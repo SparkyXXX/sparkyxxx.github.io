@@ -14,6 +14,22 @@ platforms:
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"
 
+  - type: WeChatFriend
+    icon: "fab fa-weixin"
+    link: "javascript:alert('请使用微信客户端扫描二维码分享到微信好友');"
+
+  - type: WeChatMoments
+    icon: "fab fa-weixin"
+    link: "javascript:alert('请使用微信客户端扫描二维码分享到微信朋友圈');"
+
+  - type: QQFriend
+    icon: "fab fa-qq"
+    link: "http://connect.qq.com/widget/shareqq/index.html?url=URL&title=TITLE"
+
+  - type: QQZone
+    icon: "fab fa-qq"
+    link: "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=URL&title=TITLE"
+
   # Uncomment below if you need to.
   #
   # - type: Linkedin
