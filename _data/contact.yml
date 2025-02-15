@@ -3,24 +3,24 @@
 - type: github
   icon: "fab fa-github"
 
-# - type: bilibili
-#   icon: icon-bilibili
-#   url: "https://space.bilibili.com/352420563"
+- type: bilibili
+  icon: icon-bilibili
+  url: "https://space.bilibili.com/352420563"
 
-# - type: zhihu
-#   icon: icon-zhihu
-#   url: "https://www.zhihu.com/people/hatrixxxx"
+- type: zhihu
+  icon: icon-zhihu
+  url: "https://www.zhihu.com/people/hatrixxxx"
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
