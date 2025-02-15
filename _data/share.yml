@@ -24,7 +24,7 @@ platforms:
 
   - type: QQFriend
     icon: "fab fa-qq"
-    link: "http://connect.qq.com/widget/shareqq/index.html?url=URL&title=TITLE"
+    link: "https://connect.qq.com/widget/shareqq/index.html?url=URL&title=TITLE"
 
   - type: QQZone
     icon: "fab fa-qq"
