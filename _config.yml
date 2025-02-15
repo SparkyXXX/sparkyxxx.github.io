@@ -123,9 +123,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: SparkyXXX/sparkyxxx.github.io # <gh-username>/<repo>
-    repo_id: R_kgDON5zfag
+    repo_id: R_kgDON53qQQ
     category: Comments
-    category_id: DIC_kwDON5zfas4Cm-zJ
+    category_id: DIC_kwDON53qQc4Cm_MZ
     mapping: pathname # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
