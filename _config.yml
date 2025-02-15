@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 12Hatrixの窝 # the main title
+title: Hatrixの窝 # the main title
 
 tagline: 专注于技术积累的博客笔记 # it will display as the subtitle
 
@@ -101,11 +101,11 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: commons/avatar.png
+avatar: assets/img/avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: commons/avatar.png # string, local or CORS resources
+social_preview_image: assets/img/avatar.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
