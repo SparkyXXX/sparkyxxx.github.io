@@ -50,7 +50,7 @@ social:
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
+  bing: 3B97E495A5055898AEC92C5FF736F169 # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code
