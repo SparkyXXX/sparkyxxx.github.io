@@ -82,5 +82,18 @@ layout: compress
     {% endfor %}
 
     {% include_cached search-loader.html lang=lang %}
+    <script>
+      function handleVisibilityChange() {
+        if (document.visibilityState === 'visible') {
+          document.title = "{{ site.title }}";
+        } else {
+          document.title = "我藏好了哦(≧◡≦)~";
+        }
+      }
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+      handleVisibilityChange();
+    </script>
+</body>
+</html>
   </body>
 </html>
