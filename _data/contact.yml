@@ -3,12 +3,12 @@
 - type: github
   icon: "fab fa-github"
 
-- type: bilibili
-  icon: icon-bilibili
-  url: "https://space.bilibili.com/352420563"
+- type: stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "https://stackoverflow.com/users/27007817/hatrix"
 
 - type: zhihu
-  icon: icon-zhihu
+  icon: "fab fa-zhihu"
   url: "https://www.zhihu.com/people/hatrixxxx"
 
 - type: email

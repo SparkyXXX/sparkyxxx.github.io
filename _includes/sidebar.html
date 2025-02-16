@@ -87,13 +87,7 @@
             rel="{{ link_types }}"
           {% endunless %}
         >
-
-          {% if entry.type == 'bilibili' or entry.type == 'zhihu' %}
-            <img src="{{ '/assets/img/icons/' | append: entry.icon | append: '.svg' | relative_url }}" alt="{{ entry.type }}">
-          {% else %}
-            <i class="{{ entry.icon }}"></i>
-          {% endif %}
-
+          <i class="{{ entry.icon }}"></i>
         </a>
       {% endif %}
     {% endfor %}
