@@ -10,6 +10,7 @@ layout: compress
 
 {% if site.theme_mode %}
   {% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %}
+  {% capture hrx_mode %}"{{ site.theme_mode }}"{% endcapture %}
 {% endif %}
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
@@ -17,18 +18,33 @@ layout: compress
   {% include head.html %}
 
   <body>
-  <!-- 加载动画 -->
-  <div class="loading-container">
-      <img src="/assets/img/coffe.png" alt="咖啡图片" class="coffee-img" />
-      <div class="progress-text">
-        正在将巧克力泡入咖啡
-        <span class="loading-dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </span>
+    <!-- 加载动画 -->
+    <div class="loading-container" style="display: block">
+      <div class="light-animation" style="display: flex">
+        <img src="/assets/img/cake.png" alt="蛋糕图片" class="cake-img" />
+        <div class="light-progress-text">
+          正在给蛋糕浇上蜂蜜
+          <span class="light-loading-dots">
+            <span class="light-dot"></span>
+            <span class="light-dot"></span>
+            <span class="light-dot"></span>
+          </span>
+        </div>
+        <div class="light-progress-bar"></div>
       </div>
-      <div class="progress-bar"></div>
+
+      <div class="dark-animation" style="display: none">
+        <img src="/assets/img/coffee.png" alt="咖啡图片" class="coffee-img" />
+        <div class="dark-progress-text">
+          正在将巧克力泡入咖啡
+          <span class="dark-loading-dots">
+            <span class="dark-dot"></span>
+            <span class="dark-dot"></span>
+            <span class="dark-dot"></span>
+          </span>
+        </div>
+        <div class="dark-progress-bar"></div>
+      </div>
     </div>
 
   <div class="main-container" style="display: none">
