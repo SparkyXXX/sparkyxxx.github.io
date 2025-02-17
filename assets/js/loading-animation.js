@@ -16,4 +16,4 @@ setTimeout(() => {
   const mainContent = document.querySelector('.main-container');
   loadingContainer.style.display = 'none';
   mainContent.style.display = 'block';
-}, 3000);
+}, 1500);
