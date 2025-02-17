@@ -37,7 +37,7 @@ image:
 ![openActions](../assets/img/post-pics/openActions.png)
 
 3. 将本地修改推送到远程仓库以触发Github的Actions时，有一项commitlint的工作流，即检查commit信息是否符合type(subject): body的规范（注意英文冒号后有一个空格）。如果commit信息不符合规范，会出现报错，因此要注意commit信息格式。
-![commitlint报错](../assets/img/post-pics/CommitlintError.png)
+![commitlint报错](../assets/img/post-pics/commitlintError.png)
 开发过程中由于需要对源码作修改但是最开始又使用了chirpy-starter模板，后来索性将完整版的仓库直接拉到本地chirpy-starter的目录下进行合并，合并之后貌似将commitlint的工作流给覆盖掉了，当时没有打算细究Actions，所以没有将其恢复回来。
 
 4. 在开发过程中，由于尝试使用Font Awesome库之外的图标，需要将svg图标转为font引入，在这个文件末尾添加了自定义样式，而Vscode的Prettier插件在执行代码格式化时
