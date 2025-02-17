@@ -10,7 +10,7 @@ math: true
 mermaid: true
 image:
   path: ../assets/img/post-pics/jigsaw.png
-  alt: site demo.
+  alt: site demo
 ---
 
 ## 构建说明
