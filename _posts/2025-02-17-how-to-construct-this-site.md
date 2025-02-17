@@ -3,7 +3,7 @@ title: 建站指南
 description: 本站是如何构建的
 author: Hatrix
 date: 2025-02-17 10:32:00 +0800
-categories: [Web开发]
+categories: [Web开发, 建站指南]
 tags: [Tutorial]
 pin: true
 math: true
