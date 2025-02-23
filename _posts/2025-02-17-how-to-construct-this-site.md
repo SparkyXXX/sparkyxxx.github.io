@@ -9,7 +9,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: ../assets/img/post-pics/jigsaw.png
+  path: ../assets/post-pics/jigsaw.png
   alt: site demo
 ---
 
@@ -34,10 +34,10 @@ image:
 ](https://github.com/cotes2020/jekyll-theme-chirpy)
 
 2. 官方的使用说明和CSDN那篇文章有一点没有说清楚，在部署阶段选择源为“GitHub Actions”之后，需要到Actions选项卡开启Actions，否则提交修改不会触发部署工作流。
-![openActions](../assets/img/post-pics/openActions.png)
+![openActions](../assets/post-pics/openActions.png)
 
 3. 将本地修改推送到远程仓库以触发Github的Actions时，有一项commitlint的工作流，即检查commit信息是否符合type(subject): body的规范（注意英文冒号后有一个空格）。如果commit信息不符合规范，会出现报错，因此要注意commit信息格式。
-![commitlint报错](../assets/img/post-pics/commitlintError.png)
+![commitlint报错](../assets/post-pics/commitlintError.png)
 开发过程中由于需要对源码作修改但是最开始又使用了chirpy-starter模板，后来索性将完整版的仓库直接拉到本地chirpy-starter的目录下进行合并，合并之后貌似将commitlint的工作流给覆盖掉了，当时没有打算细究Actions，所以没有将其恢复回来。
 
 4. 在开发过程中，由于尝试使用Font Awesome库之外的图标，需要将svg图标转为font引入，在这个文件末尾添加了自定义样式，而Vscode的Prettier插件在执行代码格式化时
@@ -59,4 +59,4 @@ image:
 ';
 ```
 由于`production`两端各多了一个空格，导致scss文件编译出了错误的css文件，本地测试没有问题而推送到远程，页面样式渲染出现问题。这个问题在完整版仓库的Discussion中也有提及：
-![Discussion](../assets/img/post-pics/discussion.png)
+![Discussion](../assets/post-pics/discussion.png)
