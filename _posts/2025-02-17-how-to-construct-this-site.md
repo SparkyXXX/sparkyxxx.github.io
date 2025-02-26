@@ -5,7 +5,6 @@ author: Hatrix
 date: 2025-02-17 10:32:00 +0800
 categories: [Web开发, 建站指南]
 tags: [Tutorial]
-pin: true
 math: true
 mermaid: true
 image:
