@@ -66,7 +66,7 @@ body {
   display: block;
   width: 0%;
   height: 100%;
-  animation: progress 1.5s linear infinite;
+  animation: progress 3s linear infinite;
 }
 
 /* 亮色动画特定样式 */
