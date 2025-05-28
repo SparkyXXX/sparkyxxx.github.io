@@ -1,112 +1,112 @@
-# Web开发扫盲
+# Web 开发扫盲
 
-HTML（超文本标记语言）决定网页的结构布局，通过标签来定义页面结构，成对出现的称为双标签，用于有内容的元素，相应的，单标签用于无内容的元素
+HTML(超文本标记语言)决定网页的结构布局，通过标签来定义页面结构，成对出现的称为双标签，用于有内容的元素，相应的，单标签用于无内容的元素
 
 常用标签：各级标题，段落，有序无需列表，表格
 
-标签可以具有属性，比如图片标签的src、alt，链接标签的href、target等；三个可复用的标签是class（定义类名）、id（唯一标识）和style（行内样式）
+标签可以具有属性，比如图片标签的 src、alt，链接标签的 href、target 等；三个可复用的标签是 class(定义类名)、id(唯一标识)和 style(行内样式)
 
 元素有块级元素和行内元素之分，块级元素可嵌套包含其它块级元素和行内元素，行内元素可嵌套包含其它行内元素
 
-**`<form>`** 标签用于创建一个HTML表单，它包含了用户输入的数据，并可以将这些数据提交到服务器进行处理。表单中可以包含各种表单控件，如文本框、按钮、复选框、单选按钮等。
+**`<form>`** 标签用于创建一个 HTML 表单，它包含了用户输入的数据，并可以将这些数据提交到服务器进行处理。表单中可以包含各种表单控件，如文本框、按钮、复选框、单选按钮等。
 
 是一个块级元素，通常用于将页面内容分为不同的部分。它没有特殊的语义含义，常用于布局和样式设计。
 
-**`<span>`** 是一个行内元素（inline element），它与 **`<div>`** 不同，不会自动换行。**`<span>`** 通常用于将较小的文本或元素进行分组，以便应用特定的样式或脚本处理。
+**`<span>`** 是一个行内元素(inline element)，它与 **`<div>`** 不同，不会自动换行。**`<span>`** 通常用于将较小的文本或元素进行分组，以便应用特定的样式或脚本处理。
 
-------
+---
 
-CSS（层叠样式表）完成更精细的页面设计，由选择器、属性及其值构成；选择器是包含无数键值对的字典；CSS导入方式有内联样式（在标签的style属性中直接写样式）、内部样式表（用style标签写选择器）、外部样式表（从文件导入），优先级递减。
+CSS(层叠样式表)完成更精细的页面设计，由选择器、属性及其值构成；选择器是包含无数键值对的字典；CSS 导入方式有内联样式(在标签的 style 属性中直接写样式)、内部样式表(用 style 标签写选择器)、外部样式表(从文件导入)，优先级递减。
 
-选择器的作用就是选择要应用样式的HTML元素，可以按元素名、类名、ID等方式进行选择
+选择器的作用就是选择要应用样式的 HTML 元素，可以按元素名、类名、ID 等方式进行选择
 
-CSS也有许多属性，了解常用的即可；CSS中的元素可看作一个盒子模型
+CSS 也有许多属性，了解常用的即可；CSS 中的元素可看作一个盒子模型
 
-网页布局方式包括标准流、浮动、定位和flexbox（自适应布局）
+网页布局方式包括标准流、浮动、定位和 flexbox(自适应布局)
 
-------
+---
 
-JS是轻量级、解释型面向对象的脚本语言，导入方式有内联型和外联型
+JS 是轻量级、解释型面向对象的脚本语言，导入方式有内联型和外联型
 
-JS中所有数据都在底层都是对象                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            变量可用var、let、const声明，var具有函数作用域，let具有块级作用域；一般来说let更灵活更安全，而var有跑出作用域污染全局变量的风险。原始值是特殊对象，自带一些方法。
+JS 中所有数据都在底层都是对象 变量可用 var、let、const 声明，var 具有函数作用域，let 具有块级作用域；一般来说 let 更灵活更安全，而 var 有跑出作用域污染全局变量的风险。原始值是特殊对象，自带一些方法。
 
-控制流语句与C语言一样，函数声明与调用也类似，类型名用function即可；
+控制流语句与 C 语言一样，函数声明与调用也类似，类型名用 function 即可；
 
-事件处理是对用户操作做出的响应，事件就是函数触发的条件，事件绑定方法有HTML属性、DOM属性、EventListener三种
+事件处理是对用户操作做出的响应，事件就是函数触发的条件，事件绑定方法有 HTML 属性、DOM 属性、EventListener 三种
 
-网页呗加载时，浏览器会创建页面的文档对象模型（DOM，即Document Object Model），每个HTML或XML文档可视作一个文档树，是整个文档的层次结构表示。DOM为这个文档树提供了API，可以使用JS来操作这个树结构
+网页呗加载时，浏览器会创建页面的文档对象模型(DOM，即 Document Object Model)，每个 HTML 或 XML 文档可视作一个文档树，是整个文档的层次结构表示。DOM 为这个文档树提供了 API，可以使用 JS 来操作这个树结构
 
-------
+---
 
-vue部分
+vue 部分
 
-vue是基于组件开发的。assets目录包含公用静态资源，components目录包含公用组件，App.vue是主入口组件（根组件），main.js是入口文件，registerServiceWorker.js是监听文件
+vue 是基于组件开发的。assets 目录包含公用静态资源，components 目录包含公用组件，App.vue 是主入口组件(根组件)，main.js 是入口文件，registerServiceWorker.js 是监听文件
 
-以v-开头的属性称为指令
+以 v-开头的属性称为指令
 
-vue单文件组件（.vue文件，缩写为SFC）是一种特殊的文件格式，允许将vue组件的模板、逻辑与样式封装在单个文件中。组件编写完成后，加载组件，包括引入、挂载、显示。组件的组织一般以一棵嵌套的组件树的形式来组织。
+vue 单文件组件(.vue 文件，缩写为 SFC)是一种特殊的文件格式，允许将 vue 组件的模板、逻辑与样式封装在单个文件中。组件编写完成后，加载组件，包括引入、挂载、显示。组件的组织一般以一棵嵌套的组件树的形式来组织。
 
-组件之间需要交互，prop是可以在组件上注册的一些自定义属性，prop只能从父组件传给子组件不能反向传递，反向传递需要使用自定义事件来实现。
+组件之间需要交互，prop 是可以在组件上注册的一些自定义属性，prop 只能从父组件传给子组件不能反向传递，反向传递需要使用自定义事件来实现。
 
-vue程序在执行过程中会自动调用一些被称为生命周期钩子的函数，vue有八个生命周期，对应也有八个生命周期函数，分为四个状态（创建时、渲染时、更新时、卸载时）
+vue 程序在执行过程中会自动调用一些被称为生命周期钩子的函数，vue 有八个生命周期，对应也有八个生命周期函数，分为四个状态(创建时、渲染时、更新时、卸载时)
 
-vue中用路由的方式管理页面间的关系，Vue.Router是vue的官方路由，单页面也可以实现跳转。
+vue 中用路由的方式管理页面间的关系，Vue.Router 是 vue 的官方路由，单页面也可以实现跳转。
 
-路由是指将数据从一个网络节点传输到另一个网络节点的过程。网络设备（如路由器）根据目标地址来决定数据的传输路径。简单来说，路由就是选择通向目的地的最优路径。 在前端开发中，尤其是单页面应用（SPA）中，路由指的是 URL 和页面或组件之间的映射关系，并在用户导航时加载相应的内容，而不需要重新加载整个页面。
+路由是指将数据从一个网络节点传输到另一个网络节点的过程。网络设备(如路由器)根据目标地址来决定数据的传输路径。简单来说，路由就是选择通向目的地的最优路径。 在前端开发中，尤其是单页面应用(SPA)中，路由指的是 URL 和页面或组件之间的映射关系，并在用户导航时加载相应的内容，而不需要重新加载整个页面。
 
-重定向（redirect）是网络技术中一种非常常见的操作，通常用于在用户访问某个URL时，将其自动转发到另一个URL。
+重定向(redirect)是网络技术中一种非常常见的操作，通常用于在用户访问某个 URL 时，将其自动转发到另一个 URL。
 
-createwebhistory原理是h5的pushstate，需要后台配合做重定向，否则会404；createwebhashhistpry原理是a标签的锚点连接，则不用
+createwebhistory 原理是 h5 的 pushstate，需要后台配合做重定向，否则会 404；createwebhashhistpry 原理是 a 标签的锚点连接，则不用
 
-状态管理：组件与组件之间的数据管。props只能用于父子级关系的组件
+状态管理：组件与组件之间的数据管。props 只能用于父子级关系的组件
 
-------
+---
 
-js前后端：
+js 前后端：
 
 前端是用户的设备，处理用户界面；后端是服务器，处理数据库和安全。
 
-需要前后端的原因，一是数据需要集中储存，要保存在服务器上。二是为了数据安全，后端开启一个服务，公开一个网络地址，这个服务称为API，判断前端发来的数据请求，分别调用对应的函数或者其它服务，根据函数参数取操作数据库。外部只能通过给出的API操作数据库，相对安全。三是为了权限管理。
+需要前后端的原因，一是数据需要集中储存，要保存在服务器上。二是为了数据安全，后端开启一个服务，公开一个网络地址，这个服务称为 API，判断前端发来的数据请求，分别调用对应的函数或者其它服务，根据函数参数取操作数据库。外部只能通过给出的 API 操作数据库，相对安全。三是为了权限管理。
 
-前端的数据库，数据只能保存在浏览器中。电脑网络自身网络地址是localhost，只能本地访问。别人看不到你的地址，只有有公网ip或域名时才能让别人访问。
+前端的数据库，数据只能保存在浏览器中。电脑网络自身网络地址是 localhost，只能本地访问。别人看不到你的地址，只有有公网 ip 或域名时才能让别人访问。
 
-后端通过网络通信函数fetch取得前端数据，对请求来的数据进行判断后，调用函数修改实际的数据库。数据库可以理解为更强大性能和功能的文件系统。将服务部署在一台服务器上，别人可以通义请求你的服务器地址。
+后端通过网络通信函数 fetch 取得前端数据，对请求来的数据进行判断后，调用函数修改实际的数据库。数据库可以理解为更强大性能和功能的文件系统。将服务部署在一台服务器上，别人可以通义请求你的服务器地址。
 
 在后面熟悉熟悉各种框架和库函数即可。
 
-------
+---
 
 nodejs
 
 **端口**是一个用于标识网络服务的数字标识符。计算机通过 IP 地址和端口号来唯一确定一个网络服务。**监听端口**是指服务器在网络上打开一个特定的端口，等待来自客户端的连接请求。每当客户端向该端口发送请求时，服务器就会接收该请求并进行相应的处理。
 
-nodejs是事件驱动的，即处理一堆的回调函数 。
+nodejs 是事件驱动的，即处理一堆的回调函数 。
 
-模块（CommonJS规范），把大文件拆分为小文件，通过模块进行组织。
+模块(CommonJS 规范)，把大文件拆分为小文件，通过模块进行组织。
 
-大多数Node.js核心API构建使用异步事件驱动的架构，其中某些类型的对象（又称触发器）会触发命名事件来调用函数（又称监听器）
+大多数 Node.js 核心 API 构建使用异步事件驱动的架构，其中某些类型的对象(又称触发器)会触发命名事件来调用函数(又称监听器)
 
 路由：不同的地址访问不同的数据
 
-**127.0.0.1** 和 **localhost** 都指的是计算机的本地主机，通常被称为 **回环地址**（loopback address）。它们用于在计算机内部进行网络通信，也就是说，它们是用于访问本机网络服务的。
+**127.0.0.1** 和 **localhost** 都指的是计算机的本地主机，通常被称为 **回环地址**(loopback address)。它们用于在计算机内部进行网络通信，也就是说，它们是用于访问本机网络服务的。
 
 **“handle”** 通常指代一个管理资源的引用或标识符，可能涉及资源的打开、关闭、操作等。
 
 **“handler”** 通常指的是一个用于处理事件、请求或操作的函数或方法，主要用于响应特定的操作。
 
-关系型数据库是一种基于关系模型的数据库系统，它以表格（表）的形式存储数据，表与表之间通过关系相互关联。关系型数据库的核心概念是“关系”，即数据以行和列的形式组织，并通过主键和外键建立关系。
+关系型数据库是一种基于关系模型的数据库系统，它以表格(表)的形式存储数据，表与表之间通过关系相互关联。关系型数据库的核心概念是“关系”，即数据以行和列的形式组织，并通过主键和外键建立关系。
 
-SQL（Structured Query Language 结构化查询语言）是一种用来操作关系型数据库的语言。SQL语言一般不区分大小写，但一般会把关键字大写，
+SQL(Structured Query Language 结构化查询语言)是一种用来操作关系型数据库的语言。SQL 语言一般不区分大小写，但一般会把关键字大写，
 
-# Web机制
+# Web 机制
 
 ## 互联网如何工作
 
-互联网实质上是埋在地下的线缆，直接与互联网相连的称为服务器，日常使用的设备称为客户端，通过互联网服务商（ISP）链接到互联网。互联网传输数据将数据拆成小包分别发送，到达后再按原顺序组装。任何连接互联网上的设备有一个IP地址，互联网相交的地方有路由器，数据每过一个路由器就添加上路由器自己的IP，经过多个路由器的数据被层层包覆直到到达服务器，传回的数据按顺序拆开包覆就能原路返回找到发送数据的设备
+互联网实质上是埋在地下的线缆，直接与互联网相连的称为服务器，日常使用的设备称为客户端，通过互联网服务商(ISP)链接到互联网。互联网传输数据将数据拆成小包分别发送，到达后再按原顺序组装。任何连接互联网上的设备有一个 IP 地址，互联网相交的地方有路由器，数据每过一个路由器就添加上路由器自己的 IP，经过多个路由器的数据被层层包覆直到到达服务器，传回的数据按顺序拆开包覆就能原路返回找到发送数据的设备
 
 为什么要以数据包传输？数据以小包的形式传输有多个理由。数据有时候会被丢弃或者损坏，这种情况发生时，小分块更容易被替换。此外，包可以沿着不同的路径进行路由，能使得交换更快并允许大量不同的用户同时下载同一个网站。如果每个网站以单个大的分块形式传输，一次就只有一个用户下载，无疑会让 Web 非常没有效率并且失去很多乐趣。
 
-网络结构：设备连接到路由器，路由器连接路由器形成小范围网络的拓扑结构，路由器通过调制解调器将网络信息变成电话设施可以处理的信息（反之亦然），电话线的线缆已经架设到全世界大多数区域。为了在网络上传输信息，需要将路由器接入ISP（互联网服务提供商）。整个互联网由这些基本设施构成。互联网是基础设施，Web 是建立在这种基础设施之上的服务。
+网络结构：设备连接到路由器，路由器连接路由器形成小范围网络的拓扑结构，路由器通过调制解调器将网络信息变成电话设施可以处理的信息(反之亦然)，电话线的线缆已经架设到全世界大多数区域。为了在网络上传输信息，需要将路由器接入 ISP(互联网服务提供商)。整个互联网由这些基本设施构成。互联网是基础设施，Web 是建立在这种基础设施之上的服务。
 
 ## 万维网如何工作
 
@@ -114,11 +114,11 @@ SQL（Structured Query Language 结构化查询语言）是一种用来操作关
 
 ![image-20250526211012317](../assets/post-pics/image-20250526211012317.png)
 
-- 客户端是典型的 Web 用户入网设备（比如，你连接了 Wi-Fi 的电脑，或接入移动网络的手机）和设备上能访问 Web 的软件（通常是一个 Web 浏览器，如 Firefox 或者 Chrome）。
+- 客户端是典型的 Web 用户入网设备(比如，你连接了 Wi-Fi 的电脑，或接入移动网络的手机)和设备上能访问 Web 的软件(通常是一个 Web 浏览器，如 Firefox 或者 Chrome)。
 
 - 服务器是存储网页、站点或应用程序的计算机。当一个客户端设备想要获取一个网页时，一份网页副本将从服务器上下载到客户端机器上，在用户的 Web 浏览器上显示。
 
-- **TCP/IP**：传输控制协议和互联网协议是定义数据如何在互联网上传输的通信协议。这就像你去商店购物所使用的交通方式，比如汽车或自行车（或是你能想到的其他可能）。
+- **TCP/IP**：传输控制协议和互联网协议是定义数据如何在互联网上传输的通信协议。这就像你去商店购物所使用的交通方式，比如汽车或自行车(或是你能想到的其他可能)。
 
 - **DNS**：域名系统像是一本网站地址簿。当你在浏览器内输入一个网址时，浏览器通过 DNS 找到网站的 IP 地址，然后获取网站。浏览器需要找到网站所在的服务器，这样才能发送 HTTP 消息到正确的地方。就像你要知道商店的地址才能到达那。
 
@@ -126,10 +126,10 @@ SQL（Structured Query Language 结构化查询语言）是一种用来操作关
 
 - 组成文件
 
-    ：一个网站由许多文件组成，就像商店里不同的商品一样。这些文件有两种主要的类型：
+  ：一个网站由许多文件组成，就像商店里不同的商品一样。这些文件有两种主要的类型：
 
-    - **代码文件**：网页大体由 HTML、CSS、JavaScript 组成，不过你会在后面看到其他的技术。
-    - **资源**：这是其他组成网页的东西的集合，比如图像、音频、视频、Word 文档、PDF 文件。
+  - **代码文件**：网页大体由 HTML、CSS、JavaScript 组成，不过你会在后面看到其他的技术。
+  - **资源**：这是其他组成网页的东西的集合，比如图像、音频、视频、Word 文档、PDF 文件。
 
 浏览器解析文件的顺序：
 
@@ -137,50 +137,50 @@ SQL（Structured Query Language 结构化查询语言）是一种用来操作关
 
 - 浏览器首先解析 HTML 文件，并从中识别出所有的指向外部 CSS 样式表的 `<link>` 和指向脚本的 `<script>` 元素引用。
 - 继续解析 HTML 文件的同时，浏览器继续向服务器发送请求以获取 `<link>` 元素中找到的 CSS 文件以及 `<script>` 元素中找到的 JavaScript 文件，然后解析 CSS 和 JavaScript。
-- 接着浏览器会给解析后的 HTML 文件生成一个 [DOM](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model) 树（在内存中），会给解析后的 CSS 文件生成一个 [CSSOM](https://developer.mozilla.org/zh-CN/docs/Glossary/CSSOM) 树（在内存中），并且会[编译和执行](https://developer.mozilla.org/zh-CN/docs/Web/Performance/How_browsers_work#javascript_编译)解析后的 JavaScript 脚本文件。
+- 接着浏览器会给解析后的 HTML 文件生成一个 [DOM](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model) 树(在内存中)，会给解析后的 CSS 文件生成一个 [CSSOM](https://developer.mozilla.org/zh-CN/docs/Glossary/CSSOM) 树(在内存中)，并且会[编译和执行](https://developer.mozilla.org/zh-CN/docs/Web/Performance/How_browsers_work#javascript_编译)解析后的 JavaScript 脚本文件。
 - 伴随着构建 DOM 树、应用 CSSOM 树的样式，以及执行 JavaScript 脚本文件，浏览器会在屏幕上绘制出网页的界面；用户看到网页界面也就可以跟网页进行交互了。
 
-## Web服务器
+## Web 服务器
 
 要发布一个网站，你需要一个静态或动态的服务器。
 
-**静态 web 服务器**（static web server）由一个计算机（硬件）和一个 HTTP 服务器（软件）组成。我们称它为“静态”是因为这个服务器把它托管文件的“保持原样”地传送到你的浏览器。
+**静态 web 服务器**(static web server)由一个计算机(硬件)和一个 HTTP 服务器(软件)组成。我们称它为“静态”是因为这个服务器把它托管文件的“保持原样”地传送到你的浏览器。
 
-**动态 web 服务器**（dynamic web server）由一个静态的网络服务器加上额外的软件组成，最普遍的是一个*应用服务器*和一个*数据库*。我们称它为“动态”是因为这个应用服务器会在通过 HTTP 服务器把托管文件传送到你的浏览器之前会对这些托管文件进行更新。
+**动态 web 服务器**(dynamic web server)由一个静态的网络服务器加上额外的软件组成，最普遍的是一个*应用服务器*和一个*数据库*。我们称它为“动态”是因为这个应用服务器会在通过 HTTP 服务器把托管文件传送到你的浏览器之前会对这些托管文件进行更新。
 
 举个例子，要生成你在浏览器中看到的最终网页，应用服务器或许会用一个数据库中的内容填充一个 HTML 模板。像 MDN 或维基百科这样的网站有成千上万的网页。通常情况下，这类网站只由几个 HTML 模板和一个巨大的数据库组成，而不是成千上万的静态 HTML 文档。这种设置使得维护和提供内容更加容易。
 
 要获取一个网页的步骤
 
-- 托管文件：一个网络服务器首先需要存储这个网站的文件，也就是说所有的 HTML 文档和它们的相关资源，包括图片、CSS 样式表、JavaScript 文件、字体以及视频。专用的web服务器一直运行、与互联网保持连接、有专用的固定IP、且往往由第三方进行维护
+- 托管文件：一个网络服务器首先需要存储这个网站的文件，也就是说所有的 HTML 文档和它们的相关资源，包括图片、CSS 样式表、JavaScript 文件、字体以及视频。专用的 web 服务器一直运行、与互联网保持连接、有专用的固定 IP、且往往由第三方进行维护
 
-- 通过http交流：web服务器提供了超文本传输协议支持。[协议](https://developer.mozilla.org/zh-CN/docs/Glossary/Protocol)是一套为了在两台计算机间交流而制定的规则。HTTP 是一个文本化的（textual），无状态的（stateless）协议。文本化指所有的命令都是纯文本（plain-text）且人类可读（human-readable）的；无状态指无论是服务器还是客户都不会记住之前的交流。关于http本身，需要知道
+- 通过 http 交流：web 服务器提供了超文本传输协议支持。[协议](https://developer.mozilla.org/zh-CN/docs/Glossary/Protocol)是一套为了在两台计算机间交流而制定的规则。HTTP 是一个文本化的(textual)，无状态的(stateless)协议。文本化指所有的命令都是纯文本(plain-text)且人类可读(human-readable)的；无状态指无论是服务器还是客户都不会记住之前的交流。关于 http 本身，需要知道
 
-    - 通常只有客户端可以发送 HTTP 请求，只会发送到*服务器*。服务器通常只能*响应客户端*的 HTTP 请求。服务器也可以通过一种叫做[服务器推送](https://en.wikipedia.org/wiki/HTTP/2_Server_Push)的机制，在客户请求之前，将数据填充到客户的缓存中。
-    - 当通过 HTTP 请求一个文件时，客户端必须提供这个文件的 [URL](https://developer.mozilla.org/zh-CN/docs/Glossary/URL)。
-    - 网络服务器*必须应答*每一个HTTP请求，至少也要回复错误信息。
+  - 通常只有客户端可以发送 HTTP 请求，只会发送到*服务器*。服务器通常只能*响应客户端*的 HTTP 请求。服务器也可以通过一种叫做[服务器推送](https://en.wikipedia.org/wiki/HTTP/2_Server_Push)的机制，在客户请求之前，将数据填充到客户的缓存中。
+  - 当通过 HTTP 请求一个文件时，客户端必须提供这个文件的 [URL](https://developer.mozilla.org/zh-CN/docs/Glossary/URL)。
+  - 网络服务器*必须应答*每一个 HTTP 请求，至少也要回复错误信息。
 
-    当服务器收到http请求时，首先检查是否存在一个存在的文件与之匹配，若存在则返回文件内容给浏览器，否则检查是否应动态生成所请求的文件，若两种处理都不可能则返回错误信息。
+  当服务器收到 http 请求时，首先检查是否存在一个存在的文件与之匹配，若存在则返回文件内容给浏览器，否则检查是否应动态生成所请求的文件，若两种处理都不可能则返回错误信息。
 
-## URL和域名
+## URL 和域名
 
-**URL**（统一资源定位符）是因特网中的唯一资源的地址。URL 由不同的部分组成，其中一些是必须的，而另一些是可选的。
+**URL**(统一资源定位符)是因特网中的唯一资源的地址。URL 由不同的部分组成，其中一些是必须的，而另一些是可选的。
 
 ![image-20250526211039685](../assets/post-pics/image-20250526211039685.png)
 
 - scheme：表示浏览器必须使用的协议来请求资源
-- authority：包含域和端口，以冒号分隔；域指示被请求的web服务器，可以是域名或IP地址；端口指示设备上运行的不同应用程序或服务。服务器可以利用不同的端口同时运行多个服务，互不干扰。除使用默认端口（http为80，https为443，ftp为21，smtp为25，pop3为110）外，端口是必要的。
-- path to file：Web 服务器上资源的路径，早期表示web服务器上的物理文件位置，如今主要是没有物理实现的web服务器处理的抽象
-- parameter：提供给web服务器的额外参数，用&分隔
-- anchor：表示资源中的一种书签，以#开头（片段标识符），#后的内容不会随着请求被发送到服务器
+- authority：包含域和端口，以冒号分隔；域指示被请求的 web 服务器，可以是域名或 IP 地址；端口指示设备上运行的不同应用程序或服务。服务器可以利用不同的端口同时运行多个服务，互不干扰。除使用默认端口(http 为 80，https 为 443，ftp 为 21，smtp 为 25，pop3 为 110)外，端口是必要的。
+- path to file：Web 服务器上资源的路径，早期表示 web 服务器上的物理文件位置，如今主要是没有物理实现的 web 服务器处理的抽象
+- parameter：提供给 web 服务器的额外参数，用&分隔
+- anchor：表示资源中的一种书签，以#开头(片段标识符)，#后的内容不会随着请求被发送到服务器
 
-将IP地址映射为人类可读的形式，称为域名。域名由几部分以点分隔构成、从右往左阅读。顶级域名表示域名提供服务的一般目的，后面的二级域名及以上都是标签。你不能真正地“购买一个域名”。这样做是为了让未使用的域名最终可以重新被其他人使用。不过你可用花钱获得一个域名在一年或多年内的使用权。你可以延长你的使用权，同时你的续期将优先于其他人的申请。但你从来都没有拥有过域名。
+将 IP 地址映射为人类可读的形式，称为域名。域名由几部分以点分隔构成、从右往左阅读。顶级域名表示域名提供服务的一般目的，后面的二级域名及以上都是标签。你不能真正地“购买一个域名”。这样做是为了让未使用的域名最终可以重新被其他人使用。不过你可用花钱获得一个域名在一年或多年内的使用权。你可以延长你的使用权，同时你的续期将优先于其他人的申请。但你从来都没有拥有过域名。
 
-DNS解析：域名系统使用特殊的服务器将输入的域名解析为真实的IP地址。可以使用DNS查询工具查找网站的IP地址
+DNS 解析：域名系统使用特殊的服务器将输入的域名解析为真实的 IP 地址。可以使用 DNS 查询工具查找网站的 IP 地址
 
 ## 网络数据包
 
-数据包是OSI模型中对第三层的数据单位的称呼，主要组成部分是用户数据和控制信息。用户数据称为*有效载荷*。控制信息是传送有效载荷所需的信息。它包括源地址和目的地址、序列信息和错误检测码，通常位于数据包的头部和尾部。
+数据包是 OSI 模型中对第三层的数据单位的称呼，主要组成部分是用户数据和控制信息。用户数据称为*有效载荷*。控制信息是传送有效载荷所需的信息。它包括源地址和目的地址、序列信息和错误检测码，通常位于数据包的头部和尾部。
 
 数据包包含：
 
@@ -196,105 +196,105 @@ DNS解析：域名系统使用特殊的服务器将输入的域名解析为真�
 
 - 导航：导航是加载 web 页面的第一步。它发生在以下情形：用户通过在地址栏输入一个 URL、点击一个链接、提交表单或者是其他的行为。Web 性能优化的目标之一就是缩短导航完成所花费的时间，在理想情况下，它通常不会花费太多的时间，但是网络延迟和带宽会让它变久。
 
-    - DNS查询：浏览器向域名服务器发起 DNS 查询请求，最终得到一个 IP 地址。第一次请求之后，这个 IP 地址可能会被缓存一段时间，这样可以通过从缓存里面检索 IP 地址而不是再通过域名服务器进行查询来加速后续的请求。每个主机名 (hostname) 在页面加载时通常只需要进行一次 DNS 查询。但是，对于页面指向的不同的主机名，则需要多次 DNS 查询。如果字体（font）、图像（image）、脚本（script）、广告（ads）和网站统计（metric）都有不同的主机名，则需要对每一个主机名进行 DNS 查询。但是对于移动网络，DNS 查询可能存在性能问题。当一个用户使用移动网络时，所有 DNS 查询必须从手机发送到基站，然后到达一个权威 DNS 服务器。手机、信号塔、域名服务器之间的距离会显著增加延迟。
+  - DNS 查询：浏览器向域名服务器发起 DNS 查询请求，最终得到一个 IP 地址。第一次请求之后，这个 IP 地址可能会被缓存一段时间，这样可以通过从缓存里面检索 IP 地址而不是再通过域名服务器进行查询来加速后续的请求。每个主机名 (hostname) 在页面加载时通常只需要进行一次 DNS 查询。但是，对于页面指向的不同的主机名，则需要多次 DNS 查询。如果字体(font)、图像(image)、脚本(script)、广告(ads)和网站统计(metric)都有不同的主机名，则需要对每一个主机名进行 DNS 查询。但是对于移动网络，DNS 查询可能存在性能问题。当一个用户使用移动网络时，所有 DNS 查询必须从手机发送到基站，然后到达一个权威 DNS 服务器。手机、信号塔、域名服务器之间的距离会显著增加延迟。
 
-    - TCP握手：一旦获取到服务器 IP 地址，浏览器就会通过[TCP“三次握手”](https://developer.mozilla.org/zh-CN/docs/Glossary/TCP_handshake)与服务器建立连接。这个机制的是用来让两端尝试进行通信——在浏览器和服务器通过上层协议 [HTTPS](https://developer.mozilla.org/zh-CN/docs/Glossary/HTTPS) 发送数据之前，可以协商网络 TCP 套接字连接的一些参数。TCP 的“三次握手”技术经常被称为“SYN-SYN-ACK”——更确切的说是 SYN、SYN-ACK、ACK——因为通过 TCP 首先发送了三个消息进行协商，然后在两台电脑之间开始一个 TCP 会话
+  - TCP 握手：一旦获取到服务器 IP 地址，浏览器就会通过[TCP“三次握手”](https://developer.mozilla.org/zh-CN/docs/Glossary/TCP_handshake)与服务器建立连接。这个机制的是用来让两端尝试进行通信——在浏览器和服务器通过上层协议 [HTTPS](https://developer.mozilla.org/zh-CN/docs/Glossary/HTTPS) 发送数据之前，可以协商网络 TCP 套接字连接的一些参数。TCP 的“三次握手”技术经常被称为“SYN-SYN-ACK”——更确切的说是 SYN、SYN-ACK、ACK——因为通过 TCP 首先发送了三个消息进行协商，然后在两台电脑之间开始一个 TCP 会话
 
-    - TLS（传输层安全）协商：对于通过 HTTPS 建立的安全连接，还需要另一次 "握手"。这种握手，或者说 [TLS](https://developer.mozilla.org/zh-CN/docs/Glossary/TLS) 协商，决定使用哪种密码对通信进行加密，验证服务器，并在开始实际数据传输前建立安全连接。这就需要在实际发送内容请求之前，再往返服务器五次。
+  - TLS(传输层安全)协商：对于通过 HTTPS 建立的安全连接，还需要另一次 "握手"。这种握手，或者说 [TLS](https://developer.mozilla.org/zh-CN/docs/Glossary/TLS) 协商，决定使用哪种密码对通信进行加密，验证服务器，并在开始实际数据传输前建立安全连接。这就需要在实际发送内容请求之前，再往返服务器五次。
 
-        虽然建立安全连接的步骤增加了等待加载页面的时间，但是为了建立一个安全的连接而增加延迟是值得的，因为在浏览器和 web 服务器之间传输的数据不可以被第三方解密。
+    虽然建立安全连接的步骤增加了等待加载页面的时间，但是为了建立一个安全的连接而增加延迟是值得的，因为在浏览器和 web 服务器之间传输的数据不可以被第三方解密。
 
-        如此经过 8 次往返，浏览器终于可以发出请求。
+    如此经过 8 次往返，浏览器终于可以发出请求。
 
 ![image-20250526211055620](../assets/post-pics/image-20250526211055620.png)
 
-- 响应：一旦我们建立了和 web 服务器的连接，浏览器就会代表用户发送一个初始的 
+- 响应：一旦我们建立了和 web 服务器的连接，浏览器就会代表用户发送一个初始的
 
-    HTTP `GET` 请求
+  HTTP `GET` 请求
 
-    ，对于网站来说，这个请求通常是一个 HTML 文件。一旦服务器收到请求，它将使用相关的响应头和 HTML 的内容进行回复。直到浏览器在解析阶段遇到链接时才会去请求链接的资源
+  ，对于网站来说，这个请求通常是一个 HTML 文件。一旦服务器收到请求，它将使用相关的响应头和 HTML 的内容进行回复。直到浏览器在解析阶段遇到链接时才会去请求链接的资源
 
-    - 拥塞控制、TCP慢启动：在传输过程中，TCP 包被分割成段。由于 TCP 保证了数据包的顺序，因此服务器在发送一定数量的分段后，必须从客户端接收一个 ACK 包的确认。为了平衡传输分段的数量，[TCP 慢启动](https://developer.mozilla.org/zh-CN/docs/Glossary/TCP_slow_start)算法用于逐渐增加传输数据量，直到确定最大网络带宽，并在网络负载较高时减少传输数据量。
+  - 拥塞控制、TCP 慢启动：在传输过程中，TCP 包被分割成段。由于 TCP 保证了数据包的顺序，因此服务器在发送一定数量的分段后，必须从客户端接收一个 ACK 包的确认。为了平衡传输分段的数量，[TCP 慢启动](https://developer.mozilla.org/zh-CN/docs/Glossary/TCP_slow_start)算法用于逐渐增加传输数据量，直到确定最大网络带宽，并在网络负载较高时减少传输数据量。
 
 - 解析：一旦浏览器收到第一个数据分块，它就可以开始解析收到的信息。
 
-    “解析”是浏览器将通过网络接收的数据转换为 DOM和 CSSOM的步骤，通过渲染器在屏幕上将它们绘制成页面。即使请求页面的 HTML 大于初始的 14KB 数据包，浏览器也将根据其拥有的数据开始解析并尝试渲染。这就是为什么在前 14KB 中包含浏览器开始渲染页面所需的所有内容，或者至少包含页面模板（第一次渲染所需的 CSS 和 HTML）对于 web 性能优化来说是重要的。但是在渲染到屏幕上面之前，HTML、CSS、JavaScript 必须被解析完成。
+  “解析”是浏览器将通过网络接收的数据转换为 DOM 和 CSSOM 的步骤，通过渲染器在屏幕上将它们绘制成页面。即使请求页面的 HTML 大于初始的 14KB 数据包，浏览器也将根据其拥有的数据开始解析并尝试渲染。这就是为什么在前 14KB 中包含浏览器开始渲染页面所需的所有内容，或者至少包含页面模板(第一次渲染所需的 CSS 和 HTML)对于 web 性能优化来说是重要的。但是在渲染到屏幕上面之前，HTML、CSS、JavaScript 必须被解析完成。
 
-    - 构建DOM树：关键渲染路径（Critical Rendering Path，CRP）包含了[文档对象模型](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model)（DOM）、[CSS 对象模型](https://developer.mozilla.org/zh-CN/docs/Web/API/CSS_Object_Model)（CSSOM）、渲染树和布局。优化关键渲染路径可以缩短首次渲染的时间。了解和优化关键渲染路径对于确保重排和重绘能以每秒 60 帧的速度进行、确保高效的用户交互、避免[卡顿](https://developer.mozilla.org/zh-CN/docs/Glossary/Jank)而言是至关重要的。
+  - 构建 DOM 树：关键渲染路径(Critical Rendering Path，CRP)包含了[文档对象模型](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model)(DOM)、[CSS 对象模型](https://developer.mozilla.org/zh-CN/docs/Web/API/CSS_Object_Model)(CSSOM)、渲染树和布局。优化关键渲染路径可以缩短首次渲染的时间。了解和优化关键渲染路径对于确保重排和重绘能以每秒 60 帧的速度进行、确保高效的用户交互、避免[卡顿](https://developer.mozilla.org/zh-CN/docs/Glossary/Jank)而言是至关重要的。
 
-        对网页或应用程序的请求始于 HTTP 请求。服务器发送包含 HTML 的响应。浏览器开始解析 HTML，将接收到的字节转换为 DOM 树。当浏览器每次发现 DOM 树包含外部资源就会初始化其请求（无论是样式表、脚本还是嵌入的图片引用）。有些请求是阻塞性的，这意味着在处理导入的资源前，其余 HTML 的解析工作将中止。浏览器接着解析 HTML，发送请求并构造 DOM，直到 HTML 的文件结尾，此时就会开始构造 CSSOM。等到 DOM 和 CSSOM 完成之后，浏览器构造渲染树，计算所有可见内容的样式。一旦渲染树完成，布局就会开始，定义所有渲染树元素的位置和大小。在布局完成后，页面将被渲染或“绘制”到屏幕上。
+    对网页或应用程序的请求始于 HTTP 请求。服务器发送包含 HTML 的响应。浏览器开始解析 HTML，将接收到的字节转换为 DOM 树。当浏览器每次发现 DOM 树包含外部资源就会初始化其请求(无论是样式表、脚本还是嵌入的图片引用)。有些请求是阻塞性的，这意味着在处理导入的资源前，其余 HTML 的解析工作将中止。浏览器接着解析 HTML，发送请求并构造 DOM，直到 HTML 的文件结尾，此时就会开始构造 CSSOM。等到 DOM 和 CSSOM 完成之后，浏览器构造渲染树，计算所有可见内容的样式。一旦渲染树完成，布局就会开始，定义所有渲染树元素的位置和大小。在布局完成后，页面将被渲染或“绘制”到屏幕上。
 
-        当解析器发现非阻塞资源，例如一张图片，浏览器会请求这些资源并且继续解析。当遇到一个 CSS 文件时，解析也可以继续进行，但是对于 `<script>` 标签（特别是没有 [`async`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/async_function) 或者 `defer` 属性的）会阻塞渲染并停止 HTML 的解析。尽管浏览器的预加载扫描器加速了这个过程，但过多的脚本仍然是一个重要的瓶颈。
+    当解析器发现非阻塞资源，例如一张图片，浏览器会请求这些资源并且继续解析。当遇到一个 CSS 文件时，解析也可以继续进行，但是对于 `<script>` 标签(特别是没有 [`async`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/async_function) 或者 `defer` 属性的)会阻塞渲染并停止 HTML 的解析。尽管浏览器的预加载扫描器加速了这个过程，但过多的脚本仍然是一个重要的瓶颈。
 
-    - 预加载扫描器：浏览器构建 DOM 树时，这个过程占用了主线程。同时，*预加载扫描器*会解析可用的内容并请求高优先级的资源，如 CSS、JavaScript 和 web 字体。多亏了预加载扫描器，我们不必等到解析器找到对外部资源的引用时才去请求。它将在后台检索资源，而当主 HTML 解析器解析到要请求的资源时，它们可能已经下载中了，或者已经被下载。预加载扫描器提供的优化减少了阻塞。为了确保脚本不会阻塞进程，当 JavaScript 解析和执行顺序不重要时，可以添加 `async` 属性或 `defer` 属性。等待获取 CSS 不会阻塞 HTML 的解析或者下载，但是它确实会阻塞 JavaScript，因为 JavaScript 经常用于查询元素的 CSS 属性。
+  - 预加载扫描器：浏览器构建 DOM 树时，这个过程占用了主线程。同时，*预加载扫描器*会解析可用的内容并请求高优先级的资源，如 CSS、JavaScript 和 web 字体。多亏了预加载扫描器，我们不必等到解析器找到对外部资源的引用时才去请求。它将在后台检索资源，而当主 HTML 解析器解析到要请求的资源时，它们可能已经下载中了，或者已经被下载。预加载扫描器提供的优化减少了阻塞。为了确保脚本不会阻塞进程，当 JavaScript 解析和执行顺序不重要时，可以添加 `async` 属性或 `defer` 属性。等待获取 CSS 不会阻塞 HTML 的解析或者下载，但是它确实会阻塞 JavaScript，因为 JavaScript 经常用于查询元素的 CSS 属性。
 
-    - JS编译：在解析 CSS 和创建 CSSOM 的同时，包括 JavaScript 文件在内的其他资源也在下载（这要归功于预加载扫描器）。JavaScript 会被解析、编译和解释。脚本被解析为抽象语法树。有些浏览器引擎会将[抽象语法树](https://zh.wikipedia.org/wiki/抽象语法树)输入编译器，输出字节码。这就是所谓的 JavaScript 编译。大部分代码都是在主线程上解释的。
+  - JS 编译：在解析 CSS 和创建 CSSOM 的同时，包括 JavaScript 文件在内的其他资源也在下载(这要归功于预加载扫描器)。JavaScript 会被解析、编译和解释。脚本被解析为抽象语法树。有些浏览器引擎会将[抽象语法树](https://zh.wikipedia.org/wiki/抽象语法树)输入编译器，输出字节码。这就是所谓的 JavaScript 编译。大部分代码都是在主线程上解释的。
 
 - 渲染：渲染步骤包括样式、布局、绘制，在某些情况下还包括合成。在解析步骤中创建的 CSSOM 树和 DOM 树组合成一个渲染树，然后用于计算每个可见元素的布局，然后将其绘制到屏幕上。在某些情况下，可以将内容提升到它们自己的层并进行合成，通过在 GPU 而不是 CPU 上绘制屏幕的一部分来提高性能，从而释放主线程。
 
-    - 样式：计算样式树或渲染树的构建从 DOM 树的根开始，遍历每个可见节点。不会被显示的元素（如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head) 元素及其子元素，以及任何带有 `display: none` 的节点，如用户代理样式表中的 `script { display: none; }`）不会包含在渲染树中，因为它们不会出现在渲染输出中。应用了 `visibility: hidden` 的节点会包含在渲染树中，因为它们会占用空间
-    - 布局：*布局*是确定呈现树中所有节点的尺寸和位置，以及确定页面上每个对象的大小和位置的过程。*重排*是后续过程中对页面的任意部分或整个文档的大小和位置的重新计算。为了确定每个对象的确切大小和位置，浏览器会从渲染树的根开始遍历。在网页上，大多数东西都是一个盒子。不同的设备和不同的桌面设置意味着无限数量的不同视区大小。在此阶段，根据视口大小，浏览器将确定屏幕上所有盒子的大小。以视口大小为基础，布局通常从 body 开始，设置所有 body 后代的大小，同时给不知道其尺寸的替换元素（例如图像）提供占位符空间，空间大小以相应元素盒模型的属性为准。
-    - 绘制：为了确保平滑滚动和动画效果，包括计算样式、回流和绘制等占用主线程的所有操作，必须在不超过 16.67 毫秒的时间内完成。绘制可以将布局树中的元素分解为多个层。将内容提升到 GPU 上的层（而不是 CPU 上的主线程）可以提高绘制和重新绘制性能。分层确实可以提高性能，但在内存管理方面成本较高，因此不应作为 Web 性能优化策略的过度使用。
-    - 合成：当文档的各个部分以不同的层绘制，相互重叠时，必须进行合成，以确保它们以正确的顺序绘制到屏幕上，并正确显示内容。当页面继续加载资源时，可能会发生回流（回想一下我们迟到的示例图像），回流会触发重新绘制和重新合成。如果我们定义了图像的大小，就不需要重新绘制，只需要绘制需要重新绘制的层，并在必要时进行合成。但我们并没有定义图像大小！所以从服务器获取图像后，渲染过程将返回到布局步骤并从那里重新开
+  - 样式：计算样式树或渲染树的构建从 DOM 树的根开始，遍历每个可见节点。不会被显示的元素(如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head) 元素及其子元素，以及任何带有 `display: none` 的节点，如用户代理样式表中的 `script { display: none; }`)不会包含在渲染树中，因为它们不会出现在渲染输出中。应用了 `visibility: hidden` 的节点会包含在渲染树中，因为它们会占用空间
+  - 布局：*布局*是确定呈现树中所有节点的尺寸和位置，以及确定页面上每个对象的大小和位置的过程。*重排*是后续过程中对页面的任意部分或整个文档的大小和位置的重新计算。为了确定每个对象的确切大小和位置，浏览器会从渲染树的根开始遍历。在网页上，大多数东西都是一个盒子。不同的设备和不同的桌面设置意味着无限数量的不同视区大小。在此阶段，根据视口大小，浏览器将确定屏幕上所有盒子的大小。以视口大小为基础，布局通常从 body 开始，设置所有 body 后代的大小，同时给不知道其尺寸的替换元素(例如图像)提供占位符空间，空间大小以相应元素盒模型的属性为准。
+  - 绘制：为了确保平滑滚动和动画效果，包括计算样式、回流和绘制等占用主线程的所有操作，必须在不超过 16.67 毫秒的时间内完成。绘制可以将布局树中的元素分解为多个层。将内容提升到 GPU 上的层(而不是 CPU 上的主线程)可以提高绘制和重新绘制性能。分层确实可以提高性能，但在内存管理方面成本较高，因此不应作为 Web 性能优化策略的过度使用。
+  - 合成：当文档的各个部分以不同的层绘制，相互重叠时，必须进行合成，以确保它们以正确的顺序绘制到屏幕上，并正确显示内容。当页面继续加载资源时，可能会发生回流(回想一下我们迟到的示例图像)，回流会触发重新绘制和重新合成。如果我们定义了图像的大小，就不需要重新绘制，只需要绘制需要重新绘制的层，并在必要时进行合成。但我们并没有定义图像大小！所以从服务器获取图像后，渲染过程将返回到布局步骤并从那里重新开
 
-- 交互：如果加载包括正确延迟加载的 JavaScript，并且仅在 [`onload`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/load_event) 事件触发后执行，那么主线程可能会忙于执行脚本，无法用于滚动、触摸和其他交互操作。[可交互时间（TTI）](https://developer.mozilla.org/zh-CN/docs/Glossary/Time_to_interactive)是测量从第一个请求导致 DNS 查询和 SSL 连接到页面可交互时所用的时间——可交互是在[首次内容绘制](https://developer.mozilla.org/zh-CN/docs/Glossary/First_contentful_paint)之后页面在 50ms 内响应用户的交互。如果主线程正在解析、编译和执行 JavaScript，则无法及时（小于 50ms）响应用户交互。
+- 交互：如果加载包括正确延迟加载的 JavaScript，并且仅在 [`onload`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/load_event) 事件触发后执行，那么主线程可能会忙于执行脚本，无法用于滚动、触摸和其他交互操作。[可交互时间(TTI)](https://developer.mozilla.org/zh-CN/docs/Glossary/Time_to_interactive)是测量从第一个请求导致 DNS 查询和 SSL 连接到页面可交互时所用的时间——可交互是在[首次内容绘制](https://developer.mozilla.org/zh-CN/docs/Glossary/First_contentful_paint)之后页面在 50ms 内响应用户的交互。如果主线程正在解析、编译和执行 JavaScript，则无法及时(小于 50ms)响应用户交互。
 
 ![image-20250526211122071](../assets/post-pics/image-20250526211122071.png)
 
-## 关键渲染路径CPR
+## 关键渲染路径 CPR
 
-关键渲染路径（Critical Rendering Path，CRP）分为五个步骤：文档对象元素（DOM）、CSS对象模型（CSSOM）、渲染树、布局、绘制
+关键渲染路径(Critical Rendering Path，CRP)分为五个步骤：文档对象元素(DOM)、CSS 对象模型(CSSOM)、渲染树、布局、绘制
 
-- DOM 是 Document Object Model（文档对象模型）的简称。DOM 接口就像是一个翻译官，它把网页里的这些元素都变成计算机能够理解和操作的对象。通过 DOM 接口，可以用编程语言（比如 JavaScript）来和网页里的元素进行交互。DOM 不是一种编程语言，但如果没有它，JavaScript 语言就不会有任何关于网页、HTML 文档、SVG 文档及其组成部分的模型或概念。DOM 不是 JavaScript 语言的一部分，而是用于建立网站的 Web API。JavaScript 也可以在其他情况下使用。例如，Node.js 在计算机上运行 JavaScript 程序，但提供了一套不同的 API，而且 DOM API 不是 Node.js 运行时的核心部分。
+- DOM 是 Document Object Model(文档对象模型)的简称。DOM 接口就像是一个翻译官，它把网页里的这些元素都变成计算机能够理解和操作的对象。通过 DOM 接口，可以用编程语言(比如 JavaScript)来和网页里的元素进行交互。DOM 不是一种编程语言，但如果没有它，JavaScript 语言就不会有任何关于网页、HTML 文档、SVG 文档及其组成部分的模型或概念。DOM 不是 JavaScript 语言的一部分，而是用于建立网站的 Web API。JavaScript 也可以在其他情况下使用。例如，Node.js 在计算机上运行 JavaScript 程序，但提供了一套不同的 API，而且 DOM API 不是 Node.js 运行时的核心部分。
 
-    比如最常见的HTML DOM 就是专门针对 HTML文档的 DOM。当我们打开一个网页时，浏览器会把 HTML 代码解析成一个树形结构，这个树形结构就是 HTML DOM。在 HTML DOM 里，每个 HTML 元素（像`<p>`段落标签、`<h1>`标题标签等）都是一个对象，这些对象有自己的属性（比如元素的文本内容、颜色、大小等）和方法（比如添加元素、删除元素等操作）。我们可以使用 JavaScript 来访问和操作这些对象。
+  比如最常见的 HTML DOM 就是专门针对 HTML 文档的 DOM。当我们打开一个网页时，浏览器会把 HTML 代码解析成一个树形结构，这个树形结构就是 HTML DOM。在 HTML DOM 里，每个 HTML 元素(像`<p>`段落标签、`<h1>`标题标签等)都是一个对象，这些对象有自己的属性(比如元素的文本内容、颜色、大小等)和方法(比如添加元素、删除元素等操作)。我们可以使用 JavaScript 来访问和操作这些对象。
 
-    绝大多数使用 DOM 的代码都是围绕着操作 HTML 文档进行的，所以我们通常把 DOM 中的节点称为**元素**（element），尽管严格来说并不是每个节点都是一个元素。
+  绝大多数使用 DOM 的代码都是围绕着操作 HTML 文档进行的，所以我们通常把 DOM 中的节点称为**元素**(element)，尽管严格来说并不是每个节点都是一个元素。
 
-- 与DOM类似的还有CSSOM（CSS对象模型）；DOM 使得 JavaScript 可以读取和修改文档的结构和内容，CSSOM 则使得 JavaScript 可以读取和修改文档样式。
+- 与 DOM 类似的还有 CSSOM(CSS 对象模型)；DOM 使得 JavaScript 可以读取和修改文档的结构和内容，CSSOM 则使得 JavaScript 可以读取和修改文档样式。
 
-    DOM 构建是增量的。节点数量越多，关键渲染路径中的后续事件将花费的时间就越长，增添太多的节点会影响性能。CSSOM 构建却不是增量的，因为后续规则可能被之前的所覆盖。CSS 是渲染阻塞的：浏览器会阻塞页面渲染直到它接收和执行了所有的 CSS。CSS 具有渲染阻塞性，因为规则可以被覆盖，样式将会被之后的解析所覆盖而不应该被渲染到屏幕上，所以在 CSSOM 完成之前无法渲染内容。CSS 规则向下层叠。随着解析器转换标识为节点，节点的后代继承了样式。
+  DOM 构建是增量的。节点数量越多，关键渲染路径中的后续事件将花费的时间就越长，增添太多的节点会影响性能。CSSOM 构建却不是增量的，因为后续规则可能被之前的所覆盖。CSS 是渲染阻塞的：浏览器会阻塞页面渲染直到它接收和执行了所有的 CSS。CSS 具有渲染阻塞性，因为规则可以被覆盖，样式将会被之后的解析所覆盖而不应该被渲染到屏幕上，所以在 CSSOM 完成之前无法渲染内容。CSS 规则向下层叠。随着解析器转换标识为节点，节点的后代继承了样式。
 
-    从选择器性能的角度，更少的特定选择器是比更多的要快。例如，`.foo {}` 是比 `.bar .foo {}` 更快的，因为当浏览器发现 `.foo` 时，必须沿着 DOM 向上走来检查 `.foo` 是不是有一个 `.bar` 祖先。越是具体的标签浏览器就需要更多的工作，但这样的弊端未必值得优化，在 CSS 中选择器的性能优化，提升仅仅是毫秒级的。
+  从选择器性能的角度，更少的特定选择器是比更多的要快。例如，`.foo {}` 是比 `.bar .foo {}` 更快的，因为当浏览器发现 `.foo` 时，必须沿着 DOM 向上走来检查 `.foo` 是不是有一个 `.bar` 祖先。越是具体的标签浏览器就需要更多的工作，但这样的弊端未必值得优化，在 CSS 中选择器的性能优化，提升仅仅是毫秒级的。
 
 - DOM 和 CSSOM 树结合为渲染树。为了构造渲染树，浏览器检查每个节点，从 DOM 树的根节点开始，并且决定附加哪些 CSS 规则。
 
 - 一旦渲染树被构建，就可以进行布局了。布局取决于屏幕的尺寸。布局步骤决定了元素在页面上的位置和布局方式，决定了每个元素的宽和高，以及它们之间的位置关系。布局性能受 DOM 影响——节点数越多，布局就需要更长的时间。如果在滚动或其他动画过程中需要布局，布局可能会成为一个瓶颈，从而导致卡顿。20ms 的延迟在加载或者方向改变时或许还可以接受，但在动画或滚动时就会变得卡顿。任何渲染树改变的时候，像添加节点、改变内容或者在一个节点更新盒模型样式的时候就会开始布局。
 
-    为了减小布局事件的频率和时长，我们应该批量更新或者避免改动盒模型属性。
+  为了减小布局事件的频率和时长，我们应该批量更新或者避免改动盒模型属性。
 
 - 一旦渲染树创建并且布局完成，像素就可以被绘制在屏幕上。加载时，整个屏幕被绘制出来。之后，只有受影响的屏幕区域会被重绘，浏览器被优化为只重绘需要绘制的最小区域。绘制是一个非常快的过程，所以聚焦在提升性能时这大概不是最有效的部分，重点要记住的是当测量一个动画帧需要的时间需要考虑到布局和重绘时间。
 
-优化CPR：提升页面加载速度需要通过被加载资源的优先级、控制它们加载的顺序和减小这些资源的体积。性能提示包含
+优化 CPR：提升页面加载速度需要通过被加载资源的优先级、控制它们加载的顺序和减小这些资源的体积。性能提示包含
 
-1）通过异步、延迟加载或者消除非关键资源来减少关键资源的请求数量
+1)通过异步、延迟加载或者消除非关键资源来减少关键资源的请求数量
 
-2）优化必须的请求数量和每个请求的文件体积
+2)优化必须的请求数量和每个请求的文件体积
 
-3）通过区分关键资源的优先级来优化被加载关键资源的顺序，来缩短关键路径长度。
+3)通过区分关键资源的优先级来优化被加载关键资源的顺序，来缩短关键路径长度。
 
 ## 测试本地文件存在的问题
 
 如果你将某些示例作为本地文件打开的话，它将不会运行。这可能是由于各种原因，最有可能是：
 
-- **它们具有异步请求**。如果你只是从本地文件运行示例，一些浏览器（包括 Chrome）将不会运行异步请求（请参阅[从服务器获取数据](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Network_requests)）。这是因为安全限制（更多关于 Web 安全的信息，请参阅[站点安全](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/First_steps/Website_security)）。
-- **它们具有服务端代码**。服务器端语言（如 PHP 或 Python）需要一个特殊的服务器来解释代码并提供结果。
+- **它们具有异步请求**。如果你只是从本地文件运行示例，一些浏览器(包括 Chrome)将不会运行异步请求(请参阅[从服务器获取数据](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Network_requests))。这是因为安全限制(更多关于 Web 安全的信息，请参阅[站点安全](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/First_steps/Website_security))。
+- **它们具有服务端代码**。服务器端语言(如 PHP 或 Python)需要一个特殊的服务器来解释代码并提供结果。
 - **它们引用其他文件**。浏览器通常将使用 `file://` 协议加载资源的请求视为跨域请求。所以，如果你加载了一个引用了其他本地文件的本地文件，就有可能会导致 [CORS](https://developer.mozilla.org/zh-CN/docs/Glossary/CORS) 的问题。
 
 ## 本地运行服务端代码
 
-- 要运行 Python 服务器端代码，你需要使用 Python web 框架。Python 有很多流行的 web 框架，例如 Django（有一个[指南](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/Django)可供参考）、[Flask](https://flask.palletsprojects.com/) 和 [Pyramid](https://trypyramid.com/)。
-- 要运行 Node.js（JavaScript）服务器端代码，你可以直接使用 Node 或选择构建于其上的框架。Express 是一个不错的选择——请参阅 [Express Web 框架（Node.js/JavaScript）](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)。
+- 要运行 Python 服务器端代码，你需要使用 Python web 框架。Python 有很多流行的 web 框架，例如 Django(有一个[指南](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/Django)可供参考)、[Flask](https://flask.palletsprojects.com/) 和 [Pyramid](https://trypyramid.com/)。
+- 要运行 Node.js(JavaScript)服务器端代码，你可以直接使用 Node 或选择构建于其上的框架。Express 是一个不错的选择——请参阅 [Express Web 框架(Node.js/JavaScript)](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)。
 
 ## 推荐阅读
 
-Web性能：https://developer.mozilla.org/zh-CN/docs/Web/Performance
+Web 性能：https://developer.mozilla.org/zh-CN/docs/Web/Performance
 
 服务器端网站编程：https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side
 
 数据包纠错原理：https://www.techradar.com/news/computing/how-error-detection-and-correction-works-1080736
 
-使用github pages发布网站https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Howto/Tools_and_setup/Upload_files_to_a_web_server#github
+使用 github pages 发布网站https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Howto/Tools_and_setup/Upload_files_to_a_web_server#github
 
 浏览器的同源策略：https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy
 
@@ -312,7 +312,7 @@ Web性能：https://developer.mozilla.org/zh-CN/docs/Web/Performance
 
 # HTML
 
-HTML 是一种用于定义内容结构的*标记语言，*由一系列的[**元素**](https://developer.mozilla.org/zh-CN/docs/Glossary/Element)组成。元素由开始标签结束标签、内容、属性（属性名和属性值）
+HTML 是一种用于定义内容结构的*标记语言，*由一系列的[**元素**](https://developer.mozilla.org/zh-CN/docs/Glossary/Element)组成。元素由开始标签结束标签、内容、属性(属性名和属性值)
 
 ![image-20250526211218745](../assets/post-pics/image-20250526211218745.png)
 
@@ -320,36 +320,36 @@ HTML 是一种用于定义内容结构的*标记语言，*由一系列的[**元�
 
 不包含任何内容的元素成为空元素，比如<img>元素，可以不含结束标签和内容，因为图像元素不需要通过内容来产生效果，其作用是向所在位置嵌入一张图片
 
-## HTML概述
+## HTML 概述
 
-最常用的HTML元素
+最常用的 HTML 元素
 
 标题、段落、列表、链接
 
 HTML 标签不区分大小写。不过，从一致性、可读性来说，最好仅使用小写字母。
 
-在 HTML 中有两种你需要知道的重要元素类别，块级元素和内联元素。此处的块级和内联不要与CSS盒子模型中的同名术语相混淆，尽管两者是相关的，但改变CSS显示类型不会改变元素类型
+在 HTML 中有两种你需要知道的重要元素类别，块级元素和内联元素。此处的块级和内联不要与 CSS 盒子模型中的同名术语相混淆，尽管两者是相关的，但改变 CSS 显示类型不会改变元素类型
 
 - 块级元素在页面中以块的形式展现。一个块级元素出现在它前面的内容之后的新行上。任何跟在块级元素后面的内容也会出现在新的行上。块级元素通常是页面上的结构元素。例如，一个块级元素可能代表标题、段落、列表、导航菜单或页脚。一个块级元素不会嵌套在一个内联元素里面，但它可能嵌套在另一个块级元素里面。
 - 内联元素通常出现在块级元素中并环绕文档内容的一小部分，而不是一整个段落或者一组内容。内联元素不会导致文本换行。它通常与文本一起使用，例如，[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 元素创建一个超链接，[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/em) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/strong) 等元素创建强调。
 
 不是所有元素都拥有开始标签、内容和结束标签。一些元素只有一个标签，通常用来在此元素所在位置插入/嵌入一些东西。这些元素被称为[空元素](https://developer.mozilla.org/zh-CN/docs/Glossary/Void_element)。例如：元素 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 是用来在页面插入一张指定的图片。无需在一个空元素的标签末尾添加 `/`
 
-属性包含元素的额外信息，这些信息不会出现在实际的内容中。属性往往提供识别名称，以后为元素设置样式以及方便在DOM中被选中
+属性包含元素的额外信息，这些信息不会出现在实际的内容中。属性往往提供识别名称，以后为元素设置样式以及方便在 DOM 中被选中
 
 一个例子是关于元素 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 的——元素 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 是*锚*，它使被标签包裹的内容成为一个超链接。锚元素可以添加多种属性，部分如下：
 
-[`href`](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#href)这个属性声明超链接的 web 地址。例如 `href="<https://www.mozilla.org/>"`。[`title 标题](<https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#title>)title` 属性为超链接声明额外的信息，比如你将链接至的那个页面。例如 `title="The Mozilla homepage"`。当鼠标悬停在超链接上面时，这部分信息将以工具提示的形式显示。[`target 目标](<https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#target>)target` 属性用于指定链接如何呈现出来。例如，`target="_blank"` 将在新标签页中显示链接。如果你希望在当前标签页显示链接，忽略这个属性即可。
+[`href`](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#href)这个属性声明超链接的 web 地址。例如 `href="<https://www.mozilla.org/>"`。[`title 标题](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#title)title`属性为超链接声明额外的信息，比如你将链接至的那个页面。例如`title="The Mozilla homepage"`。当鼠标悬停在超链接上面时，这部分信息将以工具提示的形式显示。[`target 目标](<https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#target>)target` 属性用于指定链接如何呈现出来。例如，`target="\_blank"` 将在新标签页中显示链接。如果你希望在当前标签页显示链接，忽略这个属性即可。
 
 有时你会看到没有值的属性，这也是完全可以接受的。这些属性被称为布尔属性。布尔属性只能有一个值，这个值一般与属性名称相同。例如，考虑 [`disabled`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input#disabled) 属性，你可以将其分配给表单输入元素。用它来禁用表单输入元素，这样用户就不能输入了。被禁用的元素通常有一个灰色的外观。
 
-在目前为止，本章内容所有的属性都是由双引号来包裹。然而，你也许在一些 HTML 中也见过单引号。这只是风格的问题，但应该注意单引号和双引号不能在一个属性值里面混用。如果你想将英文引号（单引号或双引号）当作文本显示在 html 中，你就必须使用 [HTML 实体引用](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#实体引用：在_html_中包含特殊字符)。在 HTML 中，字符 `<`、`>`、`"`、`'` 和 `&` 是特殊字符。它们是 HTML 语法自身的一部分。必须使用字符引用——表示字符的特殊编码，它们可以在那些情况下使用。
+在目前为止，本章内容所有的属性都是由双引号来包裹。然而，你也许在一些 HTML 中也见过单引号。这只是风格的问题，但应该注意单引号和双引号不能在一个属性值里面混用。如果你想将英文引号(单引号或双引号)当作文本显示在 html 中，你就必须使用 [HTML 实体引用](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax#实体引用：在_html_中包含特殊字符)。在 HTML 中，字符 `<`、`>`、`"`、`'` 和 `&` 是特殊字符。它们是 HTML 语法自身的一部分。必须使用字符引用——表示字符的特殊编码，它们可以在那些情况下使用。
 
-无论你在 HTML 元素的内容中使用多少空格（包括一个或多个空白字符或换行），当渲染这些代码的时候，HTML 解释器会将连续出现的空白字符减少为一个单独的空格符。
+无论你在 HTML 元素的内容中使用多少空格(包括一个或多个空白字符或换行)，当渲染这些代码的时候，HTML 解释器会将连续出现的空白字符减少为一个单独的空格符。
 
-## HTML头和元信息
+## HTML 头和元信息
 
-- `<!doctype html>`——[文档类型](https://developer.mozilla.org/zh-CN/docs/Glossary/Doctype)。这是必不可少的开头。混沌初分，HTML 尚在襁褓（大约是 1991/92 年）之时，这个元素用来关联 HTML 编写规范，以供自动查错等功能所用。而在当今，它作用有限，可以说仅用于保证文档正常读取。现在知道这些就足够了。
+- `<!doctype html>`——[文档类型](https://developer.mozilla.org/zh-CN/docs/Glossary/Doctype)。这是必不可少的开头。混沌初分，HTML 尚在襁褓(大约是 1991/92 年)之时，这个元素用来关联 HTML 编写规范，以供自动查错等功能所用。而在当今，它作用有限，可以说仅用于保证文档正常读取。现在知道这些就足够了。
 - `<html></html>`——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/html) 元素。该元素包含整个页面的所有内容，有时候也称作根元素。它还包含 `lang` 属性，设置页面的主要语种。
 - `<head></head>`——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head) 元素。该元素作为想在 HTML 页面中包含但不想向用户显示的内容的容器。包括想在搜索结果中显示的[关键字](https://developer.mozilla.org/zh-CN/docs/Glossary/Keyword)和页面描述、用于设置页面样式的 CSS、字符集声明等等。
 - `<meta charset="utf-8">`——该元素指明你的文档使用 UTF-8 字符编码，UTF-8 包括世界绝大多数书写语言的字符。它基本上可以处理任何文本内容。以它为编码还可以避免以后出现某些问题，没有理由再选用其他编码。
@@ -357,7 +357,7 @@ HTML 标签不区分大小写。不过，从一致性、可读性来说，最好
 - `<title></title>`——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title) 元素。该元素设置页面的标题，显示在浏览器标签页上，也作为收藏网页的描述文字。
 - `<body></body>`——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body) 元素。该元素包含期望让用户在访问页面时看到的*全部*内容，包括文本、图像、视频、游戏、可播放的音轨或其他内容。
 
-在页面加载完成的时候，HTML 文档中的[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)是不会显示在 web 浏览器的。它包含了诸如页面的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title)（标题）、指向 [CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS) 的链接（如果你选择用 CSS 来为 HTML 内容添加样式）、指向自定义网页图标的链接和其他的元数据（描述 HTML 的数据，比如作者和描述文档的重要关键词）等信息。Web 浏览器将使用文档[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)的信息正确渲染 HTML 文档。
+在页面加载完成的时候，HTML 文档中的[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)是不会显示在 web 浏览器的。它包含了诸如页面的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title)(标题)、指向 [CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS) 的链接(如果你选择用 CSS 来为 HTML 内容添加样式)、指向自定义网页图标的链接和其他的元数据(描述 HTML 的数据，比如作者和描述文档的重要关键词)等信息。Web 浏览器将使用文档[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)的信息正确渲染 HTML 文档。
 
 HTML 有一个“官方的”方式来为一个文档添加元数据——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta) 元素。当然，其他在这篇文章中提到的东西也可以被当作元数据。有很多不同种类的 `<meta>` 元素可以被包含进你的页面的 <head> 元素
 
@@ -368,43 +368,43 @@ HTML 有一个“官方的”方式来为一个文档添加元数据——[``](h
 
 指定作者在某些情况下是很有用的：如果你需要联系页面的作者，问一些关于页面内容的问题。一些内容管理系统能够自动获取页面作者的信息，然后用于某些用途。
 
-指定一个包括与你的页面内容有关的关键词的描述是有用的，因为它有可能使你的页面在搜索引擎进行的相关搜索中出现得更多（这些行为在术语上被称为：[搜索引擎优化](https://developer.mozilla.org/zh-CN/docs/Glossary/SEO) 或 [SEO](https://developer.mozilla.org/zh-CN/docs/Glossary/SEO)）。
+指定一个包括与你的页面内容有关的关键词的描述是有用的，因为它有可能使你的页面在搜索引擎进行的相关搜索中出现得更多(这些行为在术语上被称为：[搜索引擎优化](https://developer.mozilla.org/zh-CN/docs/Glossary/SEO) 或 [SEO](https://developer.mozilla.org/zh-CN/docs/Glossary/SEO))。
 
 图标
 
-这个不起眼的图标已经存在很多年了，16 像素的方形图标是第一种类型。你可以看见（取决于浏览器）这些图标出现在浏览器每一个打开的标签页中以及书签面板中的书签页面旁边。
+这个不起眼的图标已经存在很多年了，16 像素的方形图标是第一种类型。你可以看见(取决于浏览器)这些图标出现在浏览器每一个打开的标签页中以及书签面板中的书签页面旁边。
 
 页面添加网页图标的方式有：
 
-1. 将其保存在与网站的索引页面相同的目录中，以 `.ico` 格式保存（大多数浏览器支持更通用的格式，如 `.gif` 或 `.png`）
+1. 将其保存在与网站的索引页面相同的目录中，以 `.ico` 格式保存(大多数浏览器支持更通用的格式，如 `.gif` 或 `.png`)
 
 2. 将以下行添加到 HTML 的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head) 块中以引用它：
 
-    HTML HTML格式Copy to Clipboard
+   HTML HTML 格式 Copy to Clipboard
 
-    ```html
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    ```
+   ```html
+   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+   ```
 
 可以为不同的设备提供不同的图标，以确保图标在所有设备上都看起来美观。
 
-**备注：** 如果你的网站使用了内容安全策略（Content Security Policy，CSP）来增加安全性，这个策略会应用在 favicon 图标上。如果你遇到了图标没有被加载的问题，你需要确认 [`Content-Security-Policy`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy) 响应头的 [`img-src` 指令](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) 没有阻止访问图标。
+**备注：** 如果你的网站使用了内容安全策略(Content Security Policy，CSP)来增加安全性，这个策略会应用在 favicon 图标上。如果你遇到了图标没有被加载的问题，你需要确认 [`Content-Security-Policy`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy) 响应头的 [`img-src` 指令](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) 没有阻止访问图标。
 
 - [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link) 元素经常位于文档的头部，它有 2 个属性，`rel="stylesheet"` 表明这是文档的样式表，而 `href` 包含了样式表文件的路径：
 
-HTML HTML格式Copy to Clipboard
+HTML HTML 格式 Copy to Clipboard
 
 ```html
 <link rel="stylesheet" href="my-css-file.css" />
 ```
 
-- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script) 元素也应当放在文档的头部，并包含 `src` 属性来指向需要加载的 JavaScript 文件路径，同时最好加上 `defer` 以告诉浏览器在解析完成 HTML 后再加载 JavaScript。这样可以确保在加载脚本之前浏览器已经解析了所有的 HTML 内容。这样你就不会因为 JavaScript 试图访问页面上不存在的 HTML 元素而产生错误。实际上有很多方法来处理在你的页面上加载 JavaScript，但对于现代浏览器来说，这是最可靠的方法（对于其他方法，请阅读[脚本加载策略](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/What_is_JavaScript#脚本调用策略)）。
+- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script) 元素也应当放在文档的头部，并包含 `src` 属性来指向需要加载的 JavaScript 文件路径，同时最好加上 `defer` 以告诉浏览器在解析完成 HTML 后再加载 JavaScript。这样可以确保在加载脚本之前浏览器已经解析了所有的 HTML 内容。这样你就不会因为 JavaScript 试图访问页面上不存在的 HTML 元素而产生错误。实际上有很多方法来处理在你的页面上加载 JavaScript，但对于现代浏览器来说，这是最可靠的方法(对于其他方法，请阅读[脚本加载策略](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/What_is_JavaScript#脚本调用策略))。
 
-    HTML HTML格式Copy to Clipboard
+  HTML HTML 格式 Copy to Clipboard
 
-    ```html
-    <script src="my-js-file.js" defer></script>
-    ```
+  ```html
+  <script src="my-js-file.js" defer></script>
+  ```
 
 ## 文本处理
 
@@ -414,19 +414,19 @@ HTML HTML格式Copy to Clipboard
 
 - 最好只对每个页面使用一次 `<h1>`——这是顶级标题，所有其他标题位于层次结构中的下方。
 - 请确保在层次结构中以正确的顺序使用标题。不要使用 `<h3>` 来表示副标题，后面再跟 `<h2>` 来表示二级副标题——这是没有意义的，会导致奇怪的结果。
-- 在现有的六个标题层次中，除非觉得有必要，否则应该争取每页使用不超过三个。有很多层次的文件（例如，深层次的标题层次）会变得笨重，难以浏览。在这种情况下，如果可能的话，建议将内容分散到多个页面。
+- 在现有的六个标题层次中，除非觉得有必要，否则应该争取每页使用不超过三个。有很多层次的文件(例如，深层次的标题层次)会变得笨重，难以浏览。在这种情况下，如果可能的话，建议将内容分散到多个页面。
 
 用户通常会在 10-20 秒内离开网页，但具有明确价值主张的页面可以更长时间地吸引人们的注意力。要获得几分钟的用户关注，您必须在 10 秒内清楚地传达您的价值主张。
 
 对网页建立索引的搜索引擎将标题的内容视为影响网页搜索排名的重要关键字。没有标题，你的网页在[搜索引擎优化](https://developer.mozilla.org/zh-CN/docs/Glossary/SEO)方面效果不佳。
 
-[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/span) 元素，它没有语义。当想要对它用 CSS（或者 JS）时，可以用它包裹内容，且不附加任何额外的意义（在未来的课程中你会发现更多这类元素）。
+[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/span) 元素，它没有语义。当想要对它用 CSS(或者 JS)时，可以用它包裹内容，且不附加任何额外的意义(在未来的课程中你会发现更多这类元素)。
 
-ol为有序列表、ul为无序列表、li为列表子项
+ol 为有序列表、ul 为无序列表、li 为列表子项
 
-em类体、strong加粗
+em 类体、strong 加粗
 
-到目前为止，我们所讨论的元素都有明确的相关语义。[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/b)、[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/i) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/u) 的情况却有点复杂。它们出现于人们要在文本中使用粗体、斜体、下划线但 CSS 仍然不被完全支持的时期。像这样仅仅影响表象而且没有语义的元素，被称为**表象元素**（presentational elements）并且不应该再被使用。因为正如我们在之前看到的，语义对无障碍、SEO（搜索引擎优化）等非常重要。
+到目前为止，我们所讨论的元素都有明确的相关语义。[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/b)、[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/i) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/u) 的情况却有点复杂。它们出现于人们要在文本中使用粗体、斜体、下划线但 CSS 仍然不被完全支持的时期。像这样仅仅影响表象而且没有语义的元素，被称为**表象元素**(presentational elements)并且不应该再被使用。因为正如我们在之前看到的，语义对无障碍、SEO(搜索引擎优化)等非常重要。
 
 最好的经验法则是：只有在没有更合适的元素时，才适合使用 `<b>`、`<i>` 或 `<u>` 来表达传统上用粗体、斜体或下划线表达的意思；而通常情况下是有更合适的元素可供使用的。`<strong>`、`<em>`、`<mark>` 或 `<span>` 可能是更加合适的选择。
 
@@ -438,25 +438,25 @@ em类体、strong加粗
 
 人们强烈地将下划线与超链接联系起来。因此，在网页中，最好只给链接加下划线。在语义上合适的时候使用 `<u>` 元素，但要考虑使用 CSS 将默认的下划线改为在网页中更合适的东西。
 
-偶尔会遇到的第三种列表类型——**描述列表**（description list）。这种列表的目的是标记一组项目及其相关描述，例如术语和定义，或者是问题和答案等。
+偶尔会遇到的第三种列表类型——**描述列表**(description list)。这种列表的目的是标记一组项目及其相关描述，例如术语和定义，或者是问题和答案等。
 
-描述列表使用与其他列表类型不同的闭合标签——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dl)；此外，每一项都用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dt)（description term）元素闭合。每个描述都用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dd)（description definition）元素闭合。浏览器的默认样式会在描述列表的术语及其定义之间产生缩进。一个术语可以同时有多个描述。
+描述列表使用与其他列表类型不同的闭合标签——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dl)；此外，每一项都用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dt)(description term)元素闭合。每个描述都用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dd)(description definition)元素闭合。浏览器的默认样式会在描述列表的术语及其定义之间产生缩进。一个术语可以同时有多个描述。
 
-HTML 也有用于标记引用的特性，至于使用哪个元素标记，取决于你引用的是一块还是一行。如果一个块级内容（一个段落、多个段落、一个列表等）从其他地方被引用，你应该把它用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/blockquote) 元素包裹起来表示，并且在 [`cite`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/blockquote#cite) 属性里用 URL 来指向引用的资源。浏览器的默认样式会将其呈现为缩进的段落，作为引用的指示。行内引用用<q>进行标记，浏览器默认将其作为普通文本放入引号内表示引用。这里有 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/cite) 元素，但它是为了包含所引用资源的标题（如书名）。然而，你没有理由不把 `<cite>` 内的文字用<a>标签的href属性链接到引用源。
+HTML 也有用于标记引用的特性，至于使用哪个元素标记，取决于你引用的是一块还是一行。如果一个块级内容(一个段落、多个段落、一个列表等)从其他地方被引用，你应该把它用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/blockquote) 元素包裹起来表示，并且在 [`cite`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/blockquote#cite) 属性里用 URL 来指向引用的资源。浏览器的默认样式会将其呈现为缩进的段落，作为引用的指示。行内引用用<q>进行标记，浏览器默认将其作为普通文本放入引号内表示引用。这里有 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/cite) 元素，但它是为了包含所引用资源的标题(如书名)。然而，你没有理由不把 `<cite>` 内的文字用<a>标签的 href 属性链接到引用源。
 
 另一个你在 Web 上看到的相当常见的元素是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/abbr)——它常被用来包裹一个缩略语或缩写，并且提供缩写的解释。HTML 有个用于标记联系方式的元素——[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/address)。它仅仅包含联系方式。当你使用日期、化学方程式、和数学方程式时会偶尔使用上标和下标，以确保它们的正确含义。[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/sup) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/sub) 元素可以解决这样的问题。
 
 有大量的 HTML 元素可以来标记计算机代码：
 
 - [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/code)：用于标记计算机通用代码。
-- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/pre)：用于保留空白字符（通常用于代码块）——如果文本中使用了缩进或多余的空白，浏览器将忽略它，你将不会在呈现的页面上看到它。但是，如果你将文本包含在 `<pre></pre>` 标签中，那么空白将会以与你在文本编辑器中看到的相同的方式渲染出来。
+- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/pre)：用于保留空白字符(通常用于代码块)——如果文本中使用了缩进或多余的空白，浏览器将忽略它，你将不会在呈现的页面上看到它。但是，如果你将文本包含在 `<pre></pre>` 标签中，那么空白将会以与你在文本编辑器中看到的相同的方式渲染出来。
 - [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/var)：用于标记具体变量名。
-- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/kbd)：用于标记输入电脑的键盘（或其他类型）输入。
+- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/kbd)：用于标记输入电脑的键盘(或其他类型)输入。
 - [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/samp)：用于标记计算机程序的输出。
 
 HTML 还支持将时间和日期标记为可供机器识别的格式的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/time) 元素，为什么需要这样做？因为世界上有许多种书写日期的格式，但是这些不同的格式不容易被电脑识别——假如你想自动抓取页面上所有事件的日期并将它们插入到日历中，[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/time) 元素允许你附上清晰的、可被机器识别的时间或日期来实现这种需求。
 
-（上述用恰当的标签来表示含义的做法称为内联文本语义）
+(上述用恰当的标签来表示含义的做法称为内联文本语义)
 
 表格
 
@@ -466,9 +466,9 @@ HTML 还支持将时间和日期标记为可供机器识别的格式的 [``](htt
 
 1. **表格布局减少了视觉受损的用户的无障碍**: 盲人所使用的[屏幕阅读器](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Accessibility/Tooling#屏幕阅读器)会解析存在于 HTML 页面上的标签，然后为用户读出其中的内容。因为对于布局来说，表格不是一个正确的工具，使用的标记比使用 CSS 布局技术更复杂，所以屏幕阅读器的输出会让他们的用户感到困惑。
 2. **表格会产生很多标签**: 正如刚才提到的，表格布局通常会比正确的布局技术涉及更复杂的标签结构，这会导致代码变得更难于编写、维护、调试。
-3. **表格不能自动响应**: 当你使用正确的布局容器（比如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/header)、[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section)、[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 或是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/div)）时，它们的默认宽度是父元素的 100%；而表格的默认大小是根据其内容而定的。因此，需要采取额外的措施来获取表格布局样式，以便有效地在各种设备上工作。
+3. **表格不能自动响应**: 当你使用正确的布局容器(比如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/header)、[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section)、[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 或是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/div))时，它们的默认宽度是父元素的 100%；而表格的默认大小是根据其内容而定的。因此，需要采取额外的措施来获取表格布局样式，以便有效地在各种设备上工作。
 
-<td>表示单元格，<tr>另起一行，为了将表格的标题在视觉上和语义上都能被识别为标题，你可以使用 `**](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/th) 元素（其中“th”代表“table header”），用法和 `<td>`是一样的，除了它表示为标题，不是普通的单元格以外。
+<td>表示单元格，<tr>另起一行，为了将表格的标题在视觉上和语义上都能被识别为标题，你可以使用 `**](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/th) 元素(其中“th”代表“table header”)，用法和 `<td>`是一样的，除了它表示为标题，不是普通的单元格以外。
 
 ```html
 <table>
@@ -518,8 +518,6 @@ HTML 有一种为整列数据的定义样式信息的方法：就是 和 元素�
 
 可以在 `<col>` 元素上一次性指定信息，而不是像上面这样做。`<colgroup>` 容器就在开始标记 `<table>` 下面，`<col>` 元素在 `<colgroup>` 容器内指定。可以通过如下方式指定表格，来创建与上述相同的效果：
 
-
-
 ```html
 <table>
   <colgroup>
@@ -564,32 +562,32 @@ HTML 有一种为整列数据的定义样式信息的方法：就是 和 元素�
 要使用它们，应按以下顺序排列：
 
 - `<thead>` 元素必须包住表格的表头部分。一般是第一行，往往都是每列的标题，但是不是每种情况都是这样的。如果你使用了 / 元素，那么 `<thead>` 元素就需要放在它们的下面。
-- `<tbody>` 元素需要包住表格内容的主要部分（不是表头和表尾）。
+- `<tbody>` 元素需要包住表格内容的主要部分(不是表头和表尾)。
 - `<tfoot>` 元素需要包住表格的表尾部分。一般是最后一行，往往是对前面所有行的总结。
 
 表格也可以嵌套，但一般不这样做。
 
 [`scope`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/th#scope) 属性，可以添加在 `<th>` 元素中，以告诉屏幕阅读器该表头的类型——它是所在行的表头，还是所在列的表头。
 
-而每一行都可以有一个像这样定义的标题（如果我们把行的标题和列的标题都加上）
+而每一行都可以有一个像这样定义的标题(如果我们把行的标题和列的标题都加上)
 
 屏幕阅读器会识别这种结构化的标记，并一次读出整列或整行。`scope` 还有两个可选的值：`colgroup` 和 `rowgroup`。
 
 如果要替代 `scope` 属性，可以使用 [`id`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes#id) 和 [`headers`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td#headers) 属性来创建标题与单元格之间的联系。
 
-`headers` 属性包含一个空格分隔的无序字符串列表，每个字符串对应 `<th>` 元素的唯一 `id`，这些 `<th>` 元素为数据单元格（`<td>` 元素）或另一个标题单元格（`<th>` 元素）提供标题。
+`headers` 属性包含一个空格分隔的无序字符串列表，每个字符串对应 `<th>` 元素的唯一 `id`，这些 `<th>` 元素为数据单元格(`<td>` 元素)或另一个标题单元格(`<th>` 元素)提供标题。
 
 这样，HTML 表格就明确定义了表格中每个单元格的位置，这些单元格由其所属的每列和每行的标题定义，有点像电子表格。为使其运行良好，表格确实需要列标题和行标题。
 
-按钮通常是使用 HTML [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) 元素创建的（它们有时也是使用[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)将 `type` 属性设置为 `button` 或 `submit` 等值的元素创建的）。这些按钮是通用的 — 您可以将它们连接起来以触发您想要的任何功能，仅受您的想象力和编码技能的限制。
+按钮通常是使用 HTML [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) 元素创建的(它们有时也是使用[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)将 `type` 属性设置为 `button` 或 `submit` 等值的元素创建的)。这些按钮是通用的 — 您可以将它们连接起来以触发您想要的任何功能，仅受您的想象力和编码技能的限制。
 
 ## 网站架构
 
-[HTML](https://developer.mozilla.org/zh-CN/docs/Glossary/HTML) 不仅能够定义网页的单独部分（例如“段落”或“图片”），还可以使用块级元素（例如“标题栏”、“导航菜单”、“主内容列”）来定义网站中的复合区域。本文将探讨如何规划基本的网站结构，并根据规划的结构来编写 HTML。
+[HTML](https://developer.mozilla.org/zh-CN/docs/Glossary/HTML) 不仅能够定义网页的单独部分(例如“段落”或“图片”)，还可以使用块级元素(例如“标题栏”、“导航菜单”、“主内容列”)来定义网站中的复合区域。本文将探讨如何规划基本的网站结构，并根据规划的结构来编写 HTML。
 
 网页的外观多种多样，但是除了全屏视频或游戏，或艺术作品页面，或只是结构不当的页面以外，都倾向于使用类似的标准组件：
 
-[页眉](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#页眉)通常横跨于整个页面顶部有一个大标题 和/或 一个标志。这是网站的主要一般信息，通常存在于所有网页。[导航栏](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#导航栏)指向网站各个主要区段的超链接。通常用菜单按钮、链接或标签页表示。类似于标题栏，导航栏通常应在所有网页之间保持一致，否则会让用户感到疑惑，甚至无所适从。许多 web 设计人员认为导航栏是标题栏的一部分，而不是独立的组件，但这并非绝对；还有人认为，两者独立可以提供更好的 [无障碍访问特性](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Accessibility)，因为屏幕阅读器可以更清晰地分辨二者。[主内容](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#主内容)中心的大部分区域是当前网页大多数的独有内容，例如视频、文章、地图、新闻等。这些内容是网站的一部分，且会因页面而异。[侧边栏](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#侧边栏)一些外围信息、链接、引用、广告等。通常与主内容相关（例如一个新闻页面上，侧边栏可能包含作者信息或相关文章链接），还可能存在其他的重复元素，如辅助导航系统。[页脚](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#页脚)横跨页面底部的狭长区域。和标题一样，页脚是放置公共信息（比如版权声明或联系方式）的，一般使用较小字体，且通常为次要内容。还可以通过提供快速访问链接来进行 [SEO](https://developer.mozilla.org/zh-CN/docs/Glossary/SEO)。
+[页眉](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#页眉)通常横跨于整个页面顶部有一个大标题 和/或 一个标志。这是网站的主要一般信息，通常存在于所有网页。[导航栏](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#导航栏)指向网站各个主要区段的超链接。通常用菜单按钮、链接或标签页表示。类似于标题栏，导航栏通常应在所有网页之间保持一致，否则会让用户感到疑惑，甚至无所适从。许多 web 设计人员认为导航栏是标题栏的一部分，而不是独立的组件，但这并非绝对；还有人认为，两者独立可以提供更好的 [无障碍访问特性](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Accessibility)，因为屏幕阅读器可以更清晰地分辨二者。[主内容](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#主内容)中心的大部分区域是当前网页大多数的独有内容，例如视频、文章、地图、新闻等。这些内容是网站的一部分，且会因页面而异。[侧边栏](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#侧边栏)一些外围信息、链接、引用、广告等。通常与主内容相关(例如一个新闻页面上，侧边栏可能包含作者信息或相关文章链接)，还可能存在其他的重复元素，如辅助导航系统。[页脚](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Structuring_documents#页脚)横跨页面底部的狭长区域。和标题一样，页脚是放置公共信息(比如版权声明或联系方式)的，一般使用较小字体，且通常为次要内容。还可以通过提供快速访问链接来进行 [SEO](https://developer.mozilla.org/zh-CN/docs/Glossary/SEO)。
 
 一个“典型的网站”可能会这样布局：
 
@@ -612,65 +610,70 @@ HTML 代码中可根据功能来为区段添加标记。可使用元素来无歧
 理解所有 HTML 区段元素具体含义是很有益处的，这一点将随着个人 web 开发经验的逐渐丰富日趋显现。更多细节请查阅 [HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)。现在，你只需要理解以下主要元素的意义：
 
 - [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/main) 存放每个页面独有的内容。每个页面上只能用一次 `<main>`，且直接位于 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body) 中。最好不要把它嵌套进其他元素。
-- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 包围的内容即一篇文章，与页面其他部分无关（比如一篇博文）。
-- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section) 与 `<article>` 类似，但 `<section>` 更适用于组织页面使其按功能（比如迷你地图、一组文章标题和摘要）分块。一般的最佳用法是：以 [标题](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs) 作为开头；也可以把一篇 `<article>` 分成若干部分并分别置于不同的 `<section>` 中，也可以把一个区段 `<section>` 分成若干部分并分别置于不同的 `<article>` 中，取决于上下文。
-- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/aside) 包含一些间接信息（术语条目、作者简介、相关链接，等等）。
-- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/header) 是简介形式的内容。如果它是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body) 的子元素，那么就是网站的全局页眉。如果它是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 或[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section) 的子元素，那么它是这些部分特有的页眉（此 `<header>` 非彼[标题](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata#添加标题)）。
+- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 包围的内容即一篇文章，与页面其他部分无关(比如一篇博文)。
+- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section) 与 `<article>` 类似，但 `<section>` 更适用于组织页面使其按功能(比如迷你地图、一组文章标题和摘要)分块。一般的最佳用法是：以 [标题](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs) 作为开头；也可以把一篇 `<article>` 分成若干部分并分别置于不同的 `<section>` 中，也可以把一个区段 `<section>` 分成若干部分并分别置于不同的 `<article>` 中，取决于上下文。
+- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/aside) 包含一些间接信息(术语条目、作者简介、相关链接，等等)。
+- [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/header) 是简介形式的内容。如果它是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body) 的子元素，那么就是网站的全局页眉。如果它是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 或[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section) 的子元素，那么它是这些部分特有的页眉(此 `<header>` 非彼[标题](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata#添加标题))。
 - [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/nav) 包含页面主导航功能。其中不应包含二级链接等内容。
 - [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/footer) 包含了页面的页脚部分
 
 有时你会发现，对于一些要组织的项目或要包装的内容，现有的语义元素均不能很好对应。有时候你可能只想将一组元素作为一个单独的实体来修饰来响应单一的用 [CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS) 或 [JavaScript](https://developer.mozilla.org/zh-CN/docs/Glossary/JavaScript)。为了应对这种情况，HTML 提供了 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/div) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/span) 元素。应配合使用 [`class`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes#class) 属性提供一些标签，使这些元素能易于查询。
 
-[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/span) 是一个内联的（inline）无语义元素，最好只用于无法找到更好的语义元素来包含内容时，或者不想增加特定的含义时。
+[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/span) 是一个内联的(inline)无语义元素，最好只用于无法找到更好的语义元素来包含内容时，或者不想增加特定的含义时。
 
 **警告：** div 元素非常便利但容易被滥用。由于它们没有语义值，会使 HTML 代码变得混乱。要小心使用，只有在没有更好的语义方案时才选择它，而且要尽可能少用，否则文档的升级和维护工作会非常困难。
 
-`<br>` 可在段落中进行换行；`<br>` 是唯一能够生成多个短行结构（例如邮寄地址或诗歌）的元素。
+`<br>` 可在段落中进行换行；`<br>` 是唯一能够生成多个短行结构(例如邮寄地址或诗歌)的元素。
 
-`<hr>` 元素在文档中生成一条水平分割线，表示文本中主题的变化（例如话题或场景的改变）。一般就是一条水平的直线。
+`<hr>` 元素在文档中生成一条水平分割线，表示文本中主题的变化(例如话题或场景的改变)。一般就是一条水平的直线。
 
 在完成页面内容的规划后，一般应按部就班地规划整个网站的内容，要可能带给用户最好的体验，需要哪些页面、如何排列组合这些页面、如何互相链接等问题不可忽略。这些工作称为[信息架构](https://developer.mozilla.org/zh-CN/docs/Glossary/Information_architecture)。在大型网站中，大多数规划工作都可以归结于此，而对于一个只有几个页面的简单网站，规划设计过程可以更简单，更有趣！
 
 ## 超链接
 
-通过将文本或其他内容包裹在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 元素内，并给它一个包含网址的 [`href`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#href) 属性（也称为**超文本引用**或**目标**，它将包含一个网址）来创建一个基本链接。任何内容，甚至[块级元素](https://developer.mozilla.org/zh-CN/docs/Glossary/Block/CSS)都可以作为链接出现。如果想让标题元素变为链接，就把它包裹在锚点元素（`<a>`）内。
+通过将文本或其他内容包裹在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 元素内，并给它一个包含网址的 [`href`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#href) 属性(也称为**超文本引用**或**目标**，它将包含一个网址)来创建一个基本链接。任何内容，甚至[块级元素](https://developer.mozilla.org/zh-CN/docs/Glossary/Block/CSS)都可以作为链接出现。如果想让标题元素变为链接，就把它包裹在锚点元素(`<a>`)内。
 
 如果有需要作为链接的图片，使用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 元素来包裹要引用图片的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 元素。
 
 你可能要添加到你的链接的另一个属性是 `title`。这旨在包含关于链接的补充信息，当鼠标指针悬停在链接上时，标题将作为提示信息出现。
 
-URL可以链接到工程中的其他文件、外部链接和该HTML内的特定部分。要做到这一点，你必须首先给要链接到的元素分配一个 [`id`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes#id) 属性。通常情况下，链接到一个特定的标题是有意义的。为了链接到那个特定的 `id`，要将它放在 URL 的末尾，并在前面包含井号（`#`）
+URL 可以链接到工程中的其他文件、外部链接和该 HTML 内的特定部分。要做到这一点，你必须首先给要链接到的元素分配一个 [`id`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes#id) 属性。通常情况下，链接到一个特定的标题是有意义的。为了链接到那个特定的 `id`，要将它放在 URL 的末尾，并在前面包含井号(`#`)
 
 下面是一些在编写链接时可以遵循的最佳实践。
 
 [使用清晰的链接措辞](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Creating_links#使用清晰的链接措辞)
 
-把链接放在你的页面上很容易。这还不够。我们需要让所有的读者都可以使用链接，无论他们当前的环境和用于访问的工具（*无障碍*）。例如：
+把链接放在你的页面上很容易。这还不够。我们需要让所有的读者都可以使用链接，无论他们当前的环境和用于访问的工具(_无障碍_)。例如：
 
 - 使用屏幕阅读器的用户喜欢从页面上的一个链接跳到另一个链接，并且脱离上下文来阅读链接。
 - 搜索引擎使用链接文本来索引目标文件，所以在链接文本中包含关键词是一个很好的主意，以有效地描述与之相关的信息。
 - 读者往往会浏览页面而不是阅读每一个字，他们的眼睛会被页面的特征所吸引，比如链接。他们会找到描述性的链接。
 - 不要重复 URL 作为链接文本的一部分——URL 看起来很丑，当屏幕阅读器一个字母一个字母的读出来的时候听起来就更丑了。
-- 不要在链接文本中说“链接”或“链接到”——它只是无用的内容。屏幕阅读器告诉人们有一个链接。可视化用户也会知道有一个链接，因为链接通常是用不同的颜色设计的，并且存在下划线（这个惯例一般不应该被打破，因为用户习惯了它）。
+- 不要在链接文本中说“链接”或“链接到”——它只是无用的内容。屏幕阅读器告诉人们有一个链接。可视化用户也会知道有一个链接，因为链接通常是用不同的颜色设计的，并且存在下划线(这个惯例一般不应该被打破，因为用户习惯了它)。
 - 保持你的链接标签尽可能短——这非常重要，因为屏幕阅读器需要解释整个链接文本。
 - 尽量减少相同文本的多个副本链接到不同地方的情况。如果存在标记为“单击此处”、“单击此处”、“单击此处”这样脱离上下文的链接文本，容易对使用屏幕阅读器的用户带来问题。
 
 [链接到非 HTML 资源——留下清晰的指示](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Creating_links#链接到非_html_资源——留下清晰的指示)
 
-当链接到一个需要下载的资源（如 PDF 或 Word 文档）或流媒体（如视频或音频）或有另一个潜在的意想不到的效果（打开一个弹出窗口），你应该添加明确的措辞，以减少混乱。
+当链接到一个需要下载的资源(如 PDF 或 Word 文档)或流媒体(如视频或音频)或有另一个潜在的意想不到的效果(打开一个弹出窗口)，你应该添加明确的措辞，以减少混乱。
 
 如下的例子会让人反感：
 
 - 你在使用低带宽连接的情况下，点击一个链接，意外地突然开始下载大文件。
 
-    让我们看看一些例子，看看在这里可以使用什么样的文本：
+  让我们看看一些例子，看看在这里可以使用什么样的文本：
 
 ```html
-<p><a href="<https://www.example.com/large-report.pdf>">
-    下载销售报告（PDF，大小为 10 MB）
-  </a></p><p><a href="<https://www.example.com/video-stream/>" target="_blank">
-    观看视频（将在新标签页中播放，HD 画质）
-  </a></p>
+<p>
+  <a href="<https://www.example.com/large-report.pdf>">
+    下载销售报告(PDF，大小为 10 MB)
+  </a>
+</p>
+<p>
+  <a href="<https://www.example.com/video-stream/>" target="_blank">
+    观看视频(将在新标签页中播放，HD 画质)
+  </a>
+</p>
 ```
 
 [在下载链接时使用 download 属性](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Creating_links#在下载链接时使用_download_属性)
@@ -680,16 +683,17 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
 ```html
 <a
   href="<https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=zh-CN>"
-  download="firefox-latest-64bit-installer.exe">
-  下载最新的 Firefox 中文版 - Windows（64 位）
+  download="firefox-latest-64bit-installer.exe"
+>
+  下载最新的 Firefox 中文版 - Windows(64 位)
 </a>
 ```
 
 构建页面内容是一项重要技能，页面构建清晰才能顺利交付进行 CSS 布局。本测验将测试你是否能构思出页面的最终外观，以及是否会选用适当的结构语义。
 
-按钮通常是使用 HTML [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) 元素创建的（它们有时也是使用[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)将 `type` 属性设置为 `button` 或 `submit` 等值的元素创建的）。这些按钮是通用的 — 您可以将它们连接起来以触发您想要的任何功能，仅受您的想象力和编码技能的限制。表单是使用 、 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)、 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)和 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)等元素创建的。[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)表单元素可用于创建比简单按钮更复杂的控件，例如，包含多个选项的下拉菜单，允许您在用户界面元素的不同主题之间进行选择。
+按钮通常是使用 HTML [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) 元素创建的(它们有时也是使用[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)将 `type` 属性设置为 `button` 或 `submit` 等值的元素创建的)。这些按钮是通用的 — 您可以将它们连接起来以触发您想要的任何功能，仅受您的想象力和编码技能的限制。表单是使用 、 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)、 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)和 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)等元素创建的。[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)表单元素可用于创建比简单按钮更复杂的控件，例如，包含多个选项的下拉菜单，允许您在用户界面元素的不同主题之间进行选择。
 
-它们还可用于创建表单，供用户在需要向网站服务器提交信息时填写。按钮本身不会做任何有用的事情。要让它做一些有用的事情，你需要把它放在一个表单中（我们稍后会介绍），或者添加一些 JavaScript。按钮的第二个主要用途 — 提交表单的演示。
+它们还可用于创建表单，供用户在需要向网站服务器提交信息时填写。按钮本身不会做任何有用的事情。要让它做一些有用的事情，你需要把它放在一个表单中(我们稍后会介绍)，或者添加一些 JavaScript。按钮的第二个主要用途 — 提交表单的演示。
 
 基本表单包含三项内容：
 
@@ -697,20 +701,20 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
 
 - 一对或多对，每对由一个
 
-    `<label>`
+  `<label>`
 
-    元素和一个表单控制元素（通常是一个
+  元素和一个表单控制元素(通常是一个
 
-    `<input>`
+  `<input>`
 
-    元素，但也有其他类型，例如
+  元素，但也有其他类型，例如
 
-    `<select>`
+  `<select>`
 
-    ）：
+  )：
 
-    - 表单控件元素允许用户选择或输入一些数据，这些数据将在提交表单时发送到服务器。
-    - 该`<label>`元素提供与表单控件关联的标识标签，该标签描述应输入到其中的数据。
+  - 表单控件元素允许用户选择或输入一些数据，这些数据将在提交表单时发送到服务器。
+  - 该`<label>`元素提供与表单控件关联的标识标签，该标签描述应输入到其中的数据。
 
 - 用于[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)提交表单的元素。
 
@@ -722,16 +726,16 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
 还可以通过元素的 `type` 属性指定其他按钮行为：`<button>`
 
 - `<button type="submit">` 明确声明按钮的行为应该像提交按钮一样。你真的不需要声明这一点，除非出于某种原因你在 中包含了其他按钮，`<form>`并且你想清楚地表明提交按钮是哪一个。这将非常罕见。
-- `<button type="reset">` 创建一个 *reset 按钮* — 这会立即删除表单中的所有数据，将其重置为初始状态。**不要使用重置按钮** — 它们曾经在 Web 的早期很流行，但它们通常比有用更烦人。大多数人都经历过填写长表格后，不小心点击了重置按钮而不是提交按钮，这意味着他们必须重新开始。
+- `<button type="reset">` 创建一个 _reset 按钮_ — 这会立即删除表单中的所有数据，将其重置为初始状态。**不要使用重置按钮** — 它们曾经在 Web 的早期很流行，但它们通常比有用更烦人。大多数人都经历过填写长表格后，不小心点击了重置按钮而不是提交按钮，这意味着他们必须重新开始。
 - `<button type="button">` 创建一个与在`<form>`指定的按钮具有相同行为的按钮。正如我们之前看到的，它们默认完全不执行任何作，需要 JavaScript 来赋予它们功能。
 
 “选择酒店房间类型”按钮是使用 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) 控件实现的。这些控件呈现为一组按钮控件，其中任何时候都只能选择一组控件中的一个 - 你不能一次选择多个。`radio`输入类型的工作方式与`text`输入类型相同，但有一些区别。它们以老式收音机上的按钮命名，按下一个按钮，之前选择的按钮会再次弹出。还值得注意的是，我们已经将 `checked` 属性应用于第一个单选按钮 — 这会导致它在页面首次加载时被选中。这就是我们将酒店房间类型值标记为“必需”的合理性 — 将始终选择一个选项，并且您不能在不选择另一个单选按钮的情况下取消选择另一个单选按钮。
 
 在单选按钮示例中，您会注意到第三个单选按钮上设置了 `disabled` 属性。这会导致渲染的控件灰显且不可选择。这在许多情况下非常有用，因为选项通常可用，但现在不可用。例如，产品可能缺货，或者正如我们示例所示，顶层套房都被预订一空！
 
-我们的 “classes to attend” 选择器是使用 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) 控件实现的。这些呈现为一组开/关状态复选框。与单选按钮不同，您可以一次选择多个。从代码片段中可以看出，单选按钮和复选框的实现方式非常相似（它们还可以采用 `checked` 属性，以便在页面加载时预先选择它们）。
+我们的 “classes to attend” 选择器是使用 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) 控件实现的。这些呈现为一组开/关状态复选框。与单选按钮不同，您可以一次选择多个。从代码片段中可以看出，单选按钮和复选框的实现方式非常相似(它们还可以采用 `checked` 属性，以便在页面加载时预先选择它们)。
 
-下拉菜单（例如示例中的 “How are you getting here” 选择控件）不是使用类型实现的，而是使用 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) and [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)实现的：`<input>`
+下拉菜单(例如示例中的 “How are you getting here” 选择控件)不是使用类型实现的，而是使用 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) and [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)实现的：`<input>`
 
 多行文本输入字段是使用[``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)元素创建的：
 
@@ -741,7 +745,7 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
 
 表单验证是一个巨大的话题，超出了本文的范围，因此我们现在就把它留在这里。请记住，有两种类型的表单验证：
 
-- 客户端验证，在浏览器中进行，使用表单验证属性（如 `required`）和 JavaScript 的组合实现。客户端验证对于在用户输入错误数据时为用户提供即时提示非常有用，但在阻止恶意数据通过方面效果不佳。关闭 JavaScript 或更改客户端代码太容易了，因此验证不再有效。
+- 客户端验证，在浏览器中进行，使用表单验证属性(如 `required`)和 JavaScript 的组合实现。客户端验证对于在用户输入错误数据时为用户提供即时提示非常有用，但在阻止恶意数据通过方面效果不佳。关闭 JavaScript 或更改客户端代码太容易了，因此验证不再有效。
 - 服务器端验证，发生在服务器上，使用服务器使用的任何语言实现。格式错误的消息可能会意外或有意发送到服务器。传统智慧是确保您的服务器不信任客户端发送的任何内容，以避免由格式错误的消息引起的错误或安全问题。服务器端验证非常适合阻止恶意消息，因为它更难篡改服务器上运行的代码。服务器端验证不太擅长向用户提供有关错误数据的提示，因为数据必须转到服务器进行验证，然后必须先将结果发送回客户端，然后才能通知用户。
 
 [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)元素表示输入到表单中的不同数据项。
@@ -759,23 +763,23 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
 
 通过为表单控件提供 `id` 属性，然后为`<label>`与控件 `id` 值相同的 `for` 属性来创建关联。
 
-上面看到的表单标签样式称为**显式表单标签** — control 和 label 之间的关联是通过 `id` 和 `for` 属性显式建立的。您还可以通过将控件嵌套在标签内来实现**隐式表单标签。两种方法都可以，但我们建议使用显式标记方法。这是因为显式关联通常更容易识别和理解，尤其是当您的 HTML 代码变得更加复杂时。此外，屏幕阅读器（和其他辅助技术）并不总是正确处理隐式标签。**
+上面看到的表单标签样式称为**显式表单标签** — control 和 label 之间的关联是通过 `id` 和 `for` 属性显式建立的。您还可以通过将控件嵌套在标签内来实现**隐式表单标签。两种方法都可以，但我们建议使用显式标记方法。这是因为显式关联通常更容易识别和理解，尤其是当您的 HTML 代码变得更加复杂时。此外，屏幕阅读器(和其他辅助技术)并不总是正确处理隐式标签。**
 
 ## 多媒体
 
-要想在网页上放置简单的图像，我们需要使用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 元素。这个元素是[空元素](https://developer.mozilla.org/zh-CN/docs/Glossary/Void_element)（即无法包含任何子内容和结束标签），它需要两个属性才能起作用：`src` 和 `alt`。`src` 属性包含一个 URL，该 URL 指向要嵌入页面的图像。`src` 属性可以是相对 URL 或绝对 URL，这与 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 元素的 `href` 属性类似。如果没有 `src` 属性，`img` 元素就没有图像可加载。
+要想在网页上放置简单的图像，我们需要使用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 元素。这个元素是[空元素](https://developer.mozilla.org/zh-CN/docs/Glossary/Void_element)(即无法包含任何子内容和结束标签)，它需要两个属性才能起作用：`src` 和 `alt`。`src` 属性包含一个 URL，该 URL 指向要嵌入页面的图像。`src` 属性可以是相对 URL 或绝对 URL，这与 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 元素的 `href` 属性类似。如果没有 `src` 属性，`img` 元素就没有图像可加载。
 
-不建议使用绝对 URL 进行链接。你需要托管你想要在网站上使用的图像，在比较简单的情况下，通常我们会把网站的图像保存在与 HTML 相同的服务器上。此外，从维护的角度来说，使用相对 URL 比绝对 URL 更有效率（当你将网站迁移到不同的域名时，你不需要更新所有 URL，使其包含新域名）。在更高级的设置中，你可能会使用[内容分发网络（CDN）](https://developer.mozilla.org/zh-CN/docs/Glossary/CDN)来传递图像。
+不建议使用绝对 URL 进行链接。你需要托管你想要在网站上使用的图像，在比较简单的情况下，通常我们会把网站的图像保存在与 HTML 相同的服务器上。此外，从维护的角度来说，使用相对 URL 比绝对 URL 更有效率(当你将网站迁移到不同的域名时，你不需要更新所有 URL，使其包含新域名)。在更高级的设置中，你可能会使用[内容分发网络(CDN)](https://developer.mozilla.org/zh-CN/docs/Glossary/CDN)来传递图像。
 
 如果这些图像并非由你创建，你应该查看它们发布的许可证条款，确保自己有使用它们的权限
 
-**警告：** *未经许可*，*绝不要*将 `src` 属性指向其他网站上的图像。这被称为“热链接（hotlinking）”。大多数人认为这是不道德的，因为这会导致每当有人访问你的页面，都会有另一些不知情的人为图像交付带宽费用。这也导致你无法掌控图像，图像有可能在你不知情的情况下，被删除或替换为尴尬的内容。
+**警告：** _未经许可_，*绝不要*将 `src` 属性指向其他网站上的图像。这被称为“热链接(hotlinking)”。大多数人认为这是不道德的，因为这会导致每当有人访问你的页面，都会有另一些不知情的人为图像交付带宽费用。这也导致你无法掌控图像，图像有可能在你不知情的情况下，被删除或替换为尴尬的内容。
 
-像 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video) 这样的元素有时被称为**替换元素（replaced elements）**。这是因为元素的内容和大小由外部资源（如图像或视频文件）定义，而不是由元素本身的内容定义。
+像 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video) 这样的元素有时被称为**替换元素(replaced elements)**。这是因为元素的内容和大小由外部资源(如图像或视频文件)定义，而不是由元素本身的内容定义。
 
-（在 [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) 中，**可替换元素**（**replaced element**）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的）
+(在 [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) 中，**可替换元素**(**replaced element**)的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的)
 
-备选文本alt：它的值应该是图片的文本描述，用于在图片无法显示或者因为网速慢而加载缓慢的情况下使用。为什么我们需要备选文本呢？它可以派上用场的地方有很多：
+备选文本 alt：它的值应该是图片的文本描述，用于在图片无法显示或者因为网速慢而加载缓慢的情况下使用。为什么我们需要备选文本呢？它可以派上用场的地方有很多：
 
 - 用户有视力障碍，需要通过[屏幕阅读器](https://zh.wikipedia.org/wiki/螢幕閱讀器)来浏览网页。事实上，图片备选描述文本对大多数用户都很有用。
 - 就像上面所说的，你也许会把图片的路径或文件名拼错。
@@ -786,7 +790,7 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
 到底应该在 `alt` 里写点什么呢？这首先取决于*为什么*这张图片会在这儿，换句话说，如果这张图片没显示出来，会少了什么：
 
 - **装饰**：如果图片仅用于装饰，你应该使用 [CSS 背景图片](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/HTML_images#css_背景图片)，但如果必须使用 HTML，请添加空的 `alt=""`。如果图片不是内容的一部分，那么屏幕阅读器不应该浪费时间读取它。
-- **内容**：如果你的图片提供了重要的信息，就要在 `alt` 文本中*简要*的提供相同的信息，甚至更近一步，把这些信息写在主要的文本内容里，这样所有人都能看见。不要写冗余的备选文本（如果在主要文本中将所有的段落都重复两遍，对于没有失明的用户来说多烦啊！），如果在主要文本中已经对图片进行了充分的描述，写 `alt=""` 就好。
+- **内容**：如果你的图片提供了重要的信息，就要在 `alt` 文本中*简要*的提供相同的信息，甚至更近一步，把这些信息写在主要的文本内容里，这样所有人都能看见。不要写冗余的备选文本(如果在主要文本中将所有的段落都重复两遍，对于没有失明的用户来说多烦啊！)，如果在主要文本中已经对图片进行了充分的描述，写 `alt=""` 就好。
 - **链接**：如果你把图片嵌套在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 标签里，来把图片变成链接，那你还必须提供[无障碍的链接文本](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Creating_links#使用清晰的链接措辞)。在这种情况下，你可以写在同一个 `<a>` 元素里，或者写在图片的 `alt` 属性里，随你喜欢。
 - **文本**：你不应该将文本放到图像里。例如，如果你的主标题需要有阴影，你可以[用 CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-shadow) 来达到这个目的，而不是把文本放到图片里。如果*真的必须这么做*，那就把文本也放到 `alt` 里。
 
@@ -806,9 +810,9 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
 
 更好的做法是将这样的支持信息包含在主要文章文本中，而不是附加在图片上。
 
-你在网络上找到的图像（以及其他媒体资源类型）都以不同的许可类型发布。在你构建的网站上使用图像之前，请确保你拥有该图像的所有权、获得使用许可或遵守所有者的许可条件。
+你在网络上找到的图像(以及其他媒体资源类型)都以不同的许可类型发布。在你构建的网站上使用图像之前，请确保你拥有该图像的所有权、获得使用许可或遵守所有者的许可条件。
 
-比起使用alt，更好的做法是使用 HTML 的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figure) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figcaption) 元素，它正是为此而被创造出来的：为图片提供一个语义容器，在说明文字和图片之间建立清晰的关联。[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figcaption) 元素告诉浏览器和辅助技术工具，这段说明文字描述了 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figure) 元素的内容。
+比起使用 alt，更好的做法是使用 HTML 的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figure) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figcaption) 元素，它正是为此而被创造出来的：为图片提供一个语义容器，在说明文字和图片之间建立清晰的关联。[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figcaption) 元素告诉浏览器和辅助技术工具，这段说明文字描述了 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/figure) 元素的内容。
 
 ```html
 <figure>
@@ -817,7 +821,8 @@ URL可以链接到工程中的其他文件、外部链接和该HTML内的特定�
     alt="The head and torso of a dinosaur skeleton;
             it has a large head with long sharp teeth"
     width="400"
-    height="341" />
+    height="341"
+  />
 
   <figcaption>
     A T-Rex on display in the Manchester University Museum.
@@ -833,7 +838,7 @@ figure 里不一定要是图片，只要是这样的独立内容单元即可：
 
 figure 可以是几张图片、一段代码、音视频、方程、表格或类似的东西。
 
-你也可以使用 CSS 把图片嵌入网站中（JavaScript 也行，不过那是另外一回事了）。CSS 属性 [`background-image`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-image) 和其他的 `background-*` 属性是用来控制背景图片的。比如，要想为页面中的每个段落设置一个背景图片，你可以这样做：
+你也可以使用 CSS 把图片嵌入网站中(JavaScript 也行，不过那是另外一回事了)。CSS 属性 [`background-image`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-image) 和其他的 `background-*` 属性是用来控制背景图片的。比如，要想为页面中的每个段落设置一个背景图片，你可以这样做：
 
 ```css
 p {
@@ -845,17 +850,17 @@ p {
 
 总而言之，如果图像对你的内容有意义，则应使用 HTML 图像。如果图像纯粹是装饰，则应使用 CSS 背景图片。
 
-你还可以动态生成图形，或在生成后对图像进行操作。浏览器提供了使用代码创建 2D 和 3D 图形的方法，以及包含来自上传文件或用户摄像头实时流的视频。例如Canvas、SVG、WebGL、WebRTC，以及<video>和<audio>标签。
+你还可以动态生成图形，或在生成后对图像进行操作。浏览器提供了使用代码创建 2D 和 3D 图形的方法，以及包含来自上传文件或用户摄像头实时流的视频。例如 Canvas、SVG、WebGL、WebRTC，以及<video>和<audio>标签。
 
 最早的在线视频和音频的流行得益于专有的基于插件的技术，如 [Flash](https://zh.wikipedia.org/zh-cn/Adobe_Flash) 和 [Silverlight](https://zh.wikipedia.org/zh-cn/Microsoft_Silverlight)。这两种技术存在安全性和无障碍问题，现已过时，取而代之的是原生的 HTML 解决方案，该解决方案包括 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio) 元素以及用于控制它们的 [JavaScript](https://developer.mozilla.org/zh-CN/docs/Glossary/JavaScript) [API](https://developer.mozilla.org/zh-CN/docs/Glossary/API)。
 
 [`src`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#src)
 
-同 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 元素的使用方式相同，`src`（来源）属性指向你想要嵌入到网页中的视频资源，它们的运作方式完全相同。
+同 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) 元素的使用方式相同，`src`(来源)属性指向你想要嵌入到网页中的视频资源，它们的运作方式完全相同。
 
 [`controls`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#controls)
 
-用户应当能够控制视频和音频的播放（这对于患有[癫痫](https://zh.wikipedia.org/wiki/癫痫#病因)的人来说尤为重要）。你必须使用 `controls` 属性来让视频或音频包含浏览器自带的控制界面，或者使用适当的 [JavaScript API](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLMediaElement) 构建自己的界面。至少，界面必须包括启动和停止媒体以及调整音量的方法。
+用户应当能够控制视频和音频的播放(这对于患有[癫痫](https://zh.wikipedia.org/wiki/癫痫#病因)的人来说尤为重要)。你必须使用 `controls` 属性来让视频或音频包含浏览器自带的控制界面，或者使用适当的 [JavaScript API](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLMediaElement) 构建自己的界面。至少，界面必须包括启动和停止媒体以及调整音量的方法。
 
 <video> 元素内的段落
 
@@ -881,7 +886,7 @@ p {
 
 <video>的其他特性包括：
 
-[`width`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#width) 和 [`height`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#height)你可以用属性控制视频的尺寸，也可以用 [CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS) 来控制视频尺寸。无论使用哪种方式，视频都会保持它原始的长宽比——也叫做**纵横比**。如果你设置的尺寸没有保持视频原始长宽比，那么视频边框将会拉伸，而未被视频内容填充的部分，将会显示默认的背景颜色。[`autoplay`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#autoplay)这个属性会使音频和视频内容立即播放，即使页面的其他部分还没有加载完全。建议不要在你的网站上自动播放视频（或音频），因为用户可能会反感。[`loop`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#loop)这个属性可以让视频（或者音频）文件在结束时再次开始播放。这个也可能很恼人，同样不建议使用，除非有必要。[`muted`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#muted)这个属性会导致媒体播放时，默认关闭声音。[`poster`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#poster)这个属性指向了一个图像的 URL，这个图像会在视频播放前显示。通常用于粗略的预览或者广告。如果页面一加载就开始播放视频的话，就不会看到封面（poster）。[`preload`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#preload)这个属性被用来缓冲较大的文件，有三个值可选： • `"none"`：不缓冲文件 • `"auto"`：页面加载后缓存媒体文件 • `"metadata"`：仅缓冲文件的元数据
+[`width`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#width) 和 [`height`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#height)你可以用属性控制视频的尺寸，也可以用 [CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS) 来控制视频尺寸。无论使用哪种方式，视频都会保持它原始的长宽比——也叫做**纵横比**。如果你设置的尺寸没有保持视频原始长宽比，那么视频边框将会拉伸，而未被视频内容填充的部分，将会显示默认的背景颜色。[`autoplay`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#autoplay)这个属性会使音频和视频内容立即播放，即使页面的其他部分还没有加载完全。建议不要在你的网站上自动播放视频(或音频)，因为用户可能会反感。[`loop`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#loop)这个属性可以让视频(或者音频)文件在结束时再次开始播放。这个也可能很恼人，同样不建议使用，除非有必要。[`muted`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#muted)这个属性会导致媒体播放时，默认关闭声音。[`poster`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#poster)这个属性指向了一个图像的 URL，这个图像会在视频播放前显示。通常用于粗略的预览或者广告。如果页面一加载就开始播放视频的话，就不会看到封面(poster)。[`preload`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video#preload)这个属性被用来缓冲较大的文件，有三个值可选： • `"none"`：不缓冲文件 • `"auto"`：页面加载后缓存媒体文件 • `"metadata"`：仅缓冲文件的元数据
 
 - • `"none"`：不缓冲文件
 - • `"auto"`：页面加载后缓存媒体文件
@@ -898,7 +903,7 @@ p {
 
 字幕
 
-借助 HTML 视频，我们可以做到这一点。我们只需使用 [WebVTT](https://developer.mozilla.org/zh-CN/docs/Web/API/WebVTT_API) 文件格式和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/track) 元素即可。 “转录（transcribe）”是指将视频/音频中说的话记录成文字形式，转录的结果称为“文字记录（transcript）”。WebVTT 是一个格式，用来编写文本文件，这个文本文件包含了众多的字符串，这些字符串会带有一些元数据，它们可以用来描述这个字符串将会在视频中显示的时间，甚至可以用来描述这些字符串的样式以及定位信息（尽管有限制）。
+借助 HTML 视频，我们可以做到这一点。我们只需使用 [WebVTT](https://developer.mozilla.org/zh-CN/docs/Web/API/WebVTT_API) 文件格式和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/track) 元素即可。 “转录(transcribe)”是指将视频/音频中说的话记录成文字形式，转录的结果称为“文字记录(transcript)”。WebVTT 是一个格式，用来编写文本文件，这个文本文件包含了众多的字符串，这些字符串会带有一些元数据，它们可以用来描述这个字符串将会在视频中显示的时间，甚至可以用来描述这些字符串的样式以及定位信息(尽管有限制)。
 
 这些字符串叫做 **cue** ，你可以根据不同的需求来显示不同类型的 cue，最常见的如下：
 
@@ -922,12 +927,10 @@ WEBVTT
 
 要让其与 HTML 媒体一起显示，你需要做如下工作：
 
-1. 将其保存为 `.vtt` 文件，放在服务器可以提供服务的地方（见下文），例如和 HTML 文件放在同一文件夹。
+1. 将其保存为 `.vtt` 文件，放在服务器可以提供服务的地方(见下文)，例如和 HTML 文件放在同一文件夹。
 2. 用 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/track) 标签链接 `.vtt` 文件，`<track>` 标签需放在 `<audio>` 或 `<video>` 标签当中，同时需要放在所有 `<source>` 标签之后。使用 [`kind`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/track#kind) 属性来指明是 `subtitles`、`captions` 还是 `descriptions`。然后，使用 [`srclang`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/track#srclang) 来告诉浏览器你是用什么语言来编写的 subtitles。最后，添加 [`label`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/track#label)，以帮助读者在查找时识别语言。
 
 如下是例子：
-
-
 
 ```html
 <video controls>
@@ -950,29 +953,29 @@ HTML 本身不容易出现语法错误，因为浏览器是以宽松模式运行
 
 **备注：** HTML 之所以以宽松的方式进行解析，是因为 Web 创建的初心就是：人人可发布内容，不去纠结代码语法。如果 Web 以严格的风格起步，也许就不会像今天这样流行了。
 
-HTML验证：
+HTML 验证：
 
-最好的方法就是让你的 HTML 页面通过 [Markup Validation Service](https://validator.w3.org/)。由 W3C（制定 HTML、CSS 和其他网络技术标准的组织）创立并维护的标记验证服务。把一个 HTML 文档加载至本网页并运行，网页会返回一个错误报告。
+最好的方法就是让你的 HTML 页面通过 [Markup Validation Service](https://validator.w3.org/)。由 W3C(制定 HTML、CSS 和其他网络技术标准的组织)创立并维护的标记验证服务。把一个 HTML 文档加载至本网页并运行，网页会返回一个错误报告。
 
 # CSS
 
-CSS（层叠样式表）是为 web 内容添加样式的代码。CSS 不是编程语言，也不是标记语言，**而是一门样式表语言**。CSS 用于选择性地为 HTML 元素添加样式。
+CSS(层叠样式表)是为 web 内容添加样式的代码。CSS 不是编程语言，也不是标记语言，**而是一门样式表语言**。CSS 用于选择性地为 HTML 元素添加样式。
 
-## CSS规则集解释
+## CSS 规则集解释
 
 ![image-20250526211627139](../assets/post-pics/image-20250526211627139.png)
 
-整个结构称为**规则集**（*规则集*通常简称为*规则*），注意各个部分的名称：
+整个结构称为**规则集**(*规则集*通常简称为*规则*)，注意各个部分的名称：
 
-[选择器（Selector）](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#选择器（selector）)HTML 元素名位于规则集的开头。它定义了需要添加样式的元素（本例中就是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p) 元素）。要给不同的元素添加样式，只需要更改选择器。[声明（Declaration）](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#声明（declaration）)它是一条单独的规则（如 `color: red;`）。用来指定为元素的哪个**属性**添加样式。[属性（Properties）](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#属性（properties）)它是为 HTML 元素添加样式的方式（本例中 `color` 就是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p) 元素的属性）。在 CSS 中，你可以选择要在规则中影响的属性。[属性值（Property value）](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#属性值（property_value）)位于属性的右边，冒号后面即**属性值**。它从指定属性的可选值中选择一个值（例如，我们除了 `red` 之外还有很多属性值可以用于 `color`）。
+[选择器(Selector)](<https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#选择器(selector)>)HTML 元素名位于规则集的开头。它定义了需要添加样式的元素(本例中就是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p) 元素)。要给不同的元素添加样式，只需要更改选择器。[声明(Declaration)](<https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#声明(declaration)>)它是一条单独的规则(如 `color: red;`)。用来指定为元素的哪个**属性**添加样式。[属性(Properties)](<https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#属性(properties)>)它是为 HTML 元素添加样式的方式(本例中 `color` 就是 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p) 元素的属性)。在 CSS 中，你可以选择要在规则中影响的属性。[属性值(Property value)](<https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#属性值(property_value)>)位于属性的右边，冒号后面即**属性值**。它从指定属性的可选值中选择一个值(例如，我们除了 `red` 之外还有很多属性值可以用于 `color`)。
 
 注意其他重要的语法：
 
-- 除了选择器部分，每个规则集都应该包含在成对的大括号里（`{}`）。
-- 在每个声明里要用冒号（`:`）将属性与属性值分隔开。
-- 在每个规则集里要用分号（`;`）将各个声明分隔开。
+- 除了选择器部分，每个规则集都应该包含在成对的大括号里(`{}`)。
+- 在每个声明里要用冒号(`:`)将属性与属性值分隔开。
+- 在每个规则集里要用分号(`;`)将各个声明分隔开。
 
-如果要在规则集中同时修改多个属性，只需要将它们用分号隔开；也可以选择多个元素并为它们添加单个规则集，多个选择器之间用逗号分隔（每个选择器都另起一行，会更好读些）
+如果要在规则集中同时修改多个属性，只需要将它们用分号隔开；也可以选择多个元素并为它们添加单个规则集，多个选择器之间用逗号分隔(每个选择器都另起一行，会更好读些)
 
 ## 选择器
 
@@ -1005,15 +1008,15 @@ CSS（层叠样式表）是为 web 内容添加样式的代码。CSS 不是编�
 
 下个示例，我们已经用 `::before`伪元素加入了个空字符串。我们把它设为了`display: block`，以让它可以用 width 和 height 进行样式化。然后我们可以用 CSS 像任何元素那样样式化。你可以摆弄 CSS，改变它的外观和行为。
 
-`::before` 和 `::after` 伪元素与 `content` 属性的共同使用，在 CSS 中被叫做“生成内容”，而且你会见到这种技术被用于完成各种任务。最后要看的一种修改样式的方法就是根据标签的状态确定样式。一个直观的例子就是当我们修改链接的样式时。当我们修改一个链接的样式时我们需要定位（针对） [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) （锚）标签。取决于是否是未访问的、访问过的、被鼠标悬停的、被键盘定位的，亦或是正在被点击当中的状态，这个标签有着不同的状态。你可以使用 CSS 去定位或者说针对这些不同的状态进行修饰——下面的 CSS 代码使得没有被访问的链接颜色变为粉色、访问过的链接变为绿色。
+`::before` 和 `::after` 伪元素与 `content` 属性的共同使用，在 CSS 中被叫做“生成内容”，而且你会见到这种技术被用于完成各种任务。最后要看的一种修改样式的方法就是根据标签的状态确定样式。一个直观的例子就是当我们修改链接的样式时。当我们修改一个链接的样式时我们需要定位(针对) [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) (锚)标签。取决于是否是未访问的、访问过的、被鼠标悬停的、被键盘定位的，亦或是正在被点击当中的状态，这个标签有着不同的状态。你可以使用 CSS 去定位或者说针对这些不同的状态进行修饰——下面的 CSS 代码使得没有被访问的链接颜色变为粉色、访问过的链接变为绿色。
 
-后代选择器——典型用单个空格（" "）字符——组合两个选择器，比如，第二个选择器匹配的元素被选择，如果他们有一个祖先（父亲，父亲的父亲，父亲的父亲的父亲，等等）元素匹配第一个选择器。仅选择嵌套在`<li>` 元素内的`<em>`我们可以使用一个称为**包含选择符**的选择器，它只是单纯地在两个选择器之间加上一个空格。
+后代选择器——典型用单个空格(" ")字符——组合两个选择器，比如，第二个选择器匹配的元素被选择，如果他们有一个祖先(父亲，父亲的父亲，父亲的父亲的父亲，等等)元素匹配第一个选择器。仅选择嵌套在`<li>` 元素内的`<em>`我们可以使用一个称为**包含选择符**的选择器，它只是单纯地在两个选择器之间加上一个空格。
 
-子代关系选择器是个大于号（`>`），只会在选择器选中直接子元素的时候匹配。继承关系上更远的后代则不会匹配。
+子代关系选择器是个大于号(`>`)，只会在选择器选中直接子元素的时候匹配。继承关系上更远的后代则不会匹配。
 
-邻接兄弟选择器（`+`）用来选中恰好处于另一个在继承关系上同级的元素旁边的物件
+邻接兄弟选择器(`+`)用来选中恰好处于另一个在继承关系上同级的元素旁边的物件
 
-如果你想选中一个元素的兄弟元素，即使它们不直接相邻，你还是可以使用通用兄弟关系选择器（`~`）。要选中所有的`<p>`元素后*任何地方*的`<img>`元素，我们会这样做：
+如果你想选中一个元素的兄弟元素，即使它们不直接相邻，你还是可以使用通用兄弟关系选择器(`~`)。要选中所有的`<p>`元素后*任何地方*的`<img>`元素，我们会这样做：
 
 ```css
 p ~ img
@@ -1027,7 +1030,7 @@ p ~ img
 
 本文旨在让你理解 CSS 的一些最基本的概念——层叠、优先级和继承——这些概念决定着如何将 CSS 应用到 HTML 中，以及如何解决冲突。
 
-在某些时候，在做一个项目过程中你会发现一些应该产生效果的样式没有生效。通常的原因是你创建了两个应用于同一个元素的规则。与[**层叠**](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Cascade)密切相关的概念是[**优先级**（specificity）](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)，决定在发生冲突的时候应该使用哪条规则。设计元素样式的规则可能不是期望的规则，因此需要了解这些机制是如何工作的。
+在某些时候，在做一个项目过程中你会发现一些应该产生效果的样式没有生效。通常的原因是你创建了两个应用于同一个元素的规则。与[**层叠**](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Cascade)密切相关的概念是[**优先级**(specificity)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)，决定在发生冲突的时候应该使用哪条规则。设计元素样式的规则可能不是期望的规则，因此需要了解这些机制是如何工作的。
 
 这里也有[**继承**](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Inheritance)的概念，也就是在默认情况下，一些 css 属性继承当前元素的父元素上设置的值，有些则不继承。这也可能导致一些和期望不同的结果。
 
@@ -1046,11 +1049,11 @@ p ~ img
 
 这三个概念一起来控制 CSS 规则应用于哪个元素；在下面的内容中，我们将看到它们是如何协同工作的。有时候会感觉有些复杂，但是当你对 CSS 有更多经验的时候，你就可以记住它们，即便忘记了细节，可以在网上查到，有经验的开发人员也不会记得所有细节。
 
-直接写在html元素中德样式被称为内联样式。
+直接写在 html 元素中德样式被称为内联样式。
 
 - **高优先级**：在 CSS 的优先级规则中，内联样式优先级最高。当其他样式设置与内联样式冲突时，内联样式会覆盖它们，除非其他样式使用了 `!important` 声明。这确保了元素能按照开发者的意愿显示特定样式。
 
-`color` 属性是一个继承属性。像 `width`（上面提到的）、`margin`、`padding` 和 `border` 不会被继承。
+`color` 属性是一个继承属性。像 `width`(上面提到的)、`margin`、`padding` 和 `border` 不会被继承。
 
 尽管每个 CSS 属性页都列出了属性是否被继承，但我们通常可以通过常识来判断哪些属性属于默认继承。
 
@@ -1076,15 +1079,15 @@ CSS 为控制继承提供了五个特殊的通用属性值。每个 CSS 属性�
 
 将属性重置为自然值，也就是如果属性是自然继承那么就是 `inherit`，否则和 `initial` 一样
 
-一个选择器的优先级可以说是由三个不同的值（或分量）相加，可以认为是百（ID）十（类）个（元素）——三位数的三个位数：
+一个选择器的优先级可以说是由三个不同的值(或分量)相加，可以认为是百(ID)十(类)个(元素)——三位数的三个位数：
 
 - **ID**：选择器中包含 ID 选择器则百位得一分。
 - **类**：选择器中包含类选择器、属性选择器或者伪类则十位得一分。
 - **元素**：选择器中包含元素、伪元素选择器则个位得一分。
 
-**备注：** 通用选择器（[`*`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Universal_selectors)）、组合符（`+`、`>`、`~`、' '）和调整优先级的选择器（[`:where()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:where)）不会影响优先级。
+**备注：** 通用选择器([`*`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Universal_selectors))、组合符(`+`、`>`、`~`、' ')和调整优先级的选择器([`:where()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:where))不会影响优先级。
 
-否定（[`:not()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:not)）和任意匹配（[`:is()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:is)）伪类本身对优先级没有影响，但它们的参数则会带来影响。
+否定([`:not()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:not))和任意匹配([`:is()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:is))伪类本身对优先级没有影响，但它们的参数则会带来影响。
 
 有一个特殊的 CSS 可以用来覆盖所有上面所有优先级计算，不过需要很小心的使用——`!important`。用于修改特定属性的值，能够覆盖普通规则的层叠。
 
@@ -1096,18 +1099,18 @@ CSS 为控制继承提供了五个特殊的通用属性值。每个 CSS 属性�
 
 相互冲突的声明将按以下顺序应用，后一种声明将覆盖前一种声明：
 
-1. 用户代理样式表中的声明（例如，浏览器的默认样式，在没有设置其他样式时使用）。
-2. 用户样式表中的常规声明（由用户设置的自定义样式）。
-3. 作者样式表中的常规声明（这些是我们 web 开发人员设置的样式）。
+1. 用户代理样式表中的声明(例如，浏览器的默认样式，在没有设置其他样式时使用)。
+2. 用户样式表中的常规声明(由用户设置的自定义样式)。
+3. 作者样式表中的常规声明(这些是我们 web 开发人员设置的样式)。
 4. 作者样式表中的 `!important` 声明
 5. 用户样式表中的 `!important` 声明
 6. 用户代理样式表中的 `!important` 声明
 
 **备注：** 标记为 `!important` 的样式的优先级顺序是颠倒的。web 开发人员的样式表覆盖用户的样式表是有意义的，因此设计可以按预期进行，但是有时用户有充足的理由覆盖 web 开发人员的样式，正如上面提到的——这可以通过在他们的规则中使用 `!important` 来实现。
 
-层是CSS中用@layer加大括号圈定的代码结构
+层是 CSS 中用@layer 加大括号圈定的代码结构
 
-在级联层中声明 CSS 时，优先级的顺序由声明层的顺序来决定。在任何层之外声明的 CSS 样式会被按声明的顺序组合在一起，形成一个未命名的层，它会被当作最后声明的层。对于存在冲突的常规（没有 `!important` 声明）样式，后面的层比先前定义的层的优先级高。但对于带有 `!important` 标记的样式，其顺序相反——先前的层中的 important 样式比后面的层以及为在层中声明的 important 样式优先级要高。但内联样式比所有作者定义的样式的优先级都要高，不受级联层规则的影响。
+在级联层中声明 CSS 时，优先级的顺序由声明层的顺序来决定。在任何层之外声明的 CSS 样式会被按声明的顺序组合在一起，形成一个未命名的层，它会被当作最后声明的层。对于存在冲突的常规(没有 `!important` 声明)样式，后面的层比先前定义的层的优先级高。但对于带有 `!important` 标记的样式，其顺序相反——先前的层中的 important 样式比后面的层以及为在层中声明的 important 样式优先级要高。但内联样式比所有作者定义的样式的优先级都要高，不受级联层规则的影响。
 
 当你在不同的层中有多个样式块，且其中提供了对于某一元素的单一属性的相互冲突的值时，声明该冲突样式的层的顺序将决定其优先级。而不是高优先级的层直接覆盖低优先级的层中的所有样式。需要注意的是单独的一个层中的样式的优先级仍旧会起作用。
 
@@ -1115,7 +1118,7 @@ CSS 为控制继承提供了五个特殊的通用属性值。每个 CSS 属性�
 
 编写 CSS 时你会发现，所有的一切都与盒子相关——设置尺寸、颜色、位置，等等。页面上大部分 HTML 元素都可以被看作若干堆叠的盒子。
 
-在 CSS 中，我们有几种类型的盒子，一般分为**区块盒子**（block boxes）和**行内盒子**（inline boxes）。类型指的是盒子在页面流中的行为方式以及与页面上其他盒子的关系。盒子有**内部显示**（inner display type）和**外部显示**（outer display type）两种类型。
+在 CSS 中，我们有几种类型的盒子，一般分为**区块盒子**(block boxes)和**行内盒子**(inline boxes)。类型指的是盒子在页面流中的行为方式以及与页面上其他盒子的关系。盒子有**内部显示**(inner display type)和**外部显示**(outer display type)两种类型。
 
 **外部显示类型**
 
@@ -1145,7 +1148,7 @@ CSS 为控制继承提供了五个特殊的通用属性值。每个 CSS 属性�
 
 区块和行内布局是网络上的默认行为方式。默认情况下，在没有任何其他指令的情况下，方框内的元素也会以[**标准流**](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Introduction)的方式布局，并表现为区块或行内盒子。
 
-例如，可以通过设置 `display: flex;` 来更改内部显示类型。该元素仍将使用外部显示类型 `block` 但内部显示类型将变为 `flex`。该方框的任何直接子代都将成为弹性（flex）项，并按照[弹性盒子](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Flexbox)规范执行。
+例如，可以通过设置 `display: flex;` 来更改内部显示类型。该元素仍将使用外部显示类型 `block` 但内部显示类型将变为 `flex`。该方框的任何直接子代都将成为弹性(flex)项，并按照[弹性盒子](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Flexbox)规范执行。
 
 当你继续详细学习 CSS 布局时，将会遇到 [`flex`](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Flexbox) 以及盒子可以具有的其他各种内部值，例如 [`grid`](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Grids)。
 
@@ -1155,7 +1158,7 @@ CSS 为控制继承提供了五个特殊的通用属性值。每个 CSS 属性�
 
 内部显示类型的值：flow-root、flex、inline-flex、grid、inline-grid、column、table-row、table-cell
 
-CSS 盒模型整体上适用于区块盒子，它定义了盒子的不同部分（外边距、边框、内边距和内容）如何协同工作，以创建一个在页面上可以看到的盒子。行内盒子使用的只是盒模型中定义的*部分*行为。有一种标准盒模型和一种替代盒模型。默认情况下，浏览器使用标准盒模型。
+CSS 盒模型整体上适用于区块盒子，它定义了盒子的不同部分(外边距、边框、内边距和内容)如何协同工作，以创建一个在页面上可以看到的盒子。行内盒子使用的只是盒模型中定义的*部分*行为。有一种标准盒模型和一种替代盒模型。默认情况下，浏览器使用标准盒模型。
 
 CSS 中组成一个区块盒子需要：
 
@@ -1164,20 +1167,20 @@ CSS 中组成一个区块盒子需要：
 - **边框盒子**：边框盒子包住内容和任何填充；使用 [`border`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border) 和相关属性确定其大小。
 - **外边距盒子**：外边距是最外层，其包裹内容、内边距和边框，作为该盒子与其他元素之间的空白；使用 [`margin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin) 和相关属性确定其大小。
 
-在标准盒模型中，如果在盒子上设置了 `inline-size` 和 `block-size`（或 `width` 和 `height`）属性值，这些值就定义了*内容盒子*的 `inline-size` 和 `block-size`（水平语言中为 `width` 和 `height`）。然后将任何内边距和边框添加到这些尺寸中，以获得盒子所占的总大小
+在标准盒模型中，如果在盒子上设置了 `inline-size` 和 `block-size`(或 `width` 和 `height`)属性值，这些值就定义了*内容盒子*的 `inline-size` 和 `block-size`(水平语言中为 `width` 和 `height`)。然后将任何内边距和边框添加到这些尺寸中，以获得盒子所占的总大小
 
 **备注：** 外边距不计入盒子的实际大小——当然，它影响盒子在页面上所占的总空间，但只影响盒子外的空间。盒子的面积止于边框，不会延伸到外边距中。
 
-在替代盒模型中，任何宽度都是页面上可见方框的宽度。内容区域的宽度是该宽度减去填充和边框的宽度（见下图）。无需将边框和内边距相加，即可获得盒子的实际大小。
+在替代盒模型中，任何宽度都是页面上可见方框的宽度。内容区域的宽度是该宽度减去填充和边框的宽度(见下图)。无需将边框和内边距相加，即可获得盒子的实际大小。
 
 要为某个元素使用替代模型，可对其设置 `box-sizing: border-box`
 
-`em` 是一个相对长度单位，它的值是相对于当前元素的字体大小（`font-size`）而言的。如果当前元素没有显式设置字体大小，那么它会继承其父元素的字体大小。1 `em` 就等于当前元素的字体大小。
+`em` 是一个相对长度单位，它的值是相对于当前元素的字体大小(`font-size`)而言的。如果当前元素没有显式设置字体大小，那么它会继承其父元素的字体大小。1 `em` 就等于当前元素的字体大小。
 
 根据外边距相接触的两个元素是正边距还是负边距，结果会有所不同：
 
 - 两个正外边距将合并为一个外边距。其大小等于最大的单个外边距。
-- 两个负外边距会折叠，并使用最小（离零最远）的值。
+- 两个负外边距会折叠，并使用最小(离零最远)的值。
 - 如果其中一个外边距为负值，其值将从总值中*减去。*
 
 在下面的示例中，我们有两个段落。最上面一段的 `margin-bottom` 为 50 像素，另一段的 `margin-top` 为 30 像素。页边距折叠在一起，因此方框之间的实际页边距是 50 像素，而不是两个页边距的总和。
@@ -1205,13 +1208,13 @@ CSS 中组成一个区块盒子需要：
 
 当你想通过添加 `padding` 来扩大链接的点击范围时，这个功能就派上用场了。`<a>` 和 `<span>` 一样是一个行内元素；可以使用 `display: inline-block` 在其上设置内边距，使用户更容易点击链接。
 
-------
+---
 
 CSS 布局主要是基于*盒子模型*。每个在页面上占用空间的盒子都有类似的属性：
 
-- `padding`（内边距）：是指内容周围的空间。在下面的例子中，它是段落文本周围的空间。
-- `border`（边框）：是紧接着内边距的实线。
-- `margin`（外边距）：是围绕元素边框外侧的空间。
+- `padding`(内边距)：是指内容周围的空间。在下面的例子中，它是段落文本周围的空间。
+- `border`(边框)：是紧接着内边距的实线。
+- `margin`(外边距)：是围绕元素边框外侧的空间。
 
 ![image-20250526211709095](../assets/post-pics/image-20250526211709095.png)
 
@@ -1219,7 +1222,7 @@ CSS 布局主要是基于*盒子模型*。每个在页面上占用空间的盒�
 
 - `width`：元素的宽度。
 - `background-color`：元素内容和内边距底下的颜色。
-- `color`：元素内容（通常是文本）的颜色。
+- `color`：元素内容(通常是文本)的颜色。
 - `text-shadow`：为元素内的文本设置阴影。
 - `display`：设置元素的显示模式。
 
@@ -1240,7 +1243,7 @@ CSS 布局主要是基于*盒子模型*。每个在页面上占用空间的盒�
 - `repeat-y`——仅垂直方向上重复平铺。
 - `repeat`——默认值，在水平和垂直两个方向重复平铺。
 
-有一个很大的图像（*ballons.jpg*），由于它比作为背景的元素大，所以最后被裁剪掉了。在这种情况下，我们可以使用 [`background-size`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-size) 属性，它可以设置[长度](https://developer.mozilla.org/zh-CN/docs/Web/CSS/length)或[百分比](https://developer.mozilla.org/zh-CN/docs/Web/CSS/percentage)值，来调整图像的大小以适应背景。
+有一个很大的图像(_ballons.jpg_)，由于它比作为背景的元素大，所以最后被裁剪掉了。在这种情况下，我们可以使用 [`background-size`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-size) 属性，它可以设置[长度](https://developer.mozilla.org/zh-CN/docs/Web/CSS/length)或[百分比](https://developer.mozilla.org/zh-CN/docs/Web/CSS/percentage)值，来调整图像的大小以适应背景。
 
 你也可以使用关键字：
 
@@ -1249,13 +1252,13 @@ CSS 布局主要是基于*盒子模型*。每个在页面上占用空间的盒�
 
 背景图像定位
 
-[`background-position`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position) 属性允许你选择背景图片出现在它所应用的盒子上的位置。这使用了一个坐标系统，其中方框的左上角是 `(0,0)`，方框沿水平（`x`）和垂直（`y`）轴定位。
+[`background-position`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position) 属性允许你选择背景图片出现在它所应用的盒子上的位置。这使用了一个坐标系统，其中方框的左上角是 `(0,0)`，方框沿水平(`x`)和垂直(`y`)轴定位。
 
 **备注：** 默认的 `background-position` 值是 `(0,0)`。
 
 最常见的 `background-position` 值有两个单独的值——一个水平值后面跟着一个垂直值。
 
-你可以使用像 `top` 、center和 `right` 这样的关键字，或者使用[长度](https://developer.mozilla.org/zh-CN/docs/Web/CSS/length)和[百分比](https://developer.mozilla.org/zh-CN/docs/Web/CSS/percentage)值
+你可以使用像 `top` 、center 和 `right` 这样的关键字，或者使用[长度](https://developer.mozilla.org/zh-CN/docs/Web/CSS/length)和[百分比](https://developer.mozilla.org/zh-CN/docs/Web/CSS/percentage)值
 
 也可以有多个背景图像——在单个属性值中指定多个 `background-image` 值，用逗号分隔每个值。
 
@@ -1326,11 +1329,11 @@ CSS 中的书写模式是指文本的排列方向是横向还是纵向的。[`wr
 
 `margin-top` 属性的映射是 [`margin-block-start`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin-block-start)——总是指向块级维度开始处的边距。
 
-[`padding-left`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-left) 属性映射到 [`padding-inline-start`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-inline-start)，这是应用到行首方向（这是该书写模式文本开始的地方）上的内边距。[`border-bottom`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-bottom) 属性映射到的是 [`border-block-end`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-block-end)，也就是块级维度结尾处的边框。
+[`padding-left`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-left) 属性映射到 [`padding-inline-start`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-inline-start)，这是应用到行首方向(这是该书写模式文本开始的地方)上的内边距。[`border-bottom`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-bottom) 属性映射到的是 [`border-block-end`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-block-end)，也就是块级维度结尾处的边框。
 
-（逻辑属性可以随书写模式的变化而变化）
+(逻辑属性可以随书写模式的变化而变化)
 
-目前为止我们看到的都是逻辑属性的名称。还有一些属性的取值是一些物理值（如 `top`、`right`、`bottom` 和 `left`）。这些值同样拥有逻辑值映射（`block-start`、`inline-end`、`block-end` 和 `inline-start`）。
+目前为止我们看到的都是逻辑属性的名称。还有一些属性的取值是一些物理值(如 `top`、`right`、`bottom` 和 `left`)。这些值同样拥有逻辑值映射(`block-start`、`inline-end`、`block-end` 和 `inline-start`)。
 
 逻辑属性和值比物理属性和值更新颖，因此最近才在浏览器中实现。你可以查看 MDN 上的任何属性页面，了解浏览器支持的历史。如果不使用多种书写模式，那么目前可能更愿意使用物理版本。不过，我们预计人们最终会在大多数情况下过渡到逻辑版本，因为一旦开始使用弹性盒和网格等布局方法，逻辑版本就会变得非常有意义。
 
@@ -1342,7 +1345,7 @@ CSS 中的书写模式是指文本的排列方向是横向还是纵向的。[`wr
 
 CSS 给了你好几种工具来控制溢出，在学习的早期理解这些概念是很有用的。在你写 CSS 的时候你经常会遇到溢出的情形，尤其是当你以后更加深入到 CSS 布局的时候。
 
-[**CSS 尽力减少“数据损失”](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Overflow#css_尽力减少“数据损失”)，只要有可能，CSS 就不会隐藏你的内容，隐藏引起的数据损失通常会造成困扰。在 CSS 的术语里面，这会导致一些内容消失，你的访客可能不会注意到这一点，如果消失的是表格上的提交按钮，没有人能填完这个表格，这是很麻烦的事情！所以 CSS 反而会把它以可见的形式溢出出去。这样做的结果就是，你会看到错误的 CSS 导致的一片混乱，或者最坏的情况也只是你的网站的访客会告诉你有些内容冒了出来，你的网站需要修缮。**
+[\*\*CSS 尽力减少“数据损失”](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Overflow#css_尽力减少“数据损失”)，只要有可能，CSS 就不会隐藏你的内容，隐藏引起的数据损失通常会造成困扰。在 CSS 的术语里面，这会导致一些内容消失，你的访客可能不会注意到这一点，如果消失的是表格上的提交按钮，没有人能填完这个表格，这是很麻烦的事情！所以 CSS 反而会把它以可见的形式溢出出去。这样做的结果就是，你会看到错误的 CSS 导致的一片混乱，或者最坏的情况也只是你的网站的访客会告诉你有些内容冒了出来，你的网站需要修缮。\*\*
 
 如果你已经用 `width` 或者 `height` 限制住了一个盒子，CSS 假定，你知道你在做什么，而且你已经控制住了溢出的隐患。总之，在盒子里面需要放置文本的时候，限制住块方向的尺寸是会引起问题的，因为可能会有比你在设计网站的时候所预计的文本更多的文本，或者文本变大了——比如用户增加字体大小的时候。
 
@@ -1364,7 +1367,7 @@ CSS 给了你好几种工具来控制溢出，在学习的早期理解这些概�
 
 在你使用诸如 `scroll` 或者 `auto` 的时候，你就建立了一个块级排版上下文。结果就是，你改变了 `overflow` 的值的话，对应的盒子就变成了更加小巧的状态。在容器之外的东西没法混进容器内，也没有东西可以突出盒子，进入周围的版面。激活了滚动动作，你的盒子里面所有的内容会被收纳，而且不会遮到页面上其他的物件，于是就产生了一个协调的滚动体验
 
-现代网页布局的方式（正如 [CSS 布局](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout)模块中所介绍的那些）可以很好地处理溢出。我们不一定能预料到网页上会有多少内容，人们很好地设计它们，使得它们能与这种现状协调。
+现代网页布局的方式(正如 [CSS 布局](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout)模块中所介绍的那些)可以很好地处理溢出。我们不一定能预料到网页上会有多少内容，人们很好地设计它们，使得它们能与这种现状协调。
 
 在开发网站的时候，你应该一直把溢出的问题挂在心头，你应该用或多或少的内容测试设计，增加文本的字号，确保你的 CSS 可以正常地协调。改变溢出属性的值，来隐藏内容或者增加滚动条，会是你仅仅在少数特别情况下需要的，例如在你确实需要一个可滚动盒子的时候。
 
@@ -1385,11 +1388,11 @@ CSS 中的值类型是一种定义了一些可使用的值的集合的方式。�
 
 百分比的问题在于，它们总是相对于其他值设置的。例如，如果将元素的字体大小设置为百分比，那么它将是元素父元素字体大小的百分比。如果使用百分比作为宽度值，那么它将是父值宽度的百分比
 
-有些值接受数字，不添加任何单位。接受无单位数字的属性的一个例子是不透明度属性（`opacity`），它控制元素的不透明度（它的透明程度）。此属性接受 `0`（完全透明）和 `1`（完全不透明）之间的数字。
+有些值接受数字，不添加任何单位。接受无单位数字的属性的一个例子是不透明度属性(`opacity`)，它控制元素的不透明度(它的透明程度)。此属性接受 `0`(完全透明)和 `1`(完全不透明)之间的数字。
 
-**备注：** 当你在 CSS 中使用数字作为值时，它不应该用引号括起来。在 CSS 中，相同的颜色值可以在任何地方使用，无论你指定的是文本颜色、背景颜色还是其他颜色。现代计算机的标准颜色系统是 24 位的，它允许通过不同的红、绿、蓝通道的组合显示大约 1670 万种不同的颜色，每个通道有 256 个不同的值（256 x 256 x 256 = 16,777,216）。让我们来看看在 CSS 中指定颜色的一些方法。
+**备注：** 当你在 CSS 中使用数字作为值时，它不应该用引号括起来。在 CSS 中，相同的颜色值可以在任何地方使用，无论你指定的是文本颜色、背景颜色还是其他颜色。现代计算机的标准颜色系统是 24 位的，它允许通过不同的红、绿、蓝通道的组合显示大约 1670 万种不同的颜色，每个通道有 256 个不同的值(256 x 256 x 256 = 16,777,216)。让我们来看看在 CSS 中指定颜色的一些方法。
 
-颜色关键字、16进制RGB，RGB，RGBA，HSL，HSLA
+颜色关键字、16 进制 RGB，RGB，RGBA，HSL，HSLA
 
 `calc()` CSS 函数的行为更像你在传统编程语言中可能找到的东西。这个函数使你能够在 CSS 中进行简单的计算。如果你想计算一些你在编写项目的 CSS 时无法定义的数值，并且需要浏览器在运行时为你计算，那么它特别有用。
 
@@ -1401,7 +1404,7 @@ CSS 中的值类型是一种定义了一些可使用的值的集合的方式。�
 
 在受 CSS 设置影响之前，HTML 元素有其原始的尺寸。一个直观的例子就是图像。一幅图像的长和宽由这个图像文件自身确定。这个尺寸就是固有尺寸。
 
-元素的高度由其所含内容高度确定。再强调一次，这就是元素的固有尺寸——由其所包含的内容决定。我们当然可以给设计中的元素指定具体大小。当给元素指定尺寸（然后其内容需要适合该尺寸）时，我们将其称为**外部尺寸**。以上面例子中的 `<div>` 举例——我们可以给它一个具体的 [`width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width) 和 [`height`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/height) 值，然后不论我们放什么内容进去它都是该尺寸。正如我们在[上一课](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Overflow)有关溢出的内容中所发现的，如果内容的数量超出了元素可容纳的空间，则设置的高度会导致内容溢出。
+元素的高度由其所含内容高度确定。再强调一次，这就是元素的固有尺寸——由其所包含的内容决定。我们当然可以给设计中的元素指定具体大小。当给元素指定尺寸(然后其内容需要适合该尺寸)时，我们将其称为**外部尺寸**。以上面例子中的 `<div>` 举例——我们可以给它一个具体的 [`width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width) 和 [`height`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/height) 值，然后不论我们放什么内容进去它都是该尺寸。正如我们在[上一课](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Overflow)有关溢出的内容中所发现的，如果内容的数量超出了元素可容纳的空间，则设置的高度会导致内容溢出。
 
 许多时候，百分比是长度单位，正如我们在[值和单位这节课中讨论的那样](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Values_and_units#百分比)，它们常常可与长度互换。当使用百分比时，你需要清楚，它是**什么**东西的百分比。对于一个处于另外一个容器当中的盒子，如果你给予了子盒子一个百分比作为宽度，那么它指的是父容器宽度的百分比。
 
@@ -1409,11 +1412,11 @@ CSS 中的值类型是一种定义了一些可使用的值的集合的方式。�
 
 如果你把 `margins` 和 `padding` 设置为百分比的话，你会注意到一些奇怪的表现。或许，你期望元素的上下外边距是其高度的百分比，元素的左右外边距是其宽度的百分比。但情况并非如此！
 
-使用百分比作为元素外边距（margin）或填充（padding）的单位时，值是以包含块的**内联尺寸**进行计算的，也就是元素的水平宽度。（父级元素的内联尺寸）。当你使用百分比作为元素外边距或填充的单位时，你将得到一个相同尺寸的外边距或填充。
+使用百分比作为元素外边距(margin)或填充(padding)的单位时，值是以包含块的**内联尺寸**进行计算的，也就是元素的水平宽度。(父级元素的内联尺寸)。当你使用百分比作为元素外边距或填充的单位时，你将得到一个相同尺寸的外边距或填充。
 
 除了让万物都有一个确定的大小以外，我们可以让 CSS 给定一个元素的最大或最小尺寸。如果你有一个包含了变化容量的内容的盒子，而且你总是想让它**至少**有个确定的高度，你应该给它设置一个 [`min-height`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/min-height) 属性。盒子就会一直保持大于这个最小高度，但是如果有比这个盒子在最小高度状态下所能容纳的更多内容，那么盒子就会变大。
 
-这个技术是用来让图片**可响应**的，所以在更小的设备上浏览的时候，它们会合适地缩放。你无论怎样都不应该用这个技术先载入大原始尺寸的图片，再对它们在浏览器中进行缩放。图像应该合适地调整尺寸，以使它们不会比预计中展示时所需要的最大尺寸大。下载过大的图像会造成你的网站变慢，如果用户使用按量收费的网络连接，会让用户花更多钱。（响应式图片（一种在不同的屏幕尺寸、分辨率或具有其他类似特性的设备上都呈现良好的图片））
+这个技术是用来让图片**可响应**的，所以在更小的设备上浏览的时候，它们会合适地缩放。你无论怎样都不应该用这个技术先载入大原始尺寸的图片，再对它们在浏览器中进行缩放。图像应该合适地调整尺寸，以使它们不会比预计中展示时所需要的最大尺寸大。下载过大的图像会造成你的网站变慢，如果用户使用按量收费的网络连接，会让用户花更多钱。(响应式图片(一种在不同的屏幕尺寸、分辨率或具有其他类似特性的设备上都呈现良好的图片))
 
 视口，即你在浏览器中看到的部分页面，也是有尺寸的。在 CSS 中，我们有与视口尺寸相关的度量单位，即意为视口宽度的 `vw` 单位，以及意为视口高度的 `vh` 单位。使用这些单位，你可以把一些东西做得随用户的视口改变大小。
 
@@ -1425,7 +1428,7 @@ CSS 中的值类型是一种定义了一些可使用的值的集合的方式。�
 
 那么该如何处理溢出问题呢？
 
-正如我们在[之前的课程](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Sizing) 所学的那样，一个常用的方法是将一张图片的 [`max-width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/max-width) 设为 100%。这将会使图片的尺寸小于等于盒子。这个技术也会对其他替换元素（例如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video)，或者 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe) 起作用。
+正如我们在[之前的课程](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Sizing) 所学的那样，一个常用的方法是将一张图片的 [`max-width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/max-width) 设为 100%。这将会使图片的尺寸小于等于盒子。这个技术也会对其他替换元素(例如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video)，或者 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe) 起作用。
 
 **尝试向上面的示例中的 `<img>` 元素加入 `max-width: 100%`，你会看到，左边那张小的图像没有变化，而大的图像变小了，恰好装在了盒子里。**
 
@@ -1475,11 +1478,11 @@ textarea {
 
 **备注：** 通用样式表被许多开发者用作所有项目的一系列基础样式，典型就是那些做了和以上提到相似的事情的那些，在你开始自己的 CSS 作业前，它确保了跨浏览器的任何事情都被默认设定为统一样式。它们不像以往那么重要了，因为浏览器显著地要比以往更加统一。但是，如果你想要看一个例子，可以看看这个[Normalize.css](http://necolas.github.io/normalize.css/)，它被许多项目用作基础，是非常流行的样式表。
 
-## 调试CSS
+## 调试 CSS
 
-如果一个浏览器在解析你所书写的 CSS 规则的过程中遇到了无法理解的属性或者值，它会忽略这些并继续解析下面的 CSS 声明。在你书写了错误的 CSS 代码（或者误拼写），又或者当浏览器遇到对于它来说很新的还没有支持的 CSS 代码的时候上述的情况同样会发生（直接忽略）。
+如果一个浏览器在解析你所书写的 CSS 规则的过程中遇到了无法理解的属性或者值，它会忽略这些并继续解析下面的 CSS 声明。在你书写了错误的 CSS 代码(或者误拼写)，又或者当浏览器遇到对于它来说很新的还没有支持的 CSS 代码的时候上述的情况同样会发生(直接忽略)。
 
-相似的，当浏览器遇到无法解析的选择器的时候，他会直接忽略整个选择器规则，然后解析下一个 CSS 选择器。你可以为同一个元素指定多个 CSS 样式来解决有些浏览器不兼容新特性的问题（比如指定两个`width`）。这一特点在你想使用一个很新的 CSS 特性但是不是所有浏览器都支持的时候（浏览器兼容）非常有用。
+相似的，当浏览器遇到无法解析的选择器的时候，他会直接忽略整个选择器规则，然后解析下一个 CSS 选择器。你可以为同一个元素指定多个 CSS 样式来解决有些浏览器不兼容新特性的问题(比如指定两个`width`)。这一特点在你想使用一个很新的 CSS 特性但是不是所有浏览器都支持的时候(浏览器兼容)非常有用。
 
 **检查有 `.special` 类的 `<em>` 元素，开发者工具会告诉你橘黄色是实际生效的颜色，还会将应用在 em 上的 `color` 属性划掉。你这样就能看到是类选择器覆盖了元素选择器了。**
 
@@ -1496,9 +1499,9 @@ textarea {
 
 [是否有其他东西覆盖了你的 CSS?](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Debugging_CSS#是否有其他东西覆盖了你的_css)
 
-在这里，你所学到的关于特定性（specificity）的信息将非常有用。但是，DevTools 将向你显示 CSS 是如何应用的，你可以弄清楚如何使新选择器足够具体，以覆盖旧的 CSS 样式。
+在这里，你所学到的关于特定性(specificity)的信息将非常有用。但是，DevTools 将向你显示 CSS 是如何应用的，你可以弄清楚如何使新选择器足够具体，以覆盖旧的 CSS 样式。
 
-## 组织CSS
+## 组织 CSS
 
 在开始在更大的样式表和大项目上作业的时候，你会发现维护一个大型的 CSS 文件很有挑战性。在本文中，我们将会简要看一下在编写你的 CSS 时，让它更加易于维护的一些最佳实践，以及你会在其他人那里看到的，用来增强可维护性的解决方案。
 
@@ -1556,7 +1559,7 @@ CSS 不会管你使用哪种方式来进行格式化，我们自己的看法是�
 
 但是，在接纳了一个方法以后，你的代码会更有条理，而且因为这些体系许多都是被很广泛使用的，其他的开发者更有可能理解你在使用的方式，会以相同的方式编写他们自己的代码，而不需要从头接纳你自己的个人方法论。
 
-你会遇到的大多数方式都有一部分归功于面向对象的 CSS（OOCSS）的概念，OOCSS 的基本理念是将你的 CSS 分解成可复用的对象，于是你可以在你的站点上任何需要的地方使用。这一排布一方面让图片、视频或者其他元素保持固定尺寸，而另一方面也让其他内容可伸缩。这是我们在用于评论、列表等网站随处可见的排布。
+你会遇到的大多数方式都有一部分归功于面向对象的 CSS(OOCSS)的概念，OOCSS 的基本理念是将你的 CSS 分解成可复用的对象，于是你可以在你的站点上任何需要的地方使用。这一排布一方面让图片、视频或者其他元素保持固定尺寸，而另一方面也让其他内容可伸缩。这是我们在用于评论、列表等网站随处可见的排布。
 
 在 OOCSS 中，你可以建立一个叫作 `media` 的模式，里面包含所有的两种模式所共有的 CSS——一个大致用于媒体对象的形状之类的基础类。然后我们再额外加入一个类，处理那些微小的区别，这样特定地扩展基础样式。
 
@@ -1566,7 +1569,7 @@ Nicole Sullivan 在描述这种方式和推广上所做的工作导致，即使�
 
 其他常见体系
 
-应用中，有很多这样的体系。其他流行的方式包括 Jonathan Snook 创造的 [CSS 的可扩展模块化架构（SMACSS）](https://smacss.com/)、Harry Roberts 的 [ITCSS](https://itcss.io/) 以及原本由 Yahoo! 创造的[原子 CSS（ACSS）](https://acss.io/)。如果你遇到了使用这几种方式之一的项目，那么好处就是你可以搜索到许多文章和指导，帮你理解如何以同种方式写代码。使用这样的体系的缺点是，它们会看起来过于复杂，尤其是对于小项目。
+应用中，有很多这样的体系。其他流行的方式包括 Jonathan Snook 创造的 [CSS 的可扩展模块化架构(SMACSS)](https://smacss.com/)、Harry Roberts 的 [ITCSS](https://itcss.io/) 以及原本由 Yahoo! 创造的[原子 CSS(ACSS)](https://acss.io/)。如果你遇到了使用这几种方式之一的项目，那么好处就是你可以搜索到许多文章和指导，帮你理解如何以同种方式写代码。使用这样的体系的缺点是，它们会看起来过于复杂，尤其是对于小项目。
 
 [CSS 的构建体系](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Organizing#css_的构建体系)
 
@@ -1629,31 +1632,31 @@ CSS 提供了 4 种常用的属性来改变文本的样子：
 
 - [`font-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-style): 用来打开和关闭文本 italic (斜体)。可能的值如下 (你很少会用到这个属性，除非你因为一些理由想将斜体文字关闭斜体状态)：
 
-    - `normal`: 将文本设置为普通字体 (将存在的斜体关闭)
-    - `italic`: 如果当前字体的斜体版本可用，那么文本设置为斜体版本；如果不可用，那么会利用 oblique 状态来模拟 italics。
-    - `oblique`: 将文本设置为斜体字体的模拟版本，也就是将普通文本倾斜的样式应用到文本中。
+  - `normal`: 将文本设置为普通字体 (将存在的斜体关闭)
+  - `italic`: 如果当前字体的斜体版本可用，那么文本设置为斜体版本；如果不可用，那么会利用 oblique 状态来模拟 italics。
+  - `oblique`: 将文本设置为斜体字体的模拟版本，也就是将普通文本倾斜的样式应用到文本中。
 
-- [`font-weight`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-weight): 设置文字的粗体大小。这里有很多值可选 (比如 *light*, *normal*, *bold*, *extrabold*, *black*, 等等), 不过事实上你很少会用到 `normal` 和 `bold`以外的值：
+- [`font-weight`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-weight): 设置文字的粗体大小。这里有很多值可选 (比如 _light_, _normal_, _bold_, _extrabold_, _black_, 等等), 不过事实上你很少会用到 `normal` 和 `bold`以外的值：
 
-    - `normal`, `bold`: 普通或者**加粗**的字体粗细
-    - `lighter`, `bolder`: 将当前元素的粗体设置为比其父元素粗体更细或更粗一步。`100`–`900`: 数值粗体值，如果需要，可提供比上述关键字更精细的粒度控制。
+  - `normal`, `bold`: 普通或者**加粗**的字体粗细
+  - `lighter`, `bolder`: 将当前元素的粗体设置为比其父元素粗体更细或更粗一步。`100`–`900`: 数值粗体值，如果需要，可提供比上述关键字更精细的粒度控制。
 
 - [`text-transform`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-transform): 允许你设置要转换的字体。值包括：
 
-    - `none`: 防止任何转型。
-    - `uppercase`: 将所有文本转为大写。
-    - `lowercase`: 将所有文本转为小写。
-    - `capitalize`: 转换所有单词让其首字母大写。
-    - `full-width`: 将所有字形转换成全角，即固定宽度的正方形，类似于等宽字体，允许拉丁字符和亚洲语言字形（如中文，日文，韩文）对齐。
+  - `none`: 防止任何转型。
+  - `uppercase`: 将所有文本转为大写。
+  - `lowercase`: 将所有文本转为小写。
+  - `capitalize`: 转换所有单词让其首字母大写。
+  - `full-width`: 将所有字形转换成全角，即固定宽度的正方形，类似于等宽字体，允许拉丁字符和亚洲语言字形(如中文，日文，韩文)对齐。
 
 - [`text-decoration`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration): 设置/取消字体上的文本装饰 (你将主要使用此方法在设置链接时取消设置链接上的默认下划线。) 可用值为：
 
-    - `none`: 取消已经存在的任何文本装饰。
-    - `underline`: 文本下划线。
-    - `overline`: 文本上划线
-    - `line-through`: 穿过文本的线。
+  - `none`: 取消已经存在的任何文本装饰。
+  - `underline`: 文本下划线。
+  - `overline`: 文本上划线
+  - `line-through`: 穿过文本的线。
 
-    你应该注意到 [`text-decoration`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration) 可以一次接受多个值，如果你想要同时添加多个装饰值，比如 `text-decoration: underline overline`.。同时注意 [`text-decoration`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration) 是一个缩写形式，它由 [`text-decoration-line`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration-line), [`text-decoration-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration-style) 和 [`text-decoration-color`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration-color) 构成。你可以使用这些属性值的组合来创建有趣的效果，比如 `text-decoration: line-through red wavy`.
+  你应该注意到 [`text-decoration`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration) 可以一次接受多个值，如果你想要同时添加多个装饰值，比如 `text-decoration: underline overline`.。同时注意 [`text-decoration`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration) 是一个缩写形式，它由 [`text-decoration-line`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration-line), [`text-decoration-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration-style) 和 [`text-decoration-color`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration-color) 构成。你可以使用这些属性值的组合来创建有趣的效果，比如 `text-decoration: line-through red wavy`.
 
 你可以为你的文本应用阴影，使用 [`text-shadow`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-shadow) 属性。这最多需要 4 个值
 
@@ -1683,7 +1686,7 @@ Web 字体是一种 CSS 特性，允许你指定在访问时随你的网站一�
 
 ## 样式化列表
 
-当为列表添加样式时，你需要调整样式，使其保持与周围元素相同的垂直间距（例如段落和图片，有时称为垂直节奏）和相互间的水平间距
+当为列表添加样式时，你需要调整样式，使其保持与周围元素相同的垂直间距(例如段落和图片，有时称为垂直节奏)和相互间的水平间距
 
 现在我们来看一下列表的一般间距，我们来研究一些列表具有的特定属性。我们从三个属性开始了解，这三个属性可以在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ul) 或 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol) 元素上设置：
 
@@ -1697,15 +1700,15 @@ Web 字体是一种 CSS 特性，允许你指定在访问时随你的网站一�
 
 ## 样式化链接
 
-当为[链接](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Creating_links)添加样式时，理解利用伪类有效地建立链接状态是很重要的，以及如何为链接添加样式来实现常用的功能（如导航菜单和选项卡）
+当为[链接](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Creating_links)添加样式时，理解利用伪类有效地建立链接状态是很重要的，以及如何为链接添加样式来实现常用的功能(如导航菜单和选项卡)
 
 第一件需要理解的事情是链接状态的概念，链接存在时处于不同的状态，每一个状态都可以用对应的[伪类](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Basic_selectors#伪类)来应用样式：
 
-- **Link**：有目的地的链接（即不只是一个具名锚点），使用 [`:link`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:link) 伪类来应用样式。
-- **Visited**：已访问过（存在于浏览器历史记录中）的链接，使用 [`:visited`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:visited) 伪类来应用样式。
+- **Link**：有目的地的链接(即不只是一个具名锚点)，使用 [`:link`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:link) 伪类来应用样式。
+- **Visited**：已访问过(存在于浏览器历史记录中)的链接，使用 [`:visited`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:visited) 伪类来应用样式。
 - **Hover**：被用户鼠标指针悬停的链接，使用 [`:hover`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:hover) 伪类来应用样式。
-- **Focus**：被选中的链接（比如通过键盘的 Tab 移动到这个链接，或者使用像 [`HTMLElement.focus()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus) 这样的方法编程地聚焦链接），使用 [`:focus`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus) 伪类来应用样式。
-- **Active**：激活（如点击）的链接，使用 [`:active`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:active) 伪类来应用样式。
+- **Focus**：被选中的链接(比如通过键盘的 Tab 移动到这个链接，或者使用像 [`HTMLElement.focus()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus) 这样的方法编程地聚焦链接)，使用 [`:focus`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus) 伪类来应用样式。
+- **Active**：激活(如点击)的链接，使用 [`:active`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:active) 伪类来应用样式。
 
 有趣的是，这些默认的样式与 20 世纪 90 年代中期浏览器早期的风格几乎相同。这是因为用户知道以及期待链接就是这样变化的，如果链接的样式不同，就会让一些人感到奇怪。不过这不意味着你不应该为链接添加任何样式，只是你的样式不应该与用户预期的相差太大，你应该至少：
 
@@ -1742,7 +1745,7 @@ a:active {
 
 这几个规则的顺序是有意义的，因为链接的样式是建立在另一个样式之上的，比如，第一个规则的样式也会在后面的规则中生效，一个链接被激活的时候，它也是处于悬停状态的。如果你搞错了顺序，那么就可能不会产生正确的效果。要记住这个顺序，你可以尝试这样帮助记忆：**L**o**V**e **F**ears **HA**te。
 
-常见的做法是在链接中包含图标，使链接提供更多关于链接指向的内容的信息。让我们来看一个简单的例子，例子中为一个外部链接（链接指向的不是本站，而是外部站点）。这样的图标通常看起来像一个指向盒子的小箭头，比如，我们会使用 [icons8.com 上的这个优秀的范例](https://icons8.com/web-app/741/external-link)。
+常见的做法是在链接中包含图标，使链接提供更多关于链接指向的内容的信息。让我们来看一个简单的例子，例子中为一个外部链接(链接指向的不是本站，而是外部站点)。这样的图标通常看起来像一个指向盒子的小箭头，比如，我们会使用 [icons8.com 上的这个优秀的范例](https://icons8.com/web-app/741/external-link)。
 
 在外部链接上插入了一个自定义背景图片，这和上篇[自定义列表项目符号](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Text_styling/Styling_lists#使用自定义的项目符号图片)文章的做法很像。这次，我们使用了 [`background`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background) 简写，而不是分别使用多个属性。我们设置了我们想要插入的图片的路径，指定了 `no-repeat` ，这样我们只插入了一次图片，然后指定位置为 100%，使其出现在内容的右边，距离上方是 0 像素。
 
@@ -1754,7 +1757,7 @@ a:active {
 
 此外，在某些情况下，链接的样式通常看起来像按钮。网站导航菜单可以标记为一组链接，而这组链接的样式可以看起来像一组控制按钮或标签，让用户可以访问网站的其他部分。
 
-## CSS布局
+## CSS 布局
 
 现在是时候看看如何把你的盒子放在与视口相关的正确位置上。我们已经涵盖了必要的先决条件，所以我们现在可以深入到 CSS 布局，查看不同的显示设置，涉及浮动和定位的传统布局方法，以及像 flexbox 这样的现代布局工具。
 
@@ -1771,9 +1774,9 @@ CSS 页面布局技术允许我们拾取网页中的元素，并且控制它们�
 
 每种技术都有它们的用途，各有优缺点，相互辅助。通过理解各个布局方法的设计理念，你能够找到构建你想要的网页需要的布局方案。
 
-正常布局流（normal flow）是指在不对页面进行任何布局控制时，浏览器默认的 HTML 布局方式。
+正常布局流(normal flow)是指在不对页面进行任何布局控制时，浏览器默认的 HTML 布局方式。
 
-**备注：** 块元素内容的布局方向被描述为**块方向**。块方向在英语等具有水平**书写模式**(`writing mode`) 的语言中垂直运行。它可以在任何垂直书写模式的语言中水平运行。对应的**内联方向**是内联内容（如句子）的运行方向。
+**备注：** 块元素内容的布局方向被描述为**块方向**。块方向在英语等具有水平**书写模式**(`writing mode`) 的语言中垂直运行。它可以在任何垂直书写模式的语言中水平运行。对应的**内联方向**是内联内容(如句子)的运行方向。
 
 下列布局技术会覆盖默认的布局行为：
 
@@ -1785,7 +1788,7 @@ CSS 页面布局技术允许我们拾取网页中的元素，并且控制它们�
 
 正常流中的所有内容都有一个`display`的值，用作元素的默认行为方式。例如，英文段落显示在一个段落的下面，这是因为它们的样式是`display:block`。如果在段落中的某个文本周围创建链接，则该链接将与文本的其余部分保持内联，并且不会打断到新行。这是因为[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a)元素默认为`display:inline`。
 
-Flexbox 是 CSS 弹性盒子布局模块（[Flexible Box Layout](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_flexible_box_layout) Module）的缩写，它被专门设计出来用于创建横向或是纵向的一维页面布局。要使用 flexbox，你只需要在想要进行 flex 布局的父元素上应用`display: flex` ，所有直接子元素都将会按照 flex 进行布局。我们来看一个例子。
+Flexbox 是 CSS 弹性盒子布局模块([Flexible Box Layout](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_flexible_box_layout) Module)的缩写，它被专门设计出来用于创建横向或是纵向的一维页面布局。要使用 flexbox，你只需要在想要进行 flex 布局的父元素上应用`display: flex` ，所有直接子元素都将会按照 flex 进行布局。我们来看一个例子。
 
 有很多属性可以被应用到 flex 项 (flex items) 上面。这些属性可以改变 flex 项在 flex 布局中占用宽/高的方式，允许它们通过伸缩来适应可用空间。
 
@@ -1806,7 +1809,7 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 一旦你拥有了一个 grid，你也可以显式地将元素摆放在里面，而不是依赖于浏览器进行自动排列。
 
-把一个元素“浮动”(float) 起来，会改变该元素本身和在正常布局流（normal flow）中跟随它的其他元素的行为。这一元素会浮动到左侧或右侧，并且从正常布局流 (normal flow) 中移除，这时候其他的周围内容就会在这个被设置浮动 ([`float`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/float)) 的元素周围环绕。
+把一个元素“浮动”(float) 起来，会改变该元素本身和在正常布局流(normal flow)中跟随它的其他元素的行为。这一元素会浮动到左侧或右侧，并且从正常布局流 (normal flow) 中移除，这时候其他的周围内容就会在这个被设置浮动 ([`float`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/float)) 的元素周围环绕。
 
 [`float`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/float) 属性有四个可能的值：
 
@@ -1821,11 +1824,11 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 有五种主要的定位类型需要我们了解：
 
-- **静态定位**（Static positioning）是每个元素默认的属性——它表示“将元素放在文档布局流的默认位置——没有什么特殊的地方”。
-- **相对定位**（Relative positioning）允许我们相对于元素在正常的文档流中的位置移动它——包括将两个元素叠放在页面上。这对于微调和精准设计（design pinpointing）非常有用。
-- **绝对定位**（Absolute positioning）将元素完全从页面的正常布局流（normal layout flow）中移出，类似将它单独放在一个图层中。我们可以将元素相对于页面的 `<html>` 元素边缘固定，或者相对于该元素的*最近被定位祖先元素*（nearest positioned ancestor element）。绝对定位在创建复杂布局效果时非常有用，例如通过标签显示和隐藏的内容面板或者通过按钮控制滑动到屏幕中的信息面板。
-- **固定定位**（Fixed positioning）与绝对定位非常类似，但是它是将一个元素相对浏览器视口固定，而不是相对另外一个元素。这在创建类似在整个页面滚动过程中总是处于屏幕的某个位置的导航菜单时非常有用。
-- **粘性定位**（Sticky positioning）是一种新的定位方式，它会让元素先保持和 `position: static` 一样的定位，当它的相对视口位置（offset from the viewport）达到某一个预设值时，它就会像 `position: fixed` 一样定位。
+- **静态定位**(Static positioning)是每个元素默认的属性——它表示“将元素放在文档布局流的默认位置——没有什么特殊的地方”。
+- **相对定位**(Relative positioning)允许我们相对于元素在正常的文档流中的位置移动它——包括将两个元素叠放在页面上。这对于微调和精准设计(design pinpointing)非常有用。
+- **绝对定位**(Absolute positioning)将元素完全从页面的正常布局流(normal layout flow)中移出，类似将它单独放在一个图层中。我们可以将元素相对于页面的 `<html>` 元素边缘固定，或者相对于该元素的*最近被定位祖先元素*(nearest positioned ancestor element)。绝对定位在创建复杂布局效果时非常有用，例如通过标签显示和隐藏的内容面板或者通过按钮控制滑动到屏幕中的信息面板。
+- **固定定位**(Fixed positioning)与绝对定位非常类似，但是它是将一个元素相对浏览器视口固定，而不是相对另外一个元素。这在创建类似在整个页面滚动过程中总是处于屏幕的某个位置的导航菜单时非常有用。
+- **粘性定位**(Sticky positioning)是一种新的定位方式，它会让元素先保持和 `position: static` 一样的定位，当它的相对视口位置(offset from the viewport)达到某一个预设值时，它就会像 `position: fixed` 一样定位。
 
 相对定位 (relative positioning) 让你能够把一个正常布局流 (normal flow) 中的元素从它的默认位置按坐标进行相对移动。比如将一个图标往下调一点，以便放置文字。我们可以通过下面的规则添加相对定位来实现效果：
 
@@ -1855,7 +1858,7 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 它们指定元素应该从页面边界的顶部和左边的距离 (确切地说，是 `<html>`元素的距离)。
 
-我们现在暂时不讨论固定定位（fixed positioning）——它基本上以相同的方式工作，除了它仍然固定在浏览器窗口的边缘，而不是它定位的父节点的边缘。
+我们现在暂时不讨论固定定位(fixed positioning)——它基本上以相同的方式工作，除了它仍然固定在浏览器窗口的边缘，而不是它定位的父节点的边缘。
 
 固定定位 (fixed positioning) 同绝对定位 (absolute positioning) 一样，将元素从文档流 (document flow) 当中移出了。但是，定位的坐标不会应用于"容器"边框来计算元素的位置，而是会应用于视口 (viewport) 边框。利用这一特性，我们可以轻松搞出一个固定位置的菜单，而不受底下的页面滚动的影响。
 
@@ -1867,15 +1870,15 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 但 Web 开发人员很快意识到，任何东西都可以浮动，而不仅仅是图像，所以浮动的使用范围扩大了。
 
-浮动是如何工作的——浮动元素 (这个例子中的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/div) 元素) 会脱离正常的文档布局流，并吸附到其父容器的左边（这个例子中的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body) 元素）。在正常布局中位于该浮动元素之下的内容，此时会围绕着浮动元素，填满其右侧的空间。
+浮动是如何工作的——浮动元素 (这个例子中的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/div) 元素) 会脱离正常的文档布局流，并吸附到其父容器的左边(这个例子中的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body) 元素)。在正常布局中位于该浮动元素之下的内容，此时会围绕着浮动元素，填满其右侧的空间。
 
 向右浮动的内容是一样的效果，只是反过来了——浮动元素会吸附到右边，而其他内容将从左侧环绕它。
 
 我们可以在浮动元素上应用 margin，将文字推开，但不能在文字上应用 margin 将浮动元素推走。这是因为浮动的元素脱离了正常文档流，紧随其后的元素排布在它的“后方”。
 
-我们看到，一个浮动元素会被移出正常文档流，且其他元素会显示在它的下方。如果我们不想让剩余元素也受到浮动元素的影响，我们需要 *停止* 它；这是通过添加 [`clear`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/clear) 属性实现的。
+我们看到，一个浮动元素会被移出正常文档流，且其他元素会显示在它的下方。如果我们不想让剩余元素也受到浮动元素的影响，我们需要 _停止_ 它；这是通过添加 [`clear`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/clear) 属性实现的。
 
-一个较为现代的方案是使用 `display` 属性的 `flow-root` 值。它可以无需小技巧来创建块格式化上下文（BFC），在使用上没有副作用。
+一个较为现代的方案是使用 `display` 属性的 `flow-root` 值。它可以无需小技巧来创建块格式化上下文(BFC)，在使用上没有副作用。
 
 ## 定位
 
@@ -1883,9 +1886,9 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 首先，围绕元素内容添加任何内边距、边界和外边距来布置单个元素盒子——这就是[盒模型](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Box_model) ，我们前面看过。默认情况下，块级元素的内容宽度是其父元素的宽度的 100％，并且与其内容一样高。内联元素高宽与他们的内容高宽一样。你不能对内联元素设置宽度或高度——它们只是位于块级元素的内容中。如果要以这种方式控制内联元素的大小，则需要将其设置为类似块级元素 `display: block;`。
 
-这只是解释了单个元素，但是元素相互之间如何交互呢？**正常的布局流**（在布局介绍文章中提到）是将元素放置在浏览器视口内的系统。默认情况下，块级元素在视口中垂直布局——每个都将显示在上一个元素下面的新行上，并且它们的外边距将分隔开它们。
+这只是解释了单个元素，但是元素相互之间如何交互呢？**正常的布局流**(在布局介绍文章中提到)是将元素放置在浏览器视口内的系统。默认情况下，块级元素在视口中垂直布局——每个都将显示在上一个元素下面的新行上，并且它们的外边距将分隔开它们。
 
-内联元素表现不一样——它们不会出现在新行上；相反，它们互相之间以及任何相邻（或被包裹）的文本内容位于同一行上，只要在父块级元素的宽度内有空间可以这样做。如果没有空间，那么溢流的文本或元素将向下移动到新行。
+内联元素表现不一样——它们不会出现在新行上；相反，它们互相之间以及任何相邻(或被包裹)的文本内容位于同一行上，只要在父块级元素的宽度内有空间可以这样做。如果没有空间，那么溢流的文本或元素将向下移动到新行。
 
 如果两个相邻元素都在其上设置外边距，并且两个外边距接触，则两个外边距中的较大者保留，较小的一个消失——这叫[外边距折叠](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing), 我们之前也遇到过。
 
@@ -1907,7 +1910,7 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 如果所有的父元素都没有显式地定义 position 属性，那么所有的父元素默认情况下 position 属性都是 static。结果，绝对定位元素会被包含在**初始块容器**中。这个初始块容器有着和浏览器视口一样的尺寸，并且<html>元素也被包含在这个容器里面。简单来说，绝对定位元素会被放在<html>元素的外面，并且根据浏览器视口来定位。
 
-绝对定位元素在 HTML 源代码中，是被放在 <body> 中的，但是在最终的布局里面，它离页面（而不是 <body>）的左边界、上边界有 30px 的距离。我们可以改变**定位上下文**——绝对定位的元素的相对位置元素。通过设置其中一个父元素的定位属性——也就是包含绝对定位元素的那个元素（如果要设置绝对定位元素的相对元素，那么这个元素一定要包含绝对定位元素）
+绝对定位元素在 HTML 源代码中，是被放在 <body> 中的，但是在最终的布局里面，它离页面(而不是 <body>)的左边界、上边界有 30px 的距离。我们可以改变**定位上下文**——绝对定位的元素的相对位置元素。通过设置其中一个父元素的定位属性——也就是包含绝对定位元素的那个元素(如果要设置绝对定位元素的相对元素，那么这个元素一定要包含绝对定位元素)
 
 所有这些绝对定位很有趣，但还有另一件事我们还没有考虑到——当元素开始重叠，什么决定哪些元素出现在其他元素的顶部？在我们已经看到的示例中，我们在定位上下文中只有一个定位的元素，它出现在顶部，因为定位的元素胜过未定位的元素。当我们有不止一个的时候呢
 
@@ -1915,15 +1918,15 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 你可以更改堆叠顺序吗？是的，你可以使用[`z-index`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/z-index)属性。
 
-网页也有一个 z 轴：一条从屏幕表面到你的脸（或者在屏幕前面你喜欢的任何其他东西）的虚线。[`z-index`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/z-index) 值影响定位元素位于该轴上的位置；正值将它们移动到堆栈上方，负值将它们向下移动到堆栈中。默认情况下，定位的元素都具有 z-index 为 auto，实际上为 0。请注意，z-index 只接受无单位索引值
+网页也有一个 z 轴：一条从屏幕表面到你的脸(或者在屏幕前面你喜欢的任何其他东西)的虚线。[`z-index`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/z-index) 值影响定位元素位于该轴上的位置；正值将它们移动到堆栈上方，负值将它们向下移动到堆栈中。默认情况下，定位的元素都具有 z-index 为 auto，实际上为 0。请注意，z-index 只接受无单位索引值
 
-还有一种类型的定位覆盖——fixed。这与绝对定位的工作方式完全相同，只有一个主要区别：绝对定位将元素固定在相对于其位置最近的祖先。（如果没有，则为初始包含它的块）而固定定位固定元素则是相对于浏览器视口本身。这意味着你可以创建固定的有用的 UI 项目，如持久导航菜单。
+还有一种类型的定位覆盖——fixed。这与绝对定位的工作方式完全相同，只有一个主要区别：绝对定位将元素固定在相对于其位置最近的祖先。(如果没有，则为初始包含它的块)而固定定位固定元素则是相对于浏览器视口本身。这意味着你可以创建固定的有用的 UI 项目，如持久导航菜单。
 
 `top: 0;`是要使它贴在屏幕的顶部；我们然后给出标题与内容列相同的宽度，并使用可靠的老技巧 `margin: 0 auto;` 使它居中。然后我们给它一个白色背景和一些内边距，所以内容将不会在它下面可见。
 
 如果你现在保存并刷新，你会看到一个有趣的小效果，标题保持固定，内容显示向上滚动并消失在其下。
 
-还有一个可用的位置值称为 position: sticky，比起其他位置值要新一些。它基本上是相对位置和固定位置的混合体，它允许被定位的元素表现得像相对定位一样，直到它滚动到某个阈值点（例如，从视口顶部起 10 像素）为止，此后它就变得固定了。例如，它可用于使导航栏随页面滚动直到特定点，然后粘贴在页面顶部。
+还有一个可用的位置值称为 position: sticky，比起其他位置值要新一些。它基本上是相对位置和固定位置的混合体，它允许被定位的元素表现得像相对定位一样，直到它滚动到某个阈值点(例如，从视口顶部起 10 像素)为止，此后它就变得固定了。例如，它可用于使导航栏随页面滚动直到特定点，然后粘贴在页面顶部。
 
 `position: sticky` 的另一种有趣且常用的用法，是创建一个滚动索引页面。在此页面上，不同的标题会停留在页面顶部。
 
@@ -1935,7 +1938,7 @@ Flexbox 用于设计横向或纵向的布局，而 Grid 布局则被设计用于
 
 ![image-20250526211844567](../assets/post-pics/image-20250526211844567.png)
 
-弹性盒子提供了 [`flex-direction`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction) 这样一个属性，它可以指定主轴的方向（弹性盒子子类放置的地方）——它默认值是 `row`，这使得它们在按你浏览器的默认语言方向排成一排。**备注：** 你还可以使用 `row-reverse` 和 `column-reverse` 值反向排列 flex 项
+弹性盒子提供了 [`flex-direction`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction) 这样一个属性，它可以指定主轴的方向(弹性盒子子类放置的地方)——它默认值是 `row`，这使得它们在按你浏览器的默认语言方向排成一排。**备注：** 你还可以使用 `row-reverse` 和 `column-reverse` 值反向排列 flex 项
 
 当你在布局中使用定宽或者定高的时候，可能会出现问题即处于容器中的弹性盒子子元素会溢出，破坏了布局。
 
@@ -1987,13 +1990,13 @@ article:nth-of-type(3) {
 - 第二个无单位比例——[`flex-shrink`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-shrink)——一般用于溢出容器的 flex 项。这指定了从每个 flex 项中取出多少溢出量，以阻止它们溢出它们的容器。这是一个相当高级的弹性盒子功能，我们不会在本文中进一步说明。
 - 第三个是上面讨论的最小值。可以单独指定全写 [`flex-basis`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis) 属性的值。
 
-我们建议不要使用全写属性，除非你真的需要（比如要去覆盖之前写的）。使用全写会多写很多的代码，它们也可能有点让人困惑。
+我们建议不要使用全写属性，除非你真的需要(比如要去覆盖之前写的)。使用全写会多写很多的代码，它们也可能有点让人困惑。
 
 还可以使用弹性盒子的功能让 flex 项沿主轴或交叉轴对齐。
 
 [`align-items`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items) 控制 flex 项在交叉轴上的位置。
 
-- 默认的值是 `stretch`，其会使所有 flex 项沿着交叉轴的方向拉伸以填充父容器。如果父容器在交叉轴方向上没有固定宽度（即高度），则所有 flex 项将变得与最长的 flex 项一样长（即高度保持一致）。我们的第一个例子在默认情况下得到相等的高度的列的原因。
+- 默认的值是 `stretch`，其会使所有 flex 项沿着交叉轴的方向拉伸以填充父容器。如果父容器在交叉轴方向上没有固定宽度(即高度)，则所有 flex 项将变得与最长的 flex 项一样长(即高度保持一致)。我们的第一个例子在默认情况下得到相等的高度的列的原因。
 - 在上面规则中我们使用的 `center` 值会使这些项保持其原有的高度，但是会在交叉轴居中。这就是那些按钮垂直居中的原因。
 - 你也可以设置诸如 `flex-start` 或 `flex-end` 这样使 flex 项在交叉轴的开始或结束处对齐所有的值。查看 [`align-items`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items) 了解更多。
 
@@ -2005,7 +2008,7 @@ article:nth-of-type(3) {
 - 而我们上面用到的值 `space-around` 是很有用的——它会使所有 flex 项沿着主轴均匀地分布，在任意一端都会留有一点空间。
 - 还有一个值是 `space-between`，它和 `space-around` 非常相似，只是它不会在两端留下任何空间。
 
-弹性盒子也有可以改变 flex 项的布局位置的功能，而不会影响到源顺序（即 dom 树里元素的顺序）。这也是传统布局方式很难做到的一点。
+弹性盒子也有可以改变 flex 项的布局位置的功能，而不会影响到源顺序(即 dom 树里元素的顺序)。这也是传统布局方式很难做到的一点。
 
 代码也很简单，将下面的 CSS 添加到示例代码下面。
 
@@ -2024,11 +2027,11 @@ button:first-child {
 
 你也可以给 order 设置负值使它们比值为 0 的元素排得更前面。
 
-弹性盒子也能创建一些颇为复杂的布局。设置一个元素为 flex 项，那么他同样成为一个 flex 容器，它的孩子（直接子节点）也表现为弹性盒子。（嵌套）
+弹性盒子也能创建一些颇为复杂的布局。设置一个元素为 flex 项，那么他同样成为一个 flex 容器，它的孩子(直接子节点)也表现为弹性盒子。(嵌套)
 
 ## 网格布局
 
-一个网格通常具有许多的**列（column）与行（row）**，以及行与行、列与列之间的间隙，这个间隙一般被称为**沟槽（gutter）**。
+一个网格通常具有许多的**列(column)与行(row)**，以及行与行、列与列之间的间隙，这个间隙一般被称为**沟槽(gutter)**。
 
 ![image-20250526211906377](../assets/post-pics/image-20250526211906377.png)
 
@@ -2063,7 +2066,7 @@ button:first-child {
 
 100 像素高的轨道有时可能会不够用，因为时常会有比 100 像素高的内容加进去。所以，我们可以将其设定为至少 100 像素，并且能够跟随内容来自动拓展尺寸，从而保证能容纳所有内容。显而易见，你很难知道网页上某个元素的尺寸在不同情况下会变成多少，一些额外的内容或者更大的字号就会导致许多能做到像素级精准的设计出现问题。所以，我们有了[`minmax()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/minmax)函数。
 
-在定义完了网格之后，我们要把元素放入网格中。我们的网格有许多分隔线，第一条线的起始点与文档书写模式相关。在英文中，第一条列分隔线（即网格边缘线）在网格的最左边而第一条行分隔线在网格的最上面。而对于阿拉伯语，第一条列分隔线在网格的最右边，因为阿拉伯文是从右往左书写的。
+在定义完了网格之后，我们要把元素放入网格中。我们的网格有许多分隔线，第一条线的起始点与文档书写模式相关。在英文中，第一条列分隔线(即网格边缘线)在网格的最左边而第一条行分隔线在网格的最上面。而对于阿拉伯语，第一条列分隔线在网格的最右边，因为阿拉伯文是从右往左书写的。
 
 我们根据这些分隔线来放置元素，通过以下属性来指定从那条线开始到哪条线结束。
 
@@ -2143,15 +2146,15 @@ footer {
 
 ## 响应式设计
 
-早年设计 Web 时，页面是以适配特定的屏幕大小为考量创建的。如果用户正在使用比设计者考虑到的更小或者更大的屏幕，那么结果从多余的滚动条，到过长的行和没有被合理利用的空间，不一而足。随着人们使用的屏幕尺寸的种类越来越多，出现了响应式网页设计的概念（*responsive web design，RWD*），RWD 指的是允许 Web 页面适应不同屏幕宽度因素等，进行布局和外观的调整的一系列实践。
+早年设计 Web 时，页面是以适配特定的屏幕大小为考量创建的。如果用户正在使用比设计者考虑到的更小或者更大的屏幕，那么结果从多余的滚动条，到过长的行和没有被合理利用的空间，不一而足。随着人们使用的屏幕尺寸的种类越来越多，出现了响应式网页设计的概念(_responsive web design，RWD_)，RWD 指的是允许 Web 页面适应不同屏幕宽度因素等，进行布局和外观的调整的一系列实践。
 
 “响应式设计”这个词是[Ethan Marcotte 在 2010 年首度提出的](https://alistapart.com/article/responsive-web-design/)，他将其描述为三种技术的混合使用。
 
-1. 第一个是液态网格，这早先已由 Gillenwater 进行探讨，可以在 Marcotte 的文章《[Fluid Grids](https://alistapart.com/article/fluidgrids/)》（出版于 2009 年的《A List Apart》上）中读到。
+1. 第一个是液态网格，这早先已由 Gillenwater 进行探讨，可以在 Marcotte 的文章《[Fluid Grids](https://alistapart.com/article/fluidgrids/)》(出版于 2009 年的《A List Apart》上)中读到。
 2. 第二个是[液态图像](https://unstoppablerobotninja.com/entry/fluid-images)的理念。通过使用相当简单的将设置`max-width`属性设置为`100%`的技术，图像可以在包含它们的列变得比图像原始尺寸窄的时候，缩放得更小，但总不会变得更大。这使得图像可以被缩放，以被放到一个灵活尺寸的列，而不是溢出出去，同时也不会在列宽于图像的时候，使图像变得太大以至于画质变得粗糙。
 3. 第三个关键的组件是[媒体查询](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_media_queries)。媒体查询使以往 Cameron Adams 探讨过的、由 JavaScript 实现的布局类型切换，可以只使用 CSS 实现。和所有尺寸的屏幕都使用一种布局不同的是，布局是可以改变的：侧栏可以在小屏幕上重新布局，而替代用的导航栏也可以显示出来。
 
-需要你理解的很重要的一点是**响应式 Web 设计不是单独的技术**，它是描述 Web 设计的一种方式、或者是一组最佳实践的一个词，它是用来建立可以**响应**查看内容的设备的样式的一个词。在 Marcotte's 原来的探索中，这意味着灵活网格（使用 float）和媒体查询，但是在这篇文章写就的几乎十年以后，Web 的响应式工作已经成为了默认做法。现代的 CSS 布局方式基本上就是响应式的，而且我们在 Web 平台上内置了新的东西，使得设计响应式站点变得容易。
+需要你理解的很重要的一点是**响应式 Web 设计不是单独的技术**，它是描述 Web 设计的一种方式、或者是一组最佳实践的一个词，它是用来建立可以**响应**查看内容的设备的样式的一个词。在 Marcotte's 原来的探索中，这意味着灵活网格(使用 float)和媒体查询，但是在这篇文章写就的几乎十年以后，Web 的响应式工作已经成为了默认做法。现代的 CSS 布局方式基本上就是响应式的，而且我们在 Web 平台上内置了新的东西，使得设计响应式站点变得容易。
 
 媒介查询允许我们运行一系列测试，例如用户的屏幕是否大于某个宽度或者某个分辨率，并将 CSS 选择性地适应用户的需要应用在样式化页面上。响应式站点不只是在断点之间改变它们的布局，它们是建立在灵活网格上的。一个灵活网格意味着你不需要适配每个可能使用的设备尺寸，然后为其建立一个精确到像素级的适配布局。使用灵活网格，你只需要加进去一个断点，在内容看起来不齐整的时候改变设计。例如如果一行随着屏幕大小增加而增长得不可读的长，或者是一个盒子在变窄时把每行的两个单词挤到一起。现代布局方式，例如[多栏布局](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Multiple-column_Layout)、[伸缩盒](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Flexbox)和[网格](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/CSS_layout/Grids)默认是响应式的。它们都假设你在尽力创建一个可伸缩网格，而且给了你更容易这样做的方式。
 
@@ -2171,13 +2174,13 @@ img {
 
 这种方式有显然的弊端。图像有可能会显示得比它的原始尺寸小很多，以至于浪费带宽——一个移动端用户会下载几倍于他们在浏览器窗口中实际看到的大小的图像。此外，你可能不想在移动端和桌面端有相同的图像宽高比例。例如，在移动端，方形图像的表现会很好，但是在桌面端显示同样的内容则应用宽图像。或者，认识到移动端更小尺寸的图像的你也许会希望同时展示一张不同的图像，一张在小一点的屏幕上更容易理解的图像。这些东西不能简单通过缩放图像解决。
 
-响应式图像，使用了[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/picture)元素和[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) `srcset`和`sizes` 特性，解决了这两个问题。你可以提供附带着“提示”（描述图像最适合的屏幕尺寸和分辨率的元数据）的多种尺寸，浏览器将会选择对设备最合适的图像，以确保用户下载尺寸适合他们使用的设备的图像。
+响应式图像，使用了[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/picture)元素和[``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img) `srcset`和`sizes` 特性，解决了这两个问题。你可以提供附带着“提示”(描述图像最适合的屏幕尺寸和分辨率的元数据)的多种尺寸，浏览器将会选择对设备最合适的图像，以确保用户下载尺寸适合他们使用的设备的图像。
 
 一个有趣的方式是使用视口单位`vw`来实现响应式排版。`1vw`等同于视口宽度的百分之一，即如果你用`vw`来设定字体大小的话，字体的大小将总是随视口的大小进行改变。
 
 问题在于，当做上面的事情的时候，因为文本总是随着视口的大小改变大小，用户失去了放缩任何使用`vw`单位的文本的能力。**所以你永远都不要只用 viewport 单位设定文本。**
 
-这里有一个解决方法，它使用了[`calc()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/calc)，如果你将`vw`单位加到了使用固定大小（例如`em`或者`rem`）的值组，那么文本仍然是可放缩的。基本来说，是`vw`加在了放缩后的值上。
+这里有一个解决方法，它使用了[`calc()`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/calc)，如果你将`vw`单位加到了使用固定大小(例如`em`或者`rem`)的值组，那么文本仍然是可放缩的。基本来说，是`vw`加在了放缩后的值上。
 
 ```css
 h1 {
@@ -2227,7 +2230,7 @@ CSSCopy to Clipboard
 
 它由以下部分组成：
 
-- 一个媒体类型，告诉浏览器这段代码是用在什么类型的媒体上的（例如印刷品或者屏幕）；
+- 一个媒体类型，告诉浏览器这段代码是用在什么类型的媒体上的(例如印刷品或者屏幕)；
 - 一个媒体表达式，是一个被包含的 CSS 生效所需的规则或者测试；
 - 一组 CSS 规则，会在测试通过且媒体类型正确的时候应用。
 
@@ -2258,17 +2261,17 @@ JavaScript 是一门为网站添加交互性的编程语言。交互性体现在
 
 JavaScript 本身相对简洁，但非常灵活。开发者在核心 JavaScript 语言的基础上编写了各种工具，让你能以最小的努力解锁大量的功能。这些工具包括：
 
-- Web 浏览器内置的应用程序编程接口（[API](https://developer.mozilla.org/zh-CN/docs/Glossary/API)），提供了丰富的功能，例如：动态创建 HTML 和设置 CSS 样式；从用户的摄像头采集和处理视频流、生成 3D 图形和音频样本。
-- 允许开发者将来自其他内容提供商（如 [Disqus](https://disqus.com/)、Facebook）的功能整合到自己的网站中的第三方 API。
+- Web 浏览器内置的应用程序编程接口([API](https://developer.mozilla.org/zh-CN/docs/Glossary/API))，提供了丰富的功能，例如：动态创建 HTML 和设置 CSS 样式；从用户的摄像头采集和处理视频流、生成 3D 图形和音频样本。
+- 允许开发者将来自其他内容提供商(如 [Disqus](https://disqus.com/)、Facebook)的功能整合到自己的网站中的第三方 API。
 - 能够应用于 HTML 加速网站和应用程序开发的第三方框架和库。
 
 将 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script) 元素放在 HTML 文件的底部附近的原因是**浏览器会按照代码在文件中的顺序进行读取**。
 
-如果 JavaScript 先加载，并期望操纵还未加载的 HTML，可能会出现问题。将 JavaScript 放在 HTML 页面的底部附近是解决方案之一。（专业术语叫脚本加载策略）
+如果 JavaScript 先加载，并期望操纵还未加载的 HTML，可能会出现问题。将 JavaScript 放在 HTML 页面的底部附近是解决方案之一。(专业术语叫脚本加载策略)
 
-这与 CSS 选择器的用法非常相像。若要对某个元素进行操作，首先得选择它。这个特性来自DOM API。
+这与 CSS 选择器的用法非常相像。若要对某个元素进行操作，首先得选择它。这个特性来自 DOM API。
 
-变量：let类型
+变量：let 类型
 
 分号表示语句结束
 
@@ -2296,11 +2299,11 @@ document.querySelector("html").addEventListener("click", () => {
 客户端 JavaScript 语言的核心包含一些普遍的编程特性，以让你可以做到如下的事情：
 
 - 在变量中储存有用的值。比如上文的示例中，我们请求客户输入一个新名字，然后将其储存到 `name` 变量中。
-- 操作一段文本（在编程中称为“字符串”（string））。上文的示例中，我们取字符串“玩家 1：”，然后把它和 `name` 变量拼接起来，创造出完整的文本标签，比如“玩家 1：小明”。
+- 操作一段文本(在编程中称为“字符串”(string))。上文的示例中，我们取字符串“玩家 1：”，然后把它和 `name` 变量拼接起来，创造出完整的文本标签，比如“玩家 1：小明”。
 - 运行代码以响应网页中发生的特定事件。上文的示例中，我们用一个 [`click`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/click_event) 事件来检测按钮什么时候被点击，然后运行代码更新文本标签。
 - 以及更多！
 
-JavaScript 语言核心之上所构建的功能更令人兴奋。**应用程序接口**（**Application Programming Interface，API**）将为你的代码提供额外的超能力。
+JavaScript 语言核心之上所构建的功能更令人兴奋。**应用程序接口**(**Application Programming Interface，API**)将为你的代码提供额外的超能力。
 
 API 是已经建立好的一套代码组件，可以让开发者实现原本很难甚至无法实现的程序。就像现成的家具套件之于家居建设，用一些已经切好的木板组装一个书柜，显然比自己设计，寻找合适的木材，裁切至合适的尺寸和形状，找到正确尺寸的螺钉，*然后*再组装成书柜要简单得多。
 
@@ -2308,52 +2311,52 @@ API 通常分为两类。
 
 **浏览器 API** 内建于 web 浏览器中，它们可以将数据从周边计算机环境中筛选出来，还可以做实用的复杂工作。例如：
 
-- [文档对象模型 API](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model) 能通过创建、移除和修改 HTML，为页面动态应用新样式等手段来操作 HTML 和 CSS。比如当某个页面出现了一个弹窗，或者显示了一些新内容（像上文小演示中看到那样），这就是 DOM 在运行。
+- [文档对象模型 API](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model) 能通过创建、移除和修改 HTML，为页面动态应用新样式等手段来操作 HTML 和 CSS。比如当某个页面出现了一个弹窗，或者显示了一些新内容(像上文小演示中看到那样)，这就是 DOM 在运行。
 - [地理位置 API](https://developer.mozilla.org/zh-CN/docs/Web/API/Geolocation) 获取地理信息。这就是为什么[谷歌地图](https://www.google.com/maps)可以找到你的位置，而且标示在地图上。
-- [画布（Canvas）](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API) 和 [WebGL](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API) API 可以创建生动的 2D 和 3D 图像。人们正运用这些 web 技术制作令人惊叹的作品。参见 [Chrome Experiments](https://experiments.withgoogle.com/collection/chrome) 以及 [webglsamples](https://webglsamples.org/)。
-- 诸如 [`HTMLMediaElement`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLMediaElement) 和 [WebRTC](https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API) 等[影音类 API](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Audio_and_video_delivery) 让你可以利用多媒体做一些非常有趣的事，比如在网页中直接播放音乐和影片，或用自己的网络摄像头获取录像，然后在其他人的电脑上展示（试用简易版[截图演示](http://chrisdavidmills.github.io/snapshot/)以理解这个概念）。
+- [画布(Canvas)](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API) 和 [WebGL](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API) API 可以创建生动的 2D 和 3D 图像。人们正运用这些 web 技术制作令人惊叹的作品。参见 [Chrome Experiments](https://experiments.withgoogle.com/collection/chrome) 以及 [webglsamples](https://webglsamples.org/)。
+- 诸如 [`HTMLMediaElement`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLMediaElement) 和 [WebRTC](https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API) 等[影音类 API](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Audio_and_video_delivery) 让你可以利用多媒体做一些非常有趣的事，比如在网页中直接播放音乐和影片，或用自己的网络摄像头获取录像，然后在其他人的电脑上展示(试用简易版[截图演示](http://chrisdavidmills.github.io/snapshot/)以理解这个概念)。
 
 **第三方 API** 并没有默认嵌入浏览器中，一般要从网上取得它们的代码和信息。比如：
 
 - [Twitter API](https://developer.twitter.com/en/docs)、[新浪微博 API](https://open.weibo.com/) 可以在网站上展示最新推文之类。
 - [谷歌地图 API](https://developers.google.cn/maps/)、[OpenStreetMap API](https://wiki.openstreetmap.org/wiki/API)、[高德地图 API](https://lbs.amap.com/) 可以在网站嵌入定制的地图等等。
 
-JavaScript 的一个非常常见的用途是通过文档对象模型 API（如上所述）动态修改 HTML 和 CSS，以更新用户界面。
+JavaScript 的一个非常常见的用途是通过文档对象模型 API(如上所述)动态修改 HTML 和 CSS，以更新用户界面。
 
-每个浏览器标签页就是其自身用来运行代码的独立容器（这些容器用专业术语称为“运行环境”）。大多数情况下，每个标签页中的代码完全独立运行，而且一个标签页中的代码不能直接影响另一个标签页（或者另一个网站）中的代码。这是一个好的安全措施，如果不这样，黑客就可以从其他网站盗取信息，或做一些其他坏事。
+每个浏览器标签页就是其自身用来运行代码的独立容器(这些容器用专业术语称为“运行环境”)。大多数情况下，每个标签页中的代码完全独立运行，而且一个标签页中的代码不能直接影响另一个标签页(或者另一个网站)中的代码。这是一个好的安全措施，如果不这样，黑客就可以从其他网站盗取信息，或做一些其他坏事。
 
 **备注：** 以安全的方式在不同网站或标签页中传送代码和数据的方法是存在的，但它们属于进阶技术，本课程不会涉及。
 
 当浏览器执行到一段 JavaScript 代码时，通常会按从上往下的顺序执行这段代码。
 
-你或许还听说过**服务器端**（server-side）和**客户端**（client-side）代码这两个术语，尤其是在 web 开发时。客户端代码是在用户的电脑上运行的代码，在浏览一个网页时，它的客户端代码就会被下载，然后由浏览器来运行并展示。在本模块中我们讨论的主要是**客户端 JavaScript**。
+你或许还听说过**服务器端**(server-side)和**客户端**(client-side)代码这两个术语，尤其是在 web 开发时。客户端代码是在用户的电脑上运行的代码，在浏览一个网页时，它的客户端代码就会被下载，然后由浏览器来运行并展示。在本模块中我们讨论的主要是**客户端 JavaScript**。
 
 而服务器端代码在服务器上运行，然后运行结果才由浏览器下载并展示出来。流行的服务器端 web 语言包括：PHP、Python、Ruby、[ASP.NET](http://ASP.NET)，甚至有 JavaScript！JavaScript 也可用作服务器端语言，比如现在流行的 Node.js 环境，你可以在我们的[动态网页——服务器端编程](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side)主题中找到更多关于服务器端 JavaScript 的知识。
 
 JavaScript 模块需要从与 HTML 同源的地方加载，并且 `file://` URL 不符合条件。
 
-1. 保存并刷新浏览器。就会发现点击按钮不起作用，如果检查浏览器控制台，会看见类似 
+1. 保存并刷新浏览器。就会发现点击按钮不起作用，如果检查浏览器控制台，会看见类似
 
-    ```
-    Cross-origin request blocked
-    ```
+   ```
+   Cross-origin request blocked
+   ```
 
-     的错误。这是因为与许多外部资源一样，JavaScript 模块需要从与 HTML 同源的地方加载，并且 
+   的错误。这是因为与许多外部资源一样，JavaScript 模块需要从与 HTML 同源的地方加载，并且
 
-    ```
-    file://
-    ```
+   ```
+   file://
+   ```
 
-     URL 不符合条件。有两个解决方案可以解决这个问题：
+   URL 不符合条件。有两个解决方案可以解决这个问题：
 
-    - 我们推荐的解决方案是按照指南[设置本地测试服务器](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server)。运行服务器程序并且在 `8000` 端口提供文件 `apply-javascript-external.html` 和 `script.js`，打开浏览器并访问 `http://localhost:8000`。
-    - 如果无法运行本地服务器，也可以使用 `<script defer src="script.js"></script>` 代替 `<script type="module" src="script.js"></script>`。了解更多信息请参阅下面的[脚本加载策略](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/What_is_JavaScript#脚本加载策略)。但是注意，本教程其他部分使用的特性可能需要本地 HTTP 服务器。
+   - 我们推荐的解决方案是按照指南[设置本地测试服务器](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server)。运行服务器程序并且在 `8000` 端口提供文件 `apply-javascript-external.html` 和 `script.js`，打开浏览器并访问 `http://localhost:8000`。
+   - 如果无法运行本地服务器，也可以使用 `<script defer src="script.js"></script>` 代替 `<script type="module" src="script.js"></script>`。了解更多信息请参阅下面的[脚本加载策略](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/What_is_JavaScript#脚本加载策略)。但是注意，本教程其他部分使用的特性可能需要本地 HTTP 服务器。
 
-内部js：在html文档的<script>标签中直接嵌入js代码
+内部 js：在 html 文档的<script>标签中直接嵌入 js 代码
 
-外部js：写在.js文件中，在<script>标签中引入文件
+外部 js：写在.js 文件中，在<script>标签中引入文件
 
-内联js：直接在html元素中引用js代码。**然而请不要这样做**。这将使 JavaScript 污染了 HTML，而且效率低下。对于每个需要应用 JavaScript 的按钮，你都得手动添加 `onclick="createParagraph()"` 属性。与其在 HTML 中包含 JavaScript，不如使用纯 JavaScript 构造。通过 `querySelectorAll()` 函数，可以选择页面上的所有按钮。然后可以循环遍历这些按钮，使用 `addEventListener()` 为每个按钮分配一个处理器。
+内联 js：直接在 html 元素中引用 js 代码。**然而请不要这样做**。这将使 JavaScript 污染了 HTML，而且效率低下。对于每个需要应用 JavaScript 的按钮，你都得手动添加 `onclick="createParagraph()"` 属性。与其在 HTML 中包含 JavaScript，不如使用纯 JavaScript 构造。通过 `querySelectorAll()` 函数，可以选择页面上的所有按钮。然后可以循环遍历这些按钮，使用 `addEventListener()` 为每个按钮分配一个处理器。
 
 学习编程，语法本身并不难，真正困难的是如何应用它来解决现实世界的问题。你要开始像程序员那样思考。看到这个要求，首先我们要做的是将其分解成简单的可操作的任务，尽可能从程序员的思维去思考
 
@@ -2365,20 +2368,20 @@ for break continue
 
 ## 脚本加载策略
 
-页面上的所有 HTML 代码都按其出现的顺序加载。如果使用 JavaScript 去操作页面上的元素（更准确的说，是[文档对象模型](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/DOM_scripting#文档对象模型)），那么如果 JavaScript 在 HTML 之前就被加载和解析了，代码将无法运行。
+页面上的所有 HTML 代码都按其出现的顺序加载。如果使用 JavaScript 去操作页面上的元素(更准确的说，是[文档对象模型](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/DOM_scripting#文档对象模型))，那么如果 JavaScript 在 HTML 之前就被加载和解析了，代码将无法运行。
 
 有几种不同的策略来确保 JavaScript 只在 HTML 解析之后运行：
 
 - 在上面的内部 JavaScript 示例中，脚本元素放在文档正文的底部，因此只能在 HTML 正文的其他部分被解析以后运行。
 
-- 在上面的外部 JavaScript 实例中，脚本元素放在文档的头部，在解析 HTML 正文之前解析。但是由于我们使用了 `<script type="module">`，代码被视为一个[模块](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Modules)，并且浏览器在执行 JavaScript 模块之前会等待所有的 HTML 代码都处理完毕（也可以把外部脚本放在正文的底部，但是如果 HTML 内容较多且网络较慢，在浏览器开始获取并加载脚本之前可能需要大量的时间，因此将外部脚本放在头部通常会更好一些）。
+- 在上面的外部 JavaScript 实例中，脚本元素放在文档的头部，在解析 HTML 正文之前解析。但是由于我们使用了 `<script type="module">`，代码被视为一个[模块](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Modules)，并且浏览器在执行 JavaScript 模块之前会等待所有的 HTML 代码都处理完毕(也可以把外部脚本放在正文的底部，但是如果 HTML 内容较多且网络较慢，在浏览器开始获取并加载脚本之前可能需要大量的时间，因此将外部脚本放在头部通常会更好一些)。
 
 - 如果仍然想在文档头部使用非模块脚本，可能阻塞整个页面的显示，并且可能出现错误，因为脚本在文档解析之前执行：
 
-    - 对于外部脚本，应该在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script) 元素上添加 `defer`（或者如果不需要 HTML 解析完成，则可以使用 `async`）属性。
-    - 对于内部脚本，应该将代码封装在 [`DOMContextLoaded` 事件监听器](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/DOMContentLoaded_event)中。
+  - 对于外部脚本，应该在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script) 元素上添加 `defer`(或者如果不需要 HTML 解析完成，则可以使用 `async`)属性。
+  - 对于内部脚本，应该将代码封装在 [`DOMContextLoaded` 事件监听器](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/DOMContentLoaded_event)中。
 
-    这超出了本教程的范围，除非你需要支持非常老的浏览器，否则不要这样做，使用 `<script type="module">` 代替即可。
+  这超出了本教程的范围，除非你需要支持非常老的浏览器，否则不要这样做，使用 `<script type="module">` 代替即可。
 
 这一行通过 [`focus()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus) 方法让光标在页面加载完毕时自动放置于 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input) 输入框内，这意味着玩家可以马上开始第一次猜测，而无需点击输入框。这只是一个小的改进，却提高了可用性——为使用户能投入游戏提供一个良好的视觉线索。
 
@@ -2392,7 +2395,7 @@ for break continue
 const guessField = document.querySelector(".guessField");
 ```
 
-因为 `guessField` 现在包含一个指向 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input) 元素的引用，它现在就能够访问一系列的属性（存储于对象内部的基础变量，其中一些的值无法改变）和方法（存储在对象内部的基础函数）。`focus()` 是 `input` 元素可用方法之一，因此我们可以使用这行代码将光标聚焦于此文本框上︰
+因为 `guessField` 现在包含一个指向 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input) 元素的引用，它现在就能够访问一系列的属性(存储于对象内部的基础变量，其中一些的值无法改变)和方法(存储在对象内部的基础函数)。`focus()` 是 `input` 元素可用方法之一，因此我们可以使用这行代码将光标聚焦于此文本框上︰
 
 ```jsx
 guessField.focus();
@@ -2418,7 +2421,7 @@ guessField.focus();
 
 - 一个可靠的命名约定叫做 ["小写驼峰命名法"](https://en.wikipedia.org/wiki/CamelCase#Variations_and_synonyms)，用来将多个单词组在一起，小写整个命名的第一个字母然后大写剩下单词的首字符。我们已经在文章中使用了这种命名方法。
 
-你可以在变量中存储数字，不论这些数字是像 30（也叫整数）这样，或者像 2.456 这样的小数（也叫做浮点数）。与其他编程语言不同，在 JavaScript 中你不需要声明一个变量的类型。当你给一个变量数字赋值时，不需要用引号括起来。
+你可以在变量中存储数字，不论这些数字是像 30(也叫整数)这样，或者像 2.456 这样的小数(也叫做浮点数)。与其他编程语言不同，在 JavaScript 中你不需要声明一个变量的类型。当你给一个变量数字赋值时，不需要用引号括起来。
 
 字符串是文本的一部分。当你给一个变量赋值为字符串时，你需要用单引号或者双引号把值给包起来，否则 JavaScript 将会把这个字符串值理解成别的变量名。
 
@@ -2430,13 +2433,13 @@ Boolean 的值有 2 种：true 或 false。它们通常被用于在适当的代�
 
 在编程中，对象是现实生活中的模型的一种代码结构。你可以有一个简单的对象，代表一个停车场，并包含有关其宽度和长度的信息，或者你可以有一个代表一个人的对象，并包含有关他们的名字，身高，体重，他们说什么语言，如何说 你好，他们，等等。大括号括起来
 
-JavaScript 是一种“动态类型语言”，这意味着不同于其他一些语言 (译者注：如 C、JAVA)，你不需要指定变量将包含什么数据类型（例如 number 或 string）
+JavaScript 是一种“动态类型语言”，这意味着不同于其他一些语言 (译者注：如 C、JAVA)，你不需要指定变量将包含什么数据类型(例如 number 或 string)
 
 ## 字符串
 
-在 JavaScript 中，你可以选择单引号（`'`）、双引号（`"`）或反引号（```）来包裹字符串。
+在 JavaScript 中，你可以选择单引号(`'`)、双引号(`"`)或反引号(```)来包裹字符串。
 
-使用反引号声明的字符串是一种特殊字符串，被称为[*模板字面量*](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Template_literals)。在大多数情况下，模板字面量与普通字符串类似，但它具有一些特殊的属性：
+使用反引号声明的字符串是一种特殊字符串，被称为[_模板字面量_](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Template_literals)。在大多数情况下，模板字面量与普通字符串类似，但它具有一些特殊的属性：
 
 - **你可以在其中[嵌入 JavaScript](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Strings#嵌入_javascript)**
 - 你可以声明[多行](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Strings#多行字符串)的模板字面量
@@ -2465,7 +2468,7 @@ console.log(`${greeting}，${name}`); // "你好，克里斯"
 
 模板字符串会保留源代码中的换行符，因此你可以编写跨越多行的字符串，如下所示：
 
-要使用普通字符串获得等效的输出，你必须在字符串中包含换行字符（`\\n`）：
+要使用普通字符串获得等效的输出，你必须在字符串中包含换行字符(`\\n`)：
 
 当我们尝试连接一个字符串和数字时会发生什么？让我们在控制台中尝试一下：
 
@@ -2477,9 +2480,9 @@ console.log(`${greeting}，${name}`); // "你好，克里斯"
 
 把字符串当作对象，我们曾经说过，现在我们重申一遍—在 javascript 中，一切东西都可以被当作对象。使用 [`length`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/length) 属性可以获得长度，
 
-在相关的注释中，你可以使用方括号表示法返回字符串中的任何字符 - 这意味着你可以在变量名的末尾包含方括号（[ ]）。在方括号内，你可以包含要返回的字符的编号，例如，你要检索第一个字母，可以这样做：
+在相关的注释中，你可以使用方括号表示法返回字符串中的任何字符 - 这意味着你可以在变量名的末尾包含方括号([ ])。在方括号内，你可以包含要返回的字符的编号，例如，你要检索第一个字母，可以这样做：
 
-有时候你会想要找出一个较小的字符串是否存在于一个较大的字符串中（我们通常会说一个字符串中存在一个子字符串）。这可以使用[`indexOf()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)方法来完成，该方法需要一个[parameter](https://developer.mozilla.org/zh-CN/docs/Glossary/Parameter) — 你想要搜索的子字符串。尝试以下：
+有时候你会想要找出一个较小的字符串是否存在于一个较大的字符串中(我们通常会说一个字符串中存在一个子字符串)。这可以使用[`indexOf()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)方法来完成，该方法需要一个[parameter](https://developer.mozilla.org/zh-CN/docs/Glossary/Parameter) — 你想要搜索的子字符串。尝试以下：
 
 当你知道字符串中的子字符串开始的位置，以及想要结束的字符时，[`slice()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/slice)可以用来提取 它。尝试以下：
 
@@ -2489,15 +2492,15 @@ console.log(`${greeting}，${name}`); // "你好，克里斯"
 
 你可以使用[`replace()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace)方法将字符串中的一个子字符串替换为另一个子字符串。在基础的层面上，这个工作非常简单。你当然可以用它做一些更高级的事情，但目前我们不会涉及到。
 
-请注意，数组中包含数组的话称之为多维数组。你可以通过将两组方括号链接在一起来访问数组内的另一个数组。例如，要访问数组内部的一个项目，即 `random` 数组中的第三个项目（参见上一节），我们可以这样做：
+请注意，数组中包含数组的话称之为多维数组。你可以通过将两组方括号链接在一起来访问数组内的另一个数组。例如，要访问数组内部的一个项目，即 `random` 数组中的第三个项目(参见上一节)，我们可以这样做：
 
-你可以通过使用 [`length`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/length) 属性获取数组的长度（数组中有多少项元素），这与查找字符串的长度（以字符为单位）完全相同。尝试以下代码：
+你可以通过使用 [`length`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/length) 属性获取数组的长度(数组中有多少项元素)，这与查找字符串的长度(以字符为单位)完全相同。尝试以下代码：
 
 通常，你会看到一个包含在一个长长的字符串中的原始数据，你可能希望将有用的项目分成更有用的表单，然后对它们进行处理，例如将它们显示在数据表中。为此，我们可以使用 [`split()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split) 方法。在其最简单的形式中，这需要一个参数，你要将字符串分隔的字符，并返回分隔符之间的子串，作为数组中的项。
 
 你也可以使用 [`join()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join) 方法进行相反的操作。尝试以下：
 
-将数组转换为字符串的另一种方法是使用 [`toString()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString) 方法。 `toString()` 可以比 `join()` 更简单，因为它不需要一个参数，但更有限制。使用 `join()` 可以指定不同的分隔符（尝试使用与逗号不同的字符运行步骤 4）。
+将数组转换为字符串的另一种方法是使用 [`toString()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString) 方法。 `toString()` 可以比 `join()` 更简单，因为它不需要一个参数，但更有限制。使用 `join()` 可以指定不同的分隔符(尝试使用与逗号不同的字符运行步骤 4)。
 
 首先，要在数组末尾添加或删除一个项目，我们可以使用 [`push()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/push) 和 [`pop()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)。
 
@@ -2505,7 +2508,7 @@ console.log(`${greeting}，${name}`); // "你好，克里斯"
 
 ## 函数
 
-JavaScript 语言中有许多内置的函数，它们可以让你无需自己编写所有的代码，就能做很多有用的事情。事实上，许多你**调用**（专业词语，意指“运行”或“执行”）浏览器内置函数时调用的代码并不能用 JavaScript 来编写——大多数调用浏览器后台的函数的代码，是使用像 C++ 这样更低级的系统语言编写的，而不是像 JavaScript 这样的 web 编程语言。
+JavaScript 语言中有许多内置的函数，它们可以让你无需自己编写所有的代码，就能做很多有用的事情。事实上，许多你**调用**(专业词语，意指“运行”或“执行”)浏览器内置函数时调用的代码并不能用 JavaScript 来编写——大多数调用浏览器后台的函数的代码，是使用像 C++ 这样更低级的系统语言编写的，而不是像 JavaScript 这样的 web 编程语言。
 
 ```jsx
 function random(number) {
@@ -2550,7 +2553,7 @@ textBox.addEventListener("keydown", (event) => {
 如果函数只接受一个参数，可以省略参数周围的括号：
 
 ```jsx
-textBox.addEventListener("keydown", event => {
+textBox.addEventListener("keydown", (event) => {
   console.log(`You pressed "${event.key}".`);
 });
 ```
@@ -2573,13 +2576,13 @@ JavaScript 之所以设计成如此，有很多原因，但主要是出于安全
 
 因为 `output()` 函数的调用和输出变量的定义不在同一个函数作用域内——变量对于这些函数调用而言是不可见的。
 
-**备注：** 相同的作用域规则不适用于循环（例如 `for() { }`）和条件块（例如 `if() { }`）——它们看起来非常相似，但它们不一样！千万不要混淆它们。
+**备注：** 相同的作用域规则不适用于循环(例如 `for() { }`)和条件块(例如 `if() { }`)——它们看起来非常相似，但它们不一样！千万不要混淆它们。
 
 **备注：** “[ReferenceError: "x" is not defined](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Errors/Not_defined)”错误将会是你遇到的最常见的错误。如果你收到此错误，并且确定你已经定义了该变量，请检查它的作用域。
 
 ## 事件
 
-事件是发生在你正在编程的系统中的事情——当事件发生时，系统产生（或“触发”）某种信号，并提供一种机制，当事件发生时，可以自动采取某种行动（即运行一些代码）。事件是在浏览器窗口内触发的，并倾向于附加到驻留在其中的特定项目。这可能是一个单一的元素，一组元素，当前标签中加载的 HTML 文档，或整个浏览器窗口。有许多不同类型的事件可以发生。
+事件是发生在你正在编程的系统中的事情——当事件发生时，系统产生(或“触发”)某种信号，并提供一种机制，当事件发生时，可以自动采取某种行动(即运行一些代码)。事件是在浏览器窗口内触发的，并倾向于附加到驻留在其中的特定项目。这可能是一个单一的元素，一组元素，当前标签中加载的 HTML 文档，或整个浏览器窗口。有许多不同类型的事件可以发生。
 
 例如：
 
@@ -2591,9 +2594,9 @@ JavaScript 之所以设计成如此，有很多原因，但主要是出于安全
 - 视频播放、暂停或结束。
 - 发生错误。
 
-你可以从这里（以及从 MDN [事件参考](https://developer.mozilla.org/zh-CN/docs/Web/Events)文档）中看出，有**相当多**的事件可以被触发。
+你可以从这里(以及从 MDN [事件参考](https://developer.mozilla.org/zh-CN/docs/Web/Events)文档)中看出，有**相当多**的事件可以被触发。
 
-为了对一个事件做出反应，你要给它附加一个**事件处理器**。这是一个代码块（通常是你作为程序员创建的一个 JavaScript 函数），在事件发生时运行。当这样一个代码块被定义为响应一个事件而运行时，我们说我们在**注册一个事件处理器**。注意，事件处理器有时候被叫做**事件监听器**——从我们的用意来看这两个名字是相同的，尽管严格地来说这块代码既监听也处理事件。监听器留意事件是否发生，处理器对事件发生做出回应。
+为了对一个事件做出反应，你要给它附加一个**事件处理器**。这是一个代码块(通常是你作为程序员创建的一个 JavaScript 函数)，在事件发生时运行。当这样一个代码块被定义为响应一个事件而运行时，我们说我们在**注册一个事件处理器**。注意，事件处理器有时候被叫做**事件监听器**——从我们的用意来看这两个名字是相同的，尽管严格地来说这块代码既监听也处理事件。监听器留意事件是否发生，处理器对事件发生做出回应。
 
 **备注：** web 事件不是 JavaScript 语言的核心——它们被定义成内置于浏览器的 API。
 
@@ -2603,7 +2606,7 @@ JavaScript 之所以设计成如此，有很多原因，但主要是出于安全
 - [`dblclick`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/dblclick_event)：颜色只在按钮被双击时改变。
 - [`mouseover`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/mouseover_event) 和 [`mouseout`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/mouseout_event)：当鼠标指针在按钮上悬停，或指针移出按钮时，颜色分别会改变。
 
-一些事件，如 `click`（点击事件），几乎对任何元素都可用。其他事件则更具体，只在某些情况下有用：例如，[`play`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLMediaElement/play_event) 事件只对某些元素有效，如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video) 元素。
+一些事件，如 `click`(点击事件)，几乎对任何元素都可用。其他事件则更具体，只在某些情况下有用：例如，[`play`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLMediaElement/play_event) 事件只对某些元素有效，如 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video) 元素。
 
 如果你使用 `addEventListener()` 添加了一个事件处理器，你可以使用 [`removeEventListener()`](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/removeEventListener) 方法再次删除它。
 
@@ -2613,7 +2616,7 @@ JavaScript 之所以设计成如此，有很多原因，但主要是出于安全
 
 我们推荐你使用 `addEventListener()` 来注册事件处理器。这是最强大的方法，在更复杂的程序中，它的扩展性最好。然而，还有两种注册事件处理器的方法，你可能会看到：*事件处理器属性*和*内联事件处理器*。
 
-可以触发事件的对象（如按钮）通常也有属性，其名称是 `on`，后面是事件的名称。例如，元素有一个属性 `onclick`。这被称为*事件处理器属性*。为了监听事件，你可以将处理函数分配给该属性。
+可以触发事件的对象(如按钮)通常也有属性，其名称是 `on`，后面是事件的名称。例如，元素有一个属性 `onclick`。这被称为*事件处理器属性*。为了监听事件，你可以将处理函数分配给该属性。
 
 对于事件处理器属性，你不能为一个事件添加一个以上的处理程序。
 
@@ -2652,11 +2655,11 @@ element.onclick = function2;
 
 一些事件对象添加了与该特定类型的事件相关的额外属性。例如，[`keydown`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/keydown_event) 事件在用户按下一个键时发生。它的事件对象是 [`KeyboardEvent`](https://developer.mozilla.org/zh-CN/docs/Web/API/KeyboardEvent)，它是一个专门的 `Event` 对象，有一个 `key` 属性，告诉你哪个键被按下
 
-有时，你会遇到一些情况，你希望事件不执行它的默认行为。最常见的例子是 Web 表单，例如自定义注册表单。当你填写详细信息并按提交按钮时，自然行为是将数据提交到服务器上的指定页面进行处理，并将浏览器重定向到某种“成功消息”页面（或相同的页面，如果另一个没有指定）。
+有时，你会遇到一些情况，你希望事件不执行它的默认行为。最常见的例子是 Web 表单，例如自定义注册表单。当你填写详细信息并按提交按钮时，自然行为是将数据提交到服务器上的指定页面进行处理，并将浏览器重定向到某种“成功消息”页面(或相同的页面，如果另一个没有指定)。
 
 当用户没有正确提交数据时，麻烦就来了——作为开发人员，你希望停止提交信息给服务器，并给他们一个错误提示，告诉他们什么做错了，以及需要做些什么来修正错误。一些浏览器支持自动的表单数据验证功能，但由于许多浏览器不支持，因此建议你不要依赖这些功能，并实现自己的验证检查。
 
-接下来是 JavaScript 代码——这里我们在 [`submit`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLFormElement/submit_event) 事件（表单提交时触发提交事件）的处理程序中实现一个非常简单的检查，测试文本字段是否为空。如果是这样，我们就在事件对象上调用 [`preventDefault()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault) 函数，停止表单提交，然后在我们的表单下面的段落中显示错误信息，告诉用户出了什么问题
+接下来是 JavaScript 代码——这里我们在 [`submit`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLFormElement/submit_event) 事件(表单提交时触发提交事件)的处理程序中实现一个非常简单的检查，测试文本字段是否为空。如果是这样，我们就在事件对象上调用 [`preventDefault()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault) 函数，停止表单提交，然后在我们的表单下面的段落中显示错误信息，告诉用户出了什么问题
 
 事件不是 JavaScript 独有的——大多数编程语言都有某种事件模型，而模型的工作方式往往与 JavaScript 的方式不同。事实上，网页的 JavaScript 的事件模型与其他环境中使用的 JavaScript 的事件模型也是不同的。
 
@@ -2671,14 +2674,14 @@ element.onclick = function2;
 在这种情况下：
 
 - 最先触发按钮上的单击事件
-- 然后是按钮的父元素（`<div>` 元素）
-- 然后是 `<div>` 的父元素（`<body>` 元素）
+- 然后是按钮的父元素(`<div>` 元素)
+- 然后是 `<div>` 的父元素(`<body>` 元素)
 
 我们可以这样描述：事件从被点击的最里面的元素**冒泡**而出。
 
 你应该看到，当你点击按钮时，盒子和它所包含的视频都显示出来。但当你点击视频时，视频开始播放，但盒子又被隐藏起来了！
 
-视频在 `<div>` 内（是它的一部分），所以点击视频会*同时*运行两个事件处理器，导致这种行为。
+视频在 `<div>` 内(是它的一部分)，所以点击视频会*同时*运行两个事件处理器，导致这种行为。
 
 [使用 stopPropagation() 修复问题](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Event_bubbling#使用_stoppropagation_修复问题)
 
@@ -2702,7 +2705,7 @@ element.onclick = function2;
 
 ## 对象
 
-对象是一个包含相关数据和方法的集合（通常由一些变量和函数组成，我们称之为对象里面的属性和方法）
+对象是一个包含相关数据和方法的集合(通常由一些变量和函数组成，我们称之为对象里面的属性和方法)
 
 当对象的成员是函数时，语法会更简单。我们可以写 `bio()` 来代替 `bio: function()`。像这样：
 
@@ -2715,17 +2718,17 @@ const person = {
   },
   introduceSelf() {
     console.log(`你好！我是 ${this.name[0]}。`);
-  },
+  }
 };
 ```
 
-一个如上所示的对象被称之为对象字面量（object literal）——手动的写出对象的内容来创建一个对象。不同于从类实例化一个对象，我们会在后面学习这种方式。
+一个如上所示的对象被称之为对象字面量(object literal)——手动的写出对象的内容来创建一个对象。不同于从类实例化一个对象，我们会在后面学习这种方式。
 
-当你想要传输一系列结构化的相关的数据项（例如，服务器发起请求以存储一些数据到数据库）时，常见的方式是使用字面量来创建一个对象。发送一个对象要比分别发送这些数据更有效率，当你使用名字标识这些数据时，它比数组更容易使用。
+当你想要传输一系列结构化的相关的数据项(例如，服务器发起请求以存储一些数据到数据库)时，常见的方式是使用字面量来创建一个对象。发送一个对象要比分别发送这些数据更有效率，当你使用名字标识这些数据时，它比数组更容易使用。
 
-在上面的例子中，你使用了**点表示法**（dot notation）来访问对象的属性和方法。对象的名字表现为一个**命名空间**（namespace）。当你想访问对象内部的属性或方法时，命名空间必须写在第一位。然后输入一个点，紧接着是你想要访问的目标——可以是简单属性的名字，或者是数组属性的一个子元素，又或者是对象的方法调用。
+在上面的例子中，你使用了**点表示法**(dot notation)来访问对象的属性和方法。对象的名字表现为一个**命名空间**(namespace)。当你想访问对象内部的属性或方法时，命名空间必须写在第一位。然后输入一个点，紧接着是你想要访问的目标——可以是简单属性的名字，或者是数组属性的一个子元素，又或者是对象的方法调用。
 
-另外一种访问对象属性的方式是使用括号表示法（bracket notation），这看起来很像访问一个数组的元素，并且基本上是相同的——使用关联了值的名称，而不是索引来选择元素。因此对象有时被称为**关联数组**——对象将字符串映射到值，而数组将数字映射到值。
+另外一种访问对象属性的方式是使用括号表示法(bracket notation)，这看起来很像访问一个数组的元素，并且基本上是相同的——使用关联了值的名称，而不是索引来选择元素。因此对象有时被称为**关联数组**——对象将字符串映射到值，而数组将数字映射到值。
 
 点表示法通常优于括号表示法，因为它更简洁且更易于阅读。然而，在某些情况下你必须使用括号。例如，如果对象属性名称保存在变量中，则不能使用点表示法访问该值，但可以使用括号表示法访问该值。
 
@@ -2790,25 +2793,25 @@ const myVideo = document.querySelector("video");
 
 这同样适用于你使用过的几乎所有其他的内置对象或 API——[`Array`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)、[`Math`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math)，等。
 
-## DOM脚本
+## DOM 脚本
 
-在编写网页和应用程序时，你最想做的事情之一是以某种方式操纵文档结构。这通常是通过使用文档对象模型（DOM）来实现的。这是一套大量使用了 [`Document`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document) 对象，用于控制 HTML 和样式信息的 API。
+在编写网页和应用程序时，你最想做的事情之一是以某种方式操纵文档结构。这通常是通过使用文档对象模型(DOM)来实现的。这是一套大量使用了 [`Document`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document) 对象，用于控制 HTML 和样式信息的 API。
 
 考虑下图，它代表了浏览器中直接参与浏览网页的主要部分：
 
 ![image-20250526212044162](../assets/post-pics/image-20250526212044162.png)
 
-窗口（window）是载入网页的浏览器标签；在 JavaScript 中，它由 Window 对象表示。使用这个对象上的方法，你可以做一些事情，比如返回窗口的大小（见 Window.innerWidth 和 Window.innerHeight），操作加载到窗口的文档，在客户端存储该文档的特定数据（例如使用本地数据库或其他存储机制），为当前窗口附加一个事件处理器等。 导航器（navigator）在网络上出现时，代表浏览器的状态和身份（即用户代理）。在 JavaScript 中，它由 Navigator 对象表示。你可以用这个对象来检索用户的首选语言、用户网络摄像头的媒体流等信息。 文档（document，在浏览器中用 DOM 表示）是加载到窗口的实际页面，在 JavaScript 中，它由 Document 对象表示。你可以使用这个对象来返回和操作构成文档的 HTML 和 CSS 的信息，例如，在 DOM 中获得一个元素的引用，改变其文本内容，对其应用新的样式，创建新的元素并将其作为子元素添加到当前元素中，甚至完全删除它。
+窗口(window)是载入网页的浏览器标签；在 JavaScript 中，它由 Window 对象表示。使用这个对象上的方法，你可以做一些事情，比如返回窗口的大小(见 Window.innerWidth 和 Window.innerHeight)，操作加载到窗口的文档，在客户端存储该文档的特定数据(例如使用本地数据库或其他存储机制)，为当前窗口附加一个事件处理器等。 导航器(navigator)在网络上出现时，代表浏览器的状态和身份(即用户代理)。在 JavaScript 中，它由 Navigator 对象表示。你可以用这个对象来检索用户的首选语言、用户网络摄像头的媒体流等信息。 文档(document，在浏览器中用 DOM 表示)是加载到窗口的实际页面，在 JavaScript 中，它由 Document 对象表示。你可以使用这个对象来返回和操作构成文档的 HTML 和 CSS 的信息，例如，在 DOM 中获得一个元素的引用，改变其文本内容，对其应用新的样式，创建新的元素并将其作为子元素添加到当前元素中，甚至完全删除它。
 
-DOM树上的每个条目都被称为**节点**。节点也通过它们在树中相对于其他节点的位置来指代：
+DOM 树上的每个条目都被称为**节点**。节点也通过它们在树中相对于其他节点的位置来指代：
 
-- **根节点**: 树中顶层节点，在 HTML 的情况下，总是一个 `HTML` 节点（其他标记词汇，如 SVG 和定制 XML 将有不同的根元素）。
+- **根节点**: 树中顶层节点，在 HTML 的情况下，总是一个 `HTML` 节点(其他标记词汇，如 SVG 和定制 XML 将有不同的根元素)。
 - **子节点**: *直接*位于另一个节点内的节点。例如上面例子中，`IMG` 是 `SECTION` 的子节点。
 - **后代节点**: 位于另一个节点内*任意位置*的节点。例如 上面例子中，`IMG` 是 `SECTION` 的子节点，也是一个后代节点。`IMG` 不是 `BODY` 的子节点，因为它在树中比 `BODY` 低了两级，但它是 `BODY` 的后代之一。
 - **父节点**: 里面有另一个节点的节点。例如上面的例子中 `BODY` 是 `SECTION` 的父节点。
 - **兄弟节点**: DOM 树中位于同一父节点下同一等级的节点。例如上面例子中，`IMG` 和 `P` 是兄弟。
 
-在使用 DOM 之前，熟悉这些术语是很有用的，因为你会遇到的一些代码术语都会用到它们。如果你学习过 CSS，你可能也会遇到它们（例如，子孙选择器、子选择器）。
+在使用 DOM 之前，熟悉这些术语是很有用的，因为你会遇到的一些代码术语都会用到它们。如果你学习过 CSS，你可能也会遇到它们(例如，子孙选择器、子选择器)。
 
 请注意，就像 JavaScript 中所做的那样，有许多方法可以选择一个元素并将其引用存储在一个变量中。[`Document.querySelector()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelector) 是推荐的现代方法。它很方便，因为它允许你使用 CSS 选择器来选择元素。上面的 `querySelector()` 调用将匹配文档中出现的第一个 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a) 元素。如果你想对多个元素进行匹配和操作，你可以使用 [`Document.querySelectorAll()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelectorAll)，它可以匹配文档中与选择器相匹配的每个元素，并将它们的引用存储在一个叫做 [`NodeList`](https://developer.mozilla.org/zh-CN/docs/Web/API/NodeList) 的类[数组](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Arrays)对象中。
 
@@ -2821,51 +2824,51 @@ DOM树上的每个条目都被称为**节点**。节点也通过它们在树中�
 
 以上只是让你稍微尝试一下你可以做的事情，让我们进一步看看我们可以怎样来创建新的元素。
 
-1. 回到当前的例子，我们先获取到 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section) 元素的引用。在已有 script 中添加下列代码（其他代码也同样处理）：
+1. 回到当前的例子，我们先获取到 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section) 元素的引用。在已有 script 中添加下列代码(其他代码也同样处理)：
 
-    JSCopy to Clipboard
+   JSCopy to Clipboard
 
-    ```
-    const sect = document.querySelector("section");
-    ```
+   ```
+   const sect = document.querySelector("section");
+   ```
 
 2. 现在用 [`Document.createElement()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement) 创建一个新的段落，用与之前相同的方法赋予相同的文本：
 
-    JSCopy to Clipboard
+   JSCopy to Clipboard
 
-    ```
-    const para = document.createElement("p");
-    para.textContent = "We hope you enjoyed the ride.";
-    ```
+   ```
+   const para = document.createElement("p");
+   para.textContent = "We hope you enjoyed the ride.";
+   ```
 
 3. 现在可以用 [`Node.appendChild()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/appendChild) 方法在后面追加新的段落：
 
-    JSCopy to Clipboard
+   JSCopy to Clipboard
 
-    ```
-    sect.appendChild(para);
-    ```
+   ```
+   sect.appendChild(para);
+   ```
 
 4. 最后，在内部链接的段落中添加文本节点，完美的结束句子。首先我们要使用 [`Document.createTextNode()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createTextNode) 创建一个文本节点：
 
-    JSCopy to Clipboard
+   JSCopy to Clipboard
 
-    ```
-    const text = document.createTextNode(
-      " — the premier source for web development knowledge.",
-    );
-    ```
+   ```
+   const text = document.createTextNode(
+     " — the premier source for web development knowledge.",
+   );
+   ```
 
 5. 现在获取内部连接的段落的引用，并把文本节点附加到这个节点上：
 
-    JSCopy to Clipboard
+   JSCopy to Clipboard
 
-    ```
-    const linkPara = document.querySelector("p");
-    linkPara.appendChild(text);
-    ```
+   ```
+   const linkPara = document.querySelector("p");
+   linkPara.appendChild(text);
+   ```
 
-这是给 DOM 添加节点要做的大部分工作——在构建动态界面时，你将做大量使用这些方法（我们在后面可以看到一些例子）。
+这是给 DOM 添加节点要做的大部分工作——在构建动态界面时，你将做大量使用这些方法(我们在后面可以看到一些例子)。
 
 也许有时候你想移动或从 DOM 中删除节点，这是完全可能的。
 
@@ -2911,28 +2914,29 @@ linkPara.parentNode.removeChild(linkPara);
 
 1. 作为示例，把下面的代码行加到我们的例子中：
 
-    JSCopy to Clipboard
+   JSCopy to Clipboard
 
-    ```
-    para.style.color = "white";
-    para.style.backgroundColor = "black";
-    para.style.padding = "10px";
-    para.style.width = "250px";
-    para.style.textAlign = "center";
-    ```
+   ```
+   para.style.color = "white";
+   para.style.backgroundColor = "black";
+   para.style.padding = "10px";
+   para.style.width = "250px";
+   para.style.textAlign = "center";
+   ```
 
 2. 重新载入页面，你将看到样式已经应用到段落中。如果在浏览器的 [Page Inspector/DOM inspector](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/index.html) 中查看段落，你会看到这些代码的确为文档添加了内联样式：
 
-    HTMLCopy to Clipboard
+   HTMLCopy to Clipboard
 
-    ```html
-    <p
-      style="color: white; background-color: black; padding: 10px; width: 250px; text-align: center;">
-      We hope you enjoyed the ride.
-    </p>
-    ```
+   ```html
+   <p
+     style="color: white; background-color: black; padding: 10px; width: 250px; text-align: center;"
+   >
+     We hope you enjoyed the ride.
+   </p>
+   ```
 
-**备注：** 请注意，CSS 样式的 JavaScript 属性版本是用[小驼峰命名法](https://developer.mozilla.org/zh-CN/docs/Glossary/Camel_case)书写的，而 CSS 版本采用连字符（[烤串命名法](https://developer.mozilla.org/zh-CN/docs/Glossary/Kebab_case)）（例如，`backgroundColor` 对 `background-color`）。确保你不要把这些混为一谈，否则将无法工作。
+**备注：** 请注意，CSS 样式的 JavaScript 属性版本是用[小驼峰命名法](https://developer.mozilla.org/zh-CN/docs/Glossary/Camel_case)书写的，而 CSS 版本采用连字符([烤串命名法](https://developer.mozilla.org/zh-CN/docs/Glossary/Kebab_case))(例如，`backgroundColor` 对 `background-color`)。确保你不要把这些混为一谈，否则将无法工作。
 
 还有一种在你的文档上动态操作样式的常见方法，我们现在就来看看。
 
@@ -2940,54 +2944,54 @@ linkPara.parentNode.removeChild(linkPara);
 
 2. 在 HTML 的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head) 中添加下列代码 :
 
-    HTMLCopy to Clipboard
+   HTMLCopy to Clipboard
 
-    ```html
-    <style>
-      .highlight {
-        color: white;
-        background-color: black;
-        padding: 10px;
-        width: 250px;
-        text-align: center;
-      }
-    </style>
-    ```
+   ```html
+   <style>
+     .highlight {
+       color: white;
+       background-color: black;
+       padding: 10px;
+       width: 250px;
+       text-align: center;
+     }
+   </style>
+   ```
 
 3. 现在我们改为使用 HTML 操作的常用方法——[`Element.setAttribute()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/setAttribute)——它接受两个参数：想在元素上设置的属性、要为它设置的值。在这种情况下，我们在段落中设置类名为 highlight：
 
-    JSCopy to Clipboard
+   JSCopy to Clipboard
 
-    ```
-    para.setAttribute("class", "highlight");
-    ```
+   ```
+   para.setAttribute("class", "highlight");
+   ```
 
 4. 刷新你的页面，不会看到任何改变——CSS 仍然应用于该段落，但这次是通过给它一个类，由我们的 CSS 规则选择，而不是作为内联 CSS 样式。
 
-两种方式各有优缺点，选择哪种取决于你自己。第一种方法需要较少的设置，适合于简单的使用，而第二种方法更纯粹（混合 CSS、JavaScript 和内联样式通常不是一种好的实践，而该方法不会产生这些）。当你开始构建更大和更多的应用程序时，你可能会更多地开始使用第二种方法，但这真的取决于你。
+两种方式各有优缺点，选择哪种取决于你自己。第一种方法需要较少的设置，适合于简单的使用，而第二种方法更纯粹(混合 CSS、JavaScript 和内联样式通常不是一种好的实践，而该方法不会产生这些)。当你开始构建更大和更多的应用程序时，你可能会更多地开始使用第二种方法，但这真的取决于你。
 
-在这一点上，我们还没有做任何有用的事！使用 JavaScript 来创建静态内容是没有意义的，你还不如直接把它写进你的 HTML，而不使用 JavaScript。它比 HTML 更复杂，而且用 JavaScript 创建你的内容也有其他附带的问题（比如不能被搜索引擎阅读）。
+在这一点上，我们还没有做任何有用的事！使用 JavaScript 来创建静态内容是没有意义的，你还不如直接把它写进你的 HTML，而不使用 JavaScript。它比 HTML 更复杂，而且用 JavaScript 创建你的内容也有其他附带的问题(比如不能被搜索引擎阅读)。
 
 现代网站和应用中另一个常见的任务是从服务端获取个别数据来更新部分网页而不用加载整个页面。这看起来是小细节却对网站性能和行为产生巨大的影响。所以我们将在这篇文章介绍概念和技术使它成为可能，尤其是 [Fetch API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)。
 
 ## 从服务器获取数据
 
-网页由 HTML 页面和（通常也有）各种其他文件组成，例如样式表、脚本和图像。Web 加载页面的基本模型为：你的浏览器向服务器发起一个或多个 HTTP 请求以获取显示网页所需的文件，然后服务器响应请求的文件。如果你访问另一个页面，浏览器会请求新的文件，服务器则会响应这些请求。
+网页由 HTML 页面和(通常也有)各种其他文件组成，例如样式表、脚本和图像。Web 加载页面的基本模型为：你的浏览器向服务器发起一个或多个 HTTP 请求以获取显示网页所需的文件，然后服务器响应请求的文件。如果你访问另一个页面，浏览器会请求新的文件，服务器则会响应这些请求。
 
-这个模型适用于许多站点。但请考虑一个几乎是以数据驱动的网站，例如[温哥华图书馆](https://www.vpl.ca/)这样的图书馆网站。你可以将此类网站视作数据库的用户界面。它可能会允许你搜索特定类型的书籍，或者根据你之前借过的书籍向你推荐你可能喜欢的书籍。在你这样操作时，它需要使用新的书集来更新用于显示的页面。但请注意，大部分的页面内容（包括页眉、侧边栏和页脚等元素）将保持不变。
+这个模型适用于许多站点。但请考虑一个几乎是以数据驱动的网站，例如[温哥华图书馆](https://www.vpl.ca/)这样的图书馆网站。你可以将此类网站视作数据库的用户界面。它可能会允许你搜索特定类型的书籍，或者根据你之前借过的书籍向你推荐你可能喜欢的书籍。在你这样操作时，它需要使用新的书集来更新用于显示的页面。但请注意，大部分的页面内容(包括页眉、侧边栏和页脚等元素)将保持不变。
 
 传统模型的问题在于我们必须获取并加载整个页面，即使我们只需要更新页面的一部分也是如此。这是低效的，而且会带来糟糕的用户体验。
 
 因此，与传统模型不同，许多网站使用 JavaScript API 从服务器请求数据，并在不重新加载页面的情况下更新页面。因此，当用户搜索新产品时，浏览器仅请求更新页面所需的数据——例如要显示的新书集。
 
-这里主要的 API 是 [Fetch API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)。它允许页面中运行的 JavaScript 向服务器发起 [HTTP](https://developer.mozilla.org/zh-CN/docs/Web/HTTP) 请求来获取特定的资源。当服务器提供了这些资源时，JavaScript 可以使用这些数据更新页面（通常是通过使用 [DOM 操作 API](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/DOM_scripting)）。请求的数据通常是 [JSON](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/JSON)，这是一种很好的传输结构化的格式，但也可以是 HTML 或纯文本。
+这里主要的 API 是 [Fetch API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)。它允许页面中运行的 JavaScript 向服务器发起 [HTTP](https://developer.mozilla.org/zh-CN/docs/Web/HTTP) 请求来获取特定的资源。当服务器提供了这些资源时，JavaScript 可以使用这些数据更新页面(通常是通过使用 [DOM 操作 API](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/DOM_scripting))。请求的数据通常是 [JSON](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/JSON)，这是一种很好的传输结构化的格式，但也可以是 HTML 或纯文本。
 
-这是数据驱动网站（如 Amazon、YouTube、eBay 等）的常见模式。使用此模型，使得：
+这是数据驱动网站(如 Amazon、YouTube、eBay 等)的常见模式。使用此模型，使得：
 
 - 页面更新更加迅速，你不必等待页面刷新，这意味这网站的体验更加流畅、响应更加迅速。
 - 每次更新时下载的数据更少，这意味着浪费的带宽更少。这在使用宽带连接的台式机上可能不是什么问题，但在移动设备或没有高速互联网连接的国家/地区则是一个主要问题。
 
-**备注：** 在早期，这种通用技术被称为[异步](https://developer.mozilla.org/zh-CN/docs/Glossary/Asynchronous)的 JavaScript 与 XML（[Ajax](https://developer.mozilla.org/zh-CN/docs/Glossary/AJAX)）。但现在通常不是这种情况，相反你更有可能请求 JSON，不过由于结果依然相同，我们通常依旧使用术语“Ajax”来描述该技术。
+**备注：** 在早期，这种通用技术被称为[异步](https://developer.mozilla.org/zh-CN/docs/Glossary/Asynchronous)的 JavaScript 与 XML([Ajax](https://developer.mozilla.org/zh-CN/docs/Glossary/AJAX))。但现在通常不是这种情况，相反你更有可能请求 JSON，不过由于结果依然相同，我们通常依旧使用术语“Ajax”来描述该技术。
 
 为了进一步加快速度，某些网站还会在首次请求时将资源和数据存储在用户的计算机上，这意味这在后续的访问中，会使用这些内容的本地版本，而不是在每次重新加载页面时都下载新的副本。内容仅在更新后才会从服务器重新加载。
 
@@ -3001,7 +3005,7 @@ fetch(url)
     if (!response.ok) {
       throw new Error(`HTTP 错误：${response.status}`);
     }
-    // 否则（如果请求成功），我们的处理器通过调用
+    // 否则(如果请求成功)，我们的处理器通过调用
     // response.text() 以获取文本形式的响应，
     // 并立即返回 `response.text()` 返回的 promise。
     return response.text();
@@ -3014,7 +3018,7 @@ fetch(url)
   .catch((error) => (poemDisplay.textContent = `获取诗歌失败：${error}`));
 ```
 
-首先，Fetch API 的入口点是一个名为 [`fetch()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/fetch) 的全局函数，它以 URL 为参数（其使用另一个可选参数来进行自定义设置，但我们在这里不使用它）。
+首先，Fetch API 的入口点是一个名为 [`fetch()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/fetch) 的全局函数，它以 URL 为参数(其使用另一个可选参数来进行自定义设置，但我们在这里不使用它)。
 
 接下来，`fetch()` 是一个异步 API，会返回一个 [`Promise`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)。如果你不知道什么是 Promise，请参阅[异步 JavaScript](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Async_JS) 章节，然后再回到这里。你会发现那篇文章也介绍了 `fetch()` API！
 
@@ -3024,23 +3028,23 @@ fetch(url)
 
 最后，我们在最后链式调用 [`catch()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) 处理器，以捕获我们调用的异步函数或其他处理器中抛出的任何错误。
 
-此示例的一个问题是，它在第一次加载时不会显示任何诗歌。要解决此问题，请在代码的最后（`</script>` 结束标签之前）添加以下两行代码，以默认加载第一首诗歌，并确保 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select) 元素始终显示正确的值
+此示例的一个问题是，它在第一次加载时不会显示任何诗歌。要解决此问题，请在代码的最后(`</script>` 结束标签之前)添加以下两行代码，以默认加载第一首诗歌，并确保 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select) 元素始终显示正确的值
 
-如果只是使用本地文件运行示例，现代浏览器将不会执行 HTTP 请求。这是因为安全限制（更多关于 Web 安全性的限制，请参阅[网站安全](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/First_steps/Website_security)）。
+如果只是使用本地文件运行示例，现代浏览器将不会执行 HTTP 请求。这是因为安全限制(更多关于 Web 安全性的限制，请参阅[网站安全](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/First_steps/Website_security))。
 
 为了解决这个问题，我们需要通过在本地 Web 服务器上运行它来测试这个示例。要了解如何实现这一点，请阅读[我们的设置本地测试服务器指南](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server)。
 
-有时，尤其是在旧的代码中，你会看到另一个名为 [`XMLHttpRequest`](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest)（经常会被简写为“XHR”）的 API，它也用于发送 HTTP 请求。其早于 Fetch API，而且是第一个广泛用于实现 AJAX 的 API。如果可以，我们建议你使用 Fetch：它是一个更简单的 API，而且比 `XMLHttpRequest` 的特性更多。我们不再详细介绍使用 `XMLHttpRequest` 的示例
+有时，尤其是在旧的代码中，你会看到另一个名为 [`XMLHttpRequest`](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest)(经常会被简写为“XHR”)的 API，它也用于发送 HTTP 请求。其早于 Fetch API，而且是第一个广泛用于实现 AJAX 的 API。如果可以，我们建议你使用 Fetch：它是一个更简单的 API，而且比 `XMLHttpRequest` 的特性更多。我们不再详细介绍使用 `XMLHttpRequest` 的示例
 
 ## JSON
 
-JavaScript 对象表示法（JSON）是用于将结构化数据表示为 JavaScript 对象的标准格式，通常用于在网站上表示和传输数据（例如从服务器向客户端发送一些数据，因此可以将其显示在网页上）。
+JavaScript 对象表示法(JSON)是用于将结构化数据表示为 JavaScript 对象的标准格式，通常用于在网站上表示和传输数据(例如从服务器向客户端发送一些数据，因此可以将其显示在网页上)。
 
-虽然它是基于 JavaScript 语法，但它独立于 JavaScript，这也是为什么许多程序环境能够读取（解读）和生成 JSON。
+虽然它是基于 JavaScript 语法，但它独立于 JavaScript，这也是为什么许多程序环境能够读取(解读)和生成 JSON。
 
 JSON 可以作为一个对象或者字符串存在，前者用于解读 JSON 中的数据，后者用于通过网络传输 JSON 数据。这不是一个大事件——JavaScript 提供一个全局的 可访问的 [JSON](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON) 对象来对这两种数据进行转换。
 
-**备注：** 将字符串转换为原生对象称为*反序列化*（deserialization），而将原生对象转换为可以通过网络传输的字符串称为*序列化*（serialization）。
+**备注：** 将字符串转换为原生对象称为*反序列化*(deserialization)，而将原生对象转换为可以通过网络传输的字符串称为*序列化*(serialization)。
 
 一个 JSON 对象可以被储存在它自己的文件中，这基本上就是一个文本文件，扩展名为 `.json`，还有 `application/json` [MIME 类型](https://developer.mozilla.org/zh-CN/docs/Glossary/MIME_type)。
 
@@ -3054,7 +3058,7 @@ JSON 是一个字符串，其格式非常类似于 JavaScript 对象字面量的
 
 - JSON 是一种纯数据格式，它只包含属性，没有方法。
 - JSON 要求在字符串和属性名称周围使用双引号。单引号无效。
-- 甚至一个错位的逗号或分号就可以导致 JSON 文件出错。你应该小心的检查你想使用的数据（虽然计算机生成的 JSON 很少出错，只要生成程序正常工作）。你可以通过像 [JSONLint](https://jsonlint.com/) 这样的应用程序来验证 JSON。
+- 甚至一个错位的逗号或分号就可以导致 JSON 文件出错。你应该小心的检查你想使用的数据(虽然计算机生成的 JSON 很少出错，只要生成程序正常工作)。你可以通过像 [JSONLint](https://jsonlint.com/) 这样的应用程序来验证 JSON。
 - JSON 实际上可以是任何可以有效包含在 JSON 中的数据类型的形式。比如，单个字符串或者数字就是有效的 JSON 对象。
 - 与 JavaScript 代码中对象属性可以不加引号不同，JSON 中只有带引号的字符串可以用作属性。
 
@@ -3071,37 +3075,37 @@ JSON 是一个字符串，其格式非常类似于 JavaScript 对象字面量的
 
 要注意一些常见的 JavaScript 问题，比如说：
 
-- 基本的语法和逻辑问题（再次重申，请参阅[如何查找 JavaScript 代码的错误](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/What_went_wrong)）。
-- 确保变量等定义在正确的作用域中，并且你不会遇到在不同地方声明的内容之间的冲突（见[函数作用域和冲突](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Functions#函数作用域和冲突)）。
+- 基本的语法和逻辑问题(再次重申，请参阅[如何查找 JavaScript 代码的错误](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/What_went_wrong))。
+- 确保变量等定义在正确的作用域中，并且你不会遇到在不同地方声明的内容之间的冲突(见[函数作用域和冲突](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Functions#函数作用域和冲突))。
 - 对 [this](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/this) 的困惑，表现在它适用于什么作用域，它的值是否是你所期望的。你可以阅读[“this”的含义](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Object_basics#“this”的含义)，它做了一点浅显的介绍；你还应该研究像[这样](https://github.com/mdn/learning-area/blob/7ed039d17e820c93cafaff541aa65d874dde8323/javascript/oojs/assessment/main.js#L143)的例子，它显示了一个典型的模式，即把 `this` 作用域保存到一个单独的变量中，然后在嵌套函数中使用这个变量，这样你就可以确定能够把功能应用到正确的 `this` 作用域。
-- 在使用全局变量进行迭代的循环中不正确地使用函数（更普遍的是“弄错作用域”）。
+- 在使用全局变量进行迭代的循环中不正确地使用函数(更普遍的是“弄错作用域”)。
 
-例如，在 [bad-for-loop.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/javascript/bad-for-loop.html) 中（见[源代码](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/bad-for-loop.html)），我们使用一个用 `var` 定义的变量循环了 10 次，每次都创建一个段落并给它添加 [onclick](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/click_event) 事件处理器。当点击时，我们希望每个段落都能显示一个包含其编号（创建时的 `i` 值）的警告信息。但是，它们都报告 `i` 为 11，因为 `for` 循环在调用嵌套函数之前就完成了所有的迭代。
+例如，在 [bad-for-loop.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/javascript/bad-for-loop.html) 中(见[源代码](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/bad-for-loop.html))，我们使用一个用 `var` 定义的变量循环了 10 次，每次都创建一个段落并给它添加 [onclick](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/click_event) 事件处理器。当点击时，我们希望每个段落都能显示一个包含其编号(创建时的 `i` 值)的警告信息。但是，它们都报告 `i` 为 11，因为 `for` 循环在调用嵌套函数之前就完成了所有的迭代。
 
-最简单的解决方案是用 `let` 而不是 `var` 来声明迭代变量，这样与函数相关的 `i` 的值对每个迭代都是唯一的。请参阅 [good-for-loop.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/javascript/good-for-loop.html)（也可以参阅[源代码](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/good-for-loop.html)）以查看能正常工作的版本。
+最简单的解决方案是用 `let` 而不是 `var` 来声明迭代变量，这样与函数相关的 `i` 的值对每个迭代都是唯一的。请参阅 [good-for-loop.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/javascript/good-for-loop.html)(也可以参阅[源代码](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/good-for-loop.html))以查看能正常工作的版本。
 
-- 确保在你试图使用[异步操作](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Async_JS)返回的值之前，其已经完成。这通常需要了解如何使用 *promise*：适当地使用 [`await`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/await) 或在 promise 的 [`then()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) 处理器中运行代码来处理异步调用的结果。有关此主题的介绍，请参见[如何使用 promise](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Async_JS/Promises)。
+- 确保在你试图使用[异步操作](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Async_JS)返回的值之前，其已经完成。这通常需要了解如何使用 _promise_：适当地使用 [`await`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/await) 或在 promise 的 [`then()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) 处理器中运行代码来处理异步调用的结果。有关此主题的介绍，请参见[如何使用 promise](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Async_JS/Promises)。
 
 **备注：** [JavaScript 代码中的 Bug：JavaScript 开发人员的 10 个最常见错误](https://www.toptal.com/javascript/10-most-common-javascript-mistakes)对这些常见错误及更多内容有很好的讨论。
 
-随着应用程序变得越来越复杂，你可能会开始使用更多的 JavaScript。这时，你可能会遇到性能问题（尤其是在较慢的设备上）。性能优化是一个广泛的话题，我们无法在此详尽讨论，但以下是一些快速优化建议：
+随着应用程序变得越来越复杂，你可能会开始使用更多的 JavaScript。这时，你可能会遇到性能问题(尤其是在较慢的设备上)。性能优化是一个广泛的话题，我们无法在此详尽讨论，但以下是一些快速优化建议：
 
 - 为了避免加载不必要的 JavaScript，建议使用 [Browserify](https://browserify.org/) 等工具将脚本打包成单个文件。总体而言，减少 HTTP 请求的数量可以很好地提升性能。
-- 在将文件部署到生产服务器之前，应通过极简化（minification）减小文件体积。极简化会将所有代码合并成一行，从而显著减少文件大小。虽然简化后的代码可读性较差，但你不需要直接阅读它！推荐使用 [Uglify](https://github.com/mishoo/UglifyJS) 等极简化工具（还有在线版本，请访问 [JSCompress.com](https://jscompress.com/)）。
+- 在将文件部署到生产服务器之前，应通过极简化(minification)减小文件体积。极简化会将所有代码合并成一行，从而显著减少文件大小。虽然简化后的代码可读性较差，但你不需要直接阅读它！推荐使用 [Uglify](https://github.com/mishoo/UglifyJS) 等极简化工具(还有在线版本，请访问 [JSCompress.com](https://jscompress.com/))。
 - 使用 API 时，请确保在不需要时关闭 API 特性；因为某些 API 调用在处理能力方面可能非常耗费资源。例如，在显示视频流时，如果视频不在视线范围内，请确保关闭它。在使用重复调用的地理位置 API 跟踪设备位置时，如果用户不再需要，也应及时关闭。
-- 动画可能会对性能造成重大影响。尽管许多 JavaScript 库提供了由 JavaScript 控制的动画功能，但使用浏览器原生特性（如 [CSS 动画](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animations/Using_CSS_animations)或新兴的 [Web 动画 API](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Animations_API)）执行动画通常更高效。建议阅读 Brian Birtles 的文章[使用 Element.animate 制作不重要的动画](https://hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/)，了解动画成本高昂的原因、提升动画性能的技巧，以及 Web 动画 API 的相关信息。
+- 动画可能会对性能造成重大影响。尽管许多 JavaScript 库提供了由 JavaScript 控制的动画功能，但使用浏览器原生特性(如 [CSS 动画](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animations/Using_CSS_animations)或新兴的 [Web 动画 API](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Animations_API))执行动画通常更高效。建议阅读 Brian Birtles 的文章[使用 Element.animate 制作不重要的动画](https://hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/)，了解动画成本高昂的原因、提升动画性能的技巧，以及 Web 动画 API 的相关信息。
 
 特性检测的核心理念在于，通过执行测试来确认当前浏览器是否支持某个 JavaScript 特性，进而有条件地执行代码。这样做可以确保无论浏览器是否支持该特性，都能提供一个可接受的用户体验。
 
-最后一点，不要将特性检测与**浏览器嗅探**（检测访问站点的特定浏览器）混淆——这是一种应该被全面反对的做法。有关更多详细信息，请参见后文的[不要嗅探浏览器](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Debugging_JavaScript#不要嗅探浏览器)。
+最后一点，不要将特性检测与**浏览器嗅探**(检测访问站点的特定浏览器)混淆——这是一种应该被全面反对的做法。有关更多详细信息，请参见后文的[不要嗅探浏览器](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/Debugging_JavaScript#不要嗅探浏览器)。
 
-JavaScript 库往往有几个主要的种类（有些库包含其中的一个以上的目的）：
+JavaScript 库往往有几个主要的种类(有些库包含其中的一个以上的目的)：
 
 - 实用程序库：提供一组函数，使日常的任务更容易管理，不那么枯燥。例如，[jQuery](https://jquery.com/) 提供了自己的全功能选择器和 DOM 操作库，允许在 JavaScript 中进行 CSS 选择器类型的元素选择，并更容易建立 DOM。现在我们有了现代的特性，如 [`Document.querySelector()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelector)、[`Document.querySelectorAll()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelectorAll)、[`Node`](https://developer.mozilla.org/zh-CN/docs/Web/API/Node) 方法，在各浏览器中可用，这就不那么重要了，但在旧的浏览器需要支持时，它仍然有用。
-- 方便性库：让困难的事情更容易做。例如，直接使用 [WebGL API](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API) 很复杂且有挑战性，而 [Three.js](https://threejs.org/) 库（和其他类似的库）是建立在 WebGL 之上的，为创建普通 3D 对象、照明、纹理等提供了更容易的 API。[Service Worker API](https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API) 的使用也非常复杂，所以代码库已经开始出现，以使常见的 Service Worker 用例更容易实现（参见 [Service Worker 指导书](https://github.com/mdn/serviceworker-cookbook)，以获得一些有用的代码示例）。
-- 效果库：这些库的设计是为了让你能够轻松地在你的网站上添加特殊效果。在“DHTML”是一个流行的流行语的时候，这是很有用的（当时实现一个效果需要很多复杂的 JavaScript），但现在的浏览器有很多内置的 CSS 特性和 API，可以更容易地实现效果。
-- UI 库：提供实现复杂的 UI 特性的方法，没有 UI 库的话，这些特性的实现和跨浏览器的工作会很困难，例如 [Foundation](https://get.foundation/)、[Bootstrap](https://getbootstrap.com/) 和 [Material-UI](https://mui.com/)（后者是一套用于 React 框架的组件）。这些往往被用作整个网站布局的基础；仅仅为了一个 UI 特性而把它们放入其中往往是很困难的。
-- 标准化库：给你一个简单的语法，让你轻松完成一个任务，而不必担心跨浏览器的差异。该库将在后台操作适当的 API，所以无论什么浏览器，该功能都可以使用（理论上）。例如， [LocalForage](https://github.com/localForage/localForage) 是一个用于客户端数据存储的库，它为存储和检索数据提供了一个简单的语法。在后台，它使用浏览器可用的最好的 API 来存储数据，无论是 [IndexedDB](https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API)、[Web Storage](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API)，甚至是 Web SQL（现在已经废弃了，但在基于 Chromium 的浏览器安全上下文中仍然支持）。
+- 方便性库：让困难的事情更容易做。例如，直接使用 [WebGL API](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API) 很复杂且有挑战性，而 [Three.js](https://threejs.org/) 库(和其他类似的库)是建立在 WebGL 之上的，为创建普通 3D 对象、照明、纹理等提供了更容易的 API。[Service Worker API](https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API) 的使用也非常复杂，所以代码库已经开始出现，以使常见的 Service Worker 用例更容易实现(参见 [Service Worker 指导书](https://github.com/mdn/serviceworker-cookbook)，以获得一些有用的代码示例)。
+- 效果库：这些库的设计是为了让你能够轻松地在你的网站上添加特殊效果。在“DHTML”是一个流行的流行语的时候，这是很有用的(当时实现一个效果需要很多复杂的 JavaScript)，但现在的浏览器有很多内置的 CSS 特性和 API，可以更容易地实现效果。
+- UI 库：提供实现复杂的 UI 特性的方法，没有 UI 库的话，这些特性的实现和跨浏览器的工作会很困难，例如 [Foundation](https://get.foundation/)、[Bootstrap](https://getbootstrap.com/) 和 [Material-UI](https://mui.com/)(后者是一套用于 React 框架的组件)。这些往往被用作整个网站布局的基础；仅仅为了一个 UI 特性而把它们放入其中往往是很困难的。
+- 标准化库：给你一个简单的语法，让你轻松完成一个任务，而不必担心跨浏览器的差异。该库将在后台操作适当的 API，所以无论什么浏览器，该功能都可以使用(理论上)。例如， [LocalForage](https://github.com/localForage/localForage) 是一个用于客户端数据存储的库，它为存储和检索数据提供了一个简单的语法。在后台，它使用浏览器可用的最好的 API 来存储数据，无论是 [IndexedDB](https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API)、[Web Storage](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API)，甚至是 Web SQL(现在已经废弃了，但在基于 Chromium 的浏览器安全上下文中仍然支持)。
 
 在选择使用一个库时，要确保它能在你想支持的一系列浏览器中工作，并对你的实现进行彻底的测试。还要确保这个库是受欢迎的，得到良好的支持，并且不可能在下周就被淘汰。
 
@@ -3121,20 +3125,20 @@ JavaScript 的内部工作原理
 
 **闭包的情况**
 
-闭包是指有权访问另一个函数作用域中变量的函数。当一个内部函数（闭包）引用了外部函数的变量时，即使外部函数执行完毕，这些被引用的变量也不会被垃圾回收。因为闭包仍然持有对这些变量的引用，垃圾回收机制会认为这些变量还有可能被使用，所以不会将其回收。
+闭包是指有权访问另一个函数作用域中变量的函数。当一个内部函数(闭包)引用了外部函数的变量时，即使外部函数执行完毕，这些被引用的变量也不会被垃圾回收。因为闭包仍然持有对这些变量的引用，垃圾回收机制会认为这些变量还有可能被使用，所以不会将其回收。
 
 在你提供的代码中，`unused` 函数是一个闭包，它引用了 `replaceThing` 函数作用域内的 `priorThing` 变量。因此，即使 `replaceThing` 函数执行完毕，`priorThing` 也不会被回收，因为 `unused` 函数还在引用它。虽然 `unused` 函数本身没有被调用，但它的存在就保证了 `priorThing` 不会被当作垃圾回收。
 
-JavaScript 的内存管理（尤其是它的[垃圾回收](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#garbage_collection)）主要基于对象可访问性的概念。
+JavaScript 的内存管理(尤其是它的[垃圾回收](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#garbage_collection))主要基于对象可访问性的概念。
 
 以下对象被假定为*可访问*的，称为 “根”：
 
-- 从当前*调用堆栈*中任意位置引用的对象（即，当前正在调用的函数中的所有局部变量和参数，以及闭包范围内的所有变量）
+- 从当前*调用堆栈*中任意位置引用的对象(即，当前正在调用的函数中的所有局部变量和参数，以及闭包范围内的所有变量)
 - 所有*全局*变量
 
-*至少只要可以通过引用或引用链从任何根访问对象，它们就会保留在内存中。*
+_至少只要可以通过引用或引用链从任何根访问对象，它们就会保留在内存中。_
 
-浏览器中有一个垃圾回收器，可以清理无法访问的对象占用的内存;换句话说，*当且仅当* GC 认为对象无法访问时，它们才会从内存中删除。不幸的是，很容易得到不再使用的 “僵尸” 对象，但 GC 仍然认为这些对象是可访问的。
+浏览器中有一个垃圾回收器，可以清理无法访问的对象占用的内存;换句话说，_当且仅当_ GC 认为对象无法访问时，它们才会从内存中删除。不幸的是，很容易得到不再使用的 “僵尸” 对象，但 GC 仍然认为这些对象是可访问的。
 
 ## 框架和库
 
@@ -3153,7 +3157,7 @@ jQuery 是一个快速、简洁的 JavaScript 库，它使得 HTML 文档遍历�
 
 为什么需要框架？
 
-设想一个很常见的软件：一个待办事项清单创建器，在接下来的章节中我们会使用各种框架来实现它。这个应用应让用户可以完成诸如呈现任务列表、添加和删除任务等操作，且在完成这些操作的同时能可靠地跟踪和更新应用程序的底层数据。在软件开发中，这种底层数据被称为状态（state）。
+设想一个很常见的软件：一个待办事项清单创建器，在接下来的章节中我们会使用各种框架来实现它。这个应用应让用户可以完成诸如呈现任务列表、添加和删除任务等操作，且在完成这些操作的同时能可靠地跟踪和更新应用程序的底层数据。在软件开发中，这种底层数据被称为状态(state)。
 
 上述每个目标理论上都很简单。我们可以遍历数据来列出清单，添加一个对象来创建新任务，使用标识符来查找、编辑和删除任务。需要注意的是，用户都是在浏览器中使用应用的这些功能，然而这就引出了一些问题： **每当我们修改应用的数据时，我们都需要更新用户界面以使其匹配。**
 
@@ -3163,17 +3167,17 @@ JavaScript 框架都提供了一种更具以*声明性*的方式地编写用户�
 
 框架提供给我们的其他功能：社区和配套工具、组件化、路由
 
-组件化：大多数框架都鼓励开发者将其用户界面的不同部分抽象为*组件（components）*——可维护、可重用且可以相互通信的代码块。与给定组件相关的所有代码都可以存在于一个文件（或几个特定文件）中，因此身为开发者的你就可以轻松地知道去哪里修改目标组件。在原生 JavaScript 中，你就必须花时间创建自己的一套高效、可扩展的编码约定来实现这一点。如果让许多 JavaScript 开发者使用他们自己的设备，最终可能会导致与用户界面某个部分相关的所有代码分布在一个文件中——或者完全分布在另一个文件中。
+组件化：大多数框架都鼓励开发者将其用户界面的不同部分抽象为*组件(components)*——可维护、可重用且可以相互通信的代码块。与给定组件相关的所有代码都可以存在于一个文件(或几个特定文件)中，因此身为开发者的你就可以轻松地知道去哪里修改目标组件。在原生 JavaScript 中，你就必须花时间创建自己的一套高效、可扩展的编码约定来实现这一点。如果让许多 JavaScript 开发者使用他们自己的设备，最终可能会导致与用户界面某个部分相关的所有代码分布在一个文件中——或者完全分布在另一个文件中。
 
 路由：
 
-Web 最重要的特点是它允许用户从一个页面导航到另一个页面——毕竟，它是一个相互链接的文档网络。当你点击网站上的链接时，你的浏览器会与目标服务器通信，获取新内容后将其显示给你。当浏览器这样做时，地址栏中的 URL 会发生变化。你可以记下来这个新 URL 并稍后返回该页面——或者把这个 URL 分享给其他人，以便他们轻松找到相同的页面。你的浏览器会记住你的导航历史记录，并允许你来回导航（译者注：其实就是浏览器的前进后退功能）。这被称作**服务端路由**。
+Web 最重要的特点是它允许用户从一个页面导航到另一个页面——毕竟，它是一个相互链接的文档网络。当你点击网站上的链接时，你的浏览器会与目标服务器通信，获取新内容后将其显示给你。当浏览器这样做时，地址栏中的 URL 会发生变化。你可以记下来这个新 URL 并稍后返回该页面——或者把这个 URL 分享给其他人，以便他们轻松找到相同的页面。你的浏览器会记住你的导航历史记录，并允许你来回导航(译者注：其实就是浏览器的前进后退功能)。这被称作**服务端路由**。
 
-现代 Web 应用程序通常不会获取和渲染新的 HTML 文件——它们加载单个 HTML shell，并不断更新其中的 DOM 而无需将用户导航到 Web 上的新地址。(这被称为**单页应用程序（single page app）** 或 **SPA**)。每个新的伪网页通常称为一个 *view*，且在默认情况下，不会做任何路由。
+现代 Web 应用程序通常不会获取和渲染新的 HTML 文件——它们加载单个 HTML shell，并不断更新其中的 DOM 而无需将用户导航到 Web 上的新地址。(这被称为**单页应用程序(single page app)** 或 **SPA**)。每个新的伪网页通常称为一个 _view_，且在默认情况下，不会做任何路由。
 
 当 SPA 足够复杂并呈现足够多的独特视图时，将路由功能引入你的应用程序非常重要。人们习惯于能够链接到应用程序中的特定页面，在他们的浏览器中前进和后退等等，当这些标准的 Web 功能被破坏时，他们的体验会受到影响。当客户端应用程序以这种方式处理路由时，它被恰当地称为**客户端路由**。
 
-*可以使用* JavaScript 和浏览器的原生功能来实现路由功能，但是流行的、活跃开发的框架具有配套库，使路由功能在开发过程中更直观。
+_可以使用_ JavaScript 和浏览器的原生功能来实现路由功能，但是流行的、活跃开发的框架具有配套库，使路由功能在开发过程中更直观。
 
 JavaScript 框架使前端应用开发变得容易，但它们并不是解决所有问题的灵丹妙药。本节讨论在使用框架时你应该考虑的一些事项。请记住，你也许根本不需要框架——要注意不要为了使用框架而使用框架。
 
@@ -3181,23 +3185,23 @@ JavaScript 框架使前端应用开发变得容易，但它们并不是解决所
 
 如果你正在寻找工具来加快 Web 开发过程，并且你知道你的项目不需要很多客户端 JavaScript，你可以寻求其他几种构建 Web 的解决方案：
 
-- 内容管理系统CMS
+- 内容管理系统 CMS
 
-    **内容管理系统**（**CMS**）是任何允许用户在不直接编写代码的情况下创建网页内容的工具。对于大型项目来说，它们是一种很好的解决方案，尤其是那些需要由编码能力有限的内容编写者来编写的项目，或者希望节省时间的程序员。然而，它们确实需要大量的时间来设置，使用 CMS 意味着你至少放弃了对网站最终输出的一些控制。例如：如果你选择的 CMS 默认不编写无障碍的内容，通常很难改进这一点。
+  **内容管理系统**(**CMS**)是任何允许用户在不直接编写代码的情况下创建网页内容的工具。对于大型项目来说，它们是一种很好的解决方案，尤其是那些需要由编码能力有限的内容编写者来编写的项目，或者希望节省时间的程序员。然而，它们确实需要大量的时间来设置，使用 CMS 意味着你至少放弃了对网站最终输出的一些控制。例如：如果你选择的 CMS 默认不编写无障碍的内容，通常很难改进这一点。
 
-- 服务端渲染SSR
+- 服务端渲染 SSR
 
-    **服务端渲染**（**SSR**）是一种应用程序体系结构，在该体系结构中，呈现单页应用程序是服务器的工作。这与客户端渲染相反，服务端渲染是构建 JavaScript 应用程序最常见、最直接的方式。服务端渲染对于客户端的设备压力更小，因为你只发送渲染过的 HTML 文件，但它比客户端渲染更加难以构建。
+  **服务端渲染**(**SSR**)是一种应用程序体系结构，在该体系结构中，呈现单页应用程序是服务器的工作。这与客户端渲染相反，服务端渲染是构建 JavaScript 应用程序最常见、最直接的方式。服务端渲染对于客户端的设备压力更小，因为你只发送渲染过的 HTML 文件，但它比客户端渲染更加难以构建。
 
 - 静态站点生成器
 
-    静态网站生成器是动态生成多页面网站的所有网页的程序——包括任何相关的 CSS 或 JavaScript——这样它们就可以在任何地方发布。发布主机可以是一个 GitHub Page，一个 Netlify 实例，或者任何你选择的私有服务器。这种方法有很多优点，主要是在性能方面（用户的设备不使用 JavaScript 构建页面，它已经完成了）和安全性（对静态页面的攻击更少）。这些网站仍然可以使用 JavaScript，它们需要它，但并不依赖于它。静态网站生成器需要时间来学习，就像任何其他工具，它可能是你开发过程中的障碍。
+  静态网站生成器是动态生成多页面网站的所有网页的程序——包括任何相关的 CSS 或 JavaScript——这样它们就可以在任何地方发布。发布主机可以是一个 GitHub Page，一个 Netlify 实例，或者任何你选择的私有服务器。这种方法有很多优点，主要是在性能方面(用户的设备不使用 JavaScript 构建页面，它已经完成了)和安全性(对静态页面的攻击更少)。这些网站仍然可以使用 JavaScript，它们需要它，但并不依赖于它。静态网站生成器需要时间来学习，就像任何其他工具，它可能是你开发过程中的障碍。
 
-    静态网站可以可以生成你想要独特的页面。正如框架使你能够快速编写客户端 JavaScript 应用程序一样，静态站点生成器使你能够快速创建本来需要单独编写的 HTML 文件。与框架一样，静态站点生成器允许开发者编写定义网页公共部分的组件，并将这些组件组合在一起创建最终页面。在静态站点生成器的相关术语中，这些组件称为**模板**。由静态站点生成器构建的 Web 页面甚至可以成为框架应用程序的主页：例如，如果你想让静态生成的网站的一个特定页面在用户访问 React 应用程序时启动它，你可以这样做。
+  静态网站可以可以生成你想要独特的页面。正如框架使你能够快速编写客户端 JavaScript 应用程序一样，静态站点生成器使你能够快速创建本来需要单独编写的 HTML 文件。与框架一样，静态站点生成器允许开发者编写定义网页公共部分的组件，并将这些组件组合在一起创建最终页面。在静态站点生成器的相关术语中，这些组件称为**模板**。由静态站点生成器构建的 Web 页面甚至可以成为框架应用程序的主页：例如，如果你想让静态生成的网站的一个特定页面在用户访问 React 应用程序时启动它，你可以这样做。
 
 大多数框架都有某种组件模型。React 组件可以使用 JSX 编写，Ember 组件可以使用 Handlebars 编写，Angular 和 Vue 组件可以使用模板语法轻松地扩展 HTML。
 
-属性（**props**）是渲染组件所需要的外部数据。
+属性(**props**)是渲染组件所需要的外部数据。
 
 我们在上一章谈到了**状态**的概念，强大的状态处理机制是高效框架的关键，每个组件都可能有需要控制其状态的数据。只要组件还在使用，这种状态就会以某种方式持续存在。像属性一样，状态可以用来影响组件的渲染方式。
 
@@ -3207,19 +3211,19 @@ JavaScript 框架使前端应用开发变得容易，但它们并不是解决所
 
 为了规避属性穿透，框架提供了依赖注入的功能，这是一种将某些数据直接传递给需要它的组件的方法，而不需要通过中间的层次。每个框架都以不同的名称和方式来实现依赖注入，但效果最终是一样的。Angular 把这个过程称为[依赖注入](https://angular.io/guide/dependency-injection)；Vue 有 [`provide()` 和 `inject()` 组件方法](https://v2.vuejs.org/v2/api/#provide-inject)；React 有一个 [Context API](https://reactjs.org/docs/context.html)；Ember 通过[服务](https://guides.emberjs.com/release/services/)分享状态。
 
-在框架上下文中，一个组件的**生命周期**是一个组件从被追加到 DOM 然后被浏览器渲染（通常称为*挂载*）到从 DOM 中移除（通常称为*卸载*）所经历的一系列阶段的集合。每个框架对这些生命周期阶段的命名都不同，而且不是所有的框架都能让开发者访问相同的阶段。所有的框架都遵循相同的一般模型：它们允许开发者在组件*挂载*、*渲染*和*卸载*以及这之间的许多阶段执行某些动作。
+在框架上下文中，一个组件的**生命周期**是一个组件从被追加到 DOM 然后被浏览器渲染(通常称为*挂载*)到从 DOM 中移除(通常称为*卸载*)所经历的一系列阶段的集合。每个框架对这些生命周期阶段的命名都不同，而且不是所有的框架都能让开发者访问相同的阶段。所有的框架都遵循相同的一般模型：它们允许开发者在组件*挂载*、*渲染*和*卸载*以及这之间的许多阶段执行某些动作。
 
 *渲染*阶段是最需要了解的，因为它在用户与应用程序交互时重复的次数最多。每当浏览器需要渲染一些新的东西时，它就会运行，无论这些新的信息是对浏览器中的内容进行补充、删除，还是对现有内容进行编辑。
 
 就像生命周期一样，框架对如何渲染应用程序采取了不同但相似的方法。所有的框架都会跟踪浏览器 DOM 的当前渲染版本，并且每个框架都会对 DOM 在应用程序中的组件重新渲染时应该如何变化做出略有不同的决定。因为框架为你做出了这些决定，所以你通常不会自己与 DOM 交互。这种远离 DOM 的抽象比自己更新 DOM 更复杂、更耗费内存，但如果没有它，框架就不能让你以它们所熟知的声明性方式编程。
 
-**虚拟 DOM** 是一种方法，此时关于浏览器的 DOM 信息被存储在 JavaScript 内存中。你的应用程序更新这个 DOM 副本，然后将其与“真正的”DOM（为你的用户实际渲染的 DOM）进行比较，以决定要渲染什么。应用程序建立一个“diff“来比较更新的虚拟 DOM 和当前渲染的 DOM 之间的差异，并使用该差异将更新应用到真实 DOM。React 和 Vue 都利用虚拟 DOM 模型，但它们建立“diff”或渲染应用的逻辑并不完全相同。
+**虚拟 DOM** 是一种方法，此时关于浏览器的 DOM 信息被存储在 JavaScript 内存中。你的应用程序更新这个 DOM 副本，然后将其与“真正的”DOM(为你的用户实际渲染的 DOM)进行比较，以决定要渲染什么。应用程序建立一个“diff“来比较更新的虚拟 DOM 和当前渲染的 DOM 之间的差异，并使用该差异将更新应用到真实 DOM。React 和 Vue 都利用虚拟 DOM 模型，但它们建立“diff”或渲染应用的逻辑并不完全相同。
 
 **增量式 DOM** 与虚拟 DOM 类似，它建立一个 DOM“diff”来决定渲染什么，但不同的是，它不在 JavaScript 内存中创建一个完整的 DOM 副本。它忽略了 DOM 中不需要被改变的部分。Angular 是本模块到目前为止讨论的唯一一个使用增量 DOM 的框架。
 
 **Glimmer VM** 是 Ember 独有的。它既不是虚拟 DOM，也不是增量 DOM；它是一个独立的过程，通过它，Ember 的模板被转换为一种“字节码”，比 JavaScript 更容易和更快地阅读。
 
-正如[前一章中提到的，路由](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Frameworks_libraries/Introduction#路由)是网络体验的一个重要部分。为了避免在具有大量视图的足够复杂的应用程序中出现破碎的体验，本模块中涉及的每个框架都提供了一个库（或多个库），帮助开发人员在其应用程序中实现客户端路由。
+正如[前一章中提到的，路由](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Frameworks_libraries/Introduction#路由)是网络体验的一个重要部分。为了避免在具有大量视图的足够复杂的应用程序中出现破碎的体验，本模块中涉及的每个框架都提供了一个库(或多个库)，帮助开发人员在其应用程序中实现客户端路由。
 
 所有的应用程序都受益于覆盖测试，以确保你的软件继续以你期望的方式运行，Web 应用程序也不例外。每个框架的生态系统都提供工具，以促进测试的编写。测试工具并没有内置于框架本身，但用于生成框架应用程序的命令行界面工具使你能够访问适当的测试工具。
 
@@ -3229,19 +3233,19 @@ JavaScript 框架使前端应用开发变得容易，但它们并不是解决所
 
 ## 推荐阅读：
 
-十个常见的JS问题：https://www.toptal.com/javascript/10-most-common-javascript-mistakes
+十个常见的 JS 问题：https://www.toptal.com/javascript/10-most-common-javascript-mistakes
 
 # Vue
 
-## Vue介绍
+## Vue 介绍
 
 Vue 是一个现代 JavaScript 框架提供了有用的设施渐进增强——不像许多其他框架，你可以使用 Vue 增强现有的 HTML。这使你可以使用 Vue 作为 [jQuery](https://jquery.com/) 等库的直接替代品。
 
-话虽如此，你也可以使用 Vue 编写完整的单页应用程序（SPA）。这允许你创建完全由 Vue 管理的标记，当处理复杂应用程序时可以提高开发人员的体验和性能。它还允许你在需要时利用用于客户端路由和状态管理的库。此外，Vue 对于客户端路由和状态管理等工具采取了“中间立场”的方法。虽然 Vue 核心团队维护这些功能的建议库，但它们并未直接捆绑到 Vue 中。这允许你选择不同的路由/状态管理库，以使其更适合你的应用程序。
+话虽如此，你也可以使用 Vue 编写完整的单页应用程序(SPA)。这允许你创建完全由 Vue 管理的标记，当处理复杂应用程序时可以提高开发人员的体验和性能。它还允许你在需要时利用用于客户端路由和状态管理的库。此外，Vue 对于客户端路由和状态管理等工具采取了“中间立场”的方法。虽然 Vue 核心团队维护这些功能的建议库，但它们并未直接捆绑到 Vue 中。这允许你选择不同的路由/状态管理库，以使其更适合你的应用程序。
 
 除了允许你逐步将 Vue 集成到你的应用程序中，Vue 还提供了一种渐进的方式编写标记。像大多数框架，Vue 通过组件允许你创建可重用块标记。大多数时候，Vue 组件是使用一个特殊的 HTML 模板的语法写的。当你需要比 HTML 语法允许的更多的控制时，你可以编写 JSX 或纯 JavaScript 函数来定义组件。
 
-在其他框架都鼓励把模板、逻辑和样式的代码区分成不同文件的时候，Vue 却反其道行之。使用[单文件组件](https://vuejs.org/v2/guide/single-file-components.html)，Vue 把模板、相关脚本和 CSS 一起整合放在 `.vue` 结尾的一个单文件中。这些文件最终会通过 JS 打包工具（例如 Webpack）处理，这意味着你可以使用构建时工具。你可以使用比如 Babel、TypeScript、SCSS 等来创建更多复杂的组件。
+在其他框架都鼓励把模板、逻辑和样式的代码区分成不同文件的时候，Vue 却反其道行之。使用[单文件组件](https://vuejs.org/v2/guide/single-file-components.html)，Vue 把模板、相关脚本和 CSS 一起整合放在 `.vue` 结尾的一个单文件中。这些文件最终会通过 JS 打包工具(例如 Webpack)处理，这意味着你可以使用构建时工具。你可以使用比如 Babel、TypeScript、SCSS 等来创建更多复杂的组件。
 
 **数据驱动**：利用数据绑定和响应式原理，只需要操作数据，Vue 会自动根据数据变化更新 DOM。如通过`v-if`、`v-show`指令根据表达式的值来控制组件的显示与隐藏。
 
@@ -3280,19 +3284,19 @@ Vue 的响应式系统基本是基于运行时的。追踪和触发都是在浏�
 
 很多其他框架已经引入了与 Vue 组合式 API 中的 ref 类似的响应性基础类型，并称之为“信号”。从根本上说，信号是与 Vue 中的 ref 相同的响应性基础类型。它是一个在访问时跟踪依赖、在变更时触发副作用的值容器。这种基于响应性基础类型的范式在前端领域并不是一个特别新的概念。
 
-## 引入Vue框架
+## 引入 Vue 框架
 
 - 开发环境版本，包含了有帮助的命令行警告
 
-    ```html
-    <script src="<https://unpkg.com/vue@3/dist/vue.global.js>"></script>
-    ```
+  ```html
+  <script src="<https://unpkg.com/vue@3/dist/vue.global.js>"></script>
+  ```
 
 - 生产环境版本，优化了尺寸和速度，建议你在站点上包含 Vue 时指定版本号，这样任何框架更新都不会影响你的网站。
 
-    ```html
-    <script src="<https://unpkg.com/vue@3/dist/vue.global.prod.js>"></script>
-    ```
+  ```html
+  <script src="<https://unpkg.com/vue@3/dist/vue.global.prod.js>"></script>
+  ```
 
 ## Vue CLI
 
@@ -3333,11 +3337,11 @@ Vue CLI 使用了一套基于插件的架构。如果你查阅一个新创建项
 
 相比之下，仅通过`<script>`元素引入 Vue 时，就无法直接使用这些由 Vue CLI 提供的功能。例如，不能使用 Vue CLI 的开发服务器，需要自己手动配置服务器环境；也不能方便地使用 Vue CLI 提供的各种插件和工具，以及其图形化界面和命令行操作来管理项目的创建、配置、打包等过程。如果要构建更复杂的应用程序，可能会面临较多的手动配置和管理工作。
 
-因此，使用Vue一般是会默认安装Vue CLI的。
+因此，使用 Vue 一般是会默认安装 Vue CLI 的。
 
 当你使用 `npm install -g @vue/cli` 全局安装 Vue CLI 时，它会被安装到 Node.js 的全局模块目录中。在 Windows 上，默认情况下，全局模块通常安装在 `%AppData%\\npm\\node_modules` 目录下。你可以通过在命令行中运行 `npm root -g` 来查看全局模块的实际安装路径。
 
-## Vue CLI的运行模式
+## Vue CLI 的运行模式
 
 **模式**是 Vue CLI 项目中一个重要的概念。默认情况下，一个 Vue CLI 项目有三个模式：
 
@@ -3353,34 +3357,34 @@ Vue CLI 使用了一套基于插件的架构。如果你查阅一个新创建项
 
 Vue CLI 项目中，`npm run serve` 实际执行的是 `vue-cli-service serve` 命令，使用的是 `development` 模式 。如果想要使用其他模式，可以通过传递 `--mode` 选项参数为命令行覆写默认的模式。
 
-若想在 `serve` 时使用其他模式，假设要使用 `test` 模式，可以这样执行（前提是项目配置支持该模式下的 `serve` 操作）：`vue-cli-service serve --mode test`
+若想在 `serve` 时使用其他模式，假设要使用 `test` 模式，可以这样执行(前提是项目配置支持该模式下的 `serve` 操作)：`vue-cli-service serve --mode test`
 
-不要在你的应用程序中存储任何机密信息（例如私有 API 密钥）！
+不要在你的应用程序中存储任何机密信息(例如私有 API 密钥)！
 
 环境变量会随着构建打包嵌入到输出代码，意味着任何人都有机会能够看到它。
 
-## Vue CLI的构建目标
+## Vue CLI 的构建目标
 
 构建目标是指当运行 `vue-cli-service build` 时，通过 `--target` 选项指定的不同构建方式，它允许用相同源代码根据不同用例生成不同构建。
 
 **构建目标种类、特点和应用场景**
 
 - **应用模式**：是默认模式。特点包括 `index.html` 会带有注入的资源和 `resource hint`；第三方库会被分到一个独立包以便更好的缓存；小于 8KiB 的静态资源会被内联在 JavaScript 中；`public` 中的静态资源会被复制到输出目录中。适用于常规的 Vue 应用项目构建。
-- **库模式**：项目的 `publicPath` 是根据主文件的加载路径动态设置的（用以支持动态的资源加载能力），但该功能在 IE 浏览器中因不支持 `document.currentScript` 需要引入 `current-script-polyfill`；Vue 是外置的，可通过添加 `inline-vue` 标志避免；可将单独入口构建为库。适用于开发可复用的库，供其他项目使用。
-- **Web Components 模式**：不支持 IE11 及更低版本；Vue 是外置的；构建后会生成一个单独的 JavaScript 文件（及其压缩版本），自动注册自定义组件；支持以普通 DOM 元素方式使用 Vue 组件。适用于希望将 Vue 组件作为 Web Components 在不同框架或普通 HTML 中使用的场景。
+- **库模式**：项目的 `publicPath` 是根据主文件的加载路径动态设置的(用以支持动态的资源加载能力)，但该功能在 IE 浏览器中因不支持 `document.currentScript` 需要引入 `current-script-polyfill`；Vue 是外置的，可通过添加 `inline-vue` 标志避免；可将单独入口构建为库。适用于开发可复用的库，供其他项目使用。
+- **Web Components 模式**：不支持 IE11 及更低版本；Vue 是外置的；构建后会生成一个单独的 JavaScript 文件(及其压缩版本)，自动注册自定义组件；支持以普通 DOM 元素方式使用 Vue 组件。适用于希望将 Vue 组件作为 Web Components 在不同框架或普通 HTML 中使用的场景。
 - **异步 Web Components 模式**：适用于构建包含多个 Web Components 组件且包可能较大的情况，会生成一个 `code-split` 的包，带一个只提供所有组件共享的运行时，并预先注册所有的自定义组件小入口文件，组件真正的实现按需获取。
 
-## Vue CLI内置的开发服务器
+## Vue CLI 内置的开发服务器
 
 Vue CLI 带有内置的开发服务器。这样一来，你就可以在本地运行你的应用程序，这样就可以轻松对其进行测试，而无需自己配置服务器。CLI 会以 npm 脚本的形式将 `serve` 命令添加到项目的 `package.json` 文件中，因此你可以轻松地运行它。
 
-## 创建Vue项目
+## 创建 Vue 项目
 
 安装之后，要初始化一个新项目，可以在要创建项目的目录中打开一个终端，并运行 `vue create <project-name>`。CLI 将会给你一个可以使用的项目配置列表。有一些预设的，你可以按照自己的需求。这些选项允许你配置 TypeScript、linting、vue-router、testing 等更多高级特性。
 
 你会被提示选取一个 preset。你可以选默认的包含了基本的 Babel + ESLint 设置的 preset，也可以选“手动选择特性”来选取需要的特性。这个默认的设置非常适合快速创建一个新项目的原型，而手动设置则提供了更多的选项，它们是面向生产的项目更加需要的。
 
-创建vue项目时，以下是这些选项的含义：
+创建 vue 项目时，以下是这些选项的含义：
 
 - **Babel**：一个 JavaScript 编译器，可将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便在旧浏览器中也能正常运行。
 - **TypeScript**：是 JavaScript 的超集，为 JavaScript 添加了静态类型等特性，能提高代码的可维护性和健壮性。
@@ -3389,44 +3393,44 @@ Vue CLI 带有内置的开发服务器。这样一来，你就可以在本地运
 - **Vuex**：Vuex 是 Vue.js 的状态管理模式，用于集中管理 Vue 应用的组件状态，方便在多个组件间共享和管理数据。
 - **CSS Pre - processors**：CSS 预处理器，例如 Sass、Less 等，允许使用变量、混入、函数等功能来编写 CSS，提高样式代码的可维护性和复用性。
 - **Linter / Formatter**：代码检查和格式化工具，可帮助检查代码中的语法错误、风格问题等，并能自动格式化代码，保持代码风格的一致性。
-- **Unit Testing**：单元测试，用于测试应用中的最小可测试单元（通常是函数、组件等），确保每个单元的功能正确。
+- **Unit Testing**：单元测试，用于测试应用中的最小可测试单元(通常是函数、组件等)，确保每个单元的功能正确。
 - **E2E Testing**：端到端测试，模拟用户在真实环境中使用应用的场景，从应用的入口到出口进行测试，确保应用整体功能的正确性。
 
-## 为什么要使用npm run serve
+## 为什么要使用 npm run serve
 
 **构建和依赖加载机制不同**：`npm run serve`基于 Vue CLI 的内置开发服务器，它会借助 Webpack 等工具对项目进行构建。在构建过程中，会处理`App.vue`和`main.js`等文件，解析 Vue 组件、处理依赖关系，并将相关代码整合、转换为浏览器可识别的形式。而直接打开`index.html`，浏览器只是单纯加载该静态文件，不会触发构建流程，无法处理 Vue 相关代码，导致`App.vue`和`main.js`中的功能无法生效 。
 
 对于纯静态网页，直接用本地浏览器打开即可满足基本的展示需求。但当网页需要实现以下功能时，往往必须在服务器上测试：
 
 - **与后端交互**：比如发送 HTTP 请求获取数据、提交表单数据到服务器进行处理等功能，这就需要服务器环境来接收和处理这些请求。例如从数据库读取数据返回给前端展示，单纯的前端三剑客无法独立完成这类操作，必须配置服务器才能进行相关测试。
-- **使用特定服务器端技术**：如果网页使用了像 Node.js 的 Express 框架进行路由处理、使用服务器端渲染（SSR）技术来提高页面加载性能和 SEO 效果，那就必须配置服务器环境。而使用 Vue CLI 的内置开发服务器，确实可以省去自己手动配置服务器的步骤，它提供了一个开箱即用的本地开发服务器环境，方便开发者进行开发和测试。
+- **使用特定服务器端技术**：如果网页使用了像 Node.js 的 Express 框架进行路由处理、使用服务器端渲染(SSR)技术来提高页面加载性能和 SEO 效果，那就必须配置服务器环境。而使用 Vue CLI 的内置开发服务器，确实可以省去自己手动配置服务器的步骤，它提供了一个开箱即用的本地开发服务器环境，方便开发者进行开发和测试。
 
-## npm run serve和npm run dev
+## npm run serve 和 npm run dev
 
 `npm run serve` 和 `npm run dev` 本质上都是通过 `npm` 执行自定义脚本命令，它们的区别和使用场景取决于项目 `package.json` 文件中对这些命令的具体配置。由于这两个命令的具体执行内容完全由 `package.json` 中的脚本定义，所以它们执行的操作可能不同。例如，`npm run serve` 可能只启动一个简单的静态文件服务器，而 `npm run dev` 除了启动服务器外，还可能执行一些预处理任务，如编译 Sass 文件、转换 ES6+ 代码等。
 
 **`npm run serve`**
 
-- **约定含义**：通常在基于 Vue CLI 创建的项目中使用，它的主要作用是启动一个开发服务器，用于本地开发和调试项目。这个服务器支持热更新（Hot Reload），即当你修改代码后，页面会自动刷新以显示最新的修改。
+- **约定含义**：通常在基于 Vue CLI 创建的项目中使用，它的主要作用是启动一个开发服务器，用于本地开发和调试项目。这个服务器支持热更新(Hot Reload)，即当你修改代码后，页面会自动刷新以显示最新的修改。
 
 **`npm run dev`**
 
-- **约定含义**：是一个比较通用的命名，在很多前端项目构建工具（如 Vite、Webpack 等）创建的项目中都可能会使用。它的作用也是启动开发环境，可能包含启动开发服务器、监听文件变化等操作，但具体行为依赖于项目的配置。
+- **约定含义**：是一个比较通用的命名，在很多前端项目构建工具(如 Vite、Webpack 等)创建的项目中都可能会使用。它的作用也是启动开发环境，可能包含启动开发服务器、监听文件变化等操作，但具体行为依赖于项目的配置。
 
-## Vue CLI和Vite
+## Vue CLI 和 Vite
 
 Vue CLI 和 Vite 在前端开发中都属于构建工具，占据着相似的生态位，它们都用于创建、开发和构建 Vue 项目。
 
-- **Vue CLI**：基于 Webpack 构建。Webpack 是一个功能强大且高度可配置的模块打包工具，它通过分析项目中的模块依赖关系，将所有的模块（如 JavaScript、CSS、图片等）打包成一个或多个静态文件。在构建过程中，Webpack 会对整个项目进行全面的分析和处理，包括代码分割、资源优化、代码转换等。由于 Webpack 需要对整个项目进行打包，启动时间较长，尤其是在项目规模较大时，启动可能需要几十秒甚至更长时间。热更新时，Webpack 也需要重新打包受影响的模块，更新速度相对较慢。基于 Webpack 的配置非常灵活，但也非常复杂。对于初学者来说，理解和配置 Webpack 可能是一个挑战。Vue CLI 提供了一些默认配置和插件来简化开发，但在进行一些高级配置时，仍然需要对 Webpack 有深入的了解。适合大型、复杂的项目。由于 Webpack 的强大功能和高度可配置性，它可以处理各种复杂的需求，如代码分割、懒加载、多页面应用等。对于需要进行大量优化和定制的项目，Vue CLI 是一个不错的选择。由于基于 Webpack，拥有庞大的生态系统。Webpack 有大量的插件和加载器，可以满足各种不同的需求。同时，Vue CLI 也有自己的插件市场，开发者可以方便地添加各种功能。
+- **Vue CLI**：基于 Webpack 构建。Webpack 是一个功能强大且高度可配置的模块打包工具，它通过分析项目中的模块依赖关系，将所有的模块(如 JavaScript、CSS、图片等)打包成一个或多个静态文件。在构建过程中，Webpack 会对整个项目进行全面的分析和处理，包括代码分割、资源优化、代码转换等。由于 Webpack 需要对整个项目进行打包，启动时间较长，尤其是在项目规模较大时，启动可能需要几十秒甚至更长时间。热更新时，Webpack 也需要重新打包受影响的模块，更新速度相对较慢。基于 Webpack 的配置非常灵活，但也非常复杂。对于初学者来说，理解和配置 Webpack 可能是一个挑战。Vue CLI 提供了一些默认配置和插件来简化开发，但在进行一些高级配置时，仍然需要对 Webpack 有深入的了解。适合大型、复杂的项目。由于 Webpack 的强大功能和高度可配置性，它可以处理各种复杂的需求，如代码分割、懒加载、多页面应用等。对于需要进行大量优化和定制的项目，Vue CLI 是一个不错的选择。由于基于 Webpack，拥有庞大的生态系统。Webpack 有大量的插件和加载器，可以满足各种不同的需求。同时，Vue CLI 也有自己的插件市场，开发者可以方便地添加各种功能。
 - **Vite**：利用浏览器原生 ES 模块的支持，采用即时编译的方式。在开发环境下，Vite 启动一个开发服务器，当浏览器请求模块时，Vite 会实时编译并返回该模块，而不需要像 Webpack 那样对整个项目进行打包。这种方式使得 Vite 的启动速度和热更新速度非常快。启动速度极快，通常只需要几秒钟。热更新时，Vite 只需要更新受影响的模块，几乎可以实现即时更新，开发者可以立即看到代码修改后的效果。配置相对简单，默认配置已经能够满足大多数项目的需求。Vite 的配置文件使用 JavaScript 编写，语法简洁易懂，开发者可以很容易地进行自定义配置。更适合小型和中型项目。由于其快速的启动和热更新速度，Vite 可以显著提高开发效率。对于快速迭代的项目或初学者项目，Vite 是一个更友好的选择。虽然 Vite 的生态系统相对较新，但发展迅速。越来越多的第三方库和插件开始支持 Vite，并且 Vite 官方也提供了一些常用的插件和模板，能够满足大多数项目的需求。
 
-## Vue项目结构
+## Vue 项目结构
 
-Vue推出了单文件组件SFC，也就是后缀名为.vue的文件
+Vue 推出了单文件组件 SFC，也就是后缀名为.vue 的文件
 
 脚手架工具应该已经在你的项目中创建了一系列的文件和目录，我们接下来列举一些比较重要的：
 
-- `package.json`：该文件包含项目的依赖项列表，以及一些元数据和 `eslint` 配置。该文件为npm包管理器的核心文件。安装的依赖放在node_modules目录中d
+- `package.json`：该文件包含项目的依赖项列表，以及一些元数据和 `eslint` 配置。该文件为 npm 包管理器的核心文件。安装的依赖放在 node_modules 目录中 d
 
 - `yarn.lock`：如果你选择 `yarn` 作为你的包管理器，将生成此文件，其中包含项目所需的所有依赖项和子依赖项的列表。
 
@@ -3434,32 +3438,32 @@ Vue推出了单文件组件SFC，也就是后缀名为.vue的文件
 
 - `jsconfig.json`：这是一份用于 [Visual Studio Code](https://code.visualstudio.com/docs/languages/jsconfig) 的配置文件，它为 VS Code 提供了关于项目结构的上下文信息，并帮助自动完成。
 
-- `public`：这个目录包含一些在 [Webpack](https://webpack.js.org/) 编译过程中没有加工处理过的文件（有一个例外：index.html 会有一些处理）。
+- `public`：这个目录包含一些在 [Webpack](https://webpack.js.org/) 编译过程中没有加工处理过的文件(有一个例外：index.html 会有一些处理)。
 
-    - `favicon.ico`：这个是项目的图标，当前就是一个 Vue 的 logo。
+  - `favicon.ico`：这个是项目的图标，当前就是一个 Vue 的 logo。
 
-    - `index.html`：这是应用的模板文件，Vue 应用会通过这个 HTML 页面来运行，也可以通过 lodash 这种模板语法在这个文件里插值。
+  - `index.html`：这是应用的模板文件，Vue 应用会通过这个 HTML 页面来运行，也可以通过 lodash 这种模板语法在这个文件里插值。
 
-        **备注：** 这个不是负责管理页面最终展示的模板，而是管理 Vue 应用之外的静态 HTML 文件，一般只有在用到一些高级功能的时候才会修改这个文件。
+    **备注：** 这个不是负责管理页面最终展示的模板，而是管理 Vue 应用之外的静态 HTML 文件，一般只有在用到一些高级功能的时候才会修改这个文件。
 
 - `src`：这个是 Vue 应用的核心代码目录
 
-    - `main.js`：这是应用的入口文件。目前它会初始化 Vue 应用并且制定将应用挂载到 `index.html` 文件中的哪个 HTML 元素上。通常还会做一些注册全局组件或者添额外的 Vue 库的操作。
-    - `App.vue`：这是 Vue 应用的根节点组件，往下看可以了解更多关注 Vue 组件的信息。
-    - `components`：这是用来存放自定义组件的目录，目前里面会有一个示例组件。
-    - `assets`：这个目录用来存放像 CSS、图片这种静态资源，但是因为它们属于代码目录下，所以可以用 webpack 来操作和处理。意思就是你可以使用一些预处理比如 [Sass/SCSS](https://sass-lang.com/) 或者 [Stylus](https://stylus-lang.com/)。
+  - `main.js`：这是应用的入口文件。目前它会初始化 Vue 应用并且制定将应用挂载到 `index.html` 文件中的哪个 HTML 元素上。通常还会做一些注册全局组件或者添额外的 Vue 库的操作。
+  - `App.vue`：这是 Vue 应用的根节点组件，往下看可以了解更多关注 Vue 组件的信息。
+  - `components`：这是用来存放自定义组件的目录，目前里面会有一个示例组件。
+  - `assets`：这个目录用来存放像 CSS、图片这种静态资源，但是因为它们属于代码目录下，所以可以用 webpack 来操作和处理。意思就是你可以使用一些预处理比如 [Sass/SCSS](https://sass-lang.com/) 或者 [Stylus](https://stylus-lang.com/)。
 
-**备注：** 根据创建项目时候的一些配置项，可能会有一些其他的预设目录（例如，如果你选择了路由配置，会看到一个 `views` 的文件夹）。
+**备注：** 根据创建项目时候的一些配置项，可能会有一些其他的预设目录(例如，如果你选择了路由配置，会看到一个 `views` 的文件夹)。
 
-main.js中：
+main.js 中：
 
 ```jsx
 createApp(App).mount("#app");
 ```
 
-是创建一个vue应用并挂载到DOM的html标签上（#app是id选择器），原生的三剑客不受影响；因此也可以将vue嵌入到已有的项目中
+是创建一个 vue 应用并挂载到 DOM 的 html 标签上(#app 是 id 选择器)，原生的三剑客不受影响；因此也可以将 vue 嵌入到已有的项目中
 
-## public目录
+## public 目录
 
 任何放置在 `public` 文件夹的静态资源都会被简单的复制，而不经过 webpack。你需要通过绝对路径来引用它们。
 
@@ -3477,7 +3481,7 @@ createApp(App).mount("#app");
 - 你有上千个图片，需要动态引用它们的路径。
 - 有些库可能和 webpack 不兼容，这时你除了将其用一个独立的 `<script>` 标签引入没有别的选择。
 
-## Vue文件结构
+## Vue 文件结构
 
 打开 `App.vue` 文件，可以看到由 `<template>`、`<script>` 和 `<style>` 三部分组成，分别包含了组件的模板、脚本和样式相关的内容。所有的单文件组件都是这种类似的基本结构。
 
@@ -3485,7 +3489,7 @@ createApp(App).mount("#app");
 
 <script> 包含组件中所有的非显示逻辑，最重要的是，<script> 标签需要默认导出一个 JS 对象。该对象是你在本地注册组件、定义属性、处理本地状态、定义方法等的地方。在构建阶段这个包含 template 模板的对象会被处理和转换成为一个有 render() 函数的 Vue 组件。
 
-组件的 CSS 应该写在 `<style>` 标签里，如果你添加了 `scoped` 属性（形如 `<style scoped>`），Vue 会把样式的范围限制到单文件组件的内容里。这个是类似于 CSS-in-JS 的解决方案，只不过允许书写纯粹的 CSS。
+组件的 CSS 应该写在 `<style>` 标签里，如果你添加了 `scoped` 属性(形如 `<style scoped>`)，Vue 会把样式的范围限制到单文件组件的内容里。这个是类似于 CSS-in-JS 的解决方案，只不过允许书写纯粹的 CSS。
 
 **备注：** 通过设置 `<template>` 标签的 `lang` 属性，例如可以通过设置 `<template lang="pug">` 就可以在使用 Pug 模板来替代标准 HTML。在本教程中我们依然会使用标准 HTML，但是你还是值得知道这种可行的方式。通过设置 `lang="markdown"`，可以在 `<template>` 中编写 Markdown 内容，然后通常会有相应的转换机制将其渲染为 HTML 展示。
 
@@ -3529,9 +3533,10 @@ export default {
   },
 };
 </script>
-```
 
-`export default`{}用于将一个模块的默认导出对象暴露出去，使得其他模块可以通过特定方式引入并使用这个对象。其中的name属性用于标识组件名称，在路由管理、缓存组件等操作下才会用到。import中的名称是可以自定义的，这个自定义的名称用于JS对象中components属性的配置，以及<template>标签中调用组件时的名称。（注意template中需要转化为短划线连接小写的形式）。因为使用 DOM 内嵌模板 (直接写在 HTML 文件里的模板) 时，我们需要避免在名称中使用大写字母，因为浏览器会强制将其转换为小写
+````
+
+`export default`{}用于将一个模块的默认导出对象暴露出去，使得其他模块可以通过特定方式引入并使用这个对象。其中的name属性用于标识组件名称，在路由管理、缓存组件等操作下才会用到。import中的名称是可以自定义的，这个自定义的名称用于JS对象中components属性的配置，以及<template>标签中调用组件时的名称。(注意template中需要转化为短划线连接小写的形式)。因为使用 DOM 内嵌模板 (直接写在 HTML 文件里的模板) 时，我们需要避免在名称中使用大写字母，因为浏览器会强制将其转换为小写
 
 另外还有一种注册方式，即全局注册，在项目入口文件main.js中直接导入
 
@@ -3543,19 +3548,19 @@ import App from './App.vue';
 const app = createApp(App);
 app.component('ToDoItem', ToDoItem);
 app.mount('#app');
-```
+````
 
-这样在`App.vue`的模板中就可以直接使用`<to-do-item></to-do-item>`，而不需要在App.vue中在进行导入。但这样的全局注册会在整个应用中都可用，可能会导致命名冲突，且不利于组件作用域的管理，一般不推荐使用。
+这样在`App.vue`的模板中就可以直接使用`<to-do-item></to-do-item>`，而不需要在 App.vue 中在进行导入。但这样的全局注册会在整个应用中都可用，可能会导致命名冲突，且不利于组件作用域的管理，一般不推荐使用。
 
-vue中引入组件但不使用会报错。
+vue 中引入组件但不使用会报错。
 
-## props——组件动态化（向组件传输数据以控制显示）
+## props——组件动态化(向组件传输数据以控制显示)
 
 如果我们正在构建一个博客，我们可能需要一个表示博客文章的组件。我们希望所有的博客文章分享相同的视觉布局，但有不同的内容。要实现这样的效果自然必须向组件中传递数据，例如每篇文章标题和内容，这就会使用到 props。
 
 其实就是在子组件中显示地定义一个属性，在父组件调用时传入参数。
 
-也可以理解为，父组件通过显式地定义一个属性，要并传入要给子组件的数据（这个数据可以用v-bind绑定到其他地方），子组件用props属性来接受；这样就相当于在子组件中的data中声明了一个数据。
+也可以理解为，父组件通过显式地定义一个属性，要并传入要给子组件的数据(这个数据可以用 v-bind 绑定到其他地方)，子组件用 props 属性来接受；这样就相当于在子组件中的 data 中声明了一个数据。
 
 ![image.png](../../attachment:4ed04c28-6672-481c-84b8-bab0b5ab252a:image.png)
 
@@ -3563,7 +3568,7 @@ Props 是一种特别的 attributes，你可以在组件上声明注册。要传
 
 一个组件可以有任意多的 props，默认情况下，所有 prop 都接受任意类型的值。
 
-props的效果时给组件添加属性，以便和数据交互，包括控制组件本身的显示和从组件读取数据。
+props 的效果时给组件添加属性，以便和数据交互，包括控制组件本身的显示和从组件读取数据。
 
 我们需要的是一些组件状态。这可以通过在组件中添加 props 来实现。你可以认为 props 与函数中的输入类似。props 的值给予了组件影响其显示的初始状态。
 
@@ -3571,28 +3576,28 @@ props的效果时给组件添加属性，以便和数据交互，包括控制组
 
 - 第一种方式是，以字符串数组的方式列出 props，数组中的每个实体对应一个 prop 名称。这种方式简单直接，但无法指定默认值、校验类型等额外信息。
 
-    ```html
-    <!-- ToDoItem.vue，子组件 -->
-    <script>
+  ```html
+  <!-- ToDoItem.vue，子组件 -->
+  <script>
     export default {
-        props: ['label', 'done']
+      props: ["label", "done"]
     };
-    </script>
-    ```
+  </script>
+  ```
 
 - 第二种方法是将 props 定义为一个对象，每个 key 对应于 prop 名称。将 props 列为对象允许你指定默认值，将 props 标记为 required，执行基本的对象类型 (特别是 JavaScript 基本类型) ，并执行简单的 prop 校验。这种方式允许指定默认值、将 props 标记为 required、执行基本的对象类型校验等。
 
-    ```html
-    <!-- ToDoItem.vue，子组件 -->
-    <script>
+  ```html
+  <!-- ToDoItem.vue，子组件 -->
+  <script>
     export default {
-        props: {
-            label: { required: true, type: String },
-            done: { default: false, type: Boolean }
-        }
+      props: {
+        label: { required: true, type: String },
+        done: { default: false, type: Boolean }
+      }
     };
-    </script>
-    ```
+  </script>
+  ```
 
 注意：prop 验证只能在 development 模式下进行，所以你不能在生产环境中严格依赖它。此外，prop 验证函数在组件实例创建之前被调用，因此它们不能访问组件状态 (或其他 props)。
 
@@ -3605,11 +3610,11 @@ props的效果时给组件添加属性，以便和数据交互，包括控制组
 <label for="todo-item">{{ label }}</label>
 ```
 
-在调用时将实际要显示的label值传递进组件。
+在调用时将实际要显示的 label 值传递进组件。
 
 ```html
 <!-- App.vue，调用子组件的根组件 -->
-<to-do-item label="My ToDo Item"></to-do-item> 
+<to-do-item label="My ToDo Item"></to-do-item>
 ```
 
 `{{}}` 是 Vue 中的一个特殊的模版语法，它能在模版内打印类中定义的 JavaScript 表达式的结果，包括值和方法。重要的是，`{{}}` 里的内容是作为文本显示，而非 HTML。
@@ -3634,7 +3639,7 @@ props 是一种单向数据绑定，组件永远不该改变自己的 props 的�
 
 **注意 prop 的校验是在组件实例被创建之前，所以实例的属性 (比如 `data`、`computed` 等) 将在 `default` 或 `validator` 函数中不可用。**
 
-## data——Vue的数据对象（从组件读取数据）
+## data——Vue 的数据对象(从组件读取数据)
 
 选用选项式 API 时，会用 `data` 选项来声明组件的响应式状态。此选项的值应为返回一个对象的函数。Vue 将在创建新组件实例的时候调用此函数，并将函数返回的对象用响应式系统进行包装。此对象的所有顶层属性都会被代理到组件实例 (即方法和生命周期钩子中的 `this`) 上。
 
@@ -3669,30 +3674,30 @@ data() {
 
 `data` 属性是一个函数。这是为了在运行时保持组件的每个实例的数据值是唯一的——为每个组件实例单独调用函数。如果将数据声明为仅一个对象，则该组件的所有实例将共享相同的值。这是 Vue 注册组件方式的副作用，也是你不想要的。可以使用 `this` 从内部数据访问组件的 props 和其他属性。
 
-data函数返回一个对象，对象中没有方法，有一些属性，属性由键值对构成key:value，此处的键为ToDoItems，值为一个对象数组，每个数组元素都是对象，里面又由键值对构成。
+data 函数返回一个对象，对象中没有方法，有一些属性，属性由键值对构成 key:value，此处的键为 ToDoItems，值为一个对象数组，每个数组元素都是对象，里面又由键值对构成。
 
-注意：由于 `this` 在箭头函数中的工作方式（绑定到父级的上下文），如果使用箭头函数，你将无法从内部 `data` 访问任何必要的属性。因此，不要对 `data` 属性使用箭头函数。
+注意：由于 `this` 在箭头函数中的工作方式(绑定到父级的上下文)，如果使用箭头函数，你将无法从内部 `data` 访问任何必要的属性。因此，不要对 `data` 属性使用箭头函数。
 
 ```jsx
 // ToDoItem.vue，子组件
 export default {
   props: {
     label: { required: true, type: String },
-    done: { default: false, type: Boolean },
+    done: { default: false, type: Boolean }
   },
   data() {
     return {
-      isDone: this.done,
+      isDone: this.done
     };
-  },
+  }
 };
 ```
 
-vue把你所有的 props 直接绑定到组件实例上，所以我们不必调用 `this.props.done`。它还将其他属性（你已经看到 `data`，以及其他 `methods`，`computed` 等）直接绑该定到实例。这部分是为了使它们可用于的你模板。这样做的缺点是，你需要在这些属性中保持键的唯一性。这就是为什么我们将 `data` 属性为 `isDone` 而不是 `done`。
+vue 把你所有的 props 直接绑定到组件实例上，所以我们不必调用 `this.props.done`。它还将其他属性(你已经看到 `data`，以及其他 `methods`，`computed` 等)直接绑该定到实例。这部分是为了使它们可用于的你模板。这样做的缺点是，你需要在这些属性中保持键的唯一性。这就是为什么我们将 `data` 属性为 `isDone` 而不是 `done`。
 
-## provide与依赖注入
+## provide 与依赖注入
 
-props存在依赖透传的问题，当父组件与子组件之间的链路非常长时非常麻烦。
+props 存在依赖透传的问题，当父组件与子组件之间的链路非常长时非常麻烦。
 
 `provide` 和 `inject` 可以帮助我们解决这一问题 [**[1\]**](https://cn.vuejs.org/guide/components/provide-inject.html#footnote-1)。一个父组件相对于其所有的后代组件，会作为**依赖提供者**。任何后代的组件树，无论层级有多深，都可以**注入**由父组件提供给整条链路的依赖。
 
@@ -3712,7 +3717,7 @@ props存在依赖透传的问题，当父组件与子组件之间的链路非常
 
 此外还有具名插槽、条件插槽等机制，可以实现更丰富的功能。
 
-## v-**——指令
+## v-\*\*——指令
 
 一个指令的任务是在其表达式的值变化时响应式地更新 DOM。某些指令会需要一个“参数”，在指令名后通过一个冒号隔开做标识。同样在指令参数上也可以使用一个 JavaScript 表达式，需要包含在一对方括号内。这里的 `attributeName` 会作为一个 JavaScript 表达式被动态执行，计算得到的值会被用作最终的参数。相似地，你还可以将一个函数绑定到动态的事件名称上。动态参数表达式因为某些字符的缘故有一些语法限制，比如空格和引号，在 HTML attribute 名称中都是不合法的。如果你需要传入一个复杂的动态参数，我们推荐使用[**计算属性**](https://cn.vuejs.org/guide/essentials/computed.html)替换复杂的表达式。修饰符是以点开头的特殊后缀，表明指令需要以一些特殊的方式被绑定。例如 `.prevent` 修饰符会告知 `v-on` 指令对触发的事件调用 `event.preventDefault()`
 
@@ -3726,7 +3731,7 @@ Vue 自动为 `methods` 中的方法绑定了永远指向组件实例的 `this`�
 
 和组件实例上的其他属性一样，方法也可以在模板上被访问。在模板中它们常常被用作事件监听器。
 
-## 文本插值——双大括号和v-html
+## 文本插值——双大括号和 v-html
 
 最基本的数据绑定形式是文本插值，它使用的是“Mustache”语法 (即双大括号)：
 
@@ -3734,7 +3739,7 @@ Vue 自动为 `methods` 中的方法绑定了永远指向组件实例的 `this`�
 <span>Message: {{ msg }}</span>
 ```
 
-双大括号标签会被替换为[**相应组件实例中**](https://cn.vuejs.org/guide/essentials/reactivity-fundamentals.html#declaring-reactive-state) `msg` 属性的值。同时每次 `msg` 属性更改时它也会同步更新。msg也可以替换成任意的js表达式。双大括号会将数据解释为纯文本，而不是 HTML。若想插入 HTML，你需要使用 [**`v-html` 指令](https://cn.vuejs.org/api/built-in-directives.html#v-html)。**
+双大括号标签会被替换为[**相应组件实例中**](https://cn.vuejs.org/guide/essentials/reactivity-fundamentals.html#declaring-reactive-state) `msg` 属性的值。同时每次 `msg` 属性更改时它也会同步更新。msg 也可以替换成任意的 js 表达式。双大括号会将数据解释为纯文本，而不是 HTML。若想插入 HTML，你需要使用 [\*\*`v-html` 指令](https://cn.vuejs.org/api/built-in-directives.html#v-html)。\*\*
 
 注意：**绑定在表达式中的方法在组件每次更新时都会被重新调用，因此不应该产生任何副作用，比如改变数据或触发异步操作。**
 
@@ -3748,7 +3753,7 @@ Vue 自动为 `methods` 中的方法绑定了永远指向组件实例的 `this`�
 
 响应式绑定是 Vue 框架中的重要特性，它能使 DOM 与组件实例数据自动保持同步。
 
-v-bind会和vue的数据绑定，也就是切换到JS的语法规则了
+v-bind 会和 vue 的数据绑定，也就是切换到 JS 的语法规则了
 
 与 Vue 使用 `{{}}` 表达式在模板中显示 JavaScript 表达式的方式类似，Vue 有一种特殊的语法**将 JavaScript 表达式绑定到 HTML 元素和组件**：**`v-bind`**。`v-bind` 表达式如下所示：
 
@@ -3764,18 +3769,18 @@ v-bind:attribute="expression"
 <label for="todo-item">{{ label }}</label>
 ```
 
-通过将 `:done="true"` 传递给 `App.vue` 中的 `ToDoItem` 调用来测试你的组件。请注意，你需要使用 `v-bind` 语法，否则 `true` 将作为字符串传递。在 Vue 中，数据绑定有不同的方式。如果不使用v-bind语法来传递数据，Vue 会将传递的值当作普通的字符串处理。这里传递的值不是普通字符串，而是一个 JavaScript 表达式，Vue 会对其进行解析，将真正的布尔值`true`传递给`done` prop。（v-bind的作用就是将JS表达式的值传递给HTML控件）
+通过将 `:done="true"` 传递给 `App.vue` 中的 `ToDoItem` 调用来测试你的组件。请注意，你需要使用 `v-bind` 语法，否则 `true` 将作为字符串传递。在 Vue 中，数据绑定有不同的方式。如果不使用 v-bind 语法来传递数据，Vue 会将传递的值当作普通的字符串处理。这里传递的值不是普通字符串，而是一个 JavaScript 表达式，Vue 会对其进行解析，将真正的布尔值`true`传递给`done` prop。(v-bind 的作用就是将 JS 表达式的值传递给 HTML 控件)
 
 > 接下来的指引中，我们都将在示例中使用简写语法，因为这是在实际开发中更常见的用法。
 
 如果你有像这样的一个包含多个 attribute 的 JavaScript 对象：
 
 ```jsx
-const objectOfAttrs = {  
-	id: 'container',  
-	class: 'wrapper',  
-	style: 'background-color:green'
-}
+const objectOfAttrs = {
+  id: "container",
+  class: "wrapper",
+  style: "background-color:green"
+};
 ```
 
 通过不带参数的 `v-bind`，你可以将它们绑定到单个元素上：
@@ -3784,11 +3789,11 @@ const objectOfAttrs = {
 <div v-bind="objectOfAttrs"></div>
 ```
 
-`key` 属性和 `v-bind` 一起使用，用来帮助 Vue 跟踪和更新元素，默认的key属性对于数组来说，容易产生重复，此时需要显式修改key的值为一个唯一的值
+`key` 属性和 `v-bind` 一起使用，用来帮助 Vue 跟踪和更新元素，默认的 key 属性对于数组来说，容易产生重复，此时需要显式修改 key 的值为一个唯一的值
 
 ## v-for——渲染组件列表
 
-v-for指令的作用方式和元素的属性类似，就 `v-for` 而言，它类似 JavaScript 中的 [`for...in`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in) 循环——`v-for="item in items"`——`items` 是你要迭代的列表，`item` 是数组中当前元素的引用。
+v-for 指令的作用方式和元素的属性类似，就 `v-for` 而言，它类似 JavaScript 中的 [`for...in`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in) 循环——`v-for="item in items"`——`items` 是你要迭代的列表，`item` 是数组中当前元素的引用。
 
 你也可以使用 `of` 作为分隔符来替代 `in`，这更接近 JavaScript 的迭代器语法。
 
@@ -3804,7 +3809,7 @@ v-for指令的作用方式和元素的属性类似，就 `v-for` 而言，它类
 
 在这里我们可以做一个小小的重构。我们可以把 `id` 变成一个 prop，而不是在 `ToDoItem` 组件中为复选框生成它。虽然这不是严格意义上的需要，但它使我们更容易管理，因为我们已经需要为每个 todo 项目创建一个唯一的 `id`。这次重构使得 `item.id` 像其他参数一样，作为 prop 从 `App.vue` 传递给 `ToDoItem`。现在代码变得更有逻辑性和一致性。
 
-props定义组件的数据结构（容器），data作数据源将实际数据传递给props
+props 定义组件的数据结构(容器)，data 作数据源将实际数据传递给 props
 
 也可以使用 `v-for` 来遍历一个对象的所有属性。
 
@@ -3837,15 +3842,15 @@ Vue 能够侦听响应式数组的变更方法，并在它们被调用时触发�
 
 为了防止浏览器发布到服务器，我们需要通过页面冒泡阻止事件的默认操作。Vue 有一个特殊的语法叫做 **event modifiers** 可以在我们的模板中为我们处理这个问题。修饰符被附加到事件的末尾，带有一个点，如下所示：`@event.modifier`。
 
-（页面冒泡指的是在网页开发中，当一个事件在某个 HTML 元素上触发时，该事件会从触发元素开始，按照 HTML 文档的层次结构向上传播，依次触发父元素上相同类型的事件的现象）
+(页面冒泡指的是在网页开发中，当一个事件在某个 HTML 元素上触发时，该事件会从触发元素开始，按照 HTML 文档的层次结构向上传播，依次触发父元素上相同类型的事件的现象)
 
 以下是事件修饰符列表，修饰符可以链式书写
 
 - `.stop`：停止传播事件。等效于常规 JavaScript 事件中的 [`Event.stopPropagation()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopPropagation)。
 - `.prevent`：阻止事件的默认行为。等效于 [`Event.preventDefault()`](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault)。
 - `.self`：仅当事件是从该确切元素分派时触发处理程序。
-- `{.key}`：仅通过指定键触发事件处理程序。 [MDN 有一个有效键值列表](https://developer.mozilla.org/zh-CN/docs/Web/API/UI_Events/Keyboard_event_key_values); 多词键只需转换为 kebab 大小写（例如 `page-down`）。
-- `.native`：监听组件根（最外层的包装）元素上的原生事件。
+- `{.key}`：仅通过指定键触发事件处理程序。 [MDN 有一个有效键值列表](https://developer.mozilla.org/zh-CN/docs/Web/API/UI_Events/Keyboard_event_key_values); 多词键只需转换为 kebab 大小写(例如 `page-down`)。
+- `.native`：监听组件根(最外层的包装)元素上的原生事件。
 - `.once`：监听事件，直到它被触发一次，然后不再触发。
 - `.left`：仅通过鼠标左键事件触发处理程序。
 - `.right`：仅通过鼠标右键事件触发处理程序。
@@ -3870,7 +3875,7 @@ Vue 能够侦听响应式数组的变更方法，并在它们被调用时触发�
 
 但请注意，`.left`，`.right` 和 `.middle` 这些修饰符名称是基于常见的右手用鼠标布局设定的，但实际上它们分别指代设备事件触发器的“主”、”次“，“辅助”，而非实际的物理按键。
 
-当事件处理函数不需要额外的数据，仅需要执行一些固定的操作或者只需要使用事件触发时传递的数据（如原生 DOM 事件的事件对象）时，不需要显式传递参数；否则需要在v-on调用处理函数时显示传递参数。
+当事件处理函数不需要额外的数据，仅需要执行一些固定的操作或者只需要使用事件触发时传递的数据(如原生 DOM 事件的事件对象)时，不需要显式传递参数；否则需要在 v-on 调用处理函数时显示传递参数。
 
 对于非常简单的处理，内联事件处理器的代码直接嵌入在 HTML 标签内，无需像方法事件处理器那样进行方法查找和调用的额外操作，减少了函数调用的开销，从而提高了代码的执行效率。
 
@@ -3884,7 +3889,7 @@ Vue 能够侦听响应式数组的变更方法，并在它们被调用时触发�
 <script setup>
 const handleClick = (event) => {
     // 通过event.target访问触发事件的DOM元素，并获取其标签名
-    console.log(event.target.tagName); 
+    console.log(event.target.tagName);
 };
 </script>
 ```
@@ -3895,26 +3900,17 @@ const handleClick = (event) => {
 
 ```html
 <!-- 使用特殊的 $event 变量 -->
-<button @click="warn('Form cannot be submitted yet.', $event)">
-  Submit
-</button>
+<button @click="warn('Form cannot be submitted yet.', $event)">Submit</button>
 
 <!-- 使用内联箭头函数 -->
 <button @click="(event) => warn('Form cannot be submitted yet.', event)">
   Submit
 </button>
-methods: {
-  warn(message, event) {
-    // 这里可以访问 DOM 原生事件
-    if (event) {
-      event.preventDefault()
-    }
-    alert(message)
-  }
-}
+methods: { warn(message, event) { // 这里可以访问 DOM 原生事件 if (event) {
+event.preventDefault() } alert(message) } }
 ```
 
-## v-model——将组件的值附加到data
+## v-model——将组件的值附加到 data
 
 在前端处理表单时，我们常常需要将表单输入框的内容同步给 JavaScript 中相应的变量。手动连接值绑定和更改事件监听器可能会很麻烦，`v-model` 指令帮我们简化了这一步骤。
 
@@ -3932,7 +3928,7 @@ methods: {
 
 组件上的每一个 `v-model` 都会同步不同的 prop，而无需额外的选项
 
-## $emit发射传递数据的自定义事件，v-on监听
+## $emit 发射传递数据的自定义事件，v-on 监听
 
 其作用，一是将子组件的这个事件向外暴露使得父组件和其他组件可以监听，二是可以向父组件和其他组件提供子组件的数据。
 
@@ -3942,37 +3938,37 @@ methods: {
 
 自定义事件的发射方式如下：`this.$emit("event-name")`。重要的是要知道事件处理程序区分大小写并且不能包含空格。Vue 模板也被转换为小写，这意味着 Vue 模板无法监听以大写字母命名的事件。
 
-用this.$emit(”event-name”)发射的事件，可以被父组件用v-on监听到，v-on的事件参数，就是这个自定义的事件名。
+用 this.$emit(”event-name”)发射的事件，可以被父组件用 v-on 监听到，v-on 的事件参数，就是这个自定义的事件名。
 
 为了将数据传递回 `App.vue` 组件。可以通过将额外的参数传递给 `ToDoForm` 组件中的 `this.$emit()` 函数来做到这一点。这是通过在 `$emit()` 方法中包含你要作为另一个参数传递的数据来完成的：`this.$emit("todo-added", this.label)`。这类似于原生 JavaScript 事件如何包含数据。要真正在 `App.vue` 中获取这些数据，我们需要向我们的 `addToDo()` 方法添加一个参数，其中包含 `label` 新的待办事项
 
 现在我们在 `App.vue` 中获得了来自 `ToDoForm` 的数据，我们需要在 `ToDoItems` 数组中添加一个表示它的项目。这可以通过将新的待办事项对象推送到包含我们新数据的数组来完成。
 
-## 样式化Vue组件
+## 样式化 Vue 组件
 
 Vue 具有三种样式化应用程序的方法：
 
 - 外部 CSS 文件。
-- 单文件组件（`.vue` 文件）中的全局样式。
+- 单文件组件(`.vue` 文件)中的全局样式。
 - 单文件组件中组件范围的样式。
 
-你可以包括外部 CSS 文件，并将其全局应用于你的应用程序。首先，在 `src/assets` 目录中创建一个名为 `reset.css` 的文件。Webpack 将处理此文件夹中的文件。这意味着我们可以使用 CSS 预处理器（如 SCSS）或后处理器（如 PostCSS）。接下来，在 `src/main.js` 文件中导入 `reset.css` 文件：
+你可以包括外部 CSS 文件，并将其全局应用于你的应用程序。首先，在 `src/assets` 目录中创建一个名为 `reset.css` 的文件。Webpack 将处理此文件夹中的文件。这意味着我们可以使用 CSS 预处理器(如 SCSS)或后处理器(如 PostCSS)。接下来，在 `src/main.js` 文件中导入 `reset.css` 文件：
 
 ```jsx
 import "./assets/reset.css";
 ```
 
-全局应用的样式，除了可以添加到外部css文件中，还可以添加到单文件组件的<style>标签中。在 Vue 中，并非只有在`App.vue`根组件的`<style>`标签中添加的样式才是全局样式。如果在单文件组件的`<style>`标签中不使用`scoped`属性 ，那么该`<style>`标签内的样式就具有全局作用域。
+全局应用的样式，除了可以添加到外部 css 文件中，还可以添加到单文件组件的<style>标签中。在 Vue 中，并非只有在`App.vue`根组件的`<style>`标签中添加的样式才是全局样式。如果在单文件组件的`<style>`标签中不使用`scoped`属性 ，那么该`<style>`标签内的样式就具有全局作用域。
 
 我们应当在 `ToDoForm` 组件中的 `<button>` 元素上应用 CSS 按钮类。由于 Vue 模板是有效的 HTML 代码，这个步骤的实现与在纯 HTML 上实现类似——通过在元素中添加 `class=""` 属性实现。
 
-- 要添加样式的最后一个组件是我们的 `ToDoItem` 组件。为了使样式的定义靠近组件，我们可以在它里面添加一个 `<style>` 元素。（v-bind:style=”{样式名:样式值}”，其实就是传入对象）
+- 要添加样式的最后一个组件是我们的 `ToDoItem` 组件。为了使样式的定义靠近组件，我们可以在它里面添加一个 `<style>` 元素。(v-bind:style=”{样式名:样式值}”，其实就是传入对象)
 
 - 可以给 `:class` (`v-bind:class` 的缩写) 传递一个对象来动态切换 class：
 
-    `<div :class="{ active: isActive }"></div>`（类名+布尔值）将样式回归到CSS中，同时后面的布尔值可以是动态的
+  `<div :class="{ active: isActive }"></div>`(类名+布尔值)将样式回归到 CSS 中，同时后面的布尔值可以是动态的
 
-    上面的语法表示 `active` 是否存在取决于数据属性 `isActive` 的[**真假值**](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)。
+  上面的语法表示 `active` 是否存在取决于数据属性 `isActive` 的[**真假值**](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)。
 
 如果想在数组中有条件地渲染某个 class，你可以使用三元表达式： `<div :class="[isActive ? activeClass : '', errorClass]"></div>`
 
@@ -3982,9 +3978,9 @@ import "./assets/reset.css";
 
 ## computed——计算属性
 
-computed是vue组件对象的一个属性，其值往往由一个函数返回或为一个JavaScript表达式的值。
+computed 是 vue 组件对象的一个属性，其值往往由一个函数返回或为一个 JavaScript 表达式的值。
 
-使用 Vue 的[计算属性](https://vuejs.org/guide/essentials/computed.html)。计算属性的工作原理与methods类似，但仅在它们的一个依赖项发生变化时重新运行。要创建计算属性，我们需要向组件对象添加一个 `computed` 属性，就像我们之前使用的 `methods` 属性一样。如果不使用计算属性，这个值将在每次渲染时重新计算。对于像当前这样较小的应用程序，这可能并不不会产生什么影响。但是对于更大的应用程序，或者当表达式更复杂时，这可能会导致严重的性能问题。
+使用 Vue 的[计算属性](https://vuejs.org/guide/essentials/computed.html)。计算属性的工作原理与 methods 类似，但仅在它们的一个依赖项发生变化时重新运行。要创建计算属性，我们需要向组件对象添加一个 `computed` 属性，就像我们之前使用的 `methods` 属性一样。如果不使用计算属性，这个值将在每次渲染时重新计算。对于像当前这样较小的应用程序，这可能并不不会产生什么影响。但是对于更大的应用程序，或者当表达式更复杂时，这可能会导致严重的性能问题。
 
 ```jsx
 computed: {
@@ -3994,7 +3990,7 @@ computed: {
 }
 ```
 
-（`${}`是 ES6（ES2015）引入的模板字面量（Template Literals）语法。在模板字面量中，使用反引号（`）来包裹字符串，在` ${}` 大括号内部可以放置任何有效的 JavaScript 表达式，包括变量、函数调用、算术运算等）
+(`${}`是 ES6(ES2015)引入的模板字面量(Template Literals)语法。在模板字面量中，使用反引号(`)来包裹字符串，在` ${}` 大括号内部可以放置任何有效的 JavaScript 表达式，包括变量、函数调用、算术运算等)
 
 `filter`函数用于过滤数组中的元素，返回一个新数组。新数组中的元素是通过对调用数组中的每个元素执行`callback`函数进行测试后符合条件的元素。
 
@@ -4012,7 +4008,7 @@ computed: {
 
 从计算属性返回的值是派生状态。可以把它看作是一个“临时快照”，每当源状态发生变化时，就会创建一个新的快照。更改快照是没有意义的，因此计算属性的返回值应该被视为只读的，并且永远不应该被更改——应该更新它所依赖的源状态以触发新的计算。
 
-对于JS对象，属性名有横杠-是会报错的，因此这里要使用驼峰命名法
+对于 JS 对象，属性名有横杠-是会报错的，因此这里要使用驼峰命名法
 
 ## $event——传递事件数据的特殊变量
 
@@ -4026,7 +4022,7 @@ computed: {
 
 ## v-if——根据条件渲染显示控件
 
-现在我们有了一个可用的 `isEditing` 标志来表示事项正在被编辑（或者未被编辑）。如果 `isEditing` 为真，我们会用这个标志来展示我们的 `ToDoItemEditForm` 而不是复选框。为此，我们将使用另一个 Vue 指令：[`v-if`](https://cn.vuejs.org/api/built-in-directives.html#v-if)。
+现在我们有了一个可用的 `isEditing` 标志来表示事项正在被编辑(或者未被编辑)。如果 `isEditing` 为真，我们会用这个标志来展示我们的 `ToDoItemEditForm` 而不是复选框。为此，我们将使用另一个 Vue 指令：[`v-if`](https://cn.vuejs.org/api/built-in-directives.html#v-if)。
 
 `v-if` 指令只会在传递给它的值为真的情况下渲染一个块。这和 `if` 语句在 JavaScript 起作用的方式相似。`v-if` 也有对应的 [`v-else-if`](https://vuejs.org/api/built-in-directives.html#v-else-if) 和 [`v-else`](https://vuejs.org/api/built-in-directives.html#v-else) 指令，在 Vue 模板中提供相当于 JavaScript 的 `else if` 和 `else` 逻辑。
 
@@ -4037,11 +4033,11 @@ computed: {
 接下来，我们将为 `item-deleted` 和 `item-edited` 事件添加事件监听器：
 
 - 对于 `item-deleted`，你需要把 `item.id` 传递给该方法。
-- 对于 `item-edited`，你需要传递 `item.id` 和特殊的 `$event` 变量。这是一个特殊的 Vue 变量，用于传递事件数据给方法。当使用本地 HTML 事件（如 `click`）时，它将把本地事件对象传递给你的方法。
+- 对于 `item-edited`，你需要传递 `item.id` 和特殊的 `$event` 变量。这是一个特殊的 Vue 变量，用于传递事件数据给方法。当使用本地 HTML 事件(如 `click`)时，它将把本地事件对象传递给你的方法。
 
-注意你取消后复选框的状态——不仅应用程序忘记了复选框的状态，而且待办事项的完成状态现在也不正常了。如果你尝试再次勾选（或取消勾选）它，完成项的计数值将反向更改。这是因为在组件加载时，`data` 中的 `isDone` 只给出了值 `this.done`。
+注意你取消后复选框的状态——不仅应用程序忘记了复选框的状态，而且待办事项的完成状态现在也不正常了。如果你尝试再次勾选(或取消勾选)它，完成项的计数值将反向更改。这是因为在组件加载时，`data` 中的 `isDone` 只给出了值 `this.done`。
 
-幸运的是，修复这个问题很容易：我们可以通过将我们的 `isDone` 数据转换为[计算属性](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Frameworks_libraries/Vue_computed_properties)来做到这一点。计算属性的另一个优点是，它们保留了[反应性](https://vuejs.org/guide/essentials/reactivity-fundamentals.html)，这意味着（在其他事情中）当模板发生变化时，它们的状态会被保存，就像我们现在做的那样。
+幸运的是，修复这个问题很容易：我们可以通过将我们的 `isDone` 数据转换为[计算属性](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Frameworks_libraries/Vue_computed_properties)来做到这一点。计算属性的另一个优点是，它们保留了[反应性](https://vuejs.org/guide/essentials/reactivity-fundamentals.html)，这意味着(在其他事情中)当模板发生变化时，它们的状态会被保存，就像我们现在做的那样。
 
 另一个可以用来按条件显示一个元素的指令是 `v-show`。其用法基本一样：
 
@@ -4066,7 +4062,7 @@ computed: {
 
 ## ref——模板引用
 
-如果你需要访问底层 DOM 节点（比如设置焦点时），你可以使用 [Vue 模板引用](https://cn.vuejs.org/guide/essentials/template-refs.html)。对于自定义的 Vue 组件，你也可以使用 refs 来直接访问子组件的内部结构，然而这样做应该是谨慎的，因为这会使代码更难推理和理解。
+如果你需要访问底层 DOM 节点(比如设置焦点时)，你可以使用 [Vue 模板引用](https://cn.vuejs.org/guide/essentials/template-refs.html)。对于自定义的 Vue 组件，你也可以使用 refs 来直接访问子组件的内部结构，然而这样做应该是谨慎的，因为这会使代码更难推理和理解。
 
 要在一个组件中使用模板引用，你需要在你想访问的元素上添加一个 `ref` 属性，并为该属性的值添加一个字符串标识符。值得注意的是，在一个组件中，引用必须是唯一的。在同一时间呈现的两个元素不应该有相同的引用。
 
@@ -4076,13 +4072,13 @@ computed: {
 
 注意，你只可以**在组件挂载后**才能访问模板引用。如果你想在模板中的表达式上访问 `$refs.input`，在初次渲染时会是 `undefined`。这是因为在初次渲染前这个元素还不存在呢！
 
-## $nextTick( )——用于需要DOM更新后再执行的操作
+## $nextTick( )——用于需要 DOM 更新后再执行的操作
 
 当你修改了响应式状态时，DOM 会被自动更新。但是需要注意的是，DOM 更新不是同步的。Vue 会在“next tick”更新周期中缓冲所有状态的修改，以确保不管你进行了多少次状态修改，每个组件都只会被更新一次。
 
 要等待 DOM 更新完成后再执行额外的代码，可以使用 [**nextTick()**](https://cn.vuejs.org/api/general.html#nexttick) 全局 API
 
-记住，当我们把 `isEditing` 改为 `true` 时，我们不再渲染“Edit”按钮的组件部分。这意味着没有元素可以绑定引用，所以它变成了 `undefined`。这就是“*不能访问属性 "focus"，editButtonRef 是 undefined 的*”（Cannot read properties of null (reading 'focus')）这个报错的原因
+记住，当我们把 `isEditing` 改为 `true` 时，我们不再渲染“Edit”按钮的组件部分。这意味着没有元素可以绑定引用，所以它变成了 `undefined`。这就是“_不能访问属性 "focus"，editButtonRef 是 undefined 的_”(Cannot read properties of null (reading 'focus'))这个报错的原因
 
 你现在可能在想：“我们在访问 `ref` 之前不是设置了 `isEditing=false` 吗，现在 `v-if` 不是应该显示这个按钮吗？”这就是虚拟 DOM 起作用的地方。因为 Vue 试图优化和批处理变化，当我们把 `isEditing` 设置为 `false` 时，它不会立即更新 DOM。所以当我们调用 `focusOnEditButton()` 时，“Edit”按钮还没有被渲染。
 
@@ -4097,13 +4093,13 @@ computed: {
 - **表现形式**：以使用`debounce`函数创建的防抖点击事件处理函数为例，在组件中定义`click: debounce(function () { //... 对点击的响应... }, 500)`，这里的`click`方法就是有状态方法。`debounce`函数会在运行时维护一个内部状态，比如记录上次调用的时间等信息，以此来控制函数的执行频率，避免短时间内多次触发事件。
 - **存在问题及解决方式**：有状态方法对于被重用的组件存在问题，因为多个组件实例共享同一个预置防抖的函数时，它们之间会互相影响。为保持每个组件实例的防抖函数彼此独立，可以在`created`生命周期钩子中创建预置防抖的函数，让每个实例都有自己独立的有状态方法。并且在组件卸载时，最好在`unmounted`钩子中清除防抖计时器，如`this.debouncedClick.cancel()`，以避免潜在的内存泄漏等问题。
 
-## 虚拟DOM和实际DOM
+## 虚拟 DOM 和实际 DOM
 
-Vue 和其他一些框架一样，使用一个虚拟 DOM（VDOM）来管理元素。这意味着 Vue 在内存中保留了我们应用程序中所有节点的表示。任何更新首先在内存中的节点上执行，然后所有需要对页面上的实际节点进行的更改都会被批量同步。
+Vue 和其他一些框架一样，使用一个虚拟 DOM(VDOM)来管理元素。这意味着 Vue 在内存中保留了我们应用程序中所有节点的表示。任何更新首先在内存中的节点上执行，然后所有需要对页面上的实际节点进行的更改都会被批量同步。
 
-由于读写实际的 DOM 节点通常比虚拟节点开销更大，虚拟 DOM 可以带来更好的性能。然而，这也意味着在使用框架时，你往往不应该直接通过原生浏览器 API（如 [`Document.getElementById`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementById)）来编辑你的 HTML 元素，因为这会导致 VDOM 和真实 DOM 不同步。
+由于读写实际的 DOM 节点通常比虚拟节点开销更大，虚拟 DOM 可以带来更好的性能。然而，这也意味着在使用框架时，你往往不应该直接通过原生浏览器 API(如 [`Document.getElementById`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementById))来编辑你的 HTML 元素，因为这会导致 VDOM 和真实 DOM 不同步。
 
-实际 DOM 和虚拟 DOM 之间的关系是：虚拟 DOM（VDOM）是 Vue 在内存中保留的应用程序中所有节点的表示。Vue 通过虚拟 DOM 来管理元素，它会根据数据变化，在内存中的虚拟 DOM 节点上执行更新操作，然后将这些更新批量同步到实际 DOM 上 。
+实际 DOM 和虚拟 DOM 之间的关系是：虚拟 DOM(VDOM)是 Vue 在内存中保留的应用程序中所有节点的表示。Vue 通过虚拟 DOM 来管理元素，它会根据数据变化，在内存中的虚拟 DOM 节点上执行更新操作，然后将这些更新批量同步到实际 DOM 上 。
 
 在网页运行时，它们的运作机制如下：
 
@@ -4120,9 +4116,9 @@ Vue 为了提升性能，采用异步更新策略来批量处理 DOM 更新。�
 2. **挂载**：运行时渲染器调用渲染函数，遍历返回的虚拟 DOM 树，并基于它创建实际的 DOM 节点。这一步会作为[**响应式副作用**](https://cn.vuejs.org/guide/extras/reactivity-in-depth.html)执行，因此它会追踪其中所用到的所有响应式依赖。
 3. **更新**：当一个依赖发生变化后，副作用会重新运行，这时候会创建一个更新后的虚拟 DOM 树。运行时渲染器遍历这棵新树，将它与旧树进行比较，然后将必要的更新应用到真实 DOM 上去。
 
-## Vue中的生命周期方法
+## Vue 中的生命周期方法
 
-接下来，我们需要在点击“Edit”按钮时将焦点移到编辑表单的 `<input>` 元素。然而，由于我们的编辑表单和“Edit”按钮在不同的组件中，我们不能仅仅在“Edit”按钮的点击事件处理器中设置焦点。相反，我们可以利用每当“Edit”按钮被点击时，我们就删除并重新挂载 `ToDoItemEditForm` 组件的这一事实来处理这个问题。Vue 组件经历了一系列的事件，被称为**生命周期**。这个生命周期从元素被创建并添加到 VDOM（*mounted*）之前，一直到它们被从 VDOM 中移除（*destroyed*）。
+接下来，我们需要在点击“Edit”按钮时将焦点移到编辑表单的 `<input>` 元素。然而，由于我们的编辑表单和“Edit”按钮在不同的组件中，我们不能仅仅在“Edit”按钮的点击事件处理器中设置焦点。相反，我们可以利用每当“Edit”按钮被点击时，我们就删除并重新挂载 `ToDoItemEditForm` 组件的这一事实来处理这个问题。Vue 组件经历了一系列的事件，被称为**生命周期**。这个生命周期从元素被创建并添加到 VDOM(_mounted_)之前，一直到它们被从 VDOM 中移除(_destroyed_)。
 
 Vue 让你在这个生命周期的不同阶段使用**生命周期方法**运行方法。这对于像数据获取这样的事情很有用，你可能需要在组件渲染之前，或者在一个属性改变之后获取数据。下面是生命周期方法的列表，按照它们被触发的顺序排列。
 
@@ -4150,9 +4146,9 @@ Vue 让你在这个生命周期的不同阶段使用**生命周期方法**运行
 ```jsx
 // 定义一个多参数多语句的箭头函数，用于计算两个数的和并打印相关信息
 const calculateAndPrint = (num1, num2) => {
-    const sum = num1 + num2;
-    console.log(`第一个数是 ${num1}，第二个数是 ${num2}，它们的和是 ${sum}`);
-    return sum;
+  const sum = num1 + num2;
+  console.log(`第一个数是 ${num1}，第二个数是 ${num2}，它们的和是 ${sum}`);
+  return sum;
 };
 
 // 调用函数
@@ -4162,7 +4158,7 @@ console.log(`最终计算结果为: ${result}`);
 
 在使用箭头函数时需要注意，它没有自己的`this`绑定，`this`的值在定义箭头函数时就已经确定，会继承自外层作用域的`this` 。**在文档中提到的 Vue 生命周期方法中，就特别强调不能使用箭头函数定义生命周期方法，因为需要访问组件实例的`this`来获取模板引用等信息，若使用箭头函数会导致`this`指向错误，无法正确访问组件实例的属性和方法 。**
 
-## Vue路由
+## Vue 路由
 
 服务端路由指的是服务器根据用户访问的 URL 路径返回不同的响应结果。当我们在一个传统的服务端渲染的 web 应用中点击一个链接时，浏览器会从服务端获得全新的 HTML，然后重新加载整个页面。
 
@@ -4174,9 +4170,9 @@ Vue 很适合用来构建单页面应用。对于大多数此类应用，都推�
 
 如果你只需要一个简单的页面路由，而不想为此引入一整个路由库，你可以通过[**动态组件**](https://cn.vuejs.org/guide/essentials/component-basics.html#dynamic-components)的方式，监听浏览器 [**`hashchange` 事件**](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event)或使用 [**History API**](https://developer.mozilla.org/en-US/docs/Web/API/History) 来更新当前组件。
 
-## Vue状态管理
+## Vue 状态管理
 
-下面介绍手动状态管理的方式，可以用于简单的应用场景。如有大型应用的维护需求，可使用官方的pinia库或vuex库进行自动状态管理。
+下面介绍手动状态管理的方式，可以用于简单的应用场景。如有大型应用的维护需求，可使用官方的 pinia 库或 vuex 库进行自动状态管理。
 
 理论上来说，每一个 Vue 组件实例都已经在“管理”它自己的响应式状态了。以一个简单的计数器组件为例：它是一个独立的单元，由以下几个部分组成：
 
@@ -4199,7 +4195,7 @@ Vue 很适合用来构建单页面应用。对于大多数此类应用，都推�
 
 一个更简单直接的解决方案是抽取出组件间的共享状态，放在一个全局单例中来管理。这样我们的组件树就变成了一个大的“视图”，而任何位置上的组件都可以访问其中的状态或触发动作。
 
-用响应式API作简单状态管理
+用响应式 API 作简单状态管理
 
 在选项式 API 中，响应式数据是用 `data()` 选项声明的。在内部，`data()` 的返回值对象会通过 [**`reactive()`**](https://cn.vuejs.org/api/reactivity-core.html#reactive) 这个公开的 API 函数转为响应式。如果你有一部分状态需要在多个组件实例间共享，你可以使用 [**`reactive()`**](https://cn.vuejs.org/api/reactivity-core.html#reactive) 来创建一个响应式对象，并将它导入到多个组件中：
 
@@ -4268,7 +4264,7 @@ export const store = reactive({
 
 Vue 的响应性系统与组件层是解耦的，这使得它非常灵活。
 
-## 侦听器watch
+## 侦听器 watch
 
 计算属性允许我们声明性地计算衍生值。然而在有些情况下，我们需要在状态变化时执行一些“副作用”：例如更改 DOM，或是根据异步操作的结果去修改另一处的状态。
 
@@ -4282,7 +4278,7 @@ Vue 的响应性系统与组件层是解耦的，这使得它非常灵活。
 
 ### **尺寸**
 
-- **`width`**：设置元素的宽度，取值可以是具体的长度值（如 `px`、`em`、`rem`）、百分比、`auto` 等。例如：`width: 200px;`
+- **`width`**：设置元素的宽度，取值可以是具体的长度值(如 `px`、`em`、`rem`)、百分比、`auto` 等。例如：`width: 200px;`
 - **`min-width`**：设置元素的最小宽度。如：`min-width: 100px;`
 - **`max-width`**：设置元素的最大宽度。如：`max-width: 500px;`
 - **`height`**：设置元素的高度。例如：`height: 150px;`
@@ -4291,38 +4287,38 @@ Vue 的响应性系统与组件层是解耦的，这使得它非常灵活。
 
 ### **内外边距**
 
-- **`margin`**：设置元素的外边距，可分别设置上、右、下、左外边距，也可简写。例如：`margin: 10px;` （四周外边距均为 10px）；`margin-top: 5px;` （上外边距为 5px）
-- **`padding`**：设置元素的内边距，使用方法与 `margin` 类似。如：`padding: 20px 10px;` （上下内边距 20px，左右内边距 10px）
+- **`margin`**：设置元素的外边距，可分别设置上、右、下、左外边距，也可简写。例如：`margin: 10px;` (四周外边距均为 10px)；`margin-top: 5px;` (上外边距为 5px)
+- **`padding`**：设置元素的内边距，使用方法与 `margin` 类似。如：`padding: 20px 10px;` (上下内边距 20px，左右内边距 10px)
 
 ### **盒模型计算方式**
 
-- **`box-sizing`**：取值有 `content-box`（默认，宽度和高度只包含内容区）和 `border-box`（宽度和高度包含内容区、内边距和边框）。例如：`box-sizing: border-box;`
+- **`box-sizing`**：取值有 `content-box`(默认，宽度和高度只包含内容区)和 `border-box`(宽度和高度包含内容区、内边距和边框)。例如：`box-sizing: border-box;`
 
 ### **布局相关属性**
 
 ### **显示类型**
 
-- **`display`**：常见取值有 `block`（块级元素）、`inline`（行内元素）、`inline-block`（行内块级元素）、`flex`（弹性布局容器）、`grid`（网格布局容器）、`none`（不显示）等。例如：`display: flex;`
-- **`visibility`**：取值有 `visible`（默认，元素可见）、`hidden`（元素隐藏，但仍占据空间）、`collapse`（用于表格行、列等，隐藏并释放空间）。如：`visibility: hidden;`
+- **`display`**：常见取值有 `block`(块级元素)、`inline`(行内元素)、`inline-block`(行内块级元素)、`flex`(弹性布局容器)、`grid`(网格布局容器)、`none`(不显示)等。例如：`display: flex;`
+- **`visibility`**：取值有 `visible`(默认，元素可见)、`hidden`(元素隐藏，但仍占据空间)、`collapse`(用于表格行、列等，隐藏并释放空间)。如：`visibility: hidden;`
 
 ### **定位**
 
-- **`position`**：取值有 `static`（默认，元素正常布局）、`relative`（相对定位，相对于正常位置偏移）、`absolute`（绝对定位，相对于最近的已定位祖先元素）、`fixed`（固定定位，相对于浏览器窗口）、`sticky`（粘性定位，在滚动时固定在某个位置）。例如：`position: relative; top: 10px; left: 20px;`
+- **`position`**：取值有 `static`(默认，元素正常布局)、`relative`(相对定位，相对于正常位置偏移)、`absolute`(绝对定位，相对于最近的已定位祖先元素)、`fixed`(固定定位，相对于浏览器窗口)、`sticky`(粘性定位，在滚动时固定在某个位置)。例如：`position: relative; top: 10px; left: 20px;`
 - **`top`、`right`、`bottom`、`left`**：用于定位元素的偏移量，与 `position` 属性配合使用。
 
 ### **浮动与清除浮动**
 
-- **`float`**：取值有 `left`（向左浮动）、`right`（向右浮动）、`none`（不浮动）。例如：`float: left;`
-- **`clear`**：取值有 `left`（清除左浮动）、`right`（清除右浮动）、`both`（清除左右浮动）、`none`（不清除）。如：`clear: both;`
+- **`float`**：取值有 `left`(向左浮动)、`right`(向右浮动)、`none`(不浮动)。例如：`float: left;`
+- **`clear`**：取值有 `left`(清除左浮动)、`right`(清除右浮动)、`both`(清除左右浮动)、`none`(不清除)。如：`clear: both;`
 
 ### **Flexbox 布局**
 
 如果 `display` 设置为 `flex`，还有以下相关属性：
 
-- **`flex-direction`**：定义主轴方向，取值有 `row`（水平从左到右）、`row-reverse`（水平从右到左）、`column`（垂直从上到下）、`column-reverse`（垂直从下到上）。例如：`flex-direction: column;`
-- **`flex-wrap`**：定义元素是否换行，取值有 `nowrap`（不换行）、`wrap`（换行）、`wrap-reverse`（换行且反转顺序）。如：`flex-wrap: wrap;`
-- **`justify-content`**：定义主轴上的对齐方式，取值有 `flex-start`（起始端对齐）、`flex-end`（末尾端对齐）、`center`（居中对齐）、`space-between`（两端对齐，元素间间距相等）、`space-around`（元素两侧间距相等）等。例如：`justify-content: center;`
-- **`align-items`**：定义交叉轴上的对齐方式，取值有 `stretch`（拉伸填充）、`flex-start`、`flex-end`、`center`、`baseline`（基线对齐）。如：`align-items: center;`
+- **`flex-direction`**：定义主轴方向，取值有 `row`(水平从左到右)、`row-reverse`(水平从右到左)、`column`(垂直从上到下)、`column-reverse`(垂直从下到上)。例如：`flex-direction: column;`
+- **`flex-wrap`**：定义元素是否换行，取值有 `nowrap`(不换行)、`wrap`(换行)、`wrap-reverse`(换行且反转顺序)。如：`flex-wrap: wrap;`
+- **`justify-content`**：定义主轴上的对齐方式，取值有 `flex-start`(起始端对齐)、`flex-end`(末尾端对齐)、`center`(居中对齐)、`space-between`(两端对齐，元素间间距相等)、`space-around`(元素两侧间距相等)等。例如：`justify-content: center;`
+- **`align-items`**：定义交叉轴上的对齐方式，取值有 `stretch`(拉伸填充)、`flex-start`、`flex-end`、`center`、`baseline`(基线对齐)。如：`align-items: center;`
 - **`align-content`**：当有多行元素时，定义交叉轴上的对齐方式，取值与 `justify-content` 类似。
 - **`flex-grow`**：定义元素的放大比例。如：`flex-grow: 1;`
 - **`flex-shrink`**：定义元素的缩小比例。如：`flex-shrink: 2;`
@@ -4344,10 +4340,10 @@ Vue 的响应性系统与组件层是解耦的，这使得它非常灵活。
 - **`font-family`**：设置字体家族，可指定多个字体，按顺序匹配。如：`font-family: Arial, sans-serif;`
 - **`font-size`**：设置字体大小，取值可以是具体长度值、百分比等。例如：`font-size: 18px;`
 - **`font-weight`**：设置字体粗细，取值有 `normal`、`bold`、`bolder`、`lighter` 以及 100 - 900 的数字值。如：`font-weight: bold;`
-- **`font-style`**：设置字体样式，取值有 `normal`、`italic`（斜体）、`oblique`（倾斜）。例如：`font-style: italic;`
-- **`text-align`**：设置文本的水平对齐方式，取值有 `left`、`right`、`center`、`justify`（两端对齐）。如：`text-align: center;`
-- **`text-decoration`**：设置文本的装饰线，取值有 `none`、`underline`（下划线）、`overline`（上划线）、`line-through`（删除线）等。例如：`text-decoration: underline;`
-- **`text-transform`**：设置文本的大小写转换，取值有 `none`、`uppercase`（全大写）、`lowercase`（全小写）、`capitalize`（首字母大写）。如：`text-transform: uppercase;`
+- **`font-style`**：设置字体样式，取值有 `normal`、`italic`(斜体)、`oblique`(倾斜)。例如：`font-style: italic;`
+- **`text-align`**：设置文本的水平对齐方式，取值有 `left`、`right`、`center`、`justify`(两端对齐)。如：`text-align: center;`
+- **`text-decoration`**：设置文本的装饰线，取值有 `none`、`underline`(下划线)、`overline`(上划线)、`line-through`(删除线)等。例如：`text-decoration: underline;`
+- **`text-transform`**：设置文本的大小写转换，取值有 `none`、`uppercase`(全大写)、`lowercase`(全小写)、`capitalize`(首字母大写)。如：`text-transform: uppercase;`
 - **`line-height`**：设置行高，可使用具体长度值、倍数等。例如：`line-height: 1.5;`
 - **`letter-spacing`**：设置字符间距。如：`letter-spacing: 2px;`
 - **`word-spacing`**：设置单词间距。如：`word-spacing: 5px;`
@@ -4356,22 +4352,22 @@ Vue 的响应性系统与组件层是解耦的，这使得它非常灵活。
 
 - **`background-color`**：设置背景颜色。例如：`background-color: lightblue;`
 - **`background-image`**：设置背景图像，可使用 `url()` 函数指定图像路径。如：`background-image: url('image.jpg');`
-- **`background-repeat`**：定义背景图像的重复方式，取值有 `repeat`（默认，水平和垂直重复）、`repeat-x`（水平重复）、`repeat-y`（垂直重复）、`no-repeat`（不重复）。例如：`background-repeat: no-repeat;`
-- **`background-position`**：设置背景图像的位置，可使用具体长度值、百分比或关键字（如 `top`、`left`、`center` 等）。如：`background-position: center;`
-- **`background-size`**：设置背景图像的大小，取值有 `auto`（默认，保持原始大小）、`cover`（覆盖整个元素）、`contain`（包含在元素内）以及具体长度值、百分比等。例如：`background-size: cover;`
-- **`background-attachment`**：定义背景图像是否随页面滚动，取值有 `scroll`（默认，随页面滚动）、`fixed`（固定不动）、`local`（随元素内容滚动）。如：`background-attachment: fixed;`
+- **`background-repeat`**：定义背景图像的重复方式，取值有 `repeat`(默认，水平和垂直重复)、`repeat-x`(水平重复)、`repeat-y`(垂直重复)、`no-repeat`(不重复)。例如：`background-repeat: no-repeat;`
+- **`background-position`**：设置背景图像的位置，可使用具体长度值、百分比或关键字(如 `top`、`left`、`center` 等)。如：`background-position: center;`
+- **`background-size`**：设置背景图像的大小，取值有 `auto`(默认，保持原始大小)、`cover`(覆盖整个元素)、`contain`(包含在元素内)以及具体长度值、百分比等。例如：`background-size: cover;`
+- **`background-attachment`**：定义背景图像是否随页面滚动，取值有 `scroll`(默认，随页面滚动)、`fixed`(固定不动)、`local`(随元素内容滚动)。如：`background-attachment: fixed;`
 
 ### **边框相关属性**
 
 - **`border-width`**：设置边框宽度，可分别设置上、右、下、左边框宽度，也可简写。例如：`border-width: 2px;`
-- **`border-style`**：设置边框样式，常见取值有 `solid`（实线）、`dotted`（点状线）、`dashed`（虚线）、`double`（双实线）等。如：`border-style: dashed;`
+- **`border-style`**：设置边框样式，常见取值有 `solid`(实线)、`dotted`(点状线)、`dashed`(虚线)、`double`(双实线)等。如：`border-style: dashed;`
 - **`border-color`**：设置边框颜色，使用方法与 `color` 属性类似。例如：`border-color: green;`
 - **`border`**：是 `border-width`、`border-style` 和 `border-color` 的简写属性。如：`border: 1px solid black;`
 - **`border-radius`**：设置边框圆角，可分别设置四个角的圆角半径，也可简写。例如：`border-radius: 5px;`
 
 ### **特效与动画相关属性**
 
-- **`opacity`**：设置元素的透明度，取值范围是 0（完全透明）到 1（完全不透明）。例如：`opacity: 0.5;`
+- **`opacity`**：设置元素的透明度，取值范围是 0(完全透明)到 1(完全不透明)。例如：`opacity: 0.5;`
 - **`box-shadow`**：为元素添加阴影效果，可设置阴影的偏移量、模糊半径、扩散半径、颜色等。如：`box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);`
 - **`text-shadow`**：为文本添加阴影效果，使用方法与 `box-shadow` 类似。例如：`text-shadow: 1px 1px 2px gray;`
 - **`transform`**：对元素进行变换操作，如旋转、缩放、平移、倾斜等。例如：`transform: rotate(45deg);`
@@ -4388,8 +4384,8 @@ Vue 的响应性系统与组件层是解耦的，这使得它非常灵活。
 
 ### **其他属性**
 
-- **`cursor`**：设置鼠标指针在元素上的样式，取值有 `pointer`（手型）、`default`（默认箭头）、`text`（文本选择）等。例如：`cursor: pointer;`
-- **`overflow`**：当元素内容超出其尺寸时，定义如何处理溢出内容，取值有 `visible`（默认，内容可见）、`hidden`（隐藏溢出内容）、`scroll`（显示滚动条）、`auto`（根据需要显示滚动条）。如：`overflow: auto;`
+- **`cursor`**：设置鼠标指针在元素上的样式，取值有 `pointer`(手型)、`default`(默认箭头)、`text`(文本选择)等。例如：`cursor: pointer;`
+- **`overflow`**：当元素内容超出其尺寸时，定义如何处理溢出内容，取值有 `visible`(默认，内容可见)、`hidden`(隐藏溢出内容)、`scroll`(显示滚动条)、`auto`(根据需要显示滚动条)。如：`overflow: auto;`
 - **`z-index`**：设置元素的堆叠顺序，值越大越在上面，仅对定位元素有效。例如：`z-index: 10;`
 
 ## 主题切换
@@ -4410,116 +4406,116 @@ Vue 的响应性系统与组件层是解耦的，这使得它非常灵活。
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      // 初始模式为日间模式
-      isDarkMode: false,
-    };
-  },
-};
+  export default {
+    data() {
+      return {
+        // 初始模式为日间模式
+        isDarkMode: false
+      };
+    }
+  };
 </script>
 
 <style scoped>
-/* 通用样式 */
-body {
-  font-family: Arial, sans-serif;
-  transition: background-color 0.3s ease;
-}
+  /* 通用样式 */
+  body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
 
-/* 滑槽式按钮样式 */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
+  /* 滑槽式按钮样式 */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 
-input:checked + .slider {
-  background-color: #2196f3;
-}
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
 
-.slider.round {
-  border-radius: 34px;
-}
+  .slider.round {
+    border-radius: 34px;
+  }
 
-.slider.round:before {
-  border-radius: 50%;
-}
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
-/* 日间模式样式 */
-.light-mode {
-  background-image: url("@/assets/light_bg.jpg");
-  background-size: cover;
-  color: #333;
-}
+  /* 日间模式样式 */
+  .light-mode {
+    background-image: url("@/assets/light_bg.jpg");
+    background-size: cover;
+    color: #333;
+  }
 
-.light-mode p {
-  color: #333;
-}
+  .light-mode p {
+    color: #333;
+  }
 
-.light-mode button {
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #333;
-}
+  .light-mode button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
 
-/* 夜间模式样式 */
-.dark-mode {
-  background-image: url("@/assets/dark_bg.jpg");
-  background-size: cover;
-  color: #fff;
-}
+  /* 夜间模式样式 */
+  .dark-mode {
+    background-image: url("@/assets/dark_bg.jpg");
+    background-size: cover;
+    color: #fff;
+  }
 
-.dark-mode p {
-  color: #fff;
-}
+  .dark-mode p {
+    color: #fff;
+  }
 
-.dark-mode button {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #fff;
-}
+  .dark-mode button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+  }
 </style>
 ```
 
@@ -4527,7 +4523,7 @@ input:checked + .slider:before {
 
 ![画图梳理数据流](../assets/post-pics/画图梳理数据流.png)
 
-## Vue安全问题
+## Vue 安全问题
 
 无论是使用模板还是渲染函数，内容都是自动转义的。在标签内的<>”默认都会被转义以防止脚本注入。从而防止在 `title` attribute 解析时，注入任意的 HTML。这种转义是使用 `setAttribute` 这样的浏览器原生 API 完成的，所以只有当浏览器本身存在漏洞时，才会存在漏洞。
 
@@ -4558,17 +4554,17 @@ input:checked + .slider:before {
 
 类似跨站请求伪造 (CSRF/XSRF) 和跨站脚本引入 (XSSI) 这样的 HTTP 安全漏洞，主要由后端负责处理，因此它们不是 Vue 职责范围内的问题。但是，你应该与后端团队保持沟通，了解如何更好地与后端 API 进行交互，例如，在提交表单时附带 CSRF 令牌。
 
-## Vue项目部署
+## Vue 项目部署
 
-vue项目部署：https://cli.vuejs.org/zh/guide/deployment.html
+vue 项目部署：https://cli.vuejs.org/zh/guide/deployment.html
 
 # Jekyll
 
 ## 背景知识
 
-jekyll是基于Ruby开发的、用于构建静态博客的工具。
+jekyll 是基于 Ruby 开发的、用于构建静态博客的工具。
 
-Ruby 是一种开源的、面向对象的、动态的高级编程语言，由日本程序员松本行弘（Yukihiro Matsumoto，昵称 Matz）在 20 世纪 90 年代中期开发。它的设计理念是让开发者能够快乐、高效地编写代码，强调简洁性和生产力。其特点有面向对象、动态类型、标准库丰富；常用于Web开发和脚本编写等任务。
+Ruby 是一种开源的、面向对象的、动态的高级编程语言，由日本程序员松本行弘(Yukihiro Matsumoto，昵称 Matz)在 20 世纪 90 年代中期开发。它的设计理念是让开发者能够快乐、高效地编写代码，强调简洁性和生产力。其特点有面向对象、动态类型、标准库丰富；常用于 Web 开发和脚本编写等任务。
 
 Gem 是 Ruby 的软件包管理系统，它允许开发者打包、分发和安装 Ruby 库和应用程序。每个 Gem 都包含了一组 Ruby 代码以及相关的元数据，如版本信息、依赖关系等。Gemfile 是用于记录项目特定依赖的文件。
 
@@ -4576,69 +4572,69 @@ Bundler 用于管理 Ruby 项目的依赖关系
 
 ## 项目构建
 
-运行以创建Gemfile：（其中含有`source "<https://rubygems.org>"`）
+运行以创建 Gemfile：(其中含有`source "<https://rubygems.org>"`)
 
 ```bash
 bundle init
 ```
 
-在文件中输入`gem "jekyll"` 使得构建时使用指定的gem版本
+在文件中输入`gem "jekyll"` 使得构建时使用指定的 gem 版本
 
-再运行来为项目安装jekyll：
+再运行来为项目安装 jekyll：
 
 ```bash
 bundle
 ```
 
-到此为止，可以使用`bundle exec` 作为jekyll命令的前缀，以保证使用Gemfile中指定的jekyll版本
+到此为止，可以使用`bundle exec` 作为 jekyll 命令的前缀，以保证使用 Gemfile 中指定的 jekyll 版本
 
-运行`jekyll build` 来生成最终要渲染的html文档，它们存放在生成的_site目录下，因此建议将该目录添加到`.gitnore`中；同样建议加入.gitignore的还有`.jekyll-cache` 和`.jekyll-metadata` 两个目录
+运行`jekyll build` 来生成最终要渲染的 html 文档，它们存放在生成的\_site 目录下，因此建议将该目录添加到`.gitnore`中；同样建议加入.gitignore 的还有`.jekyll-cache` 和`.jekyll-metadata` 两个目录
 
 运行`jekyll serve` 可以在[`http://localhost:4000`](http://localhost:4000/)启动本地服务器
 
-## Liquid语言
+## Liquid 语言
 
 Liquid 是一种开源的模板语言，由 Shopify 开发，用于将动态内容与静态模板相结合，从而生成最终的 HTML、XML 或其他文本格式的文档。它可以与各种后端编程语言和框架集成，只要该语言或框架实现了 Liquid 的解析器。例如，Ruby、Python、Java 等语言都有相应的 Liquid 解析库，开发者可以根据自己的项目需求选择合适的后端技术。
 
 语法简单，只有三点
 
-- **对象（Objects）**：是 Liquid 中用于输出数据的占位符，通过双花括号 `{{ }}` 来标识。对象会被实际的数据所替换。例如 `{{ product.title }}` ，如果 `product` 是一个商品对象，`title` 是其属性，那么这个对象标签在渲染时会输出该商品的标题。
-- **标签（Tags）**：用于控制模板的逻辑和流程，使用 `{% %}` 包裹。标签可以实现条件判断、循环、赋值等功能。例如 `{% if product.available %}` 用于判断商品是否有货，进而执行不同的代码块。
-- **过滤器（Filters）**：用于对对象输出的数据进行格式化处理，通过管道符号 `|` 连接到对象后面。比如 `{{ product.price | money }}` ，可以将商品价格按照货币格式进行输出。
+- **对象(Objects)**：是 Liquid 中用于输出数据的占位符，通过双花括号 `{{ }}` 来标识。对象会被实际的数据所替换。例如 `{{ product.title }}` ，如果 `product` 是一个商品对象，`title` 是其属性，那么这个对象标签在渲染时会输出该商品的标题。
+- **标签(Tags)**：用于控制模板的逻辑和流程，使用 `{% %}` 包裹。标签可以实现条件判断、循环、赋值等功能。例如 `{% if product.available %}` 用于判断商品是否有货，进而执行不同的代码块。
+- **过滤器(Filters)**：用于对对象输出的数据进行格式化处理，通过管道符号 `|` 连接到对象后面。比如 `{{ product.price | money }}` ，可以将商品价格按照货币格式进行输出。
 
 ## Front Matter
 
-front matter添加在html或md文档的开头，是由两条三虚线组成的yaml片段。在 YAML 中，front matter 是一种特殊的结构，用于在文档开头嵌入元数据。
+front matter 添加在 html 或 md 文档的开头，是由两条三虚线组成的 yaml 片段。在 YAML 中，front matter 是一种特殊的结构，用于在文档开头嵌入元数据。
 
-可以在front matter中声明变量，经常使用的变量有`title`和`layout`。
+可以在 front matter 中声明变量，经常使用的变量有`title`和`layout`。
 
-使用 `page` 对象在Liquid中调用在 front matter 中声明的变量，可以从`page.url` 获取到当前页面的路由信息。
+使用 `page` 对象在 Liquid 中调用在 front matter 中声明的变量，可以从`page.url` 获取到当前页面的路由信息。
 
-## Layout模板
+## Layout 模板
 
-模板是jekyll中一种特殊的html文件，存放在_layouts目录下。作为模板的html文件将来会被提供内容的html或md文档，通过在front matter中声明layout变量来调用，模板文档可以在Liquid中调用内容文档中在front matter中声明的变量（比如title）。
+模板是 jekyll 中一种特殊的 html 文件，存放在\_layouts 目录下。作为模板的 html 文件将来会被提供内容的 html 或 md 文档，通过在 front matter 中声明 layout 变量来调用，模板文档可以在 Liquid 中调用内容文档中在 front matter 中声明的变量(比如 title)。
 
-模板文档中需要使用Liquid中的双大括号包含content关键字的语法`{{content}}` 来让内容文档中的内容嵌入，具体来说，内容文档中除了front matter的部分，都会被嵌入到模板文档的`{{content}}` 中。内容文档在front matter中，需要通过layout属性指定_layout目录下的文档名（不带后缀）来选择模板文档。
+模板文档中需要使用 Liquid 中的双大括号包含 content 关键字的语法`{{content}}` 来让内容文档中的内容嵌入，具体来说，内容文档中除了 front matter 的部分，都会被嵌入到模板文档的`{{content}}` 中。内容文档在 front matter 中，需要通过 layout 属性指定\_layout 目录下的文档名(不带后缀)来选择模板文档。
 
-layout可以嵌套，也就是用作模板的文档，还可以在front matter中声明layout，将自己文档的内容嵌入到更宏观的模板中。
+layout 可以嵌套，也就是用作模板的文档，还可以在 front matter 中声明 layout，将自己文档的内容嵌入到更宏观的模板中。
 
 ## Include Tag
 
-通过`include` 标签，可以实现 `_includes`目录下的其他文件的复用，一个典型的例子是导航栏（无论切换到哪个页面，导航栏总是存在）
+通过`include` 标签，可以实现 `_includes`目录下的其他文件的复用，一个典型的例子是导航栏(无论切换到哪个页面，导航栏总是存在)
 
 ```html
-  <body>
-    {% include navigation.html %} {{ content }}
-  </body>
+<body>
+  {% include navigation.html %} {{ content }}
+</body>
 ```
 
-实质上就是将需要复用的html代码放到了`_include`目录下，并使用特定的语法进行调用
+实质上就是将需要复用的 html 代码放到了`_include`目录下，并使用特定的语法进行调用
 
 ## 数据组织
 
-jekyll支持从`_data`目录下的`yaml`、`json`、`csv`文件中加载并解析数据
+jekyll 支持从`_data`目录下的`yaml`、`json`、`csv`文件中加载并解析数据
 
-例如，有文件`_data/navigation.yml` ，可以通过`site.data.navigation` 来访问这些数据，比如使用Liquid语法中的for标签遍历文件中的数据
+例如，有文件`_data/navigation.yml` ，可以通过`site.data.navigation` 来访问这些数据，比如使用 Liquid 语法中的 for 标签遍历文件中的数据
 
 ```html
 <nav>
@@ -4650,74 +4646,72 @@ jekyll支持从`_data`目录下的`yaml`、`json`、`csv`文件中加载并解�
 </nav>
 ```
 
-------
+---
 
-博客组织的机制与此类似：支持被自动化处理的博客，需要存放在_posts目录下，并以年月日+标题的固定格式命名，例如`_posts/2025-02-11-cmos.md` ，文档中在front matter中选择layout就可以将符合markdown语法的博客文档渲染在网页中；此外还可以在front matter声明如author、date这样的自定义属性，以供模板文件使用。
+博客组织的机制与此类似：支持被自动化处理的博客，需要存放在\_posts 目录下，并以年月日+标题的固定格式命名，例如`_posts/2025-02-11-cmos.md` ，文档中在 front matter 中选择 layout 就可以将符合 markdown 语法的博客文档渲染在网页中；此外还可以在 front matter 声明如 author、date 这样的自定义属性，以供模板文件使用。
 
 可以通过`site.posts` 来访问这些博客文档，例如一个博客列表
 
 ```html
 <ul>
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </li>
   {% endfor %}
 </ul>
 ```
 
-其中`url`属性是自动设置的；`title`属性由md文档名解析得到，可以由front matter中的`tittle`属性覆写；`excerpt`是文档的第一段，可用于写简介。
+其中`url`属性是自动设置的；`title`属性由 md 文档名解析得到，可以由 front matter 中的`tittle`属性覆写；`excerpt`是文档的第一段，可用于写简介。
 
-## 使用Sass样式化
+## 使用 Sass 样式化
 
 # 杂记
-
-
 
 主入口文件是什么，为什么需要这个文件，一般什么样的代码功能会需要这个文件
 
 主入口文件是程序运行的起始点，在 npm 包中，其作用至关重要。
 
-- **定义**：在 npm 包中，`package.json`文件里`main`配置项指定的 js 文件就是主入口文件。比如当`main`的值为`index.js` ，则`index.js`就是主入口文件12。
-- **必要性**：当别人引用这个包时，引入的就是主入口文件所`export`出的模块。它是包对外暴露接口和功能的统一入口，让引用者能方便地使用包内功能，避免引用时找不到正确的起始位置2。
-- **适用场景**：具有模块化、封装功能特性的代码功能通常需要主入口文件。像构建一个工具库，把各种工具函数封装在不同模块，通过主入口文件统一导出，使用者只需引用主入口，就能使用工具库的所有功能；还有开发一个框架，主入口文件可以整合框架的核心功能、初始化配置等，开发者引入主入口文件，就能快速搭建开发环境2。
+- **定义**：在 npm 包中，`package.json`文件里`main`配置项指定的 js 文件就是主入口文件。比如当`main`的值为`index.js` ，则`index.js`就是主入口文件 12。
+- **必要性**：当别人引用这个包时，引入的就是主入口文件所`export`出的模块。它是包对外暴露接口和功能的统一入口，让引用者能方便地使用包内功能，避免引用时找不到正确的起始位置 2。
+- **适用场景**：具有模块化、封装功能特性的代码功能通常需要主入口文件。像构建一个工具库，把各种工具函数封装在不同模块，通过主入口文件统一导出，使用者只需引用主入口，就能使用工具库的所有功能；还有开发一个框架，主入口文件可以整合框架的核心功能、初始化配置等，开发者引入主入口文件，就能快速搭建开发环境 2。
 
-什么叫js文件所export的模块，它具体是什么东西？为什么一个文件可以导出一个模块，导出的作用是什么？
+什么叫 js 文件所 export 的模块，它具体是什么东西？为什么一个文件可以导出一个模块，导出的作用是什么？
 
-在 JavaScript 中，`export`是 ES6（ES2015）引入的用于对外暴露模块内容的关键字，一个`js`文件所`export`的模块，就是该文件向外部提供的可复用代码片段、数据、函数等的集合。
+在 JavaScript 中，`export`是 ES6(ES2015)引入的用于对外暴露模块内容的关键字，一个`js`文件所`export`的模块，就是该文件向外部提供的可复用代码片段、数据、函数等的集合。
 
 - **模块定义**：一个`js`文件可以看作一个独立的模块，通过`export`关键字可以将文件内定义的函数、变量、类等暴露出去 。例如在`mathUtils.js`文件中定义了一个加法函数，使用`export`将其暴露：`export function add(a, b) { return a + b; }`，这里`add`函数就是被导出的模块内容。
-- **导出原因**：JavaScript 使用`export`来导出模块，是为了实现代码的模块化开发。在大型项目中，将不同功能的代码分别封装在不同的`js`文件（模块）中，通过`export`暴露功能，再用`import`引入使用，能让代码结构更清晰，方便管理和维护。比如开发一个电商项目，将商品列表展示功能相关代码放在`productList.js`文件中，导出其中的函数和数据，在其他需要展示商品列表的页面引入使用，提高了代码复用性1。
+- **导出原因**：JavaScript 使用`export`来导出模块，是为了实现代码的模块化开发。在大型项目中，将不同功能的代码分别封装在不同的`js`文件(模块)中，通过`export`暴露功能，再用`import`引入使用，能让代码结构更清晰，方便管理和维护。比如开发一个电商项目，将商品列表展示功能相关代码放在`productList.js`文件中，导出其中的函数和数据，在其他需要展示商品列表的页面引入使用，提高了代码复用性 1。
 
-ES6是什么
+ES6 是什么
 
 ES6，即 ECMAScript 2015，是 JavaScript 语言的一个重要版本。它为 JavaScript 带来了诸多新特性和功能，显著提升了开发效率，增强了代码的可读性与可维护性。其主要新特性如下：
 
 - **块级作用域**：通过`let`和`const`关键字实现。`let`声明的变量只在其所在的块级作用域内有效，避免了变量提升和意外修改；`const`用于声明常量，一旦声明，值不可更改 ，这使得代码中变量的作用域和可变性更可控。
 - **箭头函数**：提供了更简洁的函数定义方式。箭头函数的语法更加紧凑，并且没有自己的`this`、`arguments`等绑定，其`this`取决于外层作用域，简化了函数定义和使用，特别适用于一些简单的回调函数场景 。
 - **解构赋值**：可方便地从数组或对象中提取值，并赋给多个变量。例如`let [a, b] = [1, 2]`，将数组中的值分别赋给`a`和`b`；`let { x, y } = { x: 10, y: 20 }`，从对象中提取属性值赋值给变量，提高了数据提取和处理的便利性。
-- **模板字符串**：使用反引号（`）包裹字符串，支持在字符串中嵌入表达式，通过`${}`语法实现。如`let name = "John"; let message = `Hello, ${name}!`;`，相较于传统字符串拼接，模板字符串更易读、更灵活。
+- **模板字符串**：使用反引号(`)包裹字符串，支持在字符串中嵌入表达式，通过`${}`语法实现。如`let name = "John"; let message = `Hello, ${name}!`;`，相较于传统字符串拼接，模板字符串更易读、更灵活。
 - **类的支持**：引入`class`关键字，提供了更清晰、更接近传统面向对象编程的类定义方式。通过`class`可以定义类的属性和方法，还支持继承等特性，使 JavaScript 在面向对象编程方面更具表现力和可维护性 。
 - **模块系统**：通过`export`和`import`关键字实现。`export`用于将模块内的函数、变量等暴露出去，`import`用于在其他模块中引入这些内容，提高了代码的模块化和复用性，便于大型项目的代码组织和管理 。
 
-javascript主要用于什么开发
+javascript 主要用于什么开发
 
 JavaScript 是一种广泛应用的编程语言，主要用于以下开发领域：
 
-- **Web 前端开发**：在网页中，JavaScript 负责实现交互效果，比如网页菜单的展开与收起、表单验证、页面动态加载内容等。像电商网站的商品筛选、添加购物车功能，社交平台的点赞、评论交互等都是通过 JavaScript 实现的。同时，配合 HTML 和 CSS，它能构建出完整的用户界面，提升用户体验。常见的前端框架如 Vue.js、React 和 Angular，基于 JavaScript 构建，极大提高了前端开发效率1。
-- **Node.js 后端开发**：Node.js 基于 Chrome V8 引擎运行 JavaScript 代码，让其可以用于服务器端开发。借助 Express、Koa 等框架，开发人员能够搭建高性能的 Web 服务器，处理网络请求、文件系统操作、数据库交互等任务。像在线教育平台的后端服务，使用 Node.js 处理课程数据的存储与读取、用户登录注册验证等操作23。
+- **Web 前端开发**：在网页中，JavaScript 负责实现交互效果，比如网页菜单的展开与收起、表单验证、页面动态加载内容等。像电商网站的商品筛选、添加购物车功能，社交平台的点赞、评论交互等都是通过 JavaScript 实现的。同时，配合 HTML 和 CSS，它能构建出完整的用户界面，提升用户体验。常见的前端框架如 Vue.js、React 和 Angular，基于 JavaScript 构建，极大提高了前端开发效率 1。
+- **Node.js 后端开发**：Node.js 基于 Chrome V8 引擎运行 JavaScript 代码，让其可以用于服务器端开发。借助 Express、Koa 等框架，开发人员能够搭建高性能的 Web 服务器，处理网络请求、文件系统操作、数据库交互等任务。像在线教育平台的后端服务，使用 Node.js 处理课程数据的存储与读取、用户登录注册验证等操作 23。
 - **移动应用开发**：通过 React Native、Ionic 等技术，JavaScript 可用于开发跨平台移动应用。这些应用能在 iOS 和 Android 系统上运行，实现与原生应用相似的性能和体验。例如，知名的音乐播放应用、办公软件，就是利用这些技术开发，节省开发成本和时间。
 - **游戏开发**：在网页游戏和一些手机游戏开发中，JavaScript 发挥重要作用。借助 Canvas、WebGL 等技术，配合游戏引擎如 Phaser、Three.js，开发者可以创建 2D 和 3D 游戏。像一些简单的休闲小游戏、在线对战游戏，都基于 JavaScript 开发。
 
-举例说明什么是npm scripts
+举例说明什么是 npm scripts
 
 npm scripts 是`package.json`文件中的一个配置项，是一个由脚本名称和脚本内容组成的 JSON 对象，通过`npm run xxx`的方式来运行。比如：
 
-- **执行系统命令**：在`package.json`的`scripts`中配置`"echo":"echo hello npm"` 、`"dir":"dir"`、`"ip":"ipconfig"`，这些`echo`、`dir`、`ipconfig`都是系统 cmd 的内部命令，无需安装额外插件，通过`npm run echo` 、`npm run dir`、`npm run ip`就能执行相应操作123。
-- **执行外部命令**：如果安装了`node`、`git`等客户端且配置了系统环境变量，在`scripts`中配置`"git":"git --version"`、`"node":"node -v"`，就能用`npm run git`、`npm run node`执行查看版本的操作。此外，在项目下安装`eslint`（`npm install eslint --save-dev`）后，在`scripts`里配置`"eslint":"eslint -v"`，`eslint -v`属于项目内外部命令，虽在`cmd`窗口直接执行会报错，但通过`npm run eslint`就能正常执行，因为`npm run xxx`执行脚本时会把`当前目录的'node_modules/.bin'`加入到环境变量456。
+- **执行系统命令**：在`package.json`的`scripts`中配置`"echo":"echo hello npm"` 、`"dir":"dir"`、`"ip":"ipconfig"`，这些`echo`、`dir`、`ipconfig`都是系统 cmd 的内部命令，无需安装额外插件，通过`npm run echo` 、`npm run dir`、`npm run ip`就能执行相应操作 123。
+- **执行外部命令**：如果安装了`node`、`git`等客户端且配置了系统环境变量，在`scripts`中配置`"git":"git --version"`、`"node":"node -v"`，就能用`npm run git`、`npm run node`执行查看版本的操作。此外，在项目下安装`eslint`(`npm install eslint --save-dev`)后，在`scripts`里配置`"eslint":"eslint -v"`，`eslint -v`属于项目内外部命令，虽在`cmd`窗口直接执行会报错，但通过`npm run eslint`就能正常执行，因为`npm run xxx`执行脚本时会把`当前目录的'node_modules/.bin'`加入到环境变量 456。
 
-npm scripts实际上是一个json文件对吗
+npm scripts 实际上是一个 json 文件对吗
 
 npm scripts 不是一个 JSON 文件，它是`package.json`这个 JSON 文件中的一个配置项 ，是一个由脚本名称和脚本内容组成的 JSON 对象。在`package.json`文件中，`scripts`以如下形式存在：
 
@@ -4729,67 +4723,67 @@ npm scripts 不是一个 JSON 文件，它是`package.json`这个 JSON 文件中
 "scripts": {     "test": "echo \\"Error: no test specified\\" && exit 1",     "start": "node app.js" }
 ```
 
-这里`scripts`包含了`test`和`start`等脚本，通过`npm run`加脚本名称的方式来运行这些脚本，如`npm run test` 、`npm run start`。所以 npm scripts 本身并非一个独立的 JSON 文件，而是`package.json`文件内用于定义脚本的部分12。
+这里`scripts`包含了`test`和`start`等脚本，通过`npm run`加脚本名称的方式来运行这些脚本，如`npm run test` 、`npm run start`。所以 npm scripts 本身并非一个独立的 JSON 文件，而是`package.json`文件内用于定义脚本的部分 12。
 
-eslint是一个软件吗
+eslint 是一个软件吗
 
 eslint 是一个软件，它是一个用于检查 JavaScript 代码质量、发现并修复问题的工具，在前端开发等领域应用广泛。从 npm 的角度来看，它可以作为一个包被安装和使用。
 
-- **安装使用**：在项目下可通过`npm install eslint --save-dev`安装 eslint，安装后会在`node_modules`目录下生成相关文件，可在`package.json`的`scripts`配置项中添加脚本，如`"eslint":"eslint -v"`，之后就能用`npm run eslint`运行它，这体现了它作为一个可安装和执行的软件特性1。
-- **功能特性**：eslint 能够对 JavaScript 代码进行语法检查，找出代码中的潜在错误、不规范的写法等，帮助开发者提升代码质量，保障项目的稳定性和可维护性，这些功能也符合软件的定义1。
+- **安装使用**：在项目下可通过`npm install eslint --save-dev`安装 eslint，安装后会在`node_modules`目录下生成相关文件，可在`package.json`的`scripts`配置项中添加脚本，如`"eslint":"eslint -v"`，之后就能用`npm run eslint`运行它，这体现了它作为一个可安装和执行的软件特性 1。
+- **功能特性**：eslint 能够对 JavaScript 代码进行语法检查，找出代码中的潜在错误、不规范的写法等，帮助开发者提升代码质量，保障项目的稳定性和可维护性，这些功能也符合软件的定义 1。
 
-npm scripts在什么时候会起作用，在什么使用会被调用
+npm scripts 在什么时候会起作用，在什么使用会被调用
 
 npm scripts 在项目开发过程中涉及脚本执行的场景都会起作用并被调用，常见情况如下：
 
-- **项目初始化与构建**：运行`npm init`生成`package.json`文件后，若在`scripts`配置了如`start`脚本用于启动项目开发服务器，执行`npm run start` （对于`start`、`test`等关键命令，还能直接用`npm start`），就会调用该脚本启动相关服务，让项目处于可开发状态12。
-- **运行测试**：当在`scripts`中配置测试脚本，例如`"test": "jest"`（假设项目使用 Jest 进行测试），执行`npm test`就能调用此脚本运行测试用例，检查代码质量和功能完整性。
+- **项目初始化与构建**：运行`npm init`生成`package.json`文件后，若在`scripts`配置了如`start`脚本用于启动项目开发服务器，执行`npm run start` (对于`start`、`test`等关键命令，还能直接用`npm start`)，就会调用该脚本启动相关服务，让项目处于可开发状态 12。
+- **运行测试**：当在`scripts`中配置测试脚本，例如`"test": "jest"`(假设项目使用 Jest 进行测试)，执行`npm test`就能调用此脚本运行测试用例，检查代码质量和功能完整性。
 - **代码检查与格式化**：配置`eslint`检查脚本，像`"lint": "eslint src"`，运行`npm run lint`，会调用该脚本对`src`目录下的代码进行语法和风格检查，确保代码符合规范。若配置了代码格式化脚本，如`"format": "prettier --write src"`，执行`npm run format`可调用脚本格式化代码。
-- **打包部署**：项目开发完成后进行打包，若配置`"build": "webpack --config webpack.config.js"`，执行`npm run build`会调用此脚本启动打包流程。部署时若有相关脚本，如`"deploy": "rsync -avz dist/ server:/var/www/html"`，执行`npm run deploy`可调用脚本完成部署任务3。
+- **打包部署**：项目开发完成后进行打包，若配置`"build": "webpack --config webpack.config.js"`，执行`npm run build`会调用此脚本启动打包流程。部署时若有相关脚本，如`"deploy": "rsync -avz dist/ server:/var/www/html"`，执行`npm run deploy`可调用脚本完成部署任务 3。
 
-npm安装和管理的包，到底是指的什么？
+npm 安装和管理的包，到底是指的什么？
 
 npm 安装和管理的包是指可复用的代码集合，它包含了 JavaScript 代码及相关资源，这些包能帮助开发者快速实现各种功能。
 
-- **具体内容**：一个包可以是一个函数库，像`lodash`提供了丰富的工具函数，用于数组、对象操作等；也可以是一个框架，如`Vue`、`React`，帮助开发者构建用户界面。包中除了 JavaScript 代码，还可能包含样式文件、测试代码、文档说明等资源1。
+- **具体内容**：一个包可以是一个函数库，像`lodash`提供了丰富的工具函数，用于数组、对象操作等；也可以是一个框架，如`Vue`、`React`，帮助开发者构建用户界面。包中除了 JavaScript 代码，还可能包含样式文件、测试代码、文档说明等资源 1。
 - 依赖类型
-    - **业务依赖（`dependencies`）**：是项目运行必不可少的包，属于线上代码的一部分。例如一个电商项目中，用于处理商品数据展示的`vue`包就是业务依赖，`npm install --production`时只会安装此配置下的包23。
-    - **开发环境依赖（`devDependencies`）**：仅在开发过程中需要，比如项目开发时用于代码检查的`eslint`包，使用`npm install --save-dev`安装并添加到此配置下45。
-    - **同行依赖（`peerDependencies`）**：运行`npm install`时会提示安装，但不会自动安装。例如某些插件可能有特定的同行依赖要求，开发者需根据提示手动安装6。
-    - **可选依赖（`optionalDependencies`）**：即使安装失败也不影响项目安装，会覆盖`dependencies`中的同名包。比如某个非关键的功能扩展包，若安装失败不影响项目主要功能7。
-    - **打包依赖（`bundledDependencies`）**：发布当前包时，会将此配置下的依赖包一起打包。不过这些包必须先在`dependencies`和`devDependencies`声明过，否则打包会报错8。
+  - **业务依赖(`dependencies`)**：是项目运行必不可少的包，属于线上代码的一部分。例如一个电商项目中，用于处理商品数据展示的`vue`包就是业务依赖，`npm install --production`时只会安装此配置下的包 23。
+  - **开发环境依赖(`devDependencies`)**：仅在开发过程中需要，比如项目开发时用于代码检查的`eslint`包，使用`npm install --save-dev`安装并添加到此配置下 45。
+  - **同行依赖(`peerDependencies`)**：运行`npm install`时会提示安装，但不会自动安装。例如某些插件可能有特定的同行依赖要求，开发者需根据提示手动安装 6。
+  - **可选依赖(`optionalDependencies`)**：即使安装失败也不影响项目安装，会覆盖`dependencies`中的同名包。比如某个非关键的功能扩展包，若安装失败不影响项目主要功能 7。
+  - **打包依赖(`bundledDependencies`)**：发布当前包时，会将此配置下的依赖包一起打包。不过这些包必须先在`dependencies`和`devDependencies`声明过，否则打包会报错 8。
 
 这些软件包是从哪里来的？为何能够安装到我们的电脑上？中间经历了怎样的过程？
 
 这些软件包来自 npm 注册表，它是一个巨大的数据库，存放着包的信息。能安装到电脑上并使用，得益于 npm 的安装机制和流程。
 
-1. **包的来源**：软件包存放在 npm 注册表这个巨大数据库中，在 npm 官网上可以查找包、查看包信息，当执行安装命令时，npm 会从注册表获取相关包的信息和代码12。
-2. **安装到电脑上的原因**：npm 作为包管理工具，提供了安装和管理包的功能，npm 通过 npm-cli 这个命令行工具与开发者交互，开发者运行相关 npm 命令，npm-cli 就会按照相应逻辑从注册表获取包并安装到本地，实现对包的管理和使用34。
+1. **包的来源**：软件包存放在 npm 注册表这个巨大数据库中，在 npm 官网上可以查找包、查看包信息，当执行安装命令时，npm 会从注册表获取相关包的信息和代码 12。
+2. **安装到电脑上的原因**：npm 作为包管理工具，提供了安装和管理包的功能，npm 通过 npm-cli 这个命令行工具与开发者交互，开发者运行相关 npm 命令，npm-cli 就会按照相应逻辑从注册表获取包并安装到本地，实现对包的管理和使用 34。
 3. 安装过程
-    - **执行安装命令**：运行`npm install xxx` 或 `npm install xxx --save-dev` 等命令，`xxx`代表要安装的包名。例如运行`npm install vue`和`npm install eslint --save-dev`。
-    - **创建或更新相关文件和目录**：添加`node_modules`目录，安装的包和包的依赖都存放在这里。`package.json`文件会自动添加相应配置，如果是普通安装，包的名称和版本加入到`dependencies`配置中；如果带上`-save-dev`参数，则加入到`devDependencies`配置中。同时还会添加`package-lock.json`文件，用于锁定包的版本和依赖结构567。
-    - **查找和下载包**：npm 首先会在本地缓存查找是否有所需包。若未找到，npm 会从 npm 注册表查找符合版本要求的包，根据`package.json`中指定的版本范围，如`^`、`~`等符号确定具体版本 ，然后下载包及其依赖。下载过程中会将包信息记录到`package-lock.json`文件，包括版本号、下载地址等。安装时会按照一定规则处理依赖结构，采用扁平结构安装，避免重复安装89。
+   - **执行安装命令**：运行`npm install xxx` 或 `npm install xxx --save-dev` 等命令，`xxx`代表要安装的包名。例如运行`npm install vue`和`npm install eslint --save-dev`。
+   - **创建或更新相关文件和目录**：添加`node_modules`目录，安装的包和包的依赖都存放在这里。`package.json`文件会自动添加相应配置，如果是普通安装，包的名称和版本加入到`dependencies`配置中；如果带上`-save-dev`参数，则加入到`devDependencies`配置中。同时还会添加`package-lock.json`文件，用于锁定包的版本和依赖结构 567。
+   - **查找和下载包**：npm 首先会在本地缓存查找是否有所需包。若未找到，npm 会从 npm 注册表查找符合版本要求的包，根据`package.json`中指定的版本范围，如`^`、`~`等符号确定具体版本 ，然后下载包及其依赖。下载过程中会将包信息记录到`package-lock.json`文件，包括版本号、下载地址等。安装时会按照一定规则处理依赖结构，采用扁平结构安装，避免重复安装 89。
 
-npm在工作机制和开发中承担的角色是不是和pip类似？npm是javascript的包管理工具吗？还是nodejs的包管理工具？nodejs和javascript是什么关系？代码运行环境具体来说指的又是什么？为什么需要特定的运行环境？
+npm 在工作机制和开发中承担的角色是不是和 pip 类似？npm 是 javascript 的包管理工具吗？还是 nodejs 的包管理工具？nodejs 和 javascript 是什么关系？代码运行环境具体来说指的又是什么？为什么需要特定的运行环境？
 
 npm 在工作机制和开发中承担的角色与 pip 类似，npm 既是 JavaScript 的包管理工具，也是 Node.js 的包管理工具。
 
-1. **npm 与 pip 的相似性**：npm 和 pip 分别是 JavaScript（和 Node.js 生态）与 Python 的包管理工具 。它们都能从远程仓库获取代码包，安装到项目中。在开发时，都可以管理项目依赖，比如 npm 的`package.json`和 pip 的`requirements.txt`文件，记录项目所需包及版本，方便项目在不同环境部署12。
-2. **npm 与 JavaScript、Node.js 的关系**：npm 最初是作为 Node.js 的包管理工具出现的，随着 JavaScript 在前端开发中的广泛应用，npm 也成为 JavaScript 开发不可或缺的包管理工具。在 Node.js 环境下，npm 用于安装各种模块，辅助后端开发；在前端开发中，也借助 npm 管理如 Vue、React 等框架及相关工具库3。
+1. **npm 与 pip 的相似性**：npm 和 pip 分别是 JavaScript(和 Node.js 生态)与 Python 的包管理工具 。它们都能从远程仓库获取代码包，安装到项目中。在开发时，都可以管理项目依赖，比如 npm 的`package.json`和 pip 的`requirements.txt`文件，记录项目所需包及版本，方便项目在不同环境部署 12。
+2. **npm 与 JavaScript、Node.js 的关系**：npm 最初是作为 Node.js 的包管理工具出现的，随着 JavaScript 在前端开发中的广泛应用，npm 也成为 JavaScript 开发不可或缺的包管理工具。在 Node.js 环境下，npm 用于安装各种模块，辅助后端开发；在前端开发中，也借助 npm 管理如 Vue、React 等框架及相关工具库 3。
 3. **Node.js 与 JavaScript 的关系**：JavaScript 是一种编程语言，而 Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时环境。它让 JavaScript 可以脱离浏览器，在服务器端等环境运行，拓展了 JavaScript 的应用场景。比如使用 Node.js 可以搭建 Web 服务器，处理网络请求等，这些在传统浏览器环境下的 JavaScript 无法做到。
-4. **代码运行环境的含义及必要性**：代码运行环境是指代码执行所需的软件和硬件环境，包含操作系统、编程语言运行时（如 Node.js、Python 解释器）、相关依赖库等。不同编程语言有不同运行环境，因为每种语言都有独特的语法和执行方式，需要特定环境解析和执行代码。例如 JavaScript 在浏览器中运行，需要浏览器提供 DOM、BOM 等对象和环境；在 Node.js 环境运行，则需要其提供文件系统、网络操作等功能支持。特定运行环境能提供代码所需资源和接口，保障代码正常运行4。
+4. **代码运行环境的含义及必要性**：代码运行环境是指代码执行所需的软件和硬件环境，包含操作系统、编程语言运行时(如 Node.js、Python 解释器)、相关依赖库等。不同编程语言有不同运行环境，因为每种语言都有独特的语法和执行方式，需要特定环境解析和执行代码。例如 JavaScript 在浏览器中运行，需要浏览器提供 DOM、BOM 等对象和环境；在 Node.js 环境运行，则需要其提供文件系统、网络操作等功能支持。特定运行环境能提供代码所需资源和接口，保障代码正常运行 4。
 
-NodeJS为javascript的运行到底提供了什么？python和javascript是不是在包管理的原理和机制这一点上几乎一样
+NodeJS 为 javascript 的运行到底提供了什么？python 和 javascript 是不是在包管理的原理和机制这一点上几乎一样
 
-Node.js 为 JavaScript 的运行提供了脱离浏览器的运行环境，让 JavaScript 能在服务器端、命令行工具等场景运行。它提供了一系列内置模块，像文件系统（`fs`）模块可进行文件的读写操作；网络（`net`、`http`、`https`）模块用于创建网络服务器和发起网络请求；还有事件驱动机制，能让程序高效处理异步操作，提升性能 。
+Node.js 为 JavaScript 的运行提供了脱离浏览器的运行环境，让 JavaScript 能在服务器端、命令行工具等场景运行。它提供了一系列内置模块，像文件系统(`fs`)模块可进行文件的读写操作；网络(`net`、`http`、`https`)模块用于创建网络服务器和发起网络请求；还有事件驱动机制，能让程序高效处理异步操作，提升性能 。
 
-Python 和 JavaScript 在包管理的原理和机制上有相似点，但也存在明显差异。相似之处在于，二者都有远程仓库来存储包，npm 有 npm 注册表，Python 有 PyPI（Python Package Index）；都能安装包到项目中，npm 用`npm install`，Python 用`pip install`；都可在配置文件记录项目依赖，npm 通过`package.json`，Python 通过`requirements.txt`。不同的是，npm 安装的包存放于`node_modules`目录，而 Python 安装的包路径取决于环境和安装方式；npm 包版本管理用 semver 规范，有主、次、补丁版本号及修饰符，Python 的包版本遵循 PEP 440 规范，版本号格式和规则有自身特点 。
+Python 和 JavaScript 在包管理的原理和机制上有相似点，但也存在明显差异。相似之处在于，二者都有远程仓库来存储包，npm 有 npm 注册表，Python 有 PyPI(Python Package Index)；都能安装包到项目中，npm 用`npm install`，Python 用`pip install`；都可在配置文件记录项目依赖，npm 通过`package.json`，Python 通过`requirements.txt`。不同的是，npm 安装的包存放于`node_modules`目录，而 Python 安装的包路径取决于环境和安装方式；npm 包版本管理用 semver 规范，有主、次、补丁版本号及修饰符，Python 的包版本遵循 PEP 440 规范，版本号格式和规则有自身特点 。
 
-npm install eslint --save-dev中的 --save-dev是什么意思
+npm install eslint --save-dev 中的 --save-dev 是什么意思
 
-- `-save-dev`是`npm install`命令的一个参数，用于指定安装的包为开发环境依赖。当使用`npm install eslint --save-dev`安装`eslint`包时，`eslint`会被添加到`package.json`文件的`devDependencies`配置中，这表明`eslint`是项目开发时才需要的工具包，不是项目线上运行所必需的。与之相对的，如果安装包时不使用`-save-dev`参数，包会被添加到`dependencies`配置中，代表该包是项目的业务依赖，是项目线上代码的一部分12。
+- `-save-dev`是`npm install`命令的一个参数，用于指定安装的包为开发环境依赖。当使用`npm install eslint --save-dev`安装`eslint`包时，`eslint`会被添加到`package.json`文件的`devDependencies`配置中，这表明`eslint`是项目开发时才需要的工具包，不是项目线上运行所必需的。与之相对的，如果安装包时不使用`-save-dev`参数，包会被添加到`dependencies`配置中，代表该包是项目的业务依赖，是项目线上代码的一部分 12。
 
-直接在cmd窗口执行
+直接在 cmd 窗口执行
 
 ```
 eslint -v
@@ -4797,7 +4791,7 @@ eslint -v
 
 ,则会报错，
 
-这是因为系统找不到eslint的位置（没有配系统环境变量），但是既然cmd室npm 脚本执行的环境，为什么
+这是因为系统找不到 eslint 的位置(没有配系统环境变量)，但是既然 cmd 室 npm 脚本执行的环境，为什么
 
 ```
 npm run eslint
@@ -4811,7 +4805,7 @@ npm run eslint
 npm run xxx
 ```
 
-执行脚本的时候，会把当前目录的'node_modules/.bin'加入到环境变量，也就是说npm执行脚本的时候，会自动到
+执行脚本的时候，会把当前目录的'node_modules/.bin'加入到环境变量，也就是说 npm 执行脚本的时候，会自动到
 
 ```
 node_modules/.bin
@@ -4819,41 +4813,40 @@ node_modules/.bin
 
 目录下找，如果找到则可以正常执行
 
-package.json和package-lock.json分别都是什么文件，是专用在javascript项目中的吗？这个文件在什么时候会起作用，其什么作用
+package.json 和 package-lock.json 分别都是什么文件，是专用在 javascript 项目中的吗？这个文件在什么时候会起作用，其什么作用
 
 package.json 和 package-lock.json 都是与 JavaScript 项目依赖管理密切相关的文件，虽主要用于 JavaScript 项目，但其他使用 JavaScript 相关技术的场景也会用到。
 
-- **package.json**：是项目的配置文件，定义了项目的各种元数据和依赖关系，包含包名、版本、描述、作者、主文件、脚本、依赖等信息。运行`npm init` （或`npm init -y`）可生成。在项目初始化、安装包、运行脚本、发布包时起作用。它指定项目的基本信息和依赖关系，帮助开发者管理项目，`npm install`依据它安装项目所需包；`npm run`根据其中的`scripts`配置运行脚本123。
-- **package-lock.json**：用于锁定项目依赖包的版本和依赖结构。安装包时自动生成，确保不同环境下安装的包版本一致，避免因包版本变化导致项目运行问题。`npm install`时，先查找该文件，若找到且版本符合`package.json`配置范围，按其记录的地址安装；否则按原逻辑安装。它还记录依赖结构，保证项目依赖结构稳定，提高重新安装效率456。
+- **package.json**：是项目的配置文件，定义了项目的各种元数据和依赖关系，包含包名、版本、描述、作者、主文件、脚本、依赖等信息。运行`npm init` (或`npm init -y`)可生成。在项目初始化、安装包、运行脚本、发布包时起作用。它指定项目的基本信息和依赖关系，帮助开发者管理项目，`npm install`依据它安装项目所需包；`npm run`根据其中的`scripts`配置运行脚本 123。
+- **package-lock.json**：用于锁定项目依赖包的版本和依赖结构。安装包时自动生成，确保不同环境下安装的包版本一致，避免因包版本变化导致项目运行问题。`npm install`时，先查找该文件，若找到且版本符合`package.json`配置范围，按其记录的地址安装；否则按原逻辑安装。它还记录依赖结构，保证项目依赖结构稳定，提高重新安装效率 456。
 
-package-lock.json是怎么生成的，里面的内容都是什么？怎么做到确保不同环境下安装的包版本一致，避免因包版本变化导致项目运行的问题的
+package-lock.json 是怎么生成的，里面的内容都是什么？怎么做到确保不同环境下安装的包版本一致，避免因包版本变化导致项目运行的问题的
 
 package-lock.json 在安装包时自动生成，它记录了项目中所有依赖包的详细信息，包括包的版本号、下载地址和依赖结构等，确保不同环境下安装的包版本一致，避免因包版本变化导致项目运行问题。
 
-- **生成时机**：当运行`npm install`命令安装包时，npm 会自动生成 package-lock.json 文件。无论是安装单个包（如`npm install vue` ），还是基于 package.json 文件安装整个项目的依赖（如删除 node_modules 目录和 package-lock.json 文件后运行`npm install` ），都会触发该文件的生成或更新12。
-- **内容详情**：它记录了项目中所有依赖包的精确版本号，如`"vue": {"version": "2.6.13"}`；还包含每个包的下载地址，即`resolved`字段指定的内容，例如`"resolved": "<https://registry.nlark.com/vue/download/vue-2.6.13.tgz?cache=0&sync_timestamp=1622664849693&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue%2Fdownload%2Fvue-2.6.13.tgz>"` ，以及包的完整性校验信息`integrity` ，用于确保包的完整性和安全性34。
-- **保障版本一致的原理**：npm 在执行`install`的时候，会先把每个需要安装的包在 package-lock.json 里查找。如果找到并且版本符合 package.json 的配置范围（在范围内就行，不需要最新），就会直接按照 package-lock.json 里的地址安装。如果没找到或者不符合范围，则按照原本的逻辑安装（符合版本要求的最新版）。这就确保了不管时间过了多久，只要 package-lock.json 文件不变，npm install 安装的包的版本都是一致的，避免代码运行的依赖环境不同56。
+- **生成时机**：当运行`npm install`命令安装包时，npm 会自动生成 package-lock.json 文件。无论是安装单个包(如`npm install vue` )，还是基于 package.json 文件安装整个项目的依赖(如删除 node_modules 目录和 package-lock.json 文件后运行`npm install` )，都会触发该文件的生成或更新 12。
+- **内容详情**：它记录了项目中所有依赖包的精确版本号，如`"vue": {"version": "2.6.13"}`；还包含每个包的下载地址，即`resolved`字段指定的内容，例如`"resolved": "<https://registry.nlark.com/vue/download/vue-2.6.13.tgz?cache=0&sync_timestamp=1622664849693&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue%2Fdownload%2Fvue-2.6.13.tgz>"` ，以及包的完整性校验信息`integrity` ，用于确保包的完整性和安全性 34。
+- **保障版本一致的原理**：npm 在执行`install`的时候，会先把每个需要安装的包在 package-lock.json 里查找。如果找到并且版本符合 package.json 的配置范围(在范围内就行，不需要最新)，就会直接按照 package-lock.json 里的地址安装。如果没找到或者不符合范围，则按照原本的逻辑安装(符合版本要求的最新版)。这就确保了不管时间过了多久，只要 package-lock.json 文件不变，npm install 安装的包的版本都是一致的，避免代码运行的依赖环境不同 56。
 
-npm是JavaScript语言的包管理工具，它由三个部分组成:
+npm 是 JavaScript 语言的包管理工具，它由三个部分组成:
 
-- npm网站 [进入](https://www.npmjs.com/)npm官网上可以查找包，查看包信息。
+- npm 网站 [进入](https://www.npmjs.com/)npm 官网上可以查找包，查看包信息。
 - 注册表一个巨大的数据库，存放包的信息
-- 命令行工具npm-cli开发者运行npm命令的工具
+- 命令行工具 npm-cli 开发者运行 npm 命令的工具
 
-这三者中，与我们打交道最多的就是npm-cli，其实我们所说的npm的使用，就是指这个工具的使用，那它到底是个什么东西呢？我们先来看看它被放在哪里，在系统命令行（window cmd）工具中输入 `where npm`（安装node会自带npm），就能找到它的位置：
+这三者中，与我们打交道最多的就是 npm-cli，其实我们所说的 npm 的使用，就是指这个工具的使用，那它到底是个什么东西呢？我们先来看看它被放在哪里，在系统命令行(window cmd)工具中输入 `where npm`(安装 node 会自带 npm)，就能找到它的位置：
 
 ```html
-E:\\NodeJS\\npm
-E:\\NodeJS\\npm.cmd
+E:\\NodeJS\\npm E:\\NodeJS\\npm.cmd
 ```
 
 这其实就是一个脚本，它最终执行的是: `node npm-cli.js`
 
-所以到目前为止，我们可以知道当在命令行输入`npm`时，其实是在node环境中，执行了一段npm-cli.js代码，这是对npm的一个直观的认识。
+所以到目前为止，我们可以知道当在命令行输入`npm`时，其实是在 node 环境中，执行了一段 npm-cli.js 代码，这是对 npm 的一个直观的认识。
 
-至于npm-cli.js里面的逻辑是什么，就是研究源码层面的事了，这里不涉及。我们主要来看npm的用法和功能层面的原理。首先来看npm的配置文件package.json。
+至于 npm-cli.js 里面的逻辑是什么，就是研究源码层面的事了，这里不涉及。我们主要来看 npm 的用法和功能层面的原理。首先来看 npm 的配置文件 package.json。
 
-当我们运行命令`npm init`,根据提示输入一些信息后（`npm init -y`不需输入信息），会在当前目录下生成一个package.json文件:
+当我们运行命令`npm init`,根据提示输入一些信息后(`npm init -y`不需输入信息)，会在当前目录下生成一个 package.json 文件:
 
 ```json
 {
@@ -4870,11 +4863,11 @@ E:\\NodeJS\\npm.cmd
 }
 ```
 
-这里就是一个npm包的基本信息，包括包名name，版本version，描述description，作者author，主文件main，脚本scripts等等
+这里就是一个 npm 包的基本信息，包括包名 name，版本 version，描述 description，作者 author，主文件 main，脚本 scripts 等等
 
-`main`配置项的值是一个js文件的路径，它将作为程序的主入口文件。也就是说当别人引用了这个包时`import testNpm from 'testNpm'`，其实引入的就是`testNpm/index.js`文件所export出的模块。
+`main`配置项的值是一个 js 文件的路径，它将作为程序的主入口文件。也就是说当别人引用了这个包时`import testNpm from 'testNpm'`，其实引入的就是`testNpm/index.js`文件所 export 出的模块。
 
-npm scripts 脚本应该是我们打交道最多的一个配置项了，它是json文件中的一个配置项（json文件中的一个对象），由脚本名称和脚本内容组成：
+npm scripts 脚本应该是我们打交道最多的一个配置项了，它是 json 文件中的一个配置项(json 文件中的一个对象)，由脚本名称和脚本内容组成：
 
 ```json
 "scripts":{
@@ -4883,9 +4876,9 @@ npm scripts 脚本应该是我们打交道最多的一个配置项了，它是js
 }
 ```
 
-一般用`npm run xxx`来运行，但是一些关键命令比如：start,test,stop,restart等等，可以直接`npm xxx`来执行。其实当我们`npm run xxx`的时候，就是把xxx的内容生成了一个shell脚本，然后执行脚本
+一般用`npm run xxx`来运行，但是一些关键命令比如：start,test,stop,restart 等等，可以直接`npm xxx`来执行。其实当我们`npm run xxx`的时候，就是把 xxx 的内容生成了一个 shell 脚本，然后执行脚本
 
-在cmd中可以执行的命令，在npm的scripts中都可以执行，举例说明：
+在 cmd 中可以执行的命令，在 npm 的 scripts 中都可以执行，举例说明：
 
 ```json
 "scripts":{
@@ -4896,11 +4889,11 @@ npm scripts 脚本应该是我们打交道最多的一个配置项了，它是js
 }
 ```
 
-像dir，ipconfig,echo这些都是可以直接在cmd命令行中执行的命令，在npm的scripts中都可以通过`npm run xxx`来执行。这一类是系统cmd的内部命令，不需要安装额外的插件，就可以直接执行。
+像 dir，ipconfig,echo 这些都是可以直接在 cmd 命令行中执行的命令，在 npm 的 scripts 中都可以通过`npm run xxx`来执行。这一类是系统 cmd 的内部命令，不需要安装额外的插件，就可以直接执行。
 
-还有一种就是我们在cmd还可以执行外部命令，比如我们如果安装了node,git等客户端，可以直接在cmd窗口执行（需配置了系统的环境变量）：
+还有一种就是我们在 cmd 还可以执行外部命令，比如我们如果安装了 node,git 等客户端，可以直接在 cmd 窗口执行(需配置了系统的环境变量)：
 
-这一类的命令npm也可以执行
+这一类的命令 npm 也可以执行
 
 ```json
 "scripts":{
@@ -4914,7 +4907,7 @@ npm scripts 脚本应该是我们打交道最多的一个配置项了，它是js
 }
 ```
 
-这是全局引入的外部命令，还有些项目内部才有的命令，比如我们在项目下安装eslint: `npm install eslint --save-dev`，在scripts中配置了脚本的话，我们可以直接运行`npm run eslint`
+这是全局引入的外部命令，还有些项目内部才有的命令，比如我们在项目下安装 eslint: `npm install eslint --save-dev`，在 scripts 中配置了脚本的话，我们可以直接运行`npm run eslint`
 
 ```json
 "scripts":{
@@ -4930,9 +4923,9 @@ npm scripts 脚本应该是我们打交道最多的一个配置项了，它是js
 }
 ```
 
-但是如果我们直接在cmd窗口执行`eslint -v`,则会报错，
+但是如果我们直接在 cmd 窗口执行`eslint -v`,则会报错，
 
-这是因为系统找不到eslint的位置（没有配系统环境变量），但是既然cmd室npm 脚本执行的环境，为什么
+这是因为系统找不到 eslint 的位置(没有配系统环境变量)，但是既然 cmd 室 npm 脚本执行的环境，为什么
 
 ```
 npm run eslint
@@ -4946,7 +4939,7 @@ npm run eslint
 npm run xxx
 ```
 
-执行脚本的时候，会把当前目录的'node_modules/.bin'加入到环境变量，也就是说npm执行脚本的时候，会自动到
+执行脚本的时候，会把当前目录的'node_modules/.bin'加入到环境变量，也就是说 npm 执行脚本的时候，会自动到
 
 ```
 node_modules/.bin
@@ -4954,74 +4947,74 @@ node_modules/.bin
 
 目录下找，如果找到则可以正常执行
 
-在node_modules/.bin目录下果然是eslint.cmd脚本的，而它作的其实就是`node eslint.js`,用node来执行eslint.js的代码。
+在 node_modules/.bin 目录下果然是 eslint.cmd 脚本的，而它作的其实就是`node eslint.js`,用 node 来执行 eslint.js 的代码。
 
 **npm 脚本可以执行的命令总结：**
 
-- cmd内部命令,例如dir,ipconfig...
+- cmd 内部命令,例如 dir,ipconfig...
 - 外部命令
-    - 全局命令，加入了系统环境变量
-    - 项目下命令，这部分会放在node_modules/.bin目录下，而npm会自动链接到此目录。
+  - 全局命令，加入了系统环境变量
+  - 项目下命令，这部分会放在 node_modules/.bin 目录下，而 npm 会自动链接到此目录。
 
-下面来做下说明，其实npm的参数都是指node环境下的参数，用node的全局变量process来获取。
+下面来做下说明，其实 npm 的参数都是指 node 环境下的参数，用 node 的全局变量 process 来获取。
 
-- npm内部变量当我们在执行npm命令的时候，就会把package.json的参数加上npm_package_前缀，加入到process.env的变量中，所以在上面的node代码可以通过`process.env.npm_package_name`获取到package.json里面配置的name属性。
-- 命令参数当我们在运行npm命令时，带上以双横线为后缀的参数：`npm 命令 --xx=xx`，npm就会把xx加上npm_config_前缀，加入到process.env变量中，如果原来有同名的，命令参数的优先级最高，会覆盖掉原来的，所以在上面的node代码可以通过`process.env.npm_config_env`获取到`npm run node --env=npmEnv`命令里的参数env的值，如果参数没有赋值：`npm run node --env`，则默认值为`true`
-- 脚本参数这个其实要根据脚本的内容来看，比如我们上面的脚本是`node index.js --env=node`,这其实是纯粹的node命令了，可以通过[process.argv](http://nodejs.cn/api/process.html#process_process_argv)来获取node的命令参数，这是个数组，第一个为node命令路径，第二个为执行文件路径，后面的值为用空格隔开的其他参数，如上面打印的结果所示。
+- npm 内部变量当我们在执行 npm 命令的时候，就会把 package.json 的参数加上 npm*package*前缀，加入到 process.env 的变量中，所以在上面的 node 代码可以通过`process.env.npm_package_name`获取到 package.json 里面配置的 name 属性。
+- 命令参数当我们在运行 npm 命令时，带上以双横线为后缀的参数：`npm 命令 --xx=xx`，npm 就会把 xx 加上 npm*config*前缀，加入到 process.env 变量中，如果原来有同名的，命令参数的优先级最高，会覆盖掉原来的，所以在上面的 node 代码可以通过`process.env.npm_config_env`获取到`npm run node --env=npmEnv`命令里的参数 env 的值，如果参数没有赋值：`npm run node --env`，则默认值为`true`
+- 脚本参数这个其实要根据脚本的内容来看，比如我们上面的脚本是`node index.js --env=node`,这其实是纯粹的 node 命令了，可以通过[process.argv](http://nodejs.cn/api/process.html#process_process_argv)来获取 node 的命令参数，这是个数组，第一个为 node 命令路径，第二个为执行文件路径，后面的值为用空格隔开的其他参数，如上面打印的结果所示。
 
 **执行顺序**
 
-npm脚本的执行顺序分为两部分:
+npm 脚本的执行顺序分为两部分:
 
-- 命令钩子npm脚本有`pre`,`post`两类钩子，一个是执行前，一个是执行后。比如，当我们执行`npm run start`时，会按照以下顺序执行`npm run prestart` ->`npm run start` ->`npm run poststart`
+- 命令钩子 npm 脚本有`pre`,`post`两类钩子，一个是执行前，一个是执行后。比如，当我们执行`npm run start`时，会按照以下顺序执行`npm run prestart` ->`npm run start` ->`npm run poststart`
 
 - 多任务并行如果要执行多个脚本，可以用
 
-    ```
-    &
-    ```
+  ```
+  &
+  ```
 
-    或
+  或
 
-    ```
-    &&
-    ```
+  ```
+  &&
+  ```
 
-    来连接
+  来连接
 
-    - `npm run aa & npm run bb` 并行执行，没有先后关系
-    - `npm run aa && npm run bb` 串行执行，先执行完aa再执行bb
+  - `npm run aa & npm run bb` 并行执行，没有先后关系
+  - `npm run aa && npm run bb` 串行执行，先执行完 aa 再执行 bb
 
-npm做完包管理工具，主要的作用还是包的安装及管理。
+npm 做完包管理工具，主要的作用还是包的安装及管理。
 
 `npm install xxx` 命令用于安装包。
 
 我们先来运行`npm install vue`和`npm install eslint --save-dev`,会发现项目会有以下变化：
 
-- 添加了目录node_modules安装的包和包的依赖都存放在这里，引入的时候，会自动到此目录下找。
+- 添加了目录 node_modules 安装的包和包的依赖都存放在这里，引入的时候，会自动到此目录下找。
 
-- package.json文件自动添加了如下配置：npm 在安装包的同时，会把包的名称和版本加入到`dependencies`配置中，这表明这是项目必需的包。如果带上参数`-save-dev`，则加入到`devDependencies`配置中，这表明这是项目开发时才需要的工具包，不是项目必需的。
+- package.json 文件自动添加了如下配置：npm 在安装包的同时，会把包的名称和版本加入到`dependencies`配置中，这表明这是项目必需的包。如果带上参数`-save-dev`，则加入到`devDependencies`配置中，这表明这是项目开发时才需要的工具包，不是项目必需的。
 
-    ```json
-      "dependencies": {
-        "vue": "^2.6.13"
-      },
-      "devDependencies": {
-        "eslint": "^7.27.0"
-      }
-    ```
+  ```json
+    "dependencies": {
+      "vue": "^2.6.13"
+    },
+    "devDependencies": {
+      "eslint": "^7.27.0"
+    }
+  ```
 
-- 添加了package-lock.json文件锁定包的版本和依赖结构。
+- 添加了 package-lock.json 文件锁定包的版本和依赖结构。
 
-### **3.2 从package.json配置文件安装包**
+### **3.2 从 package.json 配置文件安装包**
 
 **包依赖类型**
 
-现在把node_modules目录和package-lock.json文件都删除，然后运行`npm install`，会发现项目会自动安装vue和eslint包。
+现在把 node_modules 目录和 package-lock.json 文件都删除，然后运行`npm install`，会发现项目会自动安装 vue 和 eslint 包。
 
 如果我们执行`npm install --production`则表明我们只是想安装项目必须的包，用于生产环境，这是就只会安装`dependencies`对象下的包。
 
-其实npm包除了这两种还有其他包的依赖类型：
+其实 npm 包除了这两种还有其他包的依赖类型：
 
 - `dependencies`业务依赖，是项目的必须包，是项目线上代码的一部分。`npm install --production`只会安装此配置下的包。
 - `devDependencies`开发环境依赖，只在开发环境需要。`npm install --save-dev`安装包并添加到此配置下。
@@ -5031,11 +5024,11 @@ npm做完包管理工具，主要的作用还是包的安装及管理。
 
 **包版本说明**
 
-npm采用[semver](https://segmentfault.com/a/1190000014405355)作为包版本管理规范。此规范规定软件版本由三个部分组成：
+npm 采用[semver](https://segmentfault.com/a/1190000014405355)作为包版本管理规范。此规范规定软件版本由三个部分组成：
 
 - `主版本号`做了不兼容的重大变更
 - `次版本号`做了向下兼容的功能添加
-- `补丁版本号`做了向下兼容的bug修复
+- `补丁版本号`做了向下兼容的 bug 修复
 
 除了版本号之外，还有一些版本修饰，后面可以带上数字：
 
@@ -5046,10 +5039,10 @@ npm采用[semver](https://segmentfault.com/a/1190000014405355)作为包版本管
 **版本匹配**
 
 - /`x`:匹配任意值`1.1.*` = `>=1.1.0 <1.2.01.x` = `>=1.0.0 <2.0.0`
-- `^xxx`: 最左侧非0版本号不变，不小于xxx`^1.2.3` = `>=1.2.3 <2.0.0` 主版本号不变`^0.1.2` = `>=0.1.2 <0.2.0` 主、次版本号不变`^0.0.2` = `= 0.0.2` 主、次、补丁版本号都不变
-- `~xxx`:如果列出了次版本号，则次版本号不变，如果没有列出次版本号，则主版本号不变，均不小于xxx`~1.2.3` = `>=1.2.3 <1.3.0` 主、次版本号不变`~1` = `>=1.0.0 <2.0.0` 主版本号不变
+- `^xxx`: 最左侧非 0 版本号不变，不小于 xxx`^1.2.3` = `>=1.2.3 <2.0.0` 主版本号不变`^0.1.2` = `>=0.1.2 <0.2.0` 主、次版本号不变`^0.0.2` = `= 0.0.2` 主、次、补丁版本号都不变
+- `~xxx`:如果列出了次版本号，则次版本号不变，如果没有列出次版本号，则主版本号不变，均不小于 xxx`~1.2.3` = `>=1.2.3 <1.3.0` 主、次版本号不变`~1` = `>=1.0.0 <2.0.0` 主版本号不变
 
-### **3.3 package-lock.json作用**
+### **3.3 package-lock.json 作用**
 
 **固定版本**
 
@@ -5069,13 +5062,13 @@ npm采用[semver](https://segmentfault.com/a/1190000014405355)作为包版本管
 }
 ```
 
-有上面一份npm配置文件，当`npm install`时会安装两个包：`vue ^2.5.1`,`eslint ^7.0.0` ，符合所配置版本的包是一个范围多个，npm会会安装符合版本配置的最新版本。比如：
+有上面一份 npm 配置文件，当`npm install`时会安装两个包：`vue ^2.5.1`,`eslint ^7.0.0` ，符合所配置版本的包是一个范围多个，npm 会会安装符合版本配置的最新版本。比如：
 
-`vue ^2.5.1` = `>=2.5.1 <3.0.0`, npm会选择安装`2.6.13`，因为它在匹配版本范围内，且是目前最新的vue2的版本，它不会选择`2.5.0`和`3.0.0`。
+`vue ^2.5.1` = `>=2.5.1 <3.0.0`, npm 会选择安装`2.6.13`，因为它在匹配版本范围内，且是目前最新的 vue2 的版本，它不会选择`2.5.0`和`3.0.0`。
 
-那么如果只有一份package.json文件，就很可能导致项目依赖的版本不一样。比如开发时候vue2的最新版本是2.6.13，过了几个月项目要上线，部署的时候vue2的最新版本已经是2.7.0了，那么线上就会安装最新的版本。如果2.7.0有一些不兼容2.6.13的地方，或者有bug，那就会导致我们开发的一个经典问题：开发环境没问题，一上线就坏。如果项目是多个人协同开发，甚至会导致开发环境都不一样。
+那么如果只有一份 package.json 文件，就很可能导致项目依赖的版本不一样。比如开发时候 vue2 的最新版本是 2.6.13，过了几个月项目要上线，部署的时候 vue2 的最新版本已经是 2.7.0 了，那么线上就会安装最新的版本。如果 2.7.0 有一些不兼容 2.6.13 的地方，或者有 bug，那就会导致我们开发的一个经典问题：开发环境没问题，一上线就坏。如果项目是多个人协同开发，甚至会导致开发环境都不一样。
 
-那么我们来看看package-lock.json文件怎么解决这个问题的：
+那么我们来看看 package-lock.json 文件怎么解决这个问题的：
 
 ```json
 //package-lock.json
@@ -5095,11 +5088,11 @@ npm采用[semver](https://segmentfault.com/a/1190000014405355)作为包版本管
 }
 ```
 
-我们看到package-lock.json文件里直接记录了vue的固定版本号和下载地址。
+我们看到 package-lock.json 文件里直接记录了 vue 的固定版本号和下载地址。
 
-npm在执行install的时候，会把每个需要安装的包先在`package-lock.json`里查找，如果找到并且版本符合`package.json`的配置范围（在范围内就行，不需要最新），就会直接按照`package-lock.json`里的地址安装。如果没找到或者不符合范围，则安装原本的逻辑安装（符合版本要求的最新版）。
+npm 在执行 install 的时候，会把每个需要安装的包先在`package-lock.json`里查找，如果找到并且版本符合`package.json`的配置范围(在范围内就行，不需要最新)，就会直接按照`package-lock.json`里的地址安装。如果没找到或者不符合范围，则安装原本的逻辑安装(符合版本要求的最新版)。
 
-这样就确保，不管时间过了多久，只要package-lock.json文件不变，`npm install`安装的包的版本都是一致的，避免代码运行的依赖环境不同。
+这样就确保，不管时间过了多久，只要 package-lock.json 文件不变，`npm install`安装的包的版本都是一致的，避免代码运行的依赖环境不同。
 
 **固定依赖结构**
 
@@ -5124,48 +5117,48 @@ npm在执行install的时候，会把每个需要安装的包先在`package-lock
 
 - esquery ： ^1.4.0,
 
-    - `estraverse ： ^5.1.0`
+  - `estraverse ： ^5.1.0`
 
 - ```
     esrecurse ： ^4.3.0
-    ```
+  ```
 
-    - `estraverse ： ^5.2.0`
+  - `estraverse ： ^5.2.0`
 
 - eslint-scope ：^5.1.1
 
-    - ```
-        esrecurse ： ^4.3.0
-        ```
+  - ```
+      esrecurse ： ^4.3.0
+    ```
 
-        - `estraverse ：^5.2.0`
+    - `estraverse ：^5.2.0`
 
-    - `estraverse ：^4.1.1`
+  - `estraverse ：^4.1.1`
 
-如果按照这个嵌套结构来安装包的话也是可以的，而且npm原来的版本就是这么做的，这样可以保证每个包都安装完整，但是问题是会导致一些包重复安装，如果这个依赖很多的话，重复的数量也会很多。那npm是怎么处理的呢？
+如果按照这个嵌套结构来安装包的话也是可以的，而且 npm 原来的版本就是这么做的，这样可以保证每个包都安装完整，但是问题是会导致一些包重复安装，如果这个依赖很多的话，重复的数量也会很多。那 npm 是怎么处理的呢？
 
-npm采用的是用扁平结构，包的依赖，不管是直接依赖，还是子依赖的依赖，都会优先放在第一级。
+npm 采用的是用扁平结构，包的依赖，不管是直接依赖，还是子依赖的依赖，都会优先放在第一级。
 
 如果第一级有找到符合版本的包，就不重复安装，如果没找到，则在当前目录下安装。
 
 比如上面的包会被安装成如下的结构：
 
 - esquery ：1.4.0,
-    - `estraverse ： 5.2.0`
+  - `estraverse ： 5.2.0`
 - esrecurse ： 4.3.0
-    - `estraverse ： 5.2.0`
+  - `estraverse ： 5.2.0`
 - eslint-scope ： 5.1.1
 - estraverse ： 4.3.1
 
-包安装的数量从开始的8个减少到了6个，虽然还是有重复，但是因为这个json的结构，又是以包名为键名，所以同一级下只能有一个同名的包，就像 `estraverse ： 5.2.0`不能放在外层，因为外层已经有了以`estraverse`为名的对象：`estraverse ： 4.3.1`。
+包安装的数量从开始的 8 个减少到了 6 个，虽然还是有重复，但是因为这个 json 的结构，又是以包名为键名，所以同一级下只能有一个同名的包，就像 `estraverse ： 5.2.0`不能放在外层，因为外层已经有了以`estraverse`为名的对象：`estraverse ： 4.3.1`。
 
-`package-lock.json`记录的就是上面的依赖结构（上面只是简写，每一项还包含一些其他的信息，比如下载地址），这也是`node_modules`里面包的结构。
+`package-lock.json`记录的就是上面的依赖结构(上面只是简写，每一项还包含一些其他的信息，比如下载地址)，这也是`node_modules`里面包的结构。
 
-所以一个项目只要`package-lock.json`不变，它的依赖结构就不变，而且npm不用重新解析包的结构了，直接从`package-lock.json`文件就可以安装完整且正确的包依赖，也提高了重新安装的效率。
+所以一个项目只要`package-lock.json`不变，它的依赖结构就不变，而且 npm 不用重新解析包的结构了，直接从`package-lock.json`文件就可以安装完整且正确的包依赖，也提高了重新安装的效率。
 
 ### **3.4 包缓存**
 
-npm安装包不是每一次都从服务器直接下载，而是有缓存机制。当npm安装包时，会在本地的缓存一份。执行`npm config get cache`可以查看缓存目录：
+npm 安装包不是每一次都从服务器直接下载，而是有缓存机制。当 npm 安装包时，会在本地的缓存一份。执行`npm config get cache`可以查看缓存目录：
 
 按照路径打开文件夹，会发现`_cacache`缓存文件夹，打开文件夹会有`index-v5`和`content-v2`两个目录。
 
@@ -5173,38 +5166,38 @@ npm安装包不是每一次都从服务器直接下载，而是有缓存机制�
 
 **缓存查找**
 
-那么npm是如何找到缓存包的呢？以vue包为例：
+那么 npm 是如何找到缓存包的呢？以 vue 包为例：
 
-- 1.首先安装vue包： `npm install vue`
-- 2.查看package-lock.json文件,根据包信息获取`resolved`,`integrity`字段，构造字符串：`pacote:range-manifest:{resolved}:{integrity}`
+- 1.首先安装 vue 包： `npm install vue`
+- 2.查看 package-lock.json 文件,根据包信息获取`resolved`,`integrity`字段，构造字符串：`pacote:range-manifest:{resolved}:{integrity}`
 - 3.把上面字符串按`SHA256`加密,得到加密字符串：`2686ae12fd03809c9e5704cd01db518f1d7d07efe5ab61e6ef386e95b8481360`
-- 4.上面加密字符串的前4位就是`_cacache/index-v5`目录的下两级，索引文件的位置：`_cacache/index-v5/26/86/ae12fd03809c9e5704cd01db518f1d7d07efe5ab61e6ef386e95b8481360`
+- 4.上面加密字符串的前 4 位就是`_cacache/index-v5`目录的下两级，索引文件的位置：`_cacache/index-v5/26/86/ae12fd03809c9e5704cd01db518f1d7d07efe5ab61e6ef386e95b8481360`
 - 5.打开按照上面路径找到的索引文件，在索引文件中找到`_shasum`字段：`94b2c1b31fddf1dfcc34f28ec848ba8f01ea4c5b`
-- 6.上面符串就是缓存包的位置，其前4位就是`_cacache/content-v2/sha1`目录的下两级，包位置：`_cacache/content-v2/sha1/94/b2/c1b31fddf1dfcc34f28ec848ba8f01ea4c5b`
-- 7.把按照上面路径找到的文件的拓展名改为`.tgz`，然后解压，会得到`vue.tar`包，再解压，就是我们熟悉的vue包了。
+- 6.上面符串就是缓存包的位置，其前 4 位就是`_cacache/content-v2/sha1`目录的下两级，包位置：`_cacache/content-v2/sha1/94/b2/c1b31fddf1dfcc34f28ec848ba8f01ea4c5b`
+- 7.把按照上面路径找到的文件的拓展名改为`.tgz`，然后解压，会得到`vue.tar`包，再解压，就是我们熟悉的 vue 包了。
 
-### **npm常用命令**
+### **npm 常用命令**
 
-- `npm init [-y]` 创建package.json文件 [直接创建]
+- `npm init [-y]` 创建 package.json 文件 [直接创建]
 - `npm run xxx [--env]` 运行脚本 [参数]
-- `npm config get [-l]` 查看npm配置 [全部配置]
-- `npm install xxx [--save-dev] [-g]` 安装npm包 [添加到开发依赖] [全局安装]
+- `npm config get [-l]` 查看 npm 配置 [全部配置]
+- `npm install xxx [--save-dev] [-g]` 安装 npm 包 [添加到开发依赖] [全局安装]
 - `npm uninstall xxx [-g]` 删除包 [删除全局包]
 - `npm info xxx` 查看包信息
 - `npm view xxx version` 查看包最新版本
 - `npm update [-g] xxx` 更新包 [全局包]
-- `npm root [-g]` npm包安装的目录 [全局包安装目录]
+- `npm root [-g]` npm 包安装的目录 [全局包安装目录]
 - `npm ls [-g]` 查看项目安装的包 [全局安装的包]
 - `npm install [--production]` 安装项目 [只安装项目依赖]
-- `npm ci` 安装项目，不对比package.json，只从package-lock.json安装，并且会先删除node_modules目录
+- `npm ci` 安装项目，不对比 package.json，只从 package-lock.json 安装，并且会先删除 node_modules 目录
 - `npm config get cache` 查看缓存目录
-- `npm cache clean --force` 清除npm包缓存
+- `npm cache clean --force` 清除 npm 包缓存
 
 ## 使用淘宝 NPM 镜像
 
-由于国内直接使用 npm 的官方镜像是非常慢的，为了解决这个问题，我们可以使用淘宝提供的镜像（cnpm 或通过配置 NPM）来加速包的下载和安装。
+由于国内直接使用 npm 的官方镜像是非常慢的，为了解决这个问题，我们可以使用淘宝提供的镜像(cnpm 或通过配置 NPM)来加速包的下载和安装。
 
-淘宝 NPM 镜像是一个完整 [npmjs.org](http://npmjs.org) 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。
+淘宝 NPM 镜像是一个完整 [npmjs.org](http://npmjs.org) 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10 分钟 一次以保证尽量与官方服务同步。
 
 你可以使用淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
 
@@ -5218,31 +5211,31 @@ $ npm install -g cnpm --registry=https://registry.npmmirror.com
 $ cnpm install [name]
 ```
 
-> npm（Node Package Manager）是Node.js的默认包管理器，用于管理JavaScript项目的依赖关系、脚本运行和包发布。理解npm的实现原理有助于更高效地使用它，优化项目的依赖管理，并在遇到问题时更快地定位和解决。以下将详细介绍npm的实现原理，包括其架构、依赖解析、安装机制、缓存系统、锁文件管理、脚本执行等方面。
+> npm(Node Package Manager)是 Node.js 的默认包管理器，用于管理 JavaScript 项目的依赖关系、脚本运行和包发布。理解 npm 的实现原理有助于更高效地使用它，优化项目的依赖管理，并在遇到问题时更快地定位和解决。以下将详细介绍 npm 的实现原理，包括其架构、依赖解析、安装机制、缓存系统、锁文件管理、脚本执行等方面。
 
 ### **1. 整体架构**
 
 **客户端-服务器模型**
 
-npm采用客户端-服务器（Client-Server）架构，主要由以下两部分组成：
+npm 采用客户端-服务器(Client-Server)架构，主要由以下两部分组成：
 
-**npm客户端**：安装在开发者的本地机器上，用于执行各种命令（如install、publish、update等）。
+**npm 客户端**：安装在开发者的本地机器上，用于执行各种命令(如 install、publish、update 等)。
 
-**npm注册表**（Registry）：一个公共的在线存储库，默认位于https://registry.npmjs.org/，用于存储和分发开源的JavaScript包。
+**npm 注册表**(Registry)：一个公共的在线存储库，默认位于https://registry.npmjs.org/，用于存储和分发开源的JavaScript包。
 
 模块组成：
 
-***npm本身是一个用JavaScript编写的命令行工具，依赖于Node.js运行环境。它由多个模块和库组成，这些模块协同工作以实现包管理的各项功能。***
+**_npm 本身是一个用 JavaScript 编写的命令行工具，依赖于 Node.js 运行环境。它由多个模块和库组成，这些模块协同工作以实现包管理的各项功能。_**
 
 ### **2. 依赖解析与版本管理**
 
-解析package.json
+解析 package.json
 
-每个Node.js项目都有一个package.json文件，定义了项目的基本信息、依赖关系、脚本等。npm通过解析package.json中的dependencies和devDependencies字段来确定需要安装的包及其版本范围。
+每个 Node.js 项目都有一个 package.json 文件，定义了项目的基本信息、依赖关系、脚本等。npm 通过解析 package.json 中的 dependencies 和 devDependencies 字段来确定需要安装的包及其版本范围。
 
 **版本范围解析**
 
-npm支持多种版本范围语法，如：
+npm 支持多种版本范围语法，如：
 
 固定版本：“lodash”: “4.17.21”
 
@@ -5252,61 +5245,61 @@ npm支持多种版本范围语法，如：
 
 标签：“latest”
 
-npm根据这些版本范围，从注册表中选择符合条件的最新版本。
+npm 根据这些版本范围，从注册表中选择符合条件的最新版本。
 
 **依赖树构建**
 
-npm解析所有依赖关系，构建一个依赖树。自npm v3起，npm采用扁平化依赖树结构，尽量将依赖包安装在顶层的node_modules目录中，减少嵌套层级。这种方式有助于避免“依赖地狱”（dependency hell）的问题，提高安装速度和节省磁盘空间。
+npm 解析所有依赖关系，构建一个依赖树。自 npm v3 起，npm 采用扁平化依赖树结构，尽量将依赖包安装在顶层的 node_modules 目录中，减少嵌套层级。这种方式有助于避免“依赖地狱”(dependency hell)的问题，提高安装速度和节省磁盘空间。
 
 ### **3. 包的下载与安装机制**
 
 - 连接到注册表
 
-当执行npm install时，npm客户端会连接到指定的注册表（默认是https://registry.npmjs.org/），查询需要的包及其版本信息。
+当执行 npm install 时，npm 客户端会连接到指定的注册表(默认是https://registry.npmjs.org/)，查询需要的包及其版本信息。
 
 - 下载包
 
-npm通过HTTP请求下载包的tarball（.tgz文件），每个包通常包含了源代码、package.json、README等文件。
+npm 通过 HTTP 请求下载包的 tarball(.tgz 文件)，每个包通常包含了源代码、package.json、README 等文件。
 
 - 解压与安装
 
-下载完成后，npm会将包解压到项目的node_modules目录中。如果包有自身的依赖，npm会递归地解析和安装这些依赖，遵循扁平化依赖树的原则，尽量减少重复安装。
+下载完成后，npm 会将包解压到项目的 node_modules 目录中。如果包有自身的依赖，npm 会递归地解析和安装这些依赖，遵循扁平化依赖树的原则，尽量减少重复安装。
 
 - 符号链接
 
-在某些情况下，npm会使用符号链接（symlinks）来优化依赖关系。例如，当多个包依赖于同一个版本的某个包时，npm会创建指向已安装包的符号链接，而不是重复安装。
+在某些情况下，npm 会使用符号链接(symlinks)来优化依赖关系。例如，当多个包依赖于同一个版本的某个包时，npm 会创建指向已安装包的符号链接，而不是重复安装。
 
 ### **4. 缓存系统**
 
 > 本地缓存
 >
-> npm为了提高安装速度和减少网络请求，会将下载的包缓存到本地目录，通常位于~/.npm。下次安装相同的包时，npm会优先从缓存中获取，避免重新下载。
+> npm 为了提高安装速度和减少网络请求，会将下载的包缓存到本地目录，通常位于~/.npm。下次安装相同的包时，npm 会优先从缓存中获取，避免重新下载。
 
 **缓存机制**
 
-> 首次安装：包从注册表下载并缓存。 重复安装：如果缓存中已有该版本的包，直接从缓存中复制到node_modules。
+> 首次安装：包从注册表下载并缓存。 重复安装：如果缓存中已有该版本的包，直接从缓存中复制到 node_modules。
 >
 > 更新缓存：当包的版本更新时，新的版本会被下载并添加到缓存中。
 >
-> 缓存命中与失效 npm会根据包的版本和内容地址（Content Addressable Storage）来判断缓存是否有效。对于带有锁文件的项目，npm会确保安装的包版本与锁文件一致，避免因缓存失效导致的版本不一致。
+> 缓存命中与失效 npm 会根据包的版本和内容地址(Content Addressable Storage)来判断缓存是否有效。对于带有锁文件的项目，npm 会确保安装的包版本与锁文件一致，避免因缓存失效导致的版本不一致。
 
 ### **5. 锁文件管理**
 
 **package-lock.json**
 
-自npm v5起，引入了package-lock.json文件，用于锁定具体的依赖版本，确保在不同环境中安装的一致性。
+自 npm v5 起，引入了 package-lock.json 文件，用于锁定具体的依赖版本，确保在不同环境中安装的一致性。
 
 **生成与更新**
 
-生成：首次运行npm install时，npm会生成package-lock.json。
+生成：首次运行 npm install 时，npm 会生成 package-lock.json。
 
-更新：当依赖关系或版本发生变化时，package-lock.json会自动更新。
+更新：当依赖关系或版本发生变化时，package-lock.json 会自动更新。
 
 **作用**
 
 版本锁定：确保所有开发者和生产环境安装相同的依赖版本。
 
-性能优化：加快安装速度，因为npm可以直接参考锁文件中的版本信息，而无需重新解析package.json中的版本范围。
+性能优化：加快安装速度，因为 npm 可以直接参考锁文件中的版本信息，而无需重新解析 package.json 中的版本范围。
 
 安全性：通过锁定版本，减少潜在的依赖冲突和漏洞风险。
 
@@ -5314,7 +5307,7 @@ npm通过HTTP请求下载包的tarball（.tgz文件），每个包通常包含�
 
 生命周期脚本
 
-package.json中可以定义多种生命周期脚本，如：
+package.json 中可以定义多种生命周期脚本，如：
 
 > preinstall / postinstall
 >
@@ -5326,29 +5319,29 @@ package.json中可以定义多种生命周期脚本，如：
 
 执行机制
 
-当运行相关命令时，npm会按顺序执行对应的脚本。例如，npm install会在安装前执行preinstall，安装完成后执行postinstall。
+当运行相关命令时，npm 会按顺序执行对应的脚本。例如，npm install 会在安装前执行 preinstall，安装完成后执行 postinstall。
 
-钩子（Hooks）
+钩子(Hooks)
 
-除了生命周期脚本，npm还支持通过钩子机制（Hooks）在特定事件触发时执行自定义逻辑。这增强了npm的可扩展性和灵活性。
+除了生命周期脚本，npm 还支持通过钩子机制(Hooks)在特定事件触发时执行自定义逻辑。这增强了 npm 的可扩展性和灵活性。
 
-### **7. 工作空间与Monorepo支持**
+### **7. 工作空间与 Monorepo 支持**
 
-工作空间（Workspaces）
+工作空间(Workspaces)
 
-从npm v7开始，npm引入了工作空间（Workspaces）功能，允许在单一仓库中管理多个包（Monorepo）。
+从 npm v7 开始，npm 引入了工作空间(Workspaces)功能，允许在单一仓库中管理多个包(Monorepo)。
 
 功能与实现
 
 统一依赖管理：共享和集中管理依赖，避免重复安装。
 
-交叉依赖：不同包之间可以相互依赖，npm会自动处理这些依赖关系。
+交叉依赖：不同包之间可以相互依赖，npm 会自动处理这些依赖关系。
 
 命令统一：可以在根目录下运行命令，自动应用到所有工作空间包。
 
 配置
 
-在package.json的根目录下，通过workspaces字段定义工作空间包的位置，例如：
+在 package.json 的根目录下，通过 workspaces 字段定义工作空间包的位置，例如：
 
 ```jsx
 {
@@ -5367,71 +5360,71 @@ package.json中可以定义多种生命周期脚本，如：
 
 内置功能
 
-npm本身提供了丰富的命令和选项，满足大多数包管理需求。然而，npm不像Yarn那样支持插件系统，其扩展性相对有限。
+npm 本身提供了丰富的命令和选项，满足大多数包管理需求。然而，npm 不像 Yarn 那样支持插件系统，其扩展性相对有限。
 
 第三方工具
 
-开发者可以通过第三方工具和脚本扩展npm的功能，例如：
+开发者可以通过第三方工具和脚本扩展 npm 的功能，例如：
 
-npx：用于临时执行Node.js包中的可执行文件。
+npx：用于临时执行 Node.js 包中的可执行文件。
 
 npm scripts：通过自定义脚本，实现复杂的构建、测试和部署流程。
 
 钩子与自定义
 
-通过生命周期脚本和钩子机制，开发者可以在特定事件触发时运行自定义逻辑，扩展npm的功能。
+通过生命周期脚本和钩子机制，开发者可以在特定事件触发时运行自定义逻辑，扩展 npm 的功能。
 
 ### **9. 安全性与审计**
 
 安全审计
 
-npm提供了安全审计功能，通过npm audit命令扫描项目依赖，检测已知的安全漏洞，并提供修复建议。
+npm 提供了安全审计功能，通过 npm audit 命令扫描项目依赖，检测已知的安全漏洞，并提供修复建议。
 
 漏洞数据库
 
-npm维护了一个公共的漏洞数据库，记录了各种包的安全问题。开发者可以通过npm audit获取最新的安全信息。
+npm 维护了一个公共的漏洞数据库，记录了各种包的安全问题。开发者可以通过 npm audit 获取最新的安全信息。
 
 自动修复
 
-在检测到漏洞时，npm可以尝试自动修复受影响的包版本，更新到安全的版本
+在检测到漏洞时，npm 可以尝试自动修复受影响的包版本，更新到安全的版本
 
 ### **10. 性能优化**
 
 并行下载
 
-npm在下载多个包时，采用并行下载的方式，提高安装速度。随着版本的迭代，npm在并行度和下载策略上不断优化。
+npm 在下载多个包时，采用并行下载的方式，提高安装速度。随着版本的迭代，npm 在并行度和下载策略上不断优化。
 
 智能缓存
 
-通过本地缓存和内容地址存储（Content Addressable Storage），npm减少了重复下载，提高了安装效率。
+通过本地缓存和内容地址存储(Content Addressable Storage)，npm 减少了重复下载，提高了安装效率。
 
 扁平化依赖树
 
-自npm v3起，采用扁平化依赖树结构，减少嵌套层级，优化磁盘使用和模块解析速度。
+自 npm v3 起，采用扁平化依赖树结构，减少嵌套层级，优化磁盘使用和模块解析速度。
 
 增量安装
 
-在已经安装过部分依赖的情况下，npm只需下载和安装新增或更新的依赖，进一步提高效率。
+在已经安装过部分依赖的情况下，npm 只需下载和安装新增或更新的依赖，进一步提高效率。
 
 ### **11. 包发布与管理**
 
 **发布流程**
 
-开发者可以通过npm publish命令将自己的包发布到npm注册表。发布前，npm会执行以下步骤：
+开发者可以通过 npm publish 命令将自己的包发布到 npm 注册表。发布前，npm 会执行以下步骤：
 
 版本验证：确保包版本符合语义化版本控制。
 
-内容打包：将包内容打包为tarball，包括package.json、源代码和其他必要文件。
+内容打包：将包内容打包为 tarball，包括 package.json、源代码和其他必要文件。
 
-上传到注册表：将打包好的包上传到npm注册表。
+上传到注册表：将打包好的包上传到 npm 注册表。
 
 访问控制
 
-npm支持私有包和访问控制，企业可以通过npm组织（Organizations）管理私有包的访问权限。
+npm 支持私有包和访问控制，企业可以通过 npm 组织(Organizations)管理私有包的访问权限。
 
 版本管理
 
-npm允许开发者发布不同版本的包，开发者可以通过npm version命令管理包版本，确保版本递增和一致性。
+npm 允许开发者发布不同版本的包，开发者可以通过 npm version 命令管理包版本，确保版本递增和一致性。
 
 ## 参考资料
 
@@ -5441,9 +5434,9 @@ https://mp.weixin.qq.com/s?__biz=MzI3ODU4MzQ1MA==&mid=2247484959&idx=2&sn=262244
 
 https://blog.csdn.net/Dou_Hua6/article/details/142781297
 
-# 杂记2
+# 杂记 2
 
-RSS 资源是一种能够让用户更方便地获取和整合互联网上各种内容的资源形式。它通过特定的 XML 格式，将网站的内容（如新闻、博客文章、视频、音频等）进行整理和标记，以便用户通过 RSS 阅读器进行订阅和接收。
+RSS 资源是一种能够让用户更方便地获取和整合互联网上各种内容的资源形式。它通过特定的 XML 格式，将网站的内容(如新闻、博客文章、视频、音频等)进行整理和标记，以便用户通过 RSS 阅读器进行订阅和接收。
 
 C 语言机制和各种语法的设计初衷
 
@@ -5474,7 +5467,7 @@ ssh 是什么，为什么需要
 
 正则表达式
 
-配置 Prettier（Prettier 是一款专门为前端开发人员设计的代码格式化工具）
+配置 Prettier(Prettier 是一款专门为前端开发人员设计的代码格式化工具)
 
 直接使用 v-if 这样的控件显示结构，与使用 JS 通过 DOM 才做元素，有什么异同
 
@@ -5482,7 +5475,7 @@ U 盘的扫描并修复是什么，启动盘对 U 盘本身的要求
 
 需要一种将文件从本地硬盘上传到远程 Web 服务器的方法。为了做到这一点，你必须使用 FTP 客户端。FTP 本质上是不安全的。你应确保你的托管服务提供商允许使用安全连接，例如 SFTP 或基于 SSH 的 RSync。
 
-SEO（搜索引擎优化）
+SEO(搜索引擎优化)
 
 使用 TCP 和 UDP 协议
 
@@ -5525,13 +5518,13 @@ md 编辑和 typora 指令：
 _Full screen width and center alignment_
 ```
 
-- 向左靠（指定位置后，不应添加图像标题）
+- 向左靠(指定位置后，不应添加图像标题)
 
 ```
 ![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" .w-50 .left}
 ```
 
-- 切换颜色和阴影（比如程序截图就可以添加阴影）：
+- 切换颜色和阴影(比如程序截图就可以添加阴影)：
 
 ```markdown
 ![light mode only](/posts/20190808/devtools-light.png){: .light .w-75 .shadow .rounded-10 w='1212' h='668' }
@@ -5552,7 +5545,7 @@ _Full screen width and center alignment_
 {: file='\_sass/jekyll-theme-chirpy.scss'}
 
 ````
-（math设置为true来允许公式渲染）
+(math设置为true来允许公式渲染)
 
 行内公式：单个美元符号
 
@@ -5591,7 +5584,7 @@ here is a footnote[^fn-nth-2].
 
 在命令行上使用 HTTPS URL 将 `git clone`、`git fetch`、`git pull` 或 `git push` 执行到专用远程仓库时，Git 将要求你提供 GitHub 用户名和密码。 当 Git 提示你输入密码时，请输入你的 personal access token。 或者，可以使用 [Git 凭据管理器](https://github.com/GitCredentialManager/git-credential-manager/blob/main/README.md)等凭据帮助程序。 Git 的基于密码的身份验证已被删除，取而代之的是更安全的身份验证方法。，即管理个人访问令牌，通过命令行或使用 API 向 GitHub 进行身份验证时，可以使用 personal access token 代替密码。
 
-SSH URL 通过 SSH（一种安全协议）提供 Git 仓库的访问权限。 要使用这些 URL，须在计算机上生成 SSH 密钥对，并将“公共”密钥添加到你在 GitHub 上的帐户。
+SSH URL 通过 SSH(一种安全协议)提供 Git 仓库的访问权限。 要使用这些 URL，须在计算机上生成 SSH 密钥对，并将“公共”密钥添加到你在 GitHub 上的帐户。
 
 ## 环境变量
 
@@ -5601,9 +5594,9 @@ SSH URL 通过 SSH（一种安全协议）提供 Git 仓库的访问权限。 �
 
 ## 现代 web 技术
 
-浏览器、http 协议、前端三剑客、开发工具（测试和调试工具、建立在语言之上的框架、Linter（代码检查工具）、minifier（极简化器））、服务端语言框架
+浏览器、http 协议、前端三剑客、开发工具(测试和调试工具、建立在语言之上的框架、Linter(代码检查工具)、minifier(极简化器))、服务端语言框架
 
-## 服务器端渲染（Server - Side Rendering，SSR）
+## 服务器端渲染(Server - Side Rendering，SSR)
 
 定义
 
@@ -5619,7 +5612,7 @@ SSH URL 通过 SSH（一种安全协议）提供 Git 仓库的访问权限。 �
 优点
 
 - **首屏加载速度快**：用户可以更快地看到页面内容，因为浏览器接收到的是已经渲染好的 HTML，无需等待 JavaScript 代码下载和执行后再渲染页面。
-- **有利于搜索引擎优化（SEO）**：搜索引擎爬虫可以直接抓取到完整的 HTML 内容，更容易理解页面的内容和结构，从而提高网站在搜索引擎中的排名。
+- **有利于搜索引擎优化(SEO)**：搜索引擎爬虫可以直接抓取到完整的 HTML 内容，更容易理解页面的内容和结构，从而提高网站在搜索引擎中的排名。
 
 缺点
 
@@ -5631,7 +5624,7 @@ SSH URL 通过 SSH（一种安全协议）提供 Git 仓库的访问权限。 �
 - **内容型网站**：如新闻网站、博客网站等，这些网站需要快速展示内容给用户，并且希望在搜索引擎中获得更好的排名。
 - **电商网站**：首屏加载速度对用户体验至关重要，同时也需要良好的 SEO 效果来吸引更多的潜在客户。
 
-## 静态站点生成（Static Site Generation，SSG）
+## 静态站点生成(Static Site Generation，SSG)
 
 定义
 
@@ -5639,8 +5632,8 @@ SSH URL 通过 SSH（一种安全协议）提供 Git 仓库的访问权限。 �
 
 工作原理
 
-1. **构建阶段**：在项目构建时，使用构建工具（如 Nuxt 的 `nuxt generate` 命令）将前端应用的所有页面进行渲染，生成静态 HTML 文件和相关的资源文件（如 CSS、JavaScript 等）。
-2. **部署阶段**：将生成的静态文件部署到静态文件服务器（如 Netlify、Vercel 等）或 CDN 上。
+1. **构建阶段**：在项目构建时，使用构建工具(如 Nuxt 的 `nuxt generate` 命令)将前端应用的所有页面进行渲染，生成静态 HTML 文件和相关的资源文件(如 CSS、JavaScript 等)。
+2. **部署阶段**：将生成的静态文件部署到静态文件服务器(如 Netlify、Vercel 等)或 CDN 上。
 3. **访问阶段**：当用户访问网站时，浏览器直接从服务器请求对应的静态 HTML 文件，服务器返回文件内容，浏览器进行展示。
 
 优点
@@ -5652,7 +5645,7 @@ SSH URL 通过 SSH（一种安全协议）提供 Git 仓库的访问权限。 �
 缺点
 
 - **内容更新不及时**：如果网站内容需要频繁更新，每次更新都需要重新生成和部署静态文件，不够灵活。
-- **不适合动态内容多的网站**：对于需要实时展示动态数据（如实时聊天、股票行情等）的网站，静态站点生成无法满足需求。
+- **不适合动态内容多的网站**：对于需要实时展示动态数据(如实时聊天、股票行情等)的网站，静态站点生成无法满足需求。
 
 应用场景
 
@@ -5665,7 +5658,7 @@ SSG 保留了和 SSR 应用相同的性能表现：它带来了优秀的首屏�
 
 ## Vscode 终端
 
-VSCode 终端只是一个集成在 VSCode 中的终端工具，它本质上也是调用系统的终端程序（如 CMD 或 PowerShell）来执行命令。VSCode 终端本质上是通过集成系统的终端程序（如 CMD、PowerShell 或 Bash）来实现的。当你在 VSCode 中打开终端时，VSCode 会创建一个新的进程来运行所选的终端程序，并将其输出显示在 VSCode 的终端面板中。用户在终端面板中输入的命令会被发送到该进程中执行，并将执行结果实时显示出来。
+VSCode 终端只是一个集成在 VSCode 中的终端工具，它本质上也是调用系统的终端程序(如 CMD 或 PowerShell)来执行命令。VSCode 终端本质上是通过集成系统的终端程序(如 CMD、PowerShell 或 Bash)来实现的。当你在 VSCode 中打开终端时，VSCode 会创建一个新的进程来运行所选的终端程序，并将其输出显示在 VSCode 的终端面板中。用户在终端面板中输入的命令会被发送到该进程中执行，并将执行结果实时显示出来。
 
 VSCode 使用 Electron 框架开发
 
@@ -5675,7 +5668,7 @@ VSCode 终端、CMD 和 PowerShell 的异同点
 
 - **都是终端工具**：它们都可以用来执行命令行操作，与操作系统进行交互。
 - **功能类似**：都可以执行系统命令、运行脚本、安装软件等。
-- **CMD（命令提示符）**：是 Windows 早期的命令行界面，功能相对基础，主要用于执行简单的系统命令和批处理脚本。
+- **CMD(命令提示符)**：是 Windows 早期的命令行界面，功能相对基础，主要用于执行简单的系统命令和批处理脚本。
 - **PowerShell**：是 Windows 下功能更强大的脚本环境，支持对象处理、管道操作和脚本编程，具有更丰富的命令集和自动化功能。
 - **VSCode 终端**：是集成在 VSCode 编辑器中的终端工具，它可以方便地与 VSCode 的其他功能集成，如代码编辑、调试等。用户可以在 VSCode 中同时打开多个终端，并方便地切换和管理。
 
@@ -5688,24 +5681,24 @@ VSCode 终端、CMD 和 PowerShell 的异同点
 原生 UI 技术借助操作系统自带的开发工具与框架构建界面，能充分发挥系统特性，提供优质用户体验。
 
 - iOS 平台
-    - **UIKit**：苹果为 iOS 应用打造的核心 UI 框架，支持 Objective - C 和 Swift 语言开发。可通过代码或 Interface Builder（故事板和 XIB 文件）创建、布局界面，提供众多标准 UI 组件。
-    - **SwiftUI**：苹果推出的声明式 UI 框架，使用 Swift 语言。简化了 UI 开发流程，具备简洁语法和实时预览功能，让开发者能高效创建现代 iOS 界面。
+  - **UIKit**：苹果为 iOS 应用打造的核心 UI 框架，支持 Objective - C 和 Swift 语言开发。可通过代码或 Interface Builder(故事板和 XIB 文件)创建、布局界面，提供众多标准 UI 组件。
+  - **SwiftUI**：苹果推出的声明式 UI 框架，使用 Swift 语言。简化了 UI 开发流程，具备简洁语法和实时预览功能，让开发者能高效创建现代 iOS 界面。
 - Android 平台
-    - **Android SDK**：谷歌官方的 Android 应用开发工具包，开发者可用 Java 或 Kotlin 语言，通过 XML 布局文件或代码创建界面，拥有丰富的 UI 组件和布局管理器。
-    - **Jetpack Compose**：谷歌推出的声明式 UI 框架，基于 Kotlin 语言。为 Android 应用 UI 开发带来更现代化、高效的开发体验，提升开发效率。
+  - **Android SDK**：谷歌官方的 Android 应用开发工具包，开发者可用 Java 或 Kotlin 语言，通过 XML 布局文件或代码创建界面，拥有丰富的 UI 组件和布局管理器。
+  - **Jetpack Compose**：谷歌推出的声明式 UI 框架，基于 Kotlin 语言。为 Android 应用 UI 开发带来更现代化、高效的开发体验，提升开发效率。
 
 Web UI 技术
 
 Web UI 技术用于构建基于浏览器的界面，具有跨平台、易部署和更新的优势。
 
 - 基础技术
-    - **HTML**：负责构建网页结构，定义各种页面元素。
-    - **CSS**：用于美化网页外观，控制元素的布局、样式等。
-    - **JavaScript**：实现网页交互功能，如表单验证、动画效果、数据交互等。
+  - **HTML**：负责构建网页结构，定义各种页面元素。
+  - **CSS**：用于美化网页外观，控制元素的布局、样式等。
+  - **JavaScript**：实现网页交互功能，如表单验证、动画效果、数据交互等。
 - 前端框架
-    - **React**：由 Facebook 开发的 JavaScript 库，采用虚拟 DOM 技术提升渲染性能，适合构建复杂的用户界面。
-    - **Vue.js**：渐进式 JavaScript 框架，易于上手，轻量级且响应式，广泛应用于各类 Web 项目。
-    - **Angular**：Google 开发的全功能 JavaScript 框架，提供丰富工具和特性，适用于大型、复杂的 Web 应用开发。
+  - **React**：由 Facebook 开发的 JavaScript 库，采用虚拟 DOM 技术提升渲染性能，适合构建复杂的用户界面。
+  - **Vue.js**：渐进式 JavaScript 框架，易于上手，轻量级且响应式，广泛应用于各类 Web 项目。
+  - **Angular**：Google 开发的全功能 JavaScript 框架，提供丰富工具和特性，适用于大型、复杂的 Web 应用开发。
 
 跨平台 UI 技术
 
@@ -5726,7 +5719,7 @@ Web UI 技术用于构建基于浏览器的界面，具有跨平台、易部署�
 
 学习知识
 
-- **操作系统知识**：了解操作系统的进程管理、文件系统、命令执行等原理，熟悉不同操作系统（如 Windows、Linux）的命令行接口。
+- **操作系统知识**：了解操作系统的进程管理、文件系统、命令执行等原理，熟悉不同操作系统(如 Windows、Linux)的命令行接口。
 - **网络编程**：如果要实现远程终端功能，需要学习网络编程知识，如 TCP/IP 协议、Socket 编程等。
 - **前端开发**：掌握 HTML、CSS 和 JavaScript 等前端技术，用于构建终端的用户界面。
 - **Node.js 开发**：Node.js 是实现终端的常用工具，需要学习其 `child_process` 模块、事件处理机制等。
@@ -5737,7 +5730,7 @@ Bootstrap 是一个流行的开源前端框架，由 Twitter 公司的 Mark Otto
 
 核心特性
 
-1. **响应式设计**：Bootstrap 采用了流式网格系统，能够根据不同设备的屏幕尺寸（如手机、平板、电脑等）自动调整页面布局，确保网页在各种设备上都能呈现出良好的视觉效果和用户体验。
+1. **响应式设计**：Bootstrap 采用了流式网格系统，能够根据不同设备的屏幕尺寸(如手机、平板、电脑等)自动调整页面布局，确保网页在各种设备上都能呈现出良好的视觉效果和用户体验。
 2. **移动设备优先**：框架的设计理念是优先考虑移动设备的使用场景，在开发过程中首先针对移动设备进行优化，然后再扩展到更大屏幕的设备。
 3. **丰富的组件库**：提供了一系列预制的 HTML、CSS 和 JavaScript 组件，如导航栏、按钮、表单、模态框、轮播图等，开发者可以直接使用这些组件快速搭建网站的界面，大大节省开发时间。
 4. **良好的兼容性**：能够兼容主流的浏览器，包括 Chrome、Firefox、Safari、Edge 等，确保网页在不同浏览器上都能正常显示和使用。
@@ -5750,7 +5743,7 @@ Bootstrap 是一个流行的开源前端框架，由 Twitter 公司的 Mark Otto
 2. **组件**：一系列预制的 HTML 和 CSS 组合，如导航栏、面包屑导航、徽章、卡片等，只需按照文档的示例代码使用，就能快速集成到项目中。
 3. **JavaScript 插件**：使用 jQuery 编写的交互式插件，为网页增添动态效果和交互功能，如模态框的显示与隐藏、下拉菜单的展开与收缩等。
 
-可以通过 CDN（内容分发网络）或下载本地文件的方式引入 Bootstrap 的 CSS 和 JavaScript 文件。以 CDN 方式为例，在 HTML 文件的`<head>`标签中引入 CSS 文件，在`<body>`标签结束前引入 JavaScript 文件
+可以通过 CDN(内容分发网络)或下载本地文件的方式引入 Bootstrap 的 CSS 和 JavaScript 文件。以 CDN 方式为例，在 HTML 文件的`<head>`标签中引入 CSS 文件，在`<body>`标签结束前引入 JavaScript 文件
 
 做前端开发，可以先针对应用需求找找有没有现成的框架或工具。
 
@@ -5768,13 +5761,13 @@ CodePen 是一个在线的前端代码编辑和展示平台，深受前端开发
 
 ## yaml
 
-YAML（YAML Ain't Markup Language）是一种人类可读的数据序列化格式，常用于配置文件、数据传输等场景。
+YAML(YAML Ain't Markup Language)是一种人类可读的数据序列化格式，常用于配置文件、数据传输等场景。
 
 特点
 
 - **易读性强**：YAML 采用空白缩进和简洁符号表示数据结构，避免了复杂标签与语法，文件内容清晰直观，即便非技术人员也能轻松阅读和编辑。
 - **跨语言兼容性好**：能被多种编程语言解析和生成，如 Python、Java、Ruby 等，便于在不同开发环境中使用。
-- **支持丰富数据类型**：可表示标量（如字符串、数字、布尔值）、列表和映射等常见数据类型，满足多样化数据存储需求。
+- **支持丰富数据类型**：可表示标量(如字符串、数字、布尔值)、列表和映射等常见数据类型，满足多样化数据存储需求。
 - **具备注释功能**：允许在文件中使用 `#` 符号添加注释，方便开发者对配置进行说明与解释。
 
 语法规则
@@ -5804,15 +5797,15 @@ YAML（YAML Ain't Markup Language）是一种人类可读的数据序列化格�
 
 ## ES 模块
 
-原生 ES 模块（ES Modules）是 JavaScript 从 ES6（ES2015）开始引入的官方模块系统，它为 JavaScript 提供了一种标准化的方式来组织和共享代码。在 ES6 之前，JavaScript 并没有官方的模块系统，开发者通常使用 CommonJS（在 Node.js 环境中）、AMD（Asynchronous Module Definition，常用于浏览器环境）等非官方的模块规范来实现代码的模块化。
+原生 ES 模块(ES Modules)是 JavaScript 从 ES6(ES2015)开始引入的官方模块系统，它为 JavaScript 提供了一种标准化的方式来组织和共享代码。在 ES6 之前，JavaScript 并没有官方的模块系统，开发者通常使用 CommonJS(在 Node.js 环境中)、AMD(Asynchronous Module Definition，常用于浏览器环境)等非官方的模块规范来实现代码的模块化。
 
 ## 即时编译
 
-即时编译（Just-in-Time Compilation，简称 JIT）在 Vite 这样的构建工具中，是指在开发环境下，当浏览器请求某个模块时，构建工具才对该模块进行编译处理，而不是像传统打包工具那样在启动时对整个项目进行一次性打包编译。
+即时编译(Just-in-Time Compilation，简称 JIT)在 Vite 这样的构建工具中，是指在开发环境下，当浏览器请求某个模块时，构建工具才对该模块进行编译处理，而不是像传统打包工具那样在启动时对整个项目进行一次性打包编译。
 
 ## XSS
 
-跨站脚本攻击（XSS）是一种常见的网络安全漏洞，指攻击者通过在网页中注入恶意脚本（通常是 JavaScript），当用户访问该网页时，这些恶意脚本会在用户浏览器中执行，从而窃取用户信息、破坏网页功能或进行其他恶意操作。
+跨站脚本攻击(XSS)是一种常见的网络安全漏洞，指攻击者通过在网页中注入恶意脚本(通常是 JavaScript)，当用户访问该网页时，这些恶意脚本会在用户浏览器中执行，从而窃取用户信息、破坏网页功能或进行其他恶意操作。
 
 ## 状态机
 
@@ -5820,15 +5813,13 @@ YAML（YAML Ain't Markup Language）是一种人类可读的数据序列化格�
 
 ## iframe 与沙盒环境
 
-iframe 是 HTML 中的一个标签，即内联框架（Inline Frame）。它可以在当前 HTML 页面中嵌入另一个 HTML 页面，形成一个独立的区域。
+iframe 是 HTML 中的一个标签，即内联框架(Inline Frame)。它可以在当前 HTML 页面中嵌入另一个 HTML 页面，形成一个独立的区域。
 
 说 iframe 是沙盒环境，原因在于它能为嵌入的内容提供相对隔离的运行环境。在这个环境中，嵌入的页面与主页面在很多方面是相互隔离的。比如，它有独立的 DOM 树，与主页面的 DOM 相互独立，这就意味着嵌入页面内的 JavaScript 脚本不能直接访问和修改主页面的 DOM 结构；同时，它也有独立的 JavaScript 执行上下文，其内部运行的 JavaScript 代码不能轻易访问主页面的变量和函数，反之亦然，这有效防止了恶意代码从嵌入页面渗透到主页面，避免了对主页面的潜在攻击，所以说它是一个可预期的沙盒环境 。像 CodePen 和 JSFiddle 这类允许执行用户提供内容的服务，就是借助 iframe 的沙盒特性，降低恶意代码对整个应用造成危害的风险 1。
 
-
-
 ## 模板文件
 
-模板文件是在项目构建过程中，被特定工具处理以生成最终文件的基础文件。在 Vue 项目里，`public/index.html`就是一个模板文件，它会被`html - webpack - plugin`处理。在构建时，资源链接会自动注入到这个模板生成的 HTML 文件中，Vue CLI 还会自动注入`resource hint`（如`preload/prefetch`）、`manifest`和图标链接（使用 PWA 插件时）以及构建过程中处理的 JavaScript 和 CSS 文件的资源链接。此外，模板文件可使用`lodash template`语法插入内容，如`<%= VALUE %>`做不转义插值、`<%- VALUE %>`做 HTML 转义插值、`<% expression %>`描述 JavaScript 流程控制，还能直接使用客户端环境变量，像`<link rel="icon" href="<%= BASE_URL %>favicon.ico">`中使用`BASE_URL`
+模板文件是在项目构建过程中，被特定工具处理以生成最终文件的基础文件。在 Vue 项目里，`public/index.html`就是一个模板文件，它会被`html - webpack - plugin`处理。在构建时，资源链接会自动注入到这个模板生成的 HTML 文件中，Vue CLI 还会自动注入`resource hint`(如`preload/prefetch`)、`manifest`和图标链接(使用 PWA 插件时)以及构建过程中处理的 JavaScript 和 CSS 文件的资源链接。此外，模板文件可使用`lodash template`语法插入内容，如`<%= VALUE %>`做不转义插值、`<%- VALUE %>`做 HTML 转义插值、`<% expression %>`描述 JavaScript 流程控制，还能直接使用客户端环境变量，像`<link rel="icon" href="<%= BASE_URL %>favicon.ico">`中使用`BASE_URL`
 
 ## Webpack
 
@@ -5849,7 +5840,7 @@ Webpack 是一个用于现代 JavaScript 应用程序的静态模块打包工具
 
 打包工具是一种在软件开发过程中，用于将多个分散的文件或模块合并、优化，生成最终可交付文件的工具。就像 Webpack 能把项目里的 JavaScript、CSS、图片等资源视为模块，按照依赖关系分析并打包成适合浏览器运行的静态资源文件 。
 
-打包工具不是针对特定编程语言的。虽然在前端 JavaScript 开发中，像 Webpack 这样的打包工具被大量使用，但在其他语言开发的项目中也有类似的工具和技术。比如在 Java 开发的项目中，Maven、Gradle 可以对 Java 代码进行打包、依赖管理等操作；在 Python 项目中，也有工具能将 Python 代码打包成可执行文件。所以，打包工具是一种通用的开发辅助工具，与多种编程语言和开发场景都有关系。打包工具（以 Webpack 为例）的原理主要涉及模块识别、依赖分析、转换处理和输出打包这几个关键环节。
+打包工具不是针对特定编程语言的。虽然在前端 JavaScript 开发中，像 Webpack 这样的打包工具被大量使用，但在其他语言开发的项目中也有类似的工具和技术。比如在 Java 开发的项目中，Maven、Gradle 可以对 Java 代码进行打包、依赖管理等操作；在 Python 项目中，也有工具能将 Python 代码打包成可执行文件。所以，打包工具是一种通用的开发辅助工具，与多种编程语言和开发场景都有关系。打包工具(以 Webpack 为例)的原理主要涉及模块识别、依赖分析、转换处理和输出打包这几个关键环节。
 
 ## 静态资源
 
@@ -5857,36 +5848,36 @@ Webpack 是一个用于现代 JavaScript 应用程序的静态模块打包工具
 
 在 Vue CLI 项目中，静态资源的两种处理方式在不同场景下各有优劣，具体如下：
 
-1. 在 JavaScript 被导入或在 template/CSS 中通过相对路径被引用（webpack 处理方式）
-    - **优点**：脚本和样式表会被压缩且打包在一起，从而避免额外的网络请求；文件丢失会直接在编译时报错，而不是到了用户端才产生 404 错误；最终生成的文件名包含了内容哈希，不必担心浏览器会缓存它们的老版本 123。
-    - **缺点**：未提及明显缺点。
-    - **适用场景**：适用于大多数静态资源处理场景，特别是对文件完整性、性能优化和缓存控制要求较高的情况。例如项目中的图片、样式文件、脚本文件等，只要能通过相对路径正常引用，都适合用这种方式处理。
-2. 放置在 public 目录下或通过绝对路径被引用（直接拷贝方式）
-    - **优点**：可以在构建输出中指定一个文件的名字；适合有上千个图片需要动态引用路径的场景；对于和 webpack 不兼容的库，可以用独立的<script>标签引入 456。
-    - **缺点**：硬编码的文件名不利于实现高效率的缓存控制；硬编码的文件名也无法很好的进行 code - splitting（代码分段），因为无法用变化的文件名生成额外的 JavaScript 文件；硬编码的文件名无法在现代模式下工作 789。
-    - **适用场景**：需要指定输出文件名时；大量图片需动态引用路径时；引入与 webpack 不兼容的库时。
+1. 在 JavaScript 被导入或在 template/CSS 中通过相对路径被引用(webpack 处理方式)
+   - **优点**：脚本和样式表会被压缩且打包在一起，从而避免额外的网络请求；文件丢失会直接在编译时报错，而不是到了用户端才产生 404 错误；最终生成的文件名包含了内容哈希，不必担心浏览器会缓存它们的老版本 123。
+   - **缺点**：未提及明显缺点。
+   - **适用场景**：适用于大多数静态资源处理场景，特别是对文件完整性、性能优化和缓存控制要求较高的情况。例如项目中的图片、样式文件、脚本文件等，只要能通过相对路径正常引用，都适合用这种方式处理。
+2. 放置在 public 目录下或通过绝对路径被引用(直接拷贝方式)
+   - **优点**：可以在构建输出中指定一个文件的名字；适合有上千个图片需要动态引用路径的场景；对于和 webpack 不兼容的库，可以用独立的<script>标签引入 456。
+   - **缺点**：硬编码的文件名不利于实现高效率的缓存控制；硬编码的文件名也无法很好的进行 code - splitting(代码分段)，因为无法用变化的文件名生成额外的 JavaScript 文件；硬编码的文件名无法在现代模式下工作 789。
+   - **适用场景**：需要指定输出文件名时；大量图片需动态引用路径时；引入与 webpack 不兼容的库时。
 
 ## 自动化构建技术
 
-打包工具属于自动化构建技术的一种，但 CMake 与一般意义上的打包工具（如 Webpack）在概念和功能上有相似之处。
+打包工具属于自动化构建技术的一种，但 CMake 与一般意义上的打包工具(如 Webpack)在概念和功能上有相似之处。
 
-打包工具，比如 Webpack，是自动化构建技术的典型代表。它能自动完成诸如模块打包、文件压缩、代码转换（将 ES6 + 代码转为 ES5 等）等任务，减少人工操作，提高开发效率，所以属于自动化构建技术的范畴。
+打包工具，比如 Webpack，是自动化构建技术的典型代表。它能自动完成诸如模块打包、文件压缩、代码转换(将 ES6 + 代码转为 ES5 等)等任务，减少人工操作，提高开发效率，所以属于自动化构建技术的范畴。
 
-CMake 是 C/C++ 等语言常用的构建工具，它也属于自动化构建技术。CMake 通过编写`CMakeLists.txt`文件来描述项目的源文件、依赖关系、编译选项等信息，然后可以根据不同的目标平台（如 Windows、Linux、macOS）生成对应的 Makefile 或工程文件（如 Visual Studio 的项目文件），自动完成编译、链接等构建过程 。
+CMake 是 C/C++ 等语言常用的构建工具，它也属于自动化构建技术。CMake 通过编写`CMakeLists.txt`文件来描述项目的源文件、依赖关系、编译选项等信息，然后可以根据不同的目标平台(如 Windows、Linux、macOS)生成对应的 Makefile 或工程文件(如 Visual Studio 的项目文件)，自动完成编译、链接等构建过程 。
 
 Webpack 主要用于前端项目，处理的是 JavaScript、CSS、图片等前端资源的打包和优化，更侧重于将多个模块合并、处理依赖关系并输出适合浏览器加载的静态资源。而 CMake 主要针对 C/C++ 项目，重点在于管理源文件的编译和链接过程，生成可执行文件或库，并且更关注不同平台下的构建差异 。
 
 目前业界广泛使用的自动化构建技术除了 Webpack，还有 Gulp 和 Grunt 等。
 
-一般意义上的打包工具是指能够将多个相关的文件（如代码文件、资源文件等）合并成一个或多个文件，以便于分发、部署和管理的工具。这种工具通常具有简单的合并功能，将文件按照一定规则组合在一起。Webpack 把项目中的各种资源（JavaScript、CSS、图片等）都视为模块，通过分析模块之间的依赖关系，对模块进行转换、处理（如用 Loader 将 ES6 + 代码转为 ES5），再打包成适合在目标环境（如浏览器）运行的静态资源文件。它还支持代码拆分、热模块替换等高级功能，在功能的丰富性和对现代项目的支持上远超一般意义上的打包工具。
+一般意义上的打包工具是指能够将多个相关的文件(如代码文件、资源文件等)合并成一个或多个文件，以便于分发、部署和管理的工具。这种工具通常具有简单的合并功能，将文件按照一定规则组合在一起。Webpack 把项目中的各种资源(JavaScript、CSS、图片等)都视为模块，通过分析模块之间的依赖关系，对模块进行转换、处理(如用 Loader 将 ES6 + 代码转为 ES5)，再打包成适合在目标环境(如浏览器)运行的静态资源文件。它还支持代码拆分、热模块替换等高级功能，在功能的丰富性和对现代项目的支持上远超一般意义上的打包工具。
 
 ## resource hint
 
-**resource hint（资源提示）相关的链接主要有**`<link rel="preload">`和`<link rel="prefetch">`。`preload`用来指定页面加载后很快会被用到的资源，让浏览器在开始主体渲染之前尽早加载这些资源；`prefetch`用于告诉浏览器在页面加载完成后，利用空闲时间提前获取用户未来可能会访问的内容，两者都用于优化资源加载性能，提升用户体验。浏览器遇到这样的标签会提前发起请求并缓存资源，需要时直接从缓存中读取，加快响应速度。
+**resource hint(资源提示)相关的链接主要有**`<link rel="preload">`和`<link rel="prefetch">`。`preload`用来指定页面加载后很快会被用到的资源，让浏览器在开始主体渲染之前尽早加载这些资源；`prefetch`用于告诉浏览器在页面加载完成后，利用空闲时间提前获取用户未来可能会访问的内容，两者都用于优化资源加载性能，提升用户体验。浏览器遇到这样的标签会提前发起请求并缓存资源，需要时直接从缓存中读取，加快响应速度。
 
-- **manifest 文件**：是一种提供应用相关元数据的文件，用于渐进式网络应用（PWA）等场景。在 Vue CLI 项目中，当用到 PWA 插件时，Vue CLI 会自动注入 manifest 相关链接。
+- **manifest 文件**：是一种提供应用相关元数据的文件，用于渐进式网络应用(PWA)等场景。在 Vue CLI 项目中，当用到 PWA 插件时，Vue CLI 会自动注入 manifest 相关链接。
 - **相关元数据**：包括应用名称、图标、启动画面、显示模式、背景色等信息，这些信息有助于浏览器更好地呈现和管理应用，比如设置应用在手机主屏幕上的显示图标和名称等。
-- **PWA（渐进式网络应用）**：是一种利用现代 Web 技术构建的网络应用，它能提供类似原生应用的体验，具备离线访问、消息推送、添加到主屏幕等功能，能提升用户的使用体验和应用的可访问性。‘
+- **PWA(渐进式网络应用)**：是一种利用现代 Web 技术构建的网络应用，它能提供类似原生应用的体验，具备离线访问、消息推送、添加到主屏幕等功能，能提升用户的使用体验和应用的可访问性。‘
 
 ## 转义插值
 
@@ -5894,9 +5885,9 @@ lodash template 语法是 JavaScript 语言中 Lodash 库提供的一种模板�
 
 转义插值是指在插入内容时，对特殊字符进行转义处理，以确保插入的内容在 HTML 或其他环境中能正确显示，而不会破坏原有结构。例如，在 HTML 中，`<`和`>`等字符如果不转义，可能会被误认为是 HTML 标签的开始和结束，导致页面解析错误。`<%- VALUE %>`就是用来做 HTML 转义插值的，它会将`VALUE`中的特殊字符进行转义后再插入到模板中。不转义插值则是直接将内容插入，不进行特殊字符的转义处理，`<%= VALUE %>`用于不转义插值 。分转义插值和不转义插值是为了满足不同的需求。当插入的内容可能包含 HTML 标签或特殊字符，且希望这些内容作为普通文本显示时，就需要使用转义插值；而当插入的内容本身就是合法的 HTML 代码片段，希望直接渲染时，则使用不转义插值。
 
-JavaScript 流程控制是指通过各种语句来控制程序的执行顺序和逻辑分支。常见的流程控制语句有`if...else`（条件判断）、`switch`（多分支选择）、`for`（循环）、`while`（循环）等。
+JavaScript 流程控制是指通过各种语句来控制程序的执行顺序和逻辑分支。常见的流程控制语句有`if...else`(条件判断)、`switch`(多分支选择)、`for`(循环)、`while`(循环)等。
 
-客户端环境变量是在客户端（如浏览器）运行环境中定义的变量，这些变量可以在客户端代码中使用。
+客户端环境变量是在客户端(如浏览器)运行环境中定义的变量，这些变量可以在客户端代码中使用。
 
 ## chunk
 
@@ -5904,7 +5895,7 @@ chunk 在 Webpack 等构建工具的语境下，是指在打包过程中，将�
 
 ## 单页应用 SPA
 
-单页应用（Single Page Application，SPA）和多页应用（Multi Page Application，MPA）是两种常见的 Web 应用架构模式。
+单页应用(Single Page Application，SPA)和多页应用(Multi Page Application，MPA)是两种常见的 Web 应用架构模式。
 
 - **单页应用**：整个应用只有一个 HTML 页面，在页面加载完成后，通过 JavaScript 动态更新页面内容，而不需要重新加载整个页面。就像手机上的一个 APP，打开后所有的操作都在这一个界面内完成，比如页面切换、数据更新等，都不会重新加载整个 APP 界面。像一些在线音乐播放平台，用户打开页面后，点击不同的歌曲、切换播放列表等操作，页面不会重新刷新，只是局部内容发生变化。在 Vue 框架中，通常使用 Vue Router 进行页面的路由管理，实现单页应用中不同视图的切换 。
 - **多页应用**：每个页面都有独立的 HTML 文件，页面之间的跳转需要重新加载新的 HTML 页面。这类似于传统的网站，每点击一个链接，就会打开一个新的网页。例如一些新闻资讯类网站，点击不同的新闻标题，会加载不同的新闻详情页面，每个页面都是一个独立的 HTML 文件。Vue CLI 支持使用`vue.config.js`中的`pages`选项构建多页面的应用，构建好的应用将会在不同的入口之间高效共享通用的 chunk 以获得最佳的加载性能。
@@ -5925,7 +5916,7 @@ CSS Modules 是一种将 CSS 样式模块化的技术，在 Vue CLI 项目中具
 
 ## DSL
 
-DSL 即 Domain - Specific Language，也就是领域特定语言，它是为特定领域的特定问题而设计的计算机语言。与通用编程语言（如 Python、Java 等）不同，DSL 专注于某个特定的应用领域，旨在提供更高效、更简洁、更易于理解和使用的编程方式。
+DSL 即 Domain - Specific Language，也就是领域特定语言，它是为特定领域的特定问题而设计的计算机语言。与通用编程语言(如 Python、Java 等)不同，DSL 专注于某个特定的应用领域，旨在提供更高效、更简洁、更易于理解和使用的编程方式。
 
 常见的 DSL 有：
 
@@ -5941,11 +5932,11 @@ DSL 即 Domain - Specific Language，也就是领域特定语言，它是为特�
 
 [TypeScript](https://www.typescriptlang.org/) 是 JavaScript 的*超集*，这意味着它*扩展*了 JavaScript——所有 JavaScript 代码都是有效的 TypeScript 代码，但反之则不然。TypeScript 可以让开发者们“严格地”执行他们的代码。
 
-## CDN（内容分发网络）
+## CDN(内容分发网络)
 
-**CDN**（内容分发网络）指的是一组分布在各个地区的服务器。这些服务器存储着数据的副本，因此服务器可以根据哪些服务器与用户距离最近，来满足数据的请求。CDN 可以提供快速服务，较少受高流量影响。
+**CDN**(内容分发网络)指的是一组分布在各个地区的服务器。这些服务器存储着数据的副本，因此服务器可以根据哪些服务器与用户距离最近，来满足数据的请求。CDN 可以提供快速服务，较少受高流量影响。
 
-CDN 被广泛用于传输样式表和 JavaScript 文件（例如 Bootstrap、jQquery 库等）的静态资源。对这些库文件使用 CDN 技术，有以下几点好处：
+CDN 被广泛用于传输样式表和 JavaScript 文件(例如 Bootstrap、jQquery 库等)的静态资源。对这些库文件使用 CDN 技术，有以下几点好处：
 
 - 通过 CDN 向用户分发传输相关库的静态资源文件，可以降低我们自身服务器的请求压力。
 - 大多数 CDN 在全球都有服务器，所以 CDN 上的服务器在地理位置上可能比你自己的服务器更接近你的用户。地理距离会按比例影响延迟。
@@ -5953,7 +5944,7 @@ CDN 被广泛用于传输样式表和 JavaScript 文件（例如 Bootstrap、jQq
 
 ## 服务端语言和框架
 
-HTML、CSS 和 JavaScript 是前端（或客户端）语言，这意味着浏览器运行它们生成用户可以使用的网站前端。还有另一类语言，称为后端（或服务器端）语言，这意味着它们先在服务器上运行，然后再将结果发送到浏览器进行显示。服务器端语言的一种典型用法是从数据库中获取数据并生成包含该数据的 HTML，然后再将 HTML 发送给浏览器并向用户显示。服务器端框架的例子包括 [ASP.NET](http://ASP.NET)（C#）、Django（Python）、Laravel（PHP）和 Next.js（JavaScript）。
+HTML、CSS 和 JavaScript 是前端(或客户端)语言，这意味着浏览器运行它们生成用户可以使用的网站前端。还有另一类语言，称为后端(或服务器端)语言，这意味着它们先在服务器上运行，然后再将结果发送到浏览器进行显示。服务器端语言的一种典型用法是从数据库中获取数据并生成包含该数据的 HTML，然后再将 HTML 发送给浏览器并向用户显示。服务器端框架的例子包括 [ASP.NET](http://ASP.NET)(C#)、Django(Python)、Laravel(PHP)和 Next.js(JavaScript)。
 
 ## 脚本编程语言
 
@@ -5961,14 +5952,14 @@ HTML、CSS 和 JavaScript 是前端（或客户端）语言，这意味着浏览
 
 脚本编程语言是一种为了实现特定任务而编写的、较为灵活且通常不需要编译过程，可直接解释执行的编程语言。它常用于自动化处理、网页交互、系统管理等场景，能快速编写和修改，以满足不同的临时性或特定需求。
 
-常见的脚本编程语言有 Python、JavaScript、Ruby、Bash 等。例如，Python 可以用于数据处理、机器学习、自动化测试等；JavaScript 广泛应用于网页前端交互和后端服务开发（Node.js）；Bash 则常用于 Unix/Linux 系统的脚本编写，实现文件操作、进程管理等任务。
+常见的脚本编程语言有 Python、JavaScript、Ruby、Bash 等。例如，Python 可以用于数据处理、机器学习、自动化测试等；JavaScript 广泛应用于网页前端交互和后端服务开发(Node.js)；Bash 则常用于 Unix/Linux 系统的脚本编写，实现文件操作、进程管理等任务。
 
-### 脚本编程语言与非脚本编程语言（编译型语言）的区别
+### 脚本编程语言与非脚本编程语言(编译型语言)的区别
 
 ### 1. 执行方式
 
 - 脚本编程语言：通常采用解释执行的方式。解释器会逐行读取并执行脚本代码，不需要提前将代码编译成机器码。这种方式使得代码修改后可以立即运行，调试方便。例如，当你编写一个 Python 脚本时，只需在命令行中输入 `python script.py`，Python 解释器就会逐行解释并执行代码。
-- 非脚本编程语言：一般是编译型语言，需要先使用编译器将源代码编译成机器码或中间代码，然后才能运行。编译过程可能需要花费一定的时间，但编译后的程序运行速度通常较快。例如，使用 C 语言编写的程序，需要使用编译器（如 GCC）将 `.c` 文件编译成可执行文件（如 `.exe`），然后才能运行该可执行文件。
+- 非脚本编程语言：一般是编译型语言，需要先使用编译器将源代码编译成机器码或中间代码，然后才能运行。编译过程可能需要花费一定的时间，但编译后的程序运行速度通常较快。例如，使用 C 语言编写的程序，需要使用编译器(如 GCC)将 `.c` 文件编译成可执行文件(如 `.exe`)，然后才能运行该可执行文件。
 
 ### 2. 开发效率
 
@@ -5977,7 +5968,7 @@ HTML、CSS 和 JavaScript 是前端（或客户端）语言，这意味着浏览
 
 ### 3. 性能
 
-- 脚本编程语言：由于是解释执行，脚本语言的运行速度通常比编译型语言慢。解释器在执行代码时需要进行逐行解析和执行，会有一定的性能开销。不过，随着技术的发展，一些脚本语言（如 Python）也通过即时编译（JIT）等技术提高了运行性能。
+- 脚本编程语言：由于是解释执行，脚本语言的运行速度通常比编译型语言慢。解释器在执行代码时需要进行逐行解析和执行，会有一定的性能开销。不过，随着技术的发展，一些脚本语言(如 Python)也通过即时编译(JIT)等技术提高了运行性能。
 - 非脚本编程语言：编译后的程序可以直接在计算机硬件上运行，运行速度通常较快。编译过程会对代码进行优化，生成高效的机器码，适合对性能要求较高的应用场景，如操作系统、游戏开发、嵌入式系统等。
 
 ### 4. 跨平台性
@@ -6006,71 +5997,71 @@ JS 独有的语法：
 
 - 动态的数据类型，null、undefined、boolean、object 类型
 
-- 匿名函数（函数表达式），箭头函数，支持闭包（函数可以访问其外部函数的作用域）
+- 匿名函数(函数表达式)，箭头函数，支持闭包(函数可以访问其外部函数的作用域)
 
-    为什么要设计匿名函数：当你只需要在某个地方临时使用一个函数，而不需要为其命名时，可以使用匿名函数。例如，在事件处理、数组方法的回调等场景中。另外，在复杂的代码中，过多的命名函数可能会导致命名冲突，使用匿名函数可以避免这个问题。
+  为什么要设计匿名函数：当你只需要在某个地方临时使用一个函数，而不需要为其命名时，可以使用匿名函数。例如，在事件处理、数组方法的回调等场景中。另外，在复杂的代码中，过多的命名函数可能会导致命名冲突，使用匿名函数可以避免这个问题。
 
-    相较于普通函数，匿名函数可以让代码更加简洁，尤其是在使用数组方法时。匿名函数可以立即调用，形成立即执行函数表达式（IIFE），用于创建独立的作用域。
+  相较于普通函数，匿名函数可以让代码更加简洁，尤其是在使用数组方法时。匿名函数可以立即调用，形成立即执行函数表达式(IIFE)，用于创建独立的作用域。
 
-    在 JavaScript 中，函数可以作为值赋给变量，这种将函数赋值给变量的方式就是函数表达式。当赋值的函数没有名称时，就是匿名函数表达式。
+  在 JavaScript 中，函数可以作为值赋给变量，这种将函数赋值给变量的方式就是函数表达式。当赋值的函数没有名称时，就是匿名函数表达式。
 
-    箭头函数是一种更简洁的函数定义方式，尤其适用于简单的函数逻辑。它没有自己的 `this`、`arguments`、`super` 或 `new.target`，其 `this` 值继承自外层函数，简化了 `this` 的使用。
+  箭头函数是一种更简洁的函数定义方式，尤其适用于简单的函数逻辑。它没有自己的 `this`、`arguments`、`super` 或 `new.target`，其 `this` 值继承自外层函数，简化了 `this` 的使用。
 
-    在编程里，有些函数的设计允许接收其他函数作为参数，这样的函数被称为高阶函数。当调用高阶函数时，我们可以传递一个已经定义好的命名函数作为参数，不过为了代码的简洁和方便，更多时候会直接传递一个没有名字的匿名函数作为参数。比如数组的 map 函数、用于延迟执行的 setTimeout 就是高阶函数。在这样的场景下，使用匿名函数可以避免为一些只在特定场景下使用一次的函数专门命名，让代码更加简洁，减少不必要的命名。可以在调用高阶函数的地方直接定义要执行的逻辑，不需要在其他地方先定义好命名函数，使代码的逻辑更加紧凑和直观，便于理解代码的上下文。减少了全局作用域中不必要的命名函数，降低命名冲突的可能性。
+  在编程里，有些函数的设计允许接收其他函数作为参数，这样的函数被称为高阶函数。当调用高阶函数时，我们可以传递一个已经定义好的命名函数作为参数，不过为了代码的简洁和方便，更多时候会直接传递一个没有名字的匿名函数作为参数。比如数组的 map 函数、用于延迟执行的 setTimeout 就是高阶函数。在这样的场景下，使用匿名函数可以避免为一些只在特定场景下使用一次的函数专门命名，让代码更加简洁，减少不必要的命名。可以在调用高阶函数的地方直接定义要执行的逻辑，不需要在其他地方先定义好命名函数，使代码的逻辑更加紧凑和直观，便于理解代码的上下文。减少了全局作用域中不必要的命名函数，降低命名冲突的可能性。
 
-    （Python 中的匿名的 `lambda` 函数同理）
+  (Python 中的匿名的 `lambda` 函数同理)
 
-    C 语言设计的初衷是用于系统级编程，追求性能和简洁性，不需要过多复杂的函数定义方式。而且 C 语言是静态类型语言，函数的类型和参数必须在编译时确定，不支持动态的函数表达式和简洁的箭头函数语法。
+  C 语言设计的初衷是用于系统级编程，追求性能和简洁性，不需要过多复杂的函数定义方式。而且 C 语言是静态类型语言，函数的类型和参数必须在编译时确定，不支持动态的函数表达式和简洁的箭头函数语法。
 
-    闭包：可以将一些变量封装在外部函数的作用域中，只有通过闭包才能访问和修改这些变量，实现数据的隐藏和保护，避免全局变量的污染。
+  闭包：可以将一些变量封装在外部函数的作用域中，只有通过闭包才能访问和修改这些变量，实现数据的隐藏和保护，避免全局变量的污染。
 
-    C 语言的内存管理和作用域机制相对简单，没有像 JavaScript 那样灵活的函数对象和动态作用域。C 语言的函数调用栈在函数返回后会被销毁，无法保留外部函数的局部变量。
+  C 语言的内存管理和作用域机制相对简单，没有像 JavaScript 那样灵活的函数对象和动态作用域。C 语言的函数调用栈在函数返回后会被销毁，无法保留外部函数的局部变量。
 
-    在 JavaScript 中，外部函数是指包含内部函数的函数。内部函数可以访问外部函数的变量和参数，形成闭包。JavaScript 支持函数嵌套，即可以在一个函数内部声明另一个函数。
+  在 JavaScript 中，外部函数是指包含内部函数的函数。内部函数可以访问外部函数的变量和参数，形成闭包。JavaScript 支持函数嵌套，即可以在一个函数内部声明另一个函数。
 
-    - **实现函数私有变量和方法**：闭包可以模拟面向对象编程中的私有变量和方法，外部无法直接访问这些私有成员，只能通过闭包提供的公共方法来操作。
-    - **实现函数工厂**：可以根据不同的参数动态创建函数，每个函数都有自己独立的作用域和状态。
+  - **实现函数私有变量和方法**：闭包可以模拟面向对象编程中的私有变量和方法，外部无法直接访问这些私有成员，只能通过闭包提供的公共方法来操作。
+  - **实现函数工厂**：可以根据不同的参数动态创建函数，每个函数都有自己独立的作用域和状态。
 
-    在编程中，闭包是指有权访问另一个函数作用域中变量的函数。即使该外部函数已经执行完毕，其作用域内的变量也不会被销毁，闭包会持有对这些变量的引用。简单来说，闭包就是函数内部的函数，它能够记住并访问其外部函数的变量。**作用**：可以将一些变量封装在外部函数的作用域中，只有通过闭包才能访问和修改这些变量，实现数据的隐藏和保护，避免全局变量的污染。
+  在编程中，闭包是指有权访问另一个函数作用域中变量的函数。即使该外部函数已经执行完毕，其作用域内的变量也不会被销毁，闭包会持有对这些变量的引用。简单来说，闭包就是函数内部的函数，它能够记住并访问其外部函数的变量。**作用**：可以将一些变量封装在外部函数的作用域中，只有通过闭包才能访问和修改这些变量，实现数据的隐藏和保护，避免全局变量的污染。
 
-- 作用域和上下文：JavaScript 使用词法作用域（静态作用域），函数的作用域在定义时就确定了。`this` 在 JavaScript 中的指向根据函数的调用方式不同而不同，这是一个比较复杂的概念，C 语言中没有类似的机制。在 JavaScript 中，函数的作用域在定义时就确定了，而不是在调用时确定。函数可以访问其外部函数的变量，即使外部函数已经执行完毕。
+- 作用域和上下文：JavaScript 使用词法作用域(静态作用域)，函数的作用域在定义时就确定了。`this` 在 JavaScript 中的指向根据函数的调用方式不同而不同，这是一个比较复杂的概念，C 语言中没有类似的机制。在 JavaScript 中，函数的作用域在定义时就确定了，而不是在调用时确定。函数可以访问其外部函数的变量，即使外部函数已经执行完毕。
 
-    C 语言也使用词法作用域，函数的作用域在定义时就确定了。但是 C 语言的函数调用栈在函数返回后会被销毁，无法像 JavaScript 那样保留外部函数的局部变量。
+  C 语言也使用词法作用域，函数的作用域在定义时就确定了。但是 C 语言的函数调用栈在函数返回后会被销毁，无法像 JavaScript 那样保留外部函数的局部变量。
 
-    在 JavaScript 中，函数声明和 `var` 声明的变量会被提升，可以在声明之前使用；而函数表达式和 `let`、`const` 声明的变量需要先声明后使用。在 C 语言中，通常需要先声明函数和变量，再使用。
+  在 JavaScript 中，函数声明和 `var` 声明的变量会被提升，可以在声明之前使用；而函数表达式和 `let`、`const` 声明的变量需要先声明后使用。在 C 语言中，通常需要先声明函数和变量，再使用。
 
-    在 JavaScript 中，`this` 是一个特殊的关键字，它的值根据函数的调用方式不同而不同。`this` 可以指向全局对象（在全局作用域中）、函数的调用者对象（在对象方法中）、构造函数创建的实例对象（在构造函数中）等。
+  在 JavaScript 中，`this` 是一个特殊的关键字，它的值根据函数的调用方式不同而不同。`this` 可以指向全局对象(在全局作用域中)、函数的调用者对象(在对象方法中)、构造函数创建的实例对象(在构造函数中)等。
 
-    `this` 关键字的设计是为了在不同的上下文中提供一种灵活的方式来引用当前对象，使得函数可以在不同的对象上复用，增强了代码的灵活性和可复用性。
+  `this` 关键字的设计是为了在不同的上下文中提供一种灵活的方式来引用当前对象，使得函数可以在不同的对象上复用，增强了代码的灵活性和可复用性。
 
-    C 语言是一种过程式编程语言，没有对象的概念，也不存在像 JavaScript 那样的动态上下文。C 语言通过传递指针来实现类似的功能。
+  C 语言是一种过程式编程语言，没有对象的概念，也不存在像 JavaScript 那样的动态上下文。C 语言通过传递指针来实现类似的功能。
 
-    声明会为变量分配内存空间，但不会给变量赋值。在日常交流中，有时也会把声明并初始化变量的过程称为 “定义变量”，但在 JavaScript 规范中并没有明确这样的术语区分。同样，在某些语境下，也可能会把函数的创建过程（包括声明和使用表达式赋值）统称为 “定义函数”，但这不是标准的严格区分术语。
+  声明会为变量分配内存空间，但不会给变量赋值。在日常交流中，有时也会把声明并初始化变量的过程称为 “定义变量”，但在 JavaScript 规范中并没有明确这样的术语区分。同样，在某些语境下，也可能会把函数的创建过程(包括声明和使用表达式赋值)统称为 “定义函数”，但这不是标准的严格区分术语。
 
 - 异步编程：JavaScript 经常使用回调函数来处理异步操作，如事件处理、网络请求等。
 
-    setTimeout、callback、promise、async、await
+  setTimeout、callback、promise、async、await
 
-    异步编程是指在程序执行过程中，不会阻塞后续代码的执行，而是在某个操作完成后再执行相应的回调函数。
+  异步编程是指在程序执行过程中，不会阻塞后续代码的执行，而是在某个操作完成后再执行相应的回调函数。
 
-    在 Web 开发中，很多操作是异步的，如网络请求、文件读取等。如果使用同步编程，会阻塞页面的渲染和用户交互，影响用户体验。异步编程可以提高程序的性能和响应能力。
+  在 Web 开发中，很多操作是异步的，如网络请求、文件读取等。如果使用同步编程，会阻塞页面的渲染和用户交互，影响用户体验。异步编程可以提高程序的性能和响应能力。
 
-    JavaScript 的异步编程基于事件循环机制。当遇到异步操作时，会将其放入任务队列中，主线程继续执行后续代码。当主线程空闲时，会从任务队列中取出任务执行。
+  JavaScript 的异步编程基于事件循环机制。当遇到异步操作时，会将其放入任务队列中，主线程继续执行后续代码。当主线程空闲时，会从任务队列中取出任务执行。
 
-    - **回调函数**：将一个函数作为参数传递给另一个函数，在异步操作完成后调用该回调函数。
-    - **Promise**：一种处理异步操作的对象，避免回调地狱。
-    - **async/await**：基于 Promise 的语法糖，使异步代码看起来更像同步代码。
+  - **回调函数**：将一个函数作为参数传递给另一个函数，在异步操作完成后调用该回调函数。
+  - **Promise**：一种处理异步操作的对象，避免回调地狱。
+  - **async/await**：基于 Promise 的语法糖，使异步代码看起来更像同步代码。
 
-    C 语言是一种系统级编程语言，设计初衷是追求性能和简洁性，没有内置的异步编程机制。C 语言的程序执行是顺序的，会阻塞后续代码的执行。
+  C 语言是一种系统级编程语言，设计初衷是追求性能和简洁性，没有内置的异步编程机制。C 语言的程序执行是顺序的，会阻塞后续代码的执行。
 
-    **C 语言实现异步操作的方法：多线程、信号机制**
+  **C 语言实现异步操作的方法：多线程、信号机制**
 
 - 面向对象编程：JavaScript 使用原型链来实现继承，与 C 语言的类继承机制不同。
 
 原型链是 JavaScript 实现继承的一种方式。每个对象都有一个原型对象，原型对象又有自己的原型对象，以此类推，直到最顶层的 Object.prototype。当访问一个对象的属性或方法时，JavaScript 会先在对象本身查找，如果找不到，会沿着原型链向上查找。C 语言本身没有内置的继承机制，但可以通过结构体嵌套和函数指针来模拟继承。
 
 - JS 在浏览器环境使用时涉及的 DOM 操作
-- 变量和函数的提升：在 JavaScript 中，变量提升（Hoisting）是指在代码执行之前，变量和函数的声明会被提升到当前作用域的顶部。这意味着你可以在变量声明之前使用该变量，但在声明之前变量的值是 `undefined`。函数提升是指函数声明会被提升到当前作用域的顶部，这意味着你可以在函数声明之前调用该函数。函数表达式（将函数赋值给一个变量）不会像函数声明那样进行提升。函数表达式使用 `var`、`let` 或 `const` 声明变量，变量会按照相应规则提升，但函数本身不会提前定义。
+- 变量和函数的提升：在 JavaScript 中，变量提升(Hoisting)是指在代码执行之前，变量和函数的声明会被提升到当前作用域的顶部。这意味着你可以在变量声明之前使用该变量，但在声明之前变量的值是 `undefined`。函数提升是指函数声明会被提升到当前作用域的顶部，这意味着你可以在函数声明之前调用该函数。函数表达式(将函数赋值给一个变量)不会像函数声明那样进行提升。函数表达式使用 `var`、`let` 或 `const` 声明变量，变量会按照相应规则提升，但函数本身不会提前定义。
 
 JavaScript 最初是为了在浏览器中实现简单的交互效果而设计的，动态、弱类型的特性使得开发者可以更快速地编写代码，无需过多关注类型声明和严格的类型检查，降低了开发门槛，提高了开发效率。在 Web 开发中，需要与 HTML 和 CSS 紧密集成，动态类型更适合处理各种不同来源的数据，如用户输入、DOM 元素属性等。
 
@@ -6086,10 +6077,10 @@ C 语言是一种系统级编程语言，需要直接操作硬件和内存，指
 
 - Node.js
 
-    ：是一个基于 Chrome V8 引擎的 JavaScript 运行环境，让 JavaScript 可以在服务器端运行。它使用事件驱动、非阻塞 I/O 模型，使得其轻量又高效，非常适合构建高并发的网络应用。
+  ：是一个基于 Chrome V8 引擎的 JavaScript 运行环境，让 JavaScript 可以在服务器端运行。它使用事件驱动、非阻塞 I/O 模型，使得其轻量又高效，非常适合构建高并发的网络应用。
 
-    - **Web 服务器**：可以使用 Node.js 搭配 Express、Koa 等框架快速搭建 Web 服务器，处理 HTTP 请求和响应，开发出各类网站和 Web 应用程序，如电商网站的后端服务、博客系统的服务器端等。
-    - **实时应用**：借助 [Socket.IO](http://Socket.IO) 等库，Node.js 能够轻松实现实时通信应用，像在线聊天系统、多人游戏、实时数据监控系统等，这些应用需要服务器和客户端之间进行频繁且即时的数据交互。
+  - **Web 服务器**：可以使用 Node.js 搭配 Express、Koa 等框架快速搭建 Web 服务器，处理 HTTP 请求和响应，开发出各类网站和 Web 应用程序，如电商网站的后端服务、博客系统的服务器端等。
+  - **实时应用**：借助 [Socket.IO](http://Socket.IO) 等库，Node.js 能够轻松实现实时通信应用，像在线聊天系统、多人游戏、实时数据监控系统等，这些应用需要服务器和客户端之间进行频繁且即时的数据交互。
 
 ## Web 最佳实践
 
@@ -6104,29 +6095,29 @@ C 语言是一种系统级编程语言，需要直接操作硬件和内存，指
 
 在你的学习过程中，你将遇到以下概念。
 
-- **跨浏览器兼容性**（Cross-browser compatibility）是一种确保你的网页能够在尽可能多的设备上运行的实践。这包括使用所有浏览器都支持的技术，为能提供这些功能（渐进增强）的浏览器提供更好的体验，和/或编写在较旧的浏览器中能回退到更简单但仍可用的体验（平稳降级）的代码。它还涉及大量测试，以查看某些浏览器是否有任何故障，然后进行更多工作来修复这些故障。
-- **响应式 Web 设计**（Responsive Web design）是一种使功能和布局变得灵活的实践，这样它们可以自动适应不同的浏览器。一个明显的例子是在桌面上的宽屏浏览器中以一种方式进行布局、但在手机浏览器中以另一种更紧凑的单列布局的网站。现在请尝试调整浏览器窗口的宽度，然后看看会发生什么。
-- **性能**（Performance）意味着要尽快加载网站，而且还应使其直观易用，以使用户不会碰壁离开。
-- **无障碍**（Accessibility）意味着使你的网站可供尽可能多的不同类型的人使用（相关概念是多样性和包容性，以及包容性设计）。这包括视力障碍，听力障碍，认知障碍或肢体障碍的人。它也不仅仅局限于残疾人——也包含年轻人或老年人、来自不同文化的人、使用移动设备的人、或网络连接不可靠或缓慢的人。
-- **国际化**（Internationalization）意味着使网站可以供来自不同文化背景、讲着不同语言的人使用。这一点可以考虑一些技术手段（例如，更改布局以使其对于从右到左甚至垂直的语言仍然可以正常使用）和人为手段（例如，使用简单的非俚语，以便使以你的语言作为第二或第三语言的人更可能理解你的文字）。
-- **隐私与安全**（Privacy & Security）这两个概念相关但不同。隐私是指允许人们私下从事其业务，而不是监视他们或收集你绝对不需要的更多数据。安全性是指以安全的方式构建你的网站，以使恶意用户无法从你或你的用户那里窃取信息。
+- **跨浏览器兼容性**(Cross-browser compatibility)是一种确保你的网页能够在尽可能多的设备上运行的实践。这包括使用所有浏览器都支持的技术，为能提供这些功能(渐进增强)的浏览器提供更好的体验，和/或编写在较旧的浏览器中能回退到更简单但仍可用的体验(平稳降级)的代码。它还涉及大量测试，以查看某些浏览器是否有任何故障，然后进行更多工作来修复这些故障。
+- **响应式 Web 设计**(Responsive Web design)是一种使功能和布局变得灵活的实践，这样它们可以自动适应不同的浏览器。一个明显的例子是在桌面上的宽屏浏览器中以一种方式进行布局、但在手机浏览器中以另一种更紧凑的单列布局的网站。现在请尝试调整浏览器窗口的宽度，然后看看会发生什么。
+- **性能**(Performance)意味着要尽快加载网站，而且还应使其直观易用，以使用户不会碰壁离开。
+- **无障碍**(Accessibility)意味着使你的网站可供尽可能多的不同类型的人使用(相关概念是多样性和包容性，以及包容性设计)。这包括视力障碍，听力障碍，认知障碍或肢体障碍的人。它也不仅仅局限于残疾人——也包含年轻人或老年人、来自不同文化的人、使用移动设备的人、或网络连接不可靠或缓慢的人。
+- **国际化**(Internationalization)意味着使网站可以供来自不同文化背景、讲着不同语言的人使用。这一点可以考虑一些技术手段(例如，更改布局以使其对于从右到左甚至垂直的语言仍然可以正常使用)和人为手段(例如，使用简单的非俚语，以便使以你的语言作为第二或第三语言的人更可能理解你的文字)。
+- **隐私与安全**(Privacy & Security)这两个概念相关但不同。隐私是指允许人们私下从事其业务，而不是监视他们或收集你绝对不需要的更多数据。安全性是指以安全的方式构建你的网站，以使恶意用户无法从你或你的用户那里窃取信息。
 
 ## Linter 和 Minifier
 
 - 所谓的“linter”，它包含了一组规则，检查你的代码之后，会突出显示你未正确遵循规则的地方。
 
-    Linter（代码检查工具）是一种在软件开发中广泛使用的工具，它可以对代码进行静态分析，也就是在代码运行之前对其进行检查，以发现潜在的错误、不规范的代码风格以及其他可能存在的问题。Linetr 具备的功能有：语法错误检查、代码风格检查、潜在错误和逻辑问题检测、性能问题检查。常见的 Linter 工具有 ESLint（JS）、JHLint（JS）、PyLint（Python）、Clang（C 和 C++）
+  Linter(代码检查工具)是一种在软件开发中广泛使用的工具，它可以对代码进行静态分析，也就是在代码运行之前对其进行检查，以发现潜在的错误、不规范的代码风格以及其他可能存在的问题。Linetr 具备的功能有：语法错误检查、代码风格检查、潜在错误和逻辑问题检测、性能问题检查。常见的 Linter 工具有 ESLint(JS)、JHLint(JS)、PyLint(Python)、Clang(C 和 C++)
 
-- 极简化器（minifier），它将代码文件中的所有空格删除以使其更小，从而可以更快地从服务器下载。
+- 极简化器(minifier)，它将代码文件中的所有空格删除以使其更小，从而可以更快地从服务器下载。
 
-    Minifier（代码压缩工具）是在软件开发过程中用于对代码进行优化处理的工具，其核心功能是通过去除代码中的不必要字符、缩短变量名等方式，减少代码文件的大小，同时不改变代码的基本功能。Minifier 常用于减小文件大小、降低带宽消耗、提高性能。常见的 Minifier 有 UglifyJS（JS）、cssnano（CSS）、HTMLMinifier。使用 Minifier 的注意事项：
+  Minifier(代码压缩工具)是在软件开发过程中用于对代码进行优化处理的工具，其核心功能是通过去除代码中的不必要字符、缩短变量名等方式，减少代码文件的大小，同时不改变代码的基本功能。Minifier 常用于减小文件大小、降低带宽消耗、提高性能。常见的 Minifier 有 UglifyJS(JS)、cssnano(CSS)、HTMLMinifier。使用 Minifier 的注意事项：
 
-    - 兼容性问题：在压缩代码时，需要确保压缩后的代码在各种浏览器和环境中都能正常运行。有些代码压缩工具可能会因为过度优化而导致兼容性问题，因此需要进行充分的测试。
-    - 调试难度增加：压缩后的代码由于去除了大量的空格、注释，并且缩短了变量名，会变得非常难以阅读和调试。因此，在开发阶段通常使用未压缩的代码，只有在生产环境中才使用压缩后的代码。
+  - 兼容性问题：在压缩代码时，需要确保压缩后的代码在各种浏览器和环境中都能正常运行。有些代码压缩工具可能会因为过度优化而导致兼容性问题，因此需要进行充分的测试。
+  - 调试难度增加：压缩后的代码由于去除了大量的空格、注释，并且缩短了变量名，会变得非常难以阅读和调试。因此，在开发阶段通常使用未压缩的代码，只有在生产环境中才使用压缩后的代码。
 
 ## 元数据
 
-在页面加载完成的时候，HTML 文档中的[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)是不会显示在 web 浏览器的。它包含了诸如页面的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title)（标题）、指向 [CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS) 的链接（如果你选择用 CSS 来为 HTML 内容添加样式）、指向自定义网页图标的链接和其他的元数据（描述 HTML 的数据，比如作者和描述文档的重要关键词）等信息。Web 浏览器将使用文档[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)的信息正确渲染 HTML 文档。
+在页面加载完成的时候，HTML 文档中的[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)是不会显示在 web 浏览器的。它包含了诸如页面的 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title)(标题)、指向 [CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS) 的链接(如果你选择用 CSS 来为 HTML 内容添加样式)、指向自定义网页图标的链接和其他的元数据(描述 HTML 的数据，比如作者和描述文档的重要关键词)等信息。Web 浏览器将使用文档[头部](https://developer.mozilla.org/zh-CN/docs/Glossary/Head)的信息正确渲染 HTML 文档。
 
 ## 视口
 
@@ -6134,21 +6125,21 @@ C 语言是一种系统级编程语言，需要直接操作硬件和内存，指
 
 一些帮助你查询视口大小和其他类似的长度属性的 DOM 属性：
 
-- 文档的 [`Element.clientWidth`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/clientWidth) 是指一个文档使用 [CSS pixels](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Viewport_meta_tag#screen_density) 单位表示的内部宽度，包括其 padding（不包括 border、margin 或垂直滚动条）。**这就是视口的宽度**。
+- 文档的 [`Element.clientWidth`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/clientWidth) 是指一个文档使用 [CSS pixels](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Viewport_meta_tag#screen_density) 单位表示的内部宽度，包括其 padding(不包括 border、margin 或垂直滚动条)。**这就是视口的宽度**。
 - [`Window.innerWidth`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/innerWidth) 是用 CSS 像素单位表示的浏览器窗口的视口宽度，包括垂直滚动条。
 - [`Window.outerWidth`](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/outerWidth) 是指包括了浏览器外边框的窗口宽度。
 
-`innerHeight` 和 `innerWidth` 所组成的区域通常被认为是**布局视口（layout viewport）**。浏览器的框架不被认为是视口的一部分。 Web 浏览器包含两个视口，**布局视口**和**视觉视口**。视觉视口指当前浏览器中可见的部分，并且可以变化。当使用双指缩放，或键盘在手机上弹出的时候，或者之前隐藏的地址栏变得可见的时候，视觉视口缩小了，但是布局视口却保持不变。视觉视口是屏幕的可视部分，不包括屏幕键盘，缩放外的区域。视觉视口要么跟布局视口相同，要么更小。
+`innerHeight` 和 `innerWidth` 所组成的区域通常被认为是**布局视口(layout viewport)**。浏览器的框架不被认为是视口的一部分。 Web 浏览器包含两个视口，**布局视口**和**视觉视口**。视觉视口指当前浏览器中可见的部分，并且可以变化。当使用双指缩放，或键盘在手机上弹出的时候，或者之前隐藏的地址栏变得可见的时候，视觉视口缩小了，但是布局视口却保持不变。视觉视口是屏幕的可视部分，不包括屏幕键盘，缩放外的区域。视觉视口要么跟布局视口相同，要么更小。
 
-在上面描述的布局视口和视觉视口不是你将遇到的唯一视口。在布局视口中完全或部分显示的任何子视口都被视为可视视口。对于嵌套元素，视觉视口是其内部高度和宽度的大小而不是其父文档的大小。你可以为其高度和宽度设置任意数值，但过大的值可能会使嵌套元素部分内容超出视口导致超出部分不可见。宽度和高度的媒体查询是相对于视口的，但当存在嵌套浏览上下文（像 `<object>`、`<iframe>` 和 SVG 这些元素创建的子视口环境）时，这些宽度、高度以及视口单位会相对于嵌套元素的父级元素的大小来进行计算。
+在上面描述的布局视口和视觉视口不是你将遇到的唯一视口。在布局视口中完全或部分显示的任何子视口都被视为可视视口。对于嵌套元素，视觉视口是其内部高度和宽度的大小而不是其父文档的大小。你可以为其高度和宽度设置任意数值，但过大的值可能会使嵌套元素部分内容超出视口导致超出部分不可见。宽度和高度的媒体查询是相对于视口的，但当存在嵌套浏览上下文(像 `<object>`、`<iframe>` 和 SVG 这些元素创建的子视口环境)时，这些宽度、高度以及视口单位会相对于嵌套元素的父级元素的大小来进行计算。
 
 CSS 中也有基于视口大小的长度单位。1vh 单位是 1% 布局视口的高度，vw 单位与此类似。需要注意的是，当你在 CSS 中使用 `vw` 和 `vh` 设置 `iframe` 的样式时，1vh 表示的是 `iframe` 高度的 1%，但 1vw 表示的则是 document 宽度的 1%。
 
-注：媒体查询（Media Queries）是 CSS3 引入的一项强大功能，它允许开发者根据不同的设备特性（如屏幕尺寸、分辨率、设备方向等）应用不同的 CSS 样式规则。通过媒体查询，网页可以在各种设备上提供更优化的显示效果，实现响应式设计。
+注：媒体查询(Media Queries)是 CSS3 引入的一项强大功能，它允许开发者根据不同的设备特性(如屏幕尺寸、分辨率、设备方向等)应用不同的 CSS 样式规则。通过媒体查询，网页可以在各种设备上提供更优化的显示效果，实现响应式设计。
 
 ## 钩子
 
-在计算机编程领域，钩子（Hook）是一种特殊的机制，它允许程序在执行到特定的阶段或发生特定事件时，插入自定义的代码逻辑。钩子就像是一个 “挂钩”，可以在程序原本的执行流程中挂上额外的操作，以实现一些额外的功能或对特定事件做出响应。
+在计算机编程领域，钩子(Hook)是一种特殊的机制，它允许程序在执行到特定的阶段或发生特定事件时，插入自定义的代码逻辑。钩子就像是一个 “挂钩”，可以在程序原本的执行流程中挂上额外的操作，以实现一些额外的功能或对特定事件做出响应。
 
 ## 命令行使用
 
@@ -6166,13 +6157,13 @@ grep：
 
 4. **显示带行号的匹配行**：使用`n`选项，比如查看`/etc/passwd`中`nobody`所在行及其行号，命令是`grep -n 'nobody' /etc/passwd` ，结果类似`18:nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin` 。
 
-5. **反转匹配（显示不匹配的行）**：使用`v`选项，例如显示`/etc/passwd`中不包含`nobody`的行，命令为`grep -v 'nobody' /etc/passwd` 。
+5. **反转匹配(显示不匹配的行)**：使用`v`选项，例如显示`/etc/passwd`中不包含`nobody`的行，命令为`grep -v 'nobody' /etc/passwd` 。
 
 6. **打印以特定字符开头的行**：用插入符号 “^” 标记开头，如显示`/etc/passwd`中以 “backup” 开头的行，命令是`grep ^backup /etc/passwd` ，输出可能为`backup:x:34:34:backup:/var/backups:/usr/sbin/nologin` 。
 
 7. **打印以特定字符结尾的行**：美元符号 “ /etc/passwd `，结果可能包含`root:x:0:0:root:/root:/bin/bash `、`linuxtechi:x:1000:1000:linuxtechi,,,:/home/linuxtechi:/bin/bash` 。
 
-    标记结尾，比如列出中以结尾的行，命令是
+   标记结尾，比如列出中以结尾的行，命令是
 
 8. **递归搜索**：使用`r`选项在文件夹及子文件夹中搜索，如递归搜索`/etc`文件夹中的`nobody`，命令为`sudo grep -r nobody /etc` ，会输出`/etc`目录下所有包含`nobody`的文件及对应行，像`/etc/shadow:nobody:*:19101:0:99999:7:::`等 。
 
@@ -6182,23 +6173,23 @@ grep：
 
 ## NodeJS
 
-一个可以在服务端运行的 JavaScript 环境（浏览器运行的是客户端的 JS）
+一个可以在服务端运行的 JavaScript 环境(浏览器运行的是客户端的 JS)
 
-**npm**（Node Package Manager）是 Node.js 的一个包管理工具。
+**npm**(Node Package Manager)是 Node.js 的一个包管理工具。
 
 Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，让 JavaScript 可以在服务器端运行。它使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。简单来说，Node.js 使得开发者可以使用 JavaScript 语言来开发服务器端应用程序，构建网络服务、命令行工具等。从本质上讲，它是一个需要安装到本地计算机的软件。
 
-npm（Node Package Manager）是 Node.js 的包管理工具，也是世界上最大的软件注册表。它允许开发者轻松地分享和复用代码，管理项目中的依赖项。npm 会随着 Node.js 一起安装，也就是说，当你安装 Node.js 时，npm 也会自动安装到你的系统中。因此，严格来说，npm 并不是一个独立需要单独安装的软件，而是 Node.js 的一个重要组成部分。Node.js 是一个需要安装的软件，安装完成后可以让 JavaScript 在服务器端运行；npm 是 Node.js 的包管理工具，会随着 Node.js 的安装而自动安装，无需额外操作。
+npm(Node Package Manager)是 Node.js 的包管理工具，也是世界上最大的软件注册表。它允许开发者轻松地分享和复用代码，管理项目中的依赖项。npm 会随着 Node.js 一起安装，也就是说，当你安装 Node.js 时，npm 也会自动安装到你的系统中。因此，严格来说，npm 并不是一个独立需要单独安装的软件，而是 Node.js 的一个重要组成部分。Node.js 是一个需要安装的软件，安装完成后可以让 JavaScript 在服务器端运行；npm 是 Node.js 的包管理工具，会随着 Node.js 的安装而自动安装，无需额外操作。
 
 ## 橡皮鸭调试
 
-在[软件工程](https://en.wikipedia.org/wiki/Software_engineering)中，橡皮鸭调试（或 rubberducking）是一种通过用口语或书面[自然语言](https://en.wikipedia.org/wiki/Natural_language)表达问题来[调试](https://en.wikipedia.org/wiki/Debugging)代码的方法。这个名字参考了《[The Pragmatic Programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer)》一书中的一个故事，在这个故事中，程序员会随身携带一只[橡皮鸭](https://en.wikipedia.org/wiki/Rubber_duck)，并通过强迫自己逐行向鸭子解释来调试他们的代码。通过使用无生命的物体，程序员可以尝试在不打断其他人的情况下完成此作，并且比在没有观众的情况下仅仅自己思考所观察到的结果要好。2018 年 4 月 1 日，[Stack Exchange](https://en.wikipedia.org/wiki/Stack_Exchange) 在其网站上推出了一个橡皮鸭头像，作为一项名为 Quack Overflow 的新“功能”，作为[愚人节](https://en.wikipedia.org/wiki/April_Fools'_Day)的笑话。鸭子出现在浏览器[视区](https://en.wikipedia.org/wiki/Viewport)的右下角，并试图通过倾听访问者的问题并给出解决方案来帮助访问者。然而，这只鸭子只是在显然思考和打字后发出[了嘎嘎](<https://en.wikipedia.org/wiki/Quack_(sound)>)声。它提到橡皮闪避是解决问题的有力方法。
+在[软件工程](https://en.wikipedia.org/wiki/Software_engineering)中，橡皮鸭调试(或 rubberducking)是一种通过用口语或书面[自然语言](https://en.wikipedia.org/wiki/Natural_language)表达问题来[调试](https://en.wikipedia.org/wiki/Debugging)代码的方法。这个名字参考了《[The Pragmatic Programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer)》一书中的一个故事，在这个故事中，程序员会随身携带一只[橡皮鸭](https://en.wikipedia.org/wiki/Rubber_duck)，并通过强迫自己逐行向鸭子解释来调试他们的代码。通过使用无生命的物体，程序员可以尝试在不打断其他人的情况下完成此作，并且比在没有观众的情况下仅仅自己思考所观察到的结果要好。2018 年 4 月 1 日，[Stack Exchange](https://en.wikipedia.org/wiki/Stack_Exchange) 在其网站上推出了一个橡皮鸭头像，作为一项名为 Quack Overflow 的新“功能”，作为[愚人节](https://en.wikipedia.org/wiki/April_Fools'_Day)的笑话。鸭子出现在浏览器[视区](https://en.wikipedia.org/wiki/Viewport)的右下角，并试图通过倾听访问者的问题并给出解决方案来帮助访问者。然而，这只鸭子只是在显然思考和打字后发出[了嘎嘎](<https://en.wikipedia.org/wiki/Quack_(sound)>)声。它提到橡皮闪避是解决问题的有力方法。
 
 ## 包管理工具
 
-包管理工具是用于管理软件包（即应用程序和库）的一类工具，它们帮助用户安装、更新、配置和移除软件包。这些工具通常可以自动处理软件包之间的依赖关系，确保在安装某个软件包时，相关的依赖包也一并安装，保证软件的正常运行。而且还能确保在卸载时不会破坏其他软件包。
+包管理工具是用于管理软件包(即应用程序和库)的一类工具，它们帮助用户安装、更新、配置和移除软件包。这些工具通常可以自动处理软件包之间的依赖关系，确保在安装某个软件包时，相关的依赖包也一并安装，保证软件的正常运行。而且还能确保在卸载时不会破坏其他软件包。
 
-在 Linux 操作系统中，包管理工具非常重要，因为大部分软件都是通过软件包的形式分发的。不同的 Linux 发行版可能使用不同的包管理工具和包格式。最常见的包管理工具及其对应的 Linux 发行版是**APT（Advanced Package Tool）**
+在 Linux 操作系统中，包管理工具非常重要，因为大部分软件都是通过软件包的形式分发的。不同的 Linux 发行版可能使用不同的包管理工具和包格式。最常见的包管理工具及其对应的 Linux 发行版是**APT(Advanced Package Tool)**
 
 `apt` 会在 `/etc/apt/sources.list` 文件中存储软件源列表。安装软件前，运行 `sudo apt update`，使用 `/etc/apt/sources.list` 更新本地软件包列表。
 
@@ -6206,17 +6197,17 @@ pip 是 python 的包管理工具，npm 是 nodejs 的包管理工具
 
 ## CLI
 
-`CLI` 是 `Command Line Interface`（命令行界面）的缩写。`CLI` 指的是通过命令行的方式与计算机系统或软件进行交互的界面。用户可以在终端或命令行窗口中输入命令，系统会根据输入的命令执行相应的操作并返回结果。可以通过 apt CLI 访问 APT。
+`CLI` 是 `Command Line Interface`(命令行界面)的缩写。`CLI` 指的是通过命令行的方式与计算机系统或软件进行交互的界面。用户可以在终端或命令行窗口中输入命令，系统会根据输入的命令执行相应的操作并返回结果。可以通过 apt CLI 访问 APT。
 
 ## SVG
 
-SVG 是 Scalable Vector Graphics（可缩放矢量图形）的缩写。它是一种基于 XML（可扩展标记语言）的图形格式，用来描述二维矢量图形。
+SVG 是 Scalable Vector Graphics(可缩放矢量图形)的缩写。它是一种基于 XML(可扩展标记语言)的图形格式，用来描述二维矢量图形。
 
-和常见的图片格式（如 JPEG、PNG）不同，SVG 图片是由数学公式来描述图形的形状、颜色等信息的，而不是像 JPEG、PNG 那样由一个个像素点组成。
+和常见的图片格式(如 JPEG、PNG)不同，SVG 图片是由数学公式来描述图形的形状、颜色等信息的，而不是像 JPEG、PNG 那样由一个个像素点组成。
 
 SVG DOM 和 HTML DOM 类似，它是针对 SVG 文档的 DOM。当浏览器加载一个 SVG 文件时，会把 SVG 代码解析成一个树形结构，这就是 SVG DOM。
 
-在 SVG DOM 里，每个 SVG 元素（像`<circle>`圆形标签、`<rect>`矩形标签等）都是一个对象，我们可以使用 JavaScript 来访问和操作这些对象。比如，我们可以通过 JavaScript 改变一个 SVG 圆形的半径、颜色，或者让它在页面上移动，实现动画效果。
+在 SVG DOM 里，每个 SVG 元素(像`<circle>`圆形标签、`<rect>`矩形标签等)都是一个对象，我们可以使用 JavaScript 来访问和操作这些对象。比如，我们可以通过 JavaScript 改变一个 SVG 圆形的半径、颜色，或者让它在页面上移动，实现动画效果。
 
 ## 字体的泛型
 
@@ -6230,9 +6221,9 @@ SVG DOM 和 HTML DOM 类似，它是针对 SVG 文档的 DOM。当浏览器加�
 
 ## MIME 类型
 
-MIME（Multipurpose Internet Mail Extensions）类型，即多用途互联网邮件扩展类型，是一种用于标识互联网上各种文件类型的标准方法。
+MIME(Multipurpose Internet Mail Extensions)类型，即多用途互联网邮件扩展类型，是一种用于标识互联网上各种文件类型的标准方法。
 
-**MIME 类型**（现在正式地称作“媒体类型”，但有时也被称作“内容类型”）是指示文件类型的会与文件同时发送出去的字符串，描述了内容的格式（例如，一个声音文件可能被标记为 `audio/ogg`，一个图像文件可能是 `image/png`）。
+**MIME 类型**(现在正式地称作“媒体类型”，但有时也被称作“内容类型”)是指示文件类型的会与文件同时发送出去的字符串，描述了内容的格式(例如，一个声音文件可能被标记为 `audio/ogg`，一个图像文件可能是 `image/png`)。
 
 它与传统 Windows 上的文件扩展名有相同目的。这个术语的名字源于最初用于电子邮件的 [MIME](https://developer.mozilla.org/zh-CN/docs/Glossary/MIME) 标准。
 
@@ -6242,32 +6233,32 @@ MIME（Multipurpose Internet Mail Extensions）类型，即多用途互联网邮
 
 **组成结构**
 
-- MIME 类型由两部分组成，即 “类型”（type）和 “子类型”（subtype），中间用 “/” 分隔。有时还可能会有一些参数来提供更详细的信息。例如，`text/plain`中，`text`是类型，`plain`是子类型，表示纯文本格式；`image/jpeg`表示 JPEG 格式的图像，`image`是类型，`jpeg`是子类型。
+- MIME 类型由两部分组成，即 “类型”(type)和 “子类型”(subtype)，中间用 “/” 分隔。有时还可能会有一些参数来提供更详细的信息。例如，`text/plain`中，`text`是类型，`plain`是子类型，表示纯文本格式；`image/jpeg`表示 JPEG 格式的图像，`image`是类型，`jpeg`是子类型。
 
 **常见的 MIME 类型**
 
 - 文本类型
-    - `text/plain`：纯文本格式，通常不包含任何格式信息，如简单的 TXT 文件。
-    - `text/html`：超文本标记语言，用于网页的显示和交互，浏览器可以直接解析并显示为网页。
-    - `text/css`：层叠样式表，用于定义网页的样式和布局。
+  - `text/plain`：纯文本格式，通常不包含任何格式信息，如简单的 TXT 文件。
+  - `text/html`：超文本标记语言，用于网页的显示和交互，浏览器可以直接解析并显示为网页。
+  - `text/css`：层叠样式表，用于定义网页的样式和布局。
 - 图像类型
-    - `image/jpeg`：JPEG 格式的图像，具有较高的压缩比，常用于照片等图像存储。
-    - `image/png`：PNG 格式的图像，支持透明背景，常用于图标、图形等。
-    - `image/gif`：GIF 格式的图像，支持动画效果，通常用于简单的动画展示。
+  - `image/jpeg`：JPEG 格式的图像，具有较高的压缩比，常用于照片等图像存储。
+  - `image/png`：PNG 格式的图像，支持透明背景，常用于图标、图形等。
+  - `image/gif`：GIF 格式的图像，支持动画效果，通常用于简单的动画展示。
 - 音频类型
-    - `audio/mpeg`：MP3 音频格式，是一种常用的音频压缩格式，具有较高的音质和压缩比。
-    - `audio/wav`：WAV 音频格式，通常包含未压缩的音频数据，音质较好，但文件体积较大。
-    - `audio/ogg`：OGG 音频格式，是一种开源的音频格式，具有良好的音质和压缩性能。
+  - `audio/mpeg`：MP3 音频格式，是一种常用的音频压缩格式，具有较高的音质和压缩比。
+  - `audio/wav`：WAV 音频格式，通常包含未压缩的音频数据，音质较好，但文件体积较大。
+  - `audio/ogg`：OGG 音频格式，是一种开源的音频格式，具有良好的音质和压缩性能。
 - 视频类型
-    - `video/mp4`：MP4 视频格式，是一种常用的视频格式，支持多种编码方式，广泛应用于网络视频、移动设备等。
-    - `video/mpeg`：MPEG 视频格式，包括 MPEG-1、MPEG-2 等标准，常用于 DVD、电视广播等。
-    - `video/avi`：AVI 视频格式，是一种较为传统的视频格式，支持多种编码方式，文件体积通常较大。
+  - `video/mp4`：MP4 视频格式，是一种常用的视频格式，支持多种编码方式，广泛应用于网络视频、移动设备等。
+  - `video/mpeg`：MPEG 视频格式，包括 MPEG-1、MPEG-2 等标准，常用于 DVD、电视广播等。
+  - `video/avi`：AVI 视频格式，是一种较为传统的视频格式，支持多种编码方式，文件体积通常较大。
 - 应用程序类型
-    - `application/pdf`：PDF 格式，用于文档的展示和打印，具有跨平台、格式固定等特点。
-    - `application/msword`：Microsoft Word 文档格式，用于文字处理。
-    - `application/vnd.ms-excel`：Microsoft Excel 电子表格格式，用于数据处理和分析。
-    - `application/json`：JSON 数据格式，常用于网络应用程序之间的数据交换，具有轻量级、易解析等特点。
-    - `application/xml`：XML 数据格式，用于存储和传输结构化数据，具有良好的可读性和可扩展性。
+  - `application/pdf`：PDF 格式，用于文档的展示和打印，具有跨平台、格式固定等特点。
+  - `application/msword`：Microsoft Word 文档格式，用于文字处理。
+  - `application/vnd.ms-excel`：Microsoft Excel 电子表格格式，用于数据处理和分析。
+  - `application/json`：JSON 数据格式，常用于网络应用程序之间的数据交换，具有轻量级、易解析等特点。
+  - `application/xml`：XML 数据格式，用于存储和传输结构化数据，具有良好的可读性和可扩展性。
 
 **应用场景**
 
@@ -6295,7 +6286,7 @@ MIME（Multipurpose Internet Mail Extensions）类型，即多用途互联网邮
 
 有一些特殊情况。例如，对于某些类型的音频，通常编解码器的数据存储没有容器或简化容器。其中一个例子就是 FLAC 编解码器，它通常存储在 FLAC 文件中，FLAC 文件只是 FLAC 的原始轨迹。
 
-另一种情况是一直流行的 MP3 文件。“MP3 文件”实际上是存储在 MPEG 或 MPEG-2 容器中的 MPEG-1 音频层 III（MPEG-1 Audio Layer III，MP3）音频轨道。这一点特别有趣，因为尽管大多数浏览器不支持在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio) 元素中使用 MPEG 媒体，但由于 MP3 的流行，它们可能仍然支持 MP3。
+另一种情况是一直流行的 MP3 文件。“MP3 文件”实际上是存储在 MPEG 或 MPEG-2 容器中的 MPEG-1 音频层 III(MPEG-1 Audio Layer III，MP3)音频轨道。这一点特别有趣，因为尽管大多数浏览器不支持在 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video) 和 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio) 元素中使用 MPEG 媒体，但由于 MP3 的流行，它们可能仍然支持 MP3。
 
 音频播放器倾向于直接播放音轨，例如 MP3 和 Ogg 文件。它们不需要容器。
 
@@ -6306,13 +6297,13 @@ MIME（Multipurpose Internet Mail Extensions）类型，即多用途互联网邮
 
 ## 主机名
 
-主机名（hostname）可以通俗地理解为网络中一台计算机或设备的名称，它就像是这台设备在网络世界里的 “名字”，方便人们识别和访问。当你访问一个网站时，你通常使用的是像 “[www.example.com](https://www.example.com/)” 这样的网址，这里的 “[example.com](https://example.com/)” 部分就是主机名的一部分。当页面加载时，为了获取这些不同主机上的资源，浏览器就需要对每个主机名进行 DNS 查询，将它们转换为对应的 IP 地址，从而能够去这些服务器上获取相应的资源。主机名和域名的概念类似，区别在于，主机名通常用于标识局域网内的设备，而域名则是互联网上用于标识的网络地址，范围更广。除此之外，主机名没有域名那样较为严格的命名结构（顶级域名、二级域名、三级域名）
+主机名(hostname)可以通俗地理解为网络中一台计算机或设备的名称，它就像是这台设备在网络世界里的 “名字”，方便人们识别和访问。当你访问一个网站时，你通常使用的是像 “[www.example.com](https://www.example.com/)” 这样的网址，这里的 “[example.com](https://example.com/)” 部分就是主机名的一部分。当页面加载时，为了获取这些不同主机上的资源，浏览器就需要对每个主机名进行 DNS 查询，将它们转换为对应的 IP 地址，从而能够去这些服务器上获取相应的资源。主机名和域名的概念类似，区别在于，主机名通常用于标识局域网内的设备，而域名则是互联网上用于标识的网络地址，范围更广。除此之外，主机名没有域名那样较为严格的命名结构(顶级域名、二级域名、三级域名)
 
 ## 常见网络类型
 
 移动网络
 
-通常是指由运营商（如中国移动、中国联通、中国电信等）搭建和运营的无线网络，利用基站等设施实现信号覆盖，让手机、平板电脑等移动设备可以接入互联网。像我们常见的 2G、3G、4G、5G 网络都属于移动网络范畴。用户通过向运营商办理套餐，使用移动设备内置的 SIM 卡就能连接到移动网络。
+通常是指由运营商(如中国移动、中国联通、中国电信等)搭建和运营的无线网络，利用基站等设施实现信号覆盖，让手机、平板电脑等移动设备可以接入互联网。像我们常见的 2G、3G、4G、5G 网络都属于移动网络范畴。用户通过向运营商办理套餐，使用移动设备内置的 SIM 卡就能连接到移动网络。
 
 与移动网络相对应的概念是固定宽带网络，比如家庭或办公室中使用的光纤宽带、ADSL 宽带等。
 
@@ -6329,42 +6320,42 @@ MIME（Multipurpose Internet Mail Extensions）类型，即多用途互联网邮
 
 有线网络共享
 
-- 路由器共享：家庭和小型办公室中最常见的方式。路由器可以连接到宽带网络（如光纤、ADSL 等），然后通过有线接口（LAN 口）将网络信号分配给多台设备。这些设备使用网线与路由器相连，就可以同时共享网络资源。
+- 路由器共享：家庭和小型办公室中最常见的方式。路由器可以连接到宽带网络(如光纤、ADSL 等)，然后通过有线接口(LAN 口)将网络信号分配给多台设备。这些设备使用网线与路由器相连，就可以同时共享网络资源。
 - 交换机共享：交换机通常用于连接多台设备，它可以扩展网络接口数量。如果已有一台设备连接到网络，可通过交换机将这台设备的网络共享给其他设备。不过交换机本身一般不具备路由功能，需要配合路由器使用。
 
 无线网络共享
 
-- 热点：移动设备的一种功能，通过该功能可以将自身连接的网络（可能是移动网络，也可能是连接的 Wi - Fi 网络）共享出来，让其他设备通过 Wi - Fi 连接到这个热点，从而使用共享的网络访问互联网。所以手机热点只是一种网络共享方式，而不是一种网络类型。
+- 热点：移动设备的一种功能，通过该功能可以将自身连接的网络(可能是移动网络，也可能是连接的 Wi - Fi 网络)共享出来，让其他设备通过 Wi - Fi 连接到这个热点，从而使用共享的网络访问互联网。所以手机热点只是一种网络共享方式，而不是一种网络类型。
 - 蓝牙共享：开启该功能后，其他具备蓝牙功能且支持网络连接的设备可以通过配对连接到共享设备，从而使用共享的网络。但蓝牙网络共享的速度相对较慢，一般适用于临时、小流量的数据传输场景。
 
 ## 常见网络技术
 
 有线局域网技术
 
-- 以太网（Ethernet）：目前应用最广泛的有线局域网技术。它使用双绞线、光纤等作为传输介质，遵循 IEEE 802.3 标准。以太网的传输速率从早期的 10Mbps 发展到现在常见的 100Mbps、1Gbps 甚至 10Gbps、40Gbps、100Gbps 等，能满足不同场景的需求。
-- 令牌环网（Token Ring）：曾是一种比较流行的局域网技术。它采用令牌传递的方式来控制网络上的通信，在一个环形拓扑结构中，令牌在节点间依次传递，只有持有令牌的节点才能发送数据。不过，随着以太网技术的发展，令牌环网的应用越来越少。
+- 以太网(Ethernet)：目前应用最广泛的有线局域网技术。它使用双绞线、光纤等作为传输介质，遵循 IEEE 802.3 标准。以太网的传输速率从早期的 10Mbps 发展到现在常见的 100Mbps、1Gbps 甚至 10Gbps、40Gbps、100Gbps 等，能满足不同场景的需求。
+- 令牌环网(Token Ring)：曾是一种比较流行的局域网技术。它采用令牌传递的方式来控制网络上的通信，在一个环形拓扑结构中，令牌在节点间依次传递，只有持有令牌的节点才能发送数据。不过，随着以太网技术的发展，令牌环网的应用越来越少。
 
 无线局域网技术
 
-- Wi-Fi：一种允许电子设备以无线方式连接到局域网（LAN）的技术，基于 IEEE 802.11 系列协议实现。它通过无线路由器或无线接入点（AP）发射无线信号，使得在信号覆盖范围内的设备可以方便地接入网络。工作原理上，无线路由器将接收到的有线网络信号转换为无线信号，通过内置的天线发射出去。支持 Wi-Fi 功能的设备通过自身的无线网卡接收这些信号，经过解码和处理后实现与网络的连接。
-- 蓝牙（Bluetooth）：一种短距离无线通信技术，主要用于连接设备，如手机与耳机、键盘、鼠标，以及智能手表与手机等。它的通信距离通常在 10 米左右，传输速率相对较低，但功耗小，适合小数据量的传输和设备间的简单连接。
+- Wi-Fi：一种允许电子设备以无线方式连接到局域网(LAN)的技术，基于 IEEE 802.11 系列协议实现。它通过无线路由器或无线接入点(AP)发射无线信号，使得在信号覆盖范围内的设备可以方便地接入网络。工作原理上，无线路由器将接收到的有线网络信号转换为无线信号，通过内置的天线发射出去。支持 Wi-Fi 功能的设备通过自身的无线网卡接收这些信号，经过解码和处理后实现与网络的连接。
+- 蓝牙(Bluetooth)：一种短距离无线通信技术，主要用于连接设备，如手机与耳机、键盘、鼠标，以及智能手表与手机等。它的通信距离通常在 10 米左右，传输速率相对较低，但功耗小，适合小数据量的传输和设备间的简单连接。
 - ZigBee：基于 IEEE 802.15.4 标准的低功耗局域网协议。它具有低功耗、低成本、自组网能力强等特点，常用于智能家居、工业监控、环境监测等领域。例如，在智能家居中可用于连接各种传感器和控制设备。
 
 有线城域网技术
 
-- 光纤分布式数据接口（FDDI）、异步传输技术（ATM）、吉比特以太网
+- 光纤分布式数据接口(FDDI)、异步传输技术(ATM)、吉比特以太网
 
 无线城域网技术
 
-- WiMAX（全球微波互联接入）
+- WiMAX(全球微波互联接入)
 
 有线广域网技术
 
-- 数字用户线路（DSL）、帧中继、同步数字体系（SDH）、同步光网络（SONET）
+- 数字用户线路(DSL)、帧中继、同步数字体系(SDH)、同步光网络(SONET)
 
 无线广域网技术
 
-- 蜂窝数据（2G、3G、4G、5G）：由移动通信运营商建设和运营，提供广域的无线覆盖。从早期的 2G 网络主要支持语音通话和低速数据传输，到现在的 5G 网络具备高速率、低延迟、大容量等特点，可满足各种移动互联网应用的需求，广泛应用于手机、物联网设备等的网络连接。
+- 蜂窝数据(2G、3G、4G、5G)：由移动通信运营商建设和运营，提供广域的无线覆盖。从早期的 2G 网络主要支持语音通话和低速数据传输，到现在的 5G 网络具备高速率、低延迟、大容量等特点，可满足各种移动互联网应用的需求，广泛应用于手机、物联网设备等的网络连接。
 
 ## 基站
 
@@ -6372,15 +6363,15 @@ MIME（Multipurpose Internet Mail Extensions）类型，即多用途互联网邮
 
 ## 无线路由器
 
-集成了路由功能和无线接入功能的网络设备。它可以连接到宽带网络（如光纤、ADSL 等），将有线网络信号转换为无线信号，使支持 Wi-Fi 功能的设备能够通过无线方式接入网络。无线路由器还具备网络地址转换（NAT）、防火墙等功能，可实现多台设备共享一个宽带账号上网，并保护内部网络的安全。
+集成了路由功能和无线接入功能的网络设备。它可以连接到宽带网络(如光纤、ADSL 等)，将有线网络信号转换为无线信号，使支持 Wi-Fi 功能的设备能够通过无线方式接入网络。无线路由器还具备网络地址转换(NAT)、防火墙等功能，可实现多台设备共享一个宽带账号上网，并保护内部网络的安全。
 
 ## 无线接入点
 
-无线接入点（AP）是一种单纯的无线信号发射设备，它主要用于扩展无线网络的覆盖范围。AP 通常连接到有线局域网，将有线网络的信号转换为无线信号发射出去，让无线设备可以接入到有线网络中。在大型场所（如商场、酒店、办公楼等），通常会安装多个 AP 来实现大面积的无线网络覆盖。
+无线接入点(AP)是一种单纯的无线信号发射设备，它主要用于扩展无线网络的覆盖范围。AP 通常连接到有线局域网，将有线网络的信号转换为无线信号发射出去，让无线设备可以接入到有线网络中。在大型场所(如商场、酒店、办公楼等)，通常会安装多个 AP 来实现大面积的无线网络覆盖。
 
 ## AP 隔离
 
-AP 隔离指的是在无线接入点（AP）中设置的一项功能，开启该功能后，接入该 AP 的各个无线设备之间将无法直接进行通信。原理是 AP 在数据转发过程中进行控制。正常情况下，AP 会转发连接到它的各个设备之间的数据帧。当开启 AP 隔离功能后，AP 会过滤掉来自一个无线设备发送给同一 AP 下其他无线设备的数据帧，只允许无线设备与有线网络或外网进行通信，从而实现设备之间的隔离
+AP 隔离指的是在无线接入点(AP)中设置的一项功能，开启该功能后，接入该 AP 的各个无线设备之间将无法直接进行通信。原理是 AP 在数据转发过程中进行控制。正常情况下，AP 会转发连接到它的各个设备之间的数据帧。当开启 AP 隔离功能后，AP 会过滤掉来自一个无线设备发送给同一 AP 下其他无线设备的数据帧，只允许无线设备与有线网络或外网进行通信，从而实现设备之间的隔离
 
 AP 隔离的作用有：
 
@@ -6389,23 +6380,23 @@ AP 隔离的作用有：
 
 ## LAN、WAN 和 WLAN
 
-- LAN：Local Area Network（局域网），某一区域内由多台计算机互联成的计算机组。一般是方圆几千米以内，是封闭型的，可以由办公室内的两台计算机组成，也可以由一个公司内的上千台计算机组成。具体到路由器，我们一般组网，都是组建的 LAN 网络，用户在局域网里通信、传输文件，其获取到的是内部 IP，LAN 内部是交换机。我们可以不连接 WAN 口，把路由器当做普通交换机来使用
-- WAN：Wide Area Network（广域网），一种跨越大的、地域性的计算机网络的集合。通常跨越省、市，甚至一个国家。广域网包括大大小小不同的子网，子网可以是局域网，也可以是小型的广域网。接外部 IP 地址用，通常指的是出口，转发来自内部 LAN 接口的 IP 数据包。基本每个路由器都有 WAN 口，当然也有路由猫这种特例。
+- LAN：Local Area Network(局域网)，某一区域内由多台计算机互联成的计算机组。一般是方圆几千米以内，是封闭型的，可以由办公室内的两台计算机组成，也可以由一个公司内的上千台计算机组成。具体到路由器，我们一般组网，都是组建的 LAN 网络，用户在局域网里通信、传输文件，其获取到的是内部 IP，LAN 内部是交换机。我们可以不连接 WAN 口，把路由器当做普通交换机来使用
+- WAN：Wide Area Network(广域网)，一种跨越大的、地域性的计算机网络的集合。通常跨越省、市，甚至一个国家。广域网包括大大小小不同的子网，子网可以是局域网，也可以是小型的广域网。接外部 IP 地址用，通常指的是出口，转发来自内部 LAN 接口的 IP 数据包。基本每个路由器都有 WAN 口，当然也有路由猫这种特例。
 - WLAN：Wireless LAN, 无线局域网。和 LAN 不同，WLAN 的数据通过电磁波传输，也就是常说的空气传输。WLAN 利用电磁波在空气中发送和接受数据，而无需线缆介质。WLAN 使用 ISM (Industrial、Scientific、Medical) 无线电广播频段通信。WLAN 的 802.11a 标准使用 5 GHz 频段，支持的最大速度为 54 Mbps，而 802.11b 和 802.11g 标准使用 2.4 GHz 频段，分别支持最大 11 Mbps 和 54 Mbps 的速度。最新的 11AC 已经达到竟然的 1.3Gbps。
 
 ## CMS
 
-内容管理系统（CMS）是一个允许用户发布、组织、修改、删除多种类型的内容的软件。CMS 不仅支持文本，还可以嵌入图片、视频、音频和互动的代码。
+内容管理系统(CMS)是一个允许用户发布、组织、修改、删除多种类型的内容的软件。CMS 不仅支持文本，还可以嵌入图片、视频、音频和互动的代码。
 
 ## 网站运营开销
 
-- 带宽：主机供应商通过你网站消耗的带宽来收费。这些取决于在一个给定的时间内多少人或机器人访问你的内容、你的内容占用多少的服务空间（这就解释了为什么人们通常把他们的视频存储在比如 Youtube、Dailymotion 和 Vimeo 等专用服务上）。实际上，你的供应商可能 有个计划规定某个实例每天至多有几千访问的可用带宽用量（不同的主机供应商的规定通常都不同）。根据经验，考虑那些月付十到五十美元的个人主机。
-- 域名：域名必须由域名提供商（注册商）购买。你的托管服务提供商也可能是注册服务商，具体价格取决于地方合同和与域名相关的服务
+- 带宽：主机供应商通过你网站消耗的带宽来收费。这些取决于在一个给定的时间内多少人或机器人访问你的内容、你的内容占用多少的服务空间(这就解释了为什么人们通常把他们的视频存储在比如 Youtube、Dailymotion 和 Vimeo 等专用服务上)。实际上，你的供应商可能 有个计划规定某个实例每天至多有几千访问的可用带宽用量(不同的主机供应商的规定通常都不同)。根据经验，考虑那些月付十到五十美元的个人主机。
+- 域名：域名必须由域名提供商(注册商)购买。你的托管服务提供商也可能是注册服务商，具体价格取决于地方合同和与域名相关的服务
 - 托管服务：有些人选择了一种混合的方式：例如，将他们的主博客放在带有适当域名的付费主机上，并使用另一种免费服务来托管自发的，不太具有战略性的内容。
 
-# AI搜索杂记
+# AI 搜索杂记
 
-搜索一下：vue项目中的vue.config.js、jsconfig.json、balbel.config.js三个文件分别都是干什么的，里面都有什么内容？这三个文件分别在什么时候会起作用？
+搜索一下：vue 项目中的 vue.config.js、jsconfig.json、balbel.config.js 三个文件分别都是干什么的，里面都有什么内容？这三个文件分别在什么时候会起作用？
 
 **基于 8 个搜索来源**
 
@@ -6415,26 +6406,26 @@ AP 隔离的作用有：
 
 - 作用
 
-    7
+  7
 
-    - **自定义 Webpack 配置**：可以修改 Vue CLI 默认的 Webpack 配置，如添加额外的 loader 或 plugin、调整 Webpack 的 entry、output 等选项。
-    - **配置开发服务器**：可设置开发服务器的端口号、代理设置、HTTPS 配置等。
-    - **配置公共资源路径**：指定构建后静态资源的公共路径，如部署到子路径或 CDN 上时的路径设置。
-    - **配置环境变量**：设置环境变量，用于在项目中访问和区分不同的环境。
-    - **配置插件**：配置 Vue CLI 插件，进行相应的设置和调整。
-    - **配置 CSS**：配置 CSS 相关的选项，如启用 CSS modules、使用 PostCSS 插件等。
+  - **自定义 Webpack 配置**：可以修改 Vue CLI 默认的 Webpack 配置，如添加额外的 loader 或 plugin、调整 Webpack 的 entry、output 等选项。
+  - **配置开发服务器**：可设置开发服务器的端口号、代理设置、HTTPS 配置等。
+  - **配置公共资源路径**：指定构建后静态资源的公共路径，如部署到子路径或 CDN 上时的路径设置。
+  - **配置环境变量**：设置环境变量，用于在项目中访问和区分不同的环境。
+  - **配置插件**：配置 Vue CLI 插件，进行相应的设置和调整。
+  - **配置 CSS**：配置 CSS 相关的选项，如启用 CSS modules、使用 PostCSS 插件等。
 
 - 常见内容
 
-    4
+  4
 
-    - **publicPath**：部署应用包时的基本 URL。
-    - **outputDir**：运行 vue-cli-service build 时生成的生产环境构建文件的目录。
-    - **assetsDir**：放置生成的静态资源的目录。
-    - **lintOnSave**：是否在开发环境下每次保存时通过 eslint-loader lint 代码。
-    - **devServer**：包含开发服务器的配置，如 port、proxy 等。
-    - **configureWebpack**：直接修改 Webpack 的配置。
-    - **chainWebpack**：使用 webpack-chain 更细粒度地修改 Webpack 配置。
+  - **publicPath**：部署应用包时的基本 URL。
+  - **outputDir**：运行 vue-cli-service build 时生成的生产环境构建文件的目录。
+  - **assetsDir**：放置生成的静态资源的目录。
+  - **lintOnSave**：是否在开发环境下每次保存时通过 eslint-loader lint 代码。
+  - **devServer**：包含开发服务器的配置，如 port、proxy 等。
+  - **configureWebpack**：直接修改 Webpack 的配置。
+  - **chainWebpack**：使用 webpack-chain 更细粒度地修改 Webpack 配置。
 
 - **起作用时机**：在使用 Vue CLI 进行项目开发、构建、运行开发服务器等操作时起作用。如执行 vue-cli-service serve 启动开发服务器，或 vue-cli-service build 进行项目构建时，会读取 vue.config.js 中的配置来进行相应的操作。
 
@@ -6442,39 +6433,39 @@ AP 隔离的作用有：
 
 - 作用
 
-    - **改进 JavaScript 开发体验**：在工作空间中定义项目上下文，使 IDE 能更好地提供代码提示、跳转等功能2。
-    - **配置路径别名**：配合 Webpack 的别名配置，让在 IDE 中更方便地导入模块，提高开发效率5。
-    - **排除无关文件**：指定不需要被 IDE 或构建工具处理的文件或目录，提高编译性能2。
+  - **改进 JavaScript 开发体验**：在工作空间中定义项目上下文，使 IDE 能更好地提供代码提示、跳转等功能 2。
+  - **配置路径别名**：配合 Webpack 的别名配置，让在 IDE 中更方便地导入模块，提高开发效率 5。
+  - **排除无关文件**：指定不需要被 IDE 或构建工具处理的文件或目录，提高编译性能 2。
 
 - 常见内容
 
-    2
+  2
 
-    - **compilerOptions**：包含各种编译选项，如 baseUrl 用于指定基础路径，paths 用于配置路径别名，experimentalDecorators 用于解决装饰器语法警告，jsx 用于设置.jsx 文件的处理方式。
-    - **exclude**：指定需要排除的目录或文件，如 node_modules、dist 等。
+  - **compilerOptions**：包含各种编译选项，如 baseUrl 用于指定基础路径，paths 用于配置路径别名，experimentalDecorators 用于解决装饰器语法警告，jsx 用于设置.jsx 文件的处理方式。
+  - **exclude**：指定需要排除的目录或文件，如 node_modules、dist 等。
 
-- **起作用时机**：在使用 IDE（如 VS Code）进行 Vue 项目开发时起作用。当在 IDE 中编写代码、进行文件导入、代码跳转等操作时，IDE 会根据 jsconfig.json 中的配置来提供相应的支持和优化。
+- **起作用时机**：在使用 IDE(如 VS Code)进行 Vue 项目开发时起作用。当在 IDE 中编写代码、进行文件导入、代码跳转等操作时，IDE 会根据 jsconfig.json 中的配置来提供相应的支持和优化。
 
 **babel.config.js**
 
 - 作用
 
-    6
+  6
 
-    - **代码转换**：将 ES6/ES7 等现代 JavaScript 代码转换为向后兼容的 ES5 代码，确保代码能在不支持新语法的浏览器中正常运行。
-    - **编译 Vue 组件**：编译 Vue 单文件组件中的 JavaScript 代码，使其更兼容不同的浏览器和环境。
-    - **支持新特性**：支持 JavaScript 的最新语法特性和提案，让开发者能使用新的语言功能。
+  - **代码转换**：将 ES6/ES7 等现代 JavaScript 代码转换为向后兼容的 ES5 代码，确保代码能在不支持新语法的浏览器中正常运行。
+  - **编译 Vue 组件**：编译 Vue 单文件组件中的 JavaScript 代码，使其更兼容不同的浏览器和环境。
+  - **支持新特性**：支持 JavaScript 的最新语法特性和提案，让开发者能使用新的语言功能。
 
 - 常见内容
 
-    6
+  6
 
-    - **presets**：指定 Babel 的预设，如 @babel/preset-env，它会根据目标浏览器环境自动选择需要的插件。
-    - **plugins**：配置 Babel 插件，如 @babel/plugin-proposal-optional-chaining 用于支持可选链操作符等特定语法。
+  - **presets**：指定 Babel 的预设，如 @babel/preset-env，它会根据目标浏览器环境自动选择需要的插件。
+  - **plugins**：配置 Babel 插件，如 @babel/plugin-proposal-optional-chaining 用于支持可选链操作符等特定语法。
 
 - **起作用时机**：在项目构建过程中，当 Webpack 处理 JavaScript 文件时起作用。Webpack 会根据 babel.config.js 中的配置，使用 Babel 对项目中的 JavaScript 代码进行转换和编译，确保代码在不同环境下的兼容性。
 
-vite和vue CLI是什么？使用这两种工具构建一个vue项目时都发生了什么？在这两种工具下，一个vue项目分别是怎么被创建出来的？相较于vite，vue CLI多做了哪些事情？分别告诉我，在执行npm run serve和npm run build两个命令时时，实际上都发生了什么事情？npm run serve时，服务器是怎么被启动的，在哪里启动的，整个流程是怎么样的？npm run build时，整个vue项目又是怎么被构建生成dist目录下面的所有文件的，究竟是哪些文件对应生成了哪些文件中的什么内容？怎么生成的？生成流程是怎么样的？
+vite 和 vue CLI 是什么？使用这两种工具构建一个 vue 项目时都发生了什么？在这两种工具下，一个 vue 项目分别是怎么被创建出来的？相较于 vite，vue CLI 多做了哪些事情？分别告诉我，在执行 npm run serve 和 npm run build 两个命令时时，实际上都发生了什么事情？npm run serve 时，服务器是怎么被启动的，在哪里启动的，整个流程是怎么样的？npm run build 时，整个 vue 项目又是怎么被构建生成 dist 目录下面的所有文件的，究竟是哪些文件对应生成了哪些文件中的什么内容？怎么生成的？生成流程是怎么样的？
 
 **Vite 和 Vue CLI 是什么**
 
@@ -6496,7 +6487,7 @@ Vue CLI 是一个基于 Vue.js 进行快速项目搭建和工具配置的工具�
 
 **Vue CLI**
 
-1. **项目初始化**：通过交互式命令行，让用户选择项目的特性（如 Babel、ESLint、Vue Router 等）。
+1. **项目初始化**：通过交互式命令行，让用户选择项目的特性(如 Babel、ESLint、Vue Router 等)。
 2. **生成项目模板**：根据用户的选择，生成相应的项目模板，包含基本的项目文件结构和配置文件。
 3. **安装依赖**：安装 Vue 核心库、Webpack 及相关 loader、plugin 等依赖。
 4. **配置文件生成**：生成 Vue CLI 配置文件 vue.config.js，以及其他相关配置文件，如 Babel 配置、ESLint 配置等。
@@ -6556,14 +6547,14 @@ vue create my-vue-app
 **Vite**
 
 1. **读取配置**：Vite 读取 vite.config.js 中的配置信息。
-2. **启动开发服务器**：基于 Node.js 启动一个开发服务器，监听指定的端口（默认是 5173）。
+2. **启动开发服务器**：基于 Node.js 启动一个开发服务器，监听指定的端口(默认是 5173)。
 3. **模块解析**：当浏览器请求文件时，Vite 会根据原生 ES 模块的导入关系，将文件进行解析和转换。对于 Vue 单文件组件，Vite 会将其拆分为模板、脚本和样式，并进行相应的处理。
 4. **热更新**：当文件发生变化时，Vite 会通过 WebSocket 通知浏览器进行热更新，只更新发生变化的模块，无需刷新整个页面。
 
 **Vue CLI**
 
 1. **读取配置**：Vue CLI 读取 vue.config.js 中的配置信息。
-2. **启动 Webpack 开发服务器**：基于 Webpack 和 webpack-dev-server 启动一个开发服务器，监听指定的端口（默认是 8080）。
+2. **启动 Webpack 开发服务器**：基于 Webpack 和 webpack-dev-server 启动一个开发服务器，监听指定的端口(默认是 8080)。
 3. **打包编译**：Webpack 会根据配置对项目中的文件进行打包编译，将 Vue 单文件组件、JavaScript、CSS 等文件进行处理和打包。
 4. **热更新**：当文件发生变化时，webpack-dev-server 会通过 WebSocket 通知浏览器进行热更新，更新发生变化的模块。
 
@@ -6574,7 +6565,7 @@ vue create my-vue-app
 1. **读取配置**：Vite 读取 vite.config.js 中的配置信息。
 2. **生产环境打包**：使用 Rollup 对项目进行打包，将所有的模块打包成一个或多个文件。
 3. **代码压缩**：对打包后的 JavaScript、CSS 等文件进行压缩，减小文件体积。
-4. **生成静态资源**：将打包后的文件和其他静态资源（如图片、字体等）输出到 dist 目录。
+4. **生成静态资源**：将打包后的文件和其他静态资源(如图片、字体等)输出到 dist 目录。
 
 **Vue CLI**
 
@@ -6582,14 +6573,14 @@ vue create my-vue-app
 2. **生产环境打包**：使用 Webpack 对项目进行打包，将所有的模块打包成一个或多个文件。
 3. **代码分割**：根据配置进行代码分割，将不同的模块分割成多个文件，提高页面加载性能。
 4. **代码压缩**：对打包后的 JavaScript、CSS 等文件进行压缩，减小文件体积。
-5. **生成静态资源**：将打包后的文件和其他静态资源（如图片、字体等）输出到 dist 目录。
+5. **生成静态资源**：将打包后的文件和其他静态资源(如图片、字体等)输出到 dist 目录。
 
 **npm run serve 时服务器的启动流程**
 
 **Vite**
 
 1. **命令执行**：在终端执行 npm run serve 命令，实际上是执行 vite 命令。
-2. **Vite 启动**：Vite 启动一个基于 Node.js 的开发服务器，监听指定的端口（默认是 5173）。
+2. **Vite 启动**：Vite 启动一个基于 Node.js 的开发服务器，监听指定的端口(默认是 5173)。
 3. **文件监听**：Vite 会监听项目中的文件变化，当文件发生变化时，会触发热更新机制。
 4. **模块处理**：当浏览器请求文件时，Vite 会根据原生 ES 模块的导入关系，将文件进行解析和转换，并返回给浏览器。
 
@@ -6598,7 +6589,7 @@ vue create my-vue-app
 1. **命令执行**：在终端执行 npm run serve 命令，实际上是执行 vue-cli-service serve 命令。
 2. **Webpack 配置**：Vue CLI 会读取 vue.config.js 中的配置信息，并根据配置生成 Webpack 配置。
 3. **Webpack 编译**：Webpack 根据配置对项目中的文件进行编译和打包。
-4. **启动开发服务器**：基于 webpack-dev-server 启动一个开发服务器，监听指定的端口（默认是 8080）。
+4. **启动开发服务器**：基于 webpack-dev-server 启动一个开发服务器，监听指定的端口(默认是 8080)。
 5. **文件监听**：webpack-dev-server 会监听项目中的文件变化，当文件发生变化时，会触发热更新机制。
 6. **模块处理**：当浏览器请求文件时，webpack-dev-server 会将打包后的文件返回给浏览器。
 
@@ -6610,7 +6601,7 @@ vue create my-vue-app
 2. **读取配置**：Vite 读取 vite.config.js 中的配置信息。
 3. **Rollup 打包**：使用 Rollup 对项目进行打包，将所有的模块打包成一个或多个文件。
 4. **代码优化**：对打包后的 JavaScript、CSS 等文件进行压缩和优化，减小文件体积。
-5. **静态资源处理**：将项目中的静态资源（如图片、字体等）复制到 dist 目录。
+5. **静态资源处理**：将项目中的静态资源(如图片、字体等)复制到 dist 目录。
 6. **生成 HTML 文件**：根据项目的入口文件和配置，生成 HTML 文件，并将打包后的文件引入到 HTML 中。
 
 **Vue CLI**
@@ -6620,7 +6611,7 @@ vue create my-vue-app
 3. **Webpack 打包**：Webpack 根据配置对项目中的文件进行编译和打包，包括 Vue 单文件组件、JavaScript、CSS 等。
 4. **代码分割**：根据配置进行代码分割，将不同的模块分割成多个文件，提高页面加载性能。
 5. **代码优化**：对打包后的 JavaScript、CSS 等文件进行压缩和优化，减小文件体积。
-6. **静态资源处理**：将项目中的静态资源（如图片、字体等）复制到 dist 目录。
+6. **静态资源处理**：将项目中的静态资源(如图片、字体等)复制到 dist 目录。
 7. **生成 HTML 文件**：根据项目的入口文件和配置，生成 HTML 文件，并将打包后的文件引入到 HTML 中。
 
 **生成文件对应关系**
@@ -6642,19 +6633,19 @@ vue create my-vue-app
 
 **静态资源**
 
-- **Vite**：将项目中的静态资源（如图片、字体等）复制到 dist 目录，根据配置进行文件名哈希处理。
+- **Vite**：将项目中的静态资源(如图片、字体等)复制到 dist 目录，根据配置进行文件名哈希处理。
 - **Vue CLI**：使用 file-loader 或 url-loader 处理静态资源，将其复制到 dist 目录，并进行文件名哈希处理。
 
-webpack是什么？是不是跟cmake差不多？webpack和vue CLI有什么关系
+webpack 是什么？是不是跟 cmake 差不多？webpack 和 vue CLI 有什么关系
 
 **Webpack 是什么**
 
-Webpack 是一个现代 JavaScript 应用程序的静态模块打包工具。在 Web 开发中，随着项目规模不断增大，代码会被拆分成多个模块，同时还会引入各种资源（如 CSS、图片、字体等）。Webpack 可以将这些模块和资源进行打包处理，将它们转换为适合浏览器加载的静态文件。
+Webpack 是一个现代 JavaScript 应用程序的静态模块打包工具。在 Web 开发中，随着项目规模不断增大，代码会被拆分成多个模块，同时还会引入各种资源(如 CSS、图片、字体等)。Webpack 可以将这些模块和资源进行打包处理，将它们转换为适合浏览器加载的静态文件。
 
 它的主要功能包括：
 
-- **模块打包**：能够处理各种类型的模块（如 CommonJS、ES6 模块等），将它们打包成一个或多个文件，减少浏览器的请求次数。
-- **资源处理**：通过加载器（loader）可以处理不同类型的文件，例如将 CSS 样式内联到 JavaScript 中，或者将图片转换为 base64 编码等。
+- **模块打包**：能够处理各种类型的模块(如 CommonJS、ES6 模块等)，将它们打包成一个或多个文件，减少浏览器的请求次数。
+- **资源处理**：通过加载器(loader)可以处理不同类型的文件，例如将 CSS 样式内联到 JavaScript 中，或者将图片转换为 base64 编码等。
 - **代码分割**：支持将代码分割成多个小块，实现按需加载，提高应用的加载性能。
 - **优化和压缩**：可以对代码进行压缩、合并、去重等优化操作，减小文件体积。
 
@@ -6664,7 +6655,7 @@ Webpack 和 CMake 有一定的相似之处，但本质上它们是用于不同�
 
 **相似点**
 
-- **构建功能**：两者都用于构建项目。CMake 用于 C/C++ 项目的构建，它可以根据不同的平台和编译器生成相应的构建脚本（如 Makefile、Visual Studio 项目文件等）；Webpack 用于前端项目的构建，将各种模块和资源打包成可部署的静态文件。
+- **构建功能**：两者都用于构建项目。CMake 用于 C/C++ 项目的构建，它可以根据不同的平台和编译器生成相应的构建脚本(如 Makefile、Visual Studio 项目文件等)；Webpack 用于前端项目的构建，将各种模块和资源打包成可部署的静态文件。
 - **配置灵活性**：都可以通过配置文件进行定制。CMake 使用 CMakeLists.txt 文件来配置项目的构建过程，开发者可以指定源文件、编译选项、依赖库等；Webpack 使用 webpack.config.js 文件来配置打包过程，包括入口文件、输出路径、加载器、插件等。
 
 **不同点**
@@ -6678,7 +6669,7 @@ Vue CLI 和 Webpack 有着紧密的联系，它们在 Vue 项目开发中扮演�
 
 **Vue CLI 对 Webpack 的封装和集成**
 
-Vue CLI 是一个基于 Vue.js 进行快速项目搭建和工具配置的工具，它内置了 Webpack 及其相关的加载器和插件。当使用 Vue CLI 创建项目时，它会根据用户选择的特性（如 Babel、ESLint、Vue Router 等）自动生成相应的 Webpack 配置。开发者可以通过 vue.config.js 文件对这些默认的 Webpack 配置进行修改和扩展，而不需要手动编写复杂的 Webpack 配置文件。
+Vue CLI 是一个基于 Vue.js 进行快速项目搭建和工具配置的工具，它内置了 Webpack 及其相关的加载器和插件。当使用 Vue CLI 创建项目时，它会根据用户选择的特性(如 Babel、ESLint、Vue Router 等)自动生成相应的 Webpack 配置。开发者可以通过 vue.config.js 文件对这些默认的 Webpack 配置进行修改和扩展，而不需要手动编写复杂的 Webpack 配置文件。
 
 **简化开发流程**
 
@@ -6698,7 +6689,7 @@ transpileDependencies: true,
 
 });
 
-这是vue.config.js中的内容，解释一下
+这是 vue.config.js 中的内容，解释一下
 
 以下是对这段 vue.config.js 代码的详细解释：
 
@@ -6727,13 +6718,13 @@ vue.config.js 是 Vue CLI 项目中的一个可选配置文件，用于对 Vue C
 
 这段代码的作用是配置 Vue CLI 项目，使其对 node_modules 中的所有依赖进行 Babel 转译，以确保项目在目标浏览器中能够正常运行。同时，使用 defineConfig 函数可以提供更好的类型提示和代码编辑体验。
 
-具体来说，webpack需要配置些什么东西？babel是什么？
+具体来说，webpack 需要配置些什么东西？babel 是什么？
 
 **Webpack 需要配置的内容**
 
 Webpack 的配置主要通过 webpack.config.js 文件完成，以下是一些常见的配置项：
 
-**1. 入口（entry）**
+**1. 入口(entry)**
 
 指定 Webpack 开始打包的入口文件。可以是单个文件路径，也可以是多个文件路径组成的对象或数组。
 
@@ -6749,7 +6740,7 @@ entry: './src/index.js'
 
 上述代码表示从 ./src/index.js 文件开始打包。
 
-**2. 输出（output）**
+**2. 输出(output)**
 
 定义打包后的文件输出位置和文件名。
 
@@ -6765,7 +6756,7 @@ entry: './src/index.js',
 
 output: {
 
-path: path.resolve(__dirname, 'dist'),
+path: path.resolve(\_\_dirname, 'dist'),
 
 filename: 'bundle.js'
 
@@ -6775,9 +6766,9 @@ filename: 'bundle.js'
 
 这里 path 指定输出目录为项目根目录下的 dist 文件夹，filename 指定打包后的文件名是 bundle.js。
 
-**3. 加载器（module.rules）**
+**3. 加载器(module.rules)**
 
-Webpack 本身只能处理 JavaScript 文件，对于其他类型的文件（如 CSS、图片、字体等），需要使用加载器进行处理。
+Webpack 本身只能处理 JavaScript 文件，对于其他类型的文件(如 CSS、图片、字体等)，需要使用加载器进行处理。
 
 收起
 
@@ -6805,7 +6796,7 @@ use: ['style-loader', 'css-loader']
 
 上述代码中，test 是一个正则表达式，用于匹配文件类型；use 数组指定了处理 .css 文件时依次使用的加载器，这里先使用 css-loader 解析 CSS 文件，再使用 style-loader 将 CSS 插入到 HTML 的 <style> 标签中。
 
-**4. 插件（plugins）**
+**4. 插件(plugins)**
 
 插件用于扩展 Webpack 的功能，比如代码压缩、生成 HTML 文件等。
 
@@ -6833,7 +6824,7 @@ template: './src/index.html'
 
 };
 
-**5. 模式（mode）**
+**5. 模式(mode)**
 
 指定 Webpack 的构建模式，有 development、production 和 none 三种可选。不同模式下，Webpack 会进行不同的优化。
 
@@ -6849,7 +6840,7 @@ mode: 'production'
 
 在 production 模式下，Webpack 会自动开启代码压缩等优化功能。
 
-**6. 解析（resolve）**
+**6. 解析(resolve)**
 
 配置模块解析规则，例如设置模块别名、指定模块查找路径等。
 
@@ -6863,7 +6854,7 @@ resolve: {
 
 alias: {
 
-'@': path.resolve(__dirname, 'src')
+'@': path.resolve(\_\_dirname, 'src')
 
 }
 
@@ -6875,16 +6866,16 @@ alias: {
 
 **Babel 是什么**
 
-Babel 是一个 JavaScript 编译器，主要用于将现代 JavaScript 代码（如 ES6+）转换为向后兼容的 JavaScript 代码，以便在旧版本的浏览器或环境中运行。
+Babel 是一个 JavaScript 编译器，主要用于将现代 JavaScript 代码(如 ES6+)转换为向后兼容的 JavaScript 代码，以便在旧版本的浏览器或环境中运行。
 
 **核心作用**
 
-- **语法转换**：将新的 JavaScript 语法（如箭头函数、模板字符串、解构赋值等）转换为旧版本浏览器支持的语法。
-- **Polyfill**：为新的 API（如 Promise、Array.prototype.includes 等）提供垫片，使得旧版本浏览器也能使用这些新特性。
+- **语法转换**：将新的 JavaScript 语法(如箭头函数、模板字符串、解构赋值等)转换为旧版本浏览器支持的语法。
+- **Polyfill**：为新的 API(如 Promise、Array.prototype.includes 等)提供垫片，使得旧版本浏览器也能使用这些新特性。
 
 **组成部分**
 
-- **预设（Presets）**：一组插件的集合，方便一次性使用多个插件。例如 @babel/preset-env 可以根据目标浏览器的配置，自动选择需要的插件进行代码转换。
+- **预设(Presets)**：一组插件的集合，方便一次性使用多个插件。例如 @babel/preset-env 可以根据目标浏览器的配置，自动选择需要的插件进行代码转换。
 
 收起
 
@@ -6914,9 +6905,9 @@ browsers: ['last 2 versions', 'ie >= 10']
 
 };
 
-上述代码表示根据目标浏览器（最后两个版本的浏览器以及 IE 10 及以上版本）的需求进行代码转换。
+上述代码表示根据目标浏览器(最后两个版本的浏览器以及 IE 10 及以上版本)的需求进行代码转换。
 
-- **插件（Plugins）**：用于实现具体的转换功能。例如 @babel/plugin-transform-arrow-functions 可以将箭头函数转换为普通函数。
+- **插件(Plugins)**：用于实现具体的转换功能。例如 @babel/plugin-transform-arrow-functions 可以将箭头函数转换为普通函数。
 
 **与 Webpack 的结合**
 
@@ -6967,17 +6958,17 @@ presets: ['@babel/preset-env']
 **项目构建**
 
 - Webpack 配置管理
-    - **默认配置**：为 Vue 项目提供一套默认的 Webpack 配置，涵盖了对 Vue 单文件组件（.vue 文件）、JavaScript、CSS、图片等各种资源的处理规则。例如，使用 vue-loader 处理 Vue 组件，babel-loader 处理 JavaScript 代码以实现 ES6+ 语法的转译。
-    - **配置扩展**：允许开发者通过 vue.config.js 文件对默认的 Webpack 配置进行扩展和修改。支持使用 configureWebpack 直接修改 Webpack 配置对象，或使用 chainWebpack 通过链式调用的方式更细粒度地调整 Webpack 配置。
+  - **默认配置**：为 Vue 项目提供一套默认的 Webpack 配置，涵盖了对 Vue 单文件组件(.vue 文件)、JavaScript、CSS、图片等各种资源的处理规则。例如，使用 vue-loader 处理 Vue 组件，babel-loader 处理 JavaScript 代码以实现 ES6+ 语法的转译。
+  - **配置扩展**：允许开发者通过 vue.config.js 文件对默认的 Webpack 配置进行扩展和修改。支持使用 configureWebpack 直接修改 Webpack 配置对象，或使用 chainWebpack 通过链式调用的方式更细粒度地调整 Webpack 配置。
 - 代码打包
-    - **生产环境打包**：在执行 vue-cli-service build 命令时，会根据配置对项目中的所有资源进行打包，将多个模块合并成一个或多个文件，同时进行代码压缩、分割等优化操作，以减小文件体积，提高项目在生产环境中的加载性能。
-    - **代码分割**：支持根据路由、动态导入等策略进行代码分割，实现按需加载，避免一次性加载过多代码，提升用户体验。
+  - **生产环境打包**：在执行 vue-cli-service build 命令时，会根据配置对项目中的所有资源进行打包，将多个模块合并成一个或多个文件，同时进行代码压缩、分割等优化操作，以减小文件体积，提高项目在生产环境中的加载性能。
+  - **代码分割**：支持根据路由、动态导入等策略进行代码分割，实现按需加载，避免一次性加载过多代码，提升用户体验。
 
 **开发服务器**
 
-- 热更新（HMR）
-    - **实时反馈**：在开发过程中，启动开发服务器（vue-cli-service serve）时，支持热更新功能。当修改项目中的文件时，浏览器会自动更新相应的模块，无需刷新整个页面，大大提高开发效率。
-    - **状态保持**：对于 Vue 组件的修改，热更新可以尽量保持组件的状态，使得开发者在调试过程中能够更方便地观察组件的变化。
+- 热更新(HMR)
+  - **实时反馈**：在开发过程中，启动开发服务器(vue-cli-service serve)时，支持热更新功能。当修改项目中的文件时，浏览器会自动更新相应的模块，无需刷新整个页面，大大提高开发效率。
+  - **状态保持**：对于 Vue 组件的修改，热更新可以尽量保持组件的状态，使得开发者在调试过程中能够更方便地观察组件的变化。
 - **代理配置**：允许开发者在开发服务器中配置代理，解决跨域问题。通过在 vue.config.js 中设置 devServer.proxy，可以将特定的请求代理到目标服务器。例如：
 
 收起
@@ -7014,24 +7005,24 @@ changeOrigin: true
 **环境变量和模式管理**
 
 - **环境变量支持**：允许开发者定义和使用环境变量，方便在不同环境下使用不同的配置。例如，可以在 .env、.env.development、.env.production 等文件中定义环境变量，并在项目代码中通过 process.env 访问。
-- **模式切换**：支持不同的模式（如开发模式、生产模式），不同模式下可以加载不同的环境变量和配置。在启动开发服务器或进行项目构建时，可以通过 --mode 参数指定模式。
+- **模式切换**：支持不同的模式(如开发模式、生产模式)，不同模式下可以加载不同的环境变量和配置。在启动开发服务器或进行项目构建时，可以通过 --mode 参数指定模式。
 
-**命令行接口（CLI）**
+**命令行接口(CLI)**
 
 - **统一命令**：提供了一系列统一的命令行接口，如 vue-cli-service serve 用于启动开发服务器，vue-cli-service build 用于构建生产环境代码，vue-cli-service inspect 用于查看最终生成的 Webpack 配置等。这些命令简化了项目的开发和构建流程，降低了开发者的使用门槛。
 
 **测试支持**
 
-- **测试集成**：与常见的测试框架（如 Jest、Mocha 等）集成，方便开发者编写和运行单元测试、集成测试等。通过安装相应的测试插件，可以在项目中快速搭建测试环境。
+- **测试集成**：与常见的测试框架(如 Jest、Mocha 等)集成，方便开发者编写和运行单元测试、集成测试等。通过安装相应的测试插件，可以在项目中快速搭建测试环境。
 
-CDN是什么
+CDN 是什么
 
-CDN（Content Delivery Network）即内容分发网络，是一种通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络。下面从多个方面详细介绍 CDN：
+CDN(Content Delivery Network)即内容分发网络，是一种通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络。下面从多个方面详细介绍 CDN：
 
 **工作原理**
 
-- **内容缓存**：CDN 网络中包含多个分布在不同地理位置的节点服务器。当用户请求某个网站的内容时，CDN 会根据用户的地理位置，将网站的静态资源（如图片、CSS、JavaScript 文件等）缓存到离用户最近的节点服务器上。
-- **智能调度**：CDN 系统会根据用户的 IP 地址，通过负载均衡技术和 DNS（Domain Name System）解析，将用户的请求导向离用户最近、响应速度最快的节点服务器。这样可以大大缩短用户与服务器之间的物理距离，减少数据传输的延迟。
+- **内容缓存**：CDN 网络中包含多个分布在不同地理位置的节点服务器。当用户请求某个网站的内容时，CDN 会根据用户的地理位置，将网站的静态资源(如图片、CSS、JavaScript 文件等)缓存到离用户最近的节点服务器上。
+- **智能调度**：CDN 系统会根据用户的 IP 地址，通过负载均衡技术和 DNS(Domain Name System)解析，将用户的请求导向离用户最近、响应速度最快的节点服务器。这样可以大大缩短用户与服务器之间的物理距离，减少数据传输的延迟。
 
 **主要作用**
 
@@ -7064,7 +7055,7 @@ CDN（Content Delivery Network）即内容分发网络，是一种通过在网�
 
 "paths": {
 
-"@/*": ["src/*"]
+"@/_": ["src/_"]
 
 },
 
@@ -7074,9 +7065,9 @@ CDN（Content Delivery Network）即内容分发网络，是一种通过在网�
 
 }
 
-这是jsconfig.json中的内容，解释一下
+这是 jsconfig.json 中的内容，解释一下
 
-jsconfig.json 文件主要用于为 JavaScript 项目提供配置，帮助 IDE（如 VS Code）理解项目结构和模块解析规则，从而提供更好的代码智能提示、跳转等功能。下面详细解释你给出的 jsconfig.json 文件内容：
+jsconfig.json 文件主要用于为 JavaScript 项目提供配置，帮助 IDE(如 VS Code)理解项目结构和模块解析规则，从而提供更好的代码智能提示、跳转等功能。下面详细解释你给出的 jsconfig.json 文件内容：
 
 **整体结构**
 
@@ -7132,7 +7123,7 @@ json
 
 "paths": {
 
-"@/*": ["src/*"]
+"@/_": ["src/_"]
 
 }
 
@@ -7148,16 +7139,16 @@ json
 
 - 含义
 
-    ：指定编译过程中要包含的库文件。这些库文件提供了代码中可能使用到的全局对象和类型定义。
+  ：指定编译过程中要包含的库文件。这些库文件提供了代码中可能使用到的全局对象和类型定义。
 
-    - "esnext"：包含了 ECMAScript 最新版本的标准库定义，提供了最新的 JavaScript 特性的类型信息。
-    - "dom"：包含了浏览器 DOM（文档对象模型）的类型定义，使得在代码中操作 DOM 元素时可以获得准确的类型提示。
-    - "dom.iterable"：提供了 DOM 中可迭代对象的类型定义，例如 NodeList 等。
-    - "scripthost"：包含了脚本宿主环境（如浏览器）的一些类型定义。
+  - "esnext"：包含了 ECMAScript 最新版本的标准库定义，提供了最新的 JavaScript 特性的类型信息。
+  - "dom"：包含了浏览器 DOM(文档对象模型)的类型定义，使得在代码中操作 DOM 元素时可以获得准确的类型提示。
+  - "dom.iterable"：提供了 DOM 中可迭代对象的类型定义，例如 NodeList 等。
+  - "scripthost"：包含了脚本宿主环境(如浏览器)的一些类型定义。
 
 综上所述，这个 jsconfig.json 文件的配置使得项目使用 ES6+ 模块语法编写代码，最终编译成 ES5 代码以保证兼容性，同时通过路径别名简化了模块导入，并且为代码提供了丰富的类型定义和智能提示。
 
-有哪些常用的工具或者项目或者工程用到了CDN？npm、pip这样的包管理工具是不是都用到了CDN？
+有哪些常用的工具或者项目或者工程用到了 CDN？npm、pip 这样的包管理工具是不是都用到了 CDN？
 
 **常用的使用 CDN 的工具、项目或工程**
 
@@ -7165,7 +7156,7 @@ json
 
 - **jQuery**：作为最流行的 JavaScript 库之一，许多网站会使用 CDN 来加载 jQuery。例如，Google 和 Microsoft 都提供了 jQuery 的 CDN 服务，开发者可以通过引用 CDN 链接来快速引入 jQuery，而无需将其下载到本地项目中。
 - **Vue.js**：Vue 官方也提供了 CDN 链接，方便开发者在不使用构建工具的情况下快速搭建 Vue 项目。在 HTML 文件中直接引入 Vue 的 CDN 链接，就可以开始使用 Vue 的功能。
-- **React**：同样，React 及其配套库（如 ReactDOM）也可以通过 CDN 进行加载。对于一些小型项目或快速原型开发，使用 CDN 引入 React 可以节省时间和精力。
+- **React**：同样，React 及其配套库(如 ReactDOM)也可以通过 CDN 进行加载。对于一些小型项目或快速原型开发，使用 CDN 引入 React 可以节省时间和精力。
 
 **字体库**
 
@@ -7181,12 +7172,12 @@ json
 
 **npm**
 
-- **一般情况**：npm（Node Package Manager）本身并不直接使用 CDN 来分发包。npm 包主要存储在 npm 官方的注册表（[registry.npmjs.org](https://registry.npmjs.org/)）中，当用户使用 npm install 命令安装包时，会从这个注册表下载包的压缩文件。
+- **一般情况**：npm(Node Package Manager)本身并不直接使用 CDN 来分发包。npm 包主要存储在 npm 官方的注册表([registry.npmjs.org](https://registry.npmjs.org/))中，当用户使用 npm install 命令安装包时，会从这个注册表下载包的压缩文件。
 - **部分优化**：不过，一些第三方服务可能会使用 CDN 来缓存和加速 npm 包的下载。例如，Verdaccio 是一个私有的 npm 注册表，可以配置使用 CDN 来加速包的分发。此外，一些云服务提供商也可能提供 npm 包的加速服务。
 
 **pip**
 
-- **默认情况**：pip（Python Package Index 的包管理工具）默认从 Python Package Index（PyPI）下载包。PyPI 本身没有使用 CDN 进行包的分发，而是依赖于多个镜像站点来提高下载速度。
+- **默认情况**：pip(Python Package Index 的包管理工具)默认从 Python Package Index(PyPI)下载包。PyPI 本身没有使用 CDN 进行包的分发，而是依赖于多个镜像站点来提高下载速度。
 - **镜像与 CDN**：国内的一些镜像源，如阿里云、清华大学等提供的 PyPI 镜像，可能会使用 CDN 技术来加速包的下载。用户可以通过配置 pip 使用这些镜像源，从而获得更快的下载速度。例如，使用以下命令可以临时使用清华大学的 PyPI 镜像：
 
 收起
@@ -7197,15 +7188,15 @@ pip install package_name -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 综上所述，虽然 npm 和 pip 本身不一定直接使用 CDN，但在实际使用中可以通过一些方式借助 CDN 来提高包的下载速度。而前端框架、字体库、视频和图片托管平台等则广泛使用 CDN 来加速资源的分发。
 
-jsconfig.json是不是只有在使用IDE是才会起作用？为什么这个文件中会有compilerOptions包含编译选项，作用是什么？js不是解释性的脚本语言，源代码不需要编译吗？另外，解释性的脚本语言是不是还有python？解释性的脚本语言是不是都需要靠解释器才能工作？js语言和python语言的解释器分别是什么？
+jsconfig.json 是不是只有在使用 IDE 是才会起作用？为什么这个文件中会有 compilerOptions 包含编译选项，作用是什么？js 不是解释性的脚本语言，源代码不需要编译吗？另外，解释性的脚本语言是不是还有 python？解释性的脚本语言是不是都需要靠解释器才能工作？js 语言和 python 语言的解释器分别是什么？
 
 **jsconfig.json 是否仅在使用 IDE 时起作用**
 
-jsconfig.json 主要是为集成开发环境（IDE）服务的，比如 Visual Studio Code 等。在这些 IDE 中，它能帮助 IDE 更好地理解项目结构和模块解析规则，从而提供诸如代码提示、自动补全、跳转定义等智能功能。不过，严格来说它并非仅在使用 IDE 时起作用，当使用一些依赖于项目配置来进行静态分析的工具时，jsconfig.json 里的配置也会被参考，但它最显著的效果还是体现在提升 IDE 的开发体验上。
+jsconfig.json 主要是为集成开发环境(IDE)服务的，比如 Visual Studio Code 等。在这些 IDE 中，它能帮助 IDE 更好地理解项目结构和模块解析规则，从而提供诸如代码提示、自动补全、跳转定义等智能功能。不过，严格来说它并非仅在使用 IDE 时起作用，当使用一些依赖于项目配置来进行静态分析的工具时，jsconfig.json 里的配置也会被参考，但它最显著的效果还是体现在提升 IDE 的开发体验上。
 
 **compilerOptions 存在的原因及作用**
 
-虽然 JavaScript 是解释性语言，但这里的 “编译选项” 更多是为了让工具（如 IDE）能够对代码进行静态分析和类型检查。在现代 JavaScript 开发中，很多项目会使用一些高级特性，并且规模越来越大，静态分析变得非常重要。compilerOptions 中的配置项作用如下：
+虽然 JavaScript 是解释性语言，但这里的 “编译选项” 更多是为了让工具(如 IDE)能够对代码进行静态分析和类型检查。在现代 JavaScript 开发中，很多项目会使用一些高级特性，并且规模越来越大，静态分析变得非常重要。compilerOptions 中的配置项作用如下：
 
 - **target**：指定代码最终要兼容的 ECMAScript 版本。IDE 可以根据这个版本提示代码中使用的特性是否会在目标环境中兼容。例如设置为 "es5"，如果代码里使用了 ES6 的箭头函数，IDE 可能会给出警告。
 - **module**：表明代码使用的模块系统。像设置为 "esnext"，IDE 就能识别并正确处理 import 和 export 语句，提供准确的模块导入提示。
@@ -7213,11 +7204,11 @@ jsconfig.json 主要是为集成开发环境（IDE）服务的，比如 Visual S
 
 **JavaScript 和 Python 作为解释性语言的特点**
 
-JavaScript 和 Python 都属于解释性脚本语言。解释性语言的特点是源代码在运行时逐行被解释执行，而不像编译型语言（如 C、C++）那样需要先将源代码编译成机器码。不过，现代的 JavaScript 和 Python 实现都有一些优化，不完全是纯粹的逐行解释执行。
+JavaScript 和 Python 都属于解释性脚本语言。解释性语言的特点是源代码在运行时逐行被解释执行，而不像编译型语言(如 C、C++)那样需要先将源代码编译成机器码。不过，现代的 JavaScript 和 Python 实现都有一些优化，不完全是纯粹的逐行解释执行。
 
 **解释性语言与解释器的关系**
 
-解释性语言通常需要解释器才能运行。解释器负责读取源代码，将其翻译成机器可以理解的指令并执行。但也有一些情况，比如通过即时编译（JIT）技术，在运行时将部分代码编译成机器码以提高执行效率，但整体上仍然依赖解释器的运行环境。
+解释性语言通常需要解释器才能运行。解释器负责读取源代码，将其翻译成机器可以理解的指令并执行。但也有一些情况，比如通过即时编译(JIT)技术，在运行时将部分代码编译成机器码以提高执行效率，但整体上仍然依赖解释器的运行环境。
 
 **JavaScript 和 Python 的解释器**
 
@@ -7230,13 +7221,13 @@ JavaScript 和 Python 都属于解释性脚本语言。解释性语言的特点�
 
 - **CPython**：这是 Python 最常用的解释器，用 C 语言实现。它是 Python 官方推荐的解释器，具有广泛的库支持和社区资源。当你从 Python 官方网站下载安装 Python 时，默认安装的就是 CPython。
 - **PyPy**：采用即时编译技术，能在很多情况下提供比 CPython 更快的执行速度。它可以作为 CPython 的替代解释器，尤其适合对性能要求较高的 Python 程序。
-- **Jython**：运行在 Java 虚拟机（JVM）上的 Python 解释器，允许 Python 代码与 Java 代码进行交互，可利用 Java 的丰富类库和生态系统。
+- **Jython**：运行在 Java 虚拟机(JVM)上的 Python 解释器，允许 Python 代码与 Java 代码进行交互，可利用 Java 的丰富类库和生态系统。
 
-原生 ES 是什么？如果我使用Vite创建vue项目，从创建完到运行，除了纯粹的代码编写外，相较于vue CLI还需要进行哪些额外的配置工作，详细告诉我怎么做这些步骤？
+原生 ES 是什么？如果我使用 Vite 创建 vue 项目，从创建完到运行，除了纯粹的代码编写外，相较于 vue CLI 还需要进行哪些额外的配置工作，详细告诉我怎么做这些步骤？
 
 **原生 ES 是什么**
 
-原生 ES 指的是原生的 ECMAScript 模块系统，也就是 ES6（ES2015）及后续版本引入的模块语法。在原生 ES 模块中，使用 import 和 export 语句来实现模块的导入和导出，例如：
+原生 ES 指的是原生的 ECMAScript 模块系统，也就是 ES6(ES2015)及后续版本引入的模块语法。在原生 ES 模块中，使用 import 和 export 语句来实现模块的导入和导出，例如：
 
 **导出模块**
 
@@ -7264,7 +7255,7 @@ console.log(add(2, 3)); // 输出 5
 
 原生 ES 模块是 JavaScript 语言标准的一部分，浏览器和 Node.js 都逐渐支持这种模块系统，它使得 JavaScript 代码的组织和复用更加方便和规范。
 
-**使用 Vite 创建 Vue 项目后额外的配置步骤（相较于 Vue CLI）**
+**使用 Vite 创建 Vue 项目后额外的配置步骤(相较于 Vue CLI)**
 
 **1. 项目创建**
 
@@ -7300,7 +7291,7 @@ resolve: {
 
 alias: {
 
-'@': path.resolve(__dirname, './src'),
+'@': path.resolve(\_\_dirname, './src'),
 
 },
 
@@ -7354,7 +7345,7 @@ rewrite: (path) => path.replace(/^\/api/, ''),
 
 **4. 配置 CSS 预处理器**
 
-如果要使用 CSS 预处理器（如 Sass、Less），在 Vue CLI 中创建项目时可以选择相应的特性。在 Vite 中，需要手动安装和配置。
+如果要使用 CSS 预处理器(如 Sass、Less)，在 Vue CLI 中创建项目时可以选择相应的特性。在 Vite 中，需要手动安装和配置。
 
 - **安装依赖**：以 Sass 为例，安装相关依赖：
 
@@ -7380,9 +7371,9 @@ npm install eslint eslint-plugin-vue @vue/eslint-config-prettier prettier --save
 
 - 创建配置文件
 
-    ：
+  ：
 
-    - 创建 .eslintrc.cjs 文件：
+  - 创建 .eslintrc.cjs 文件：
 
 收起
 
@@ -7446,7 +7437,7 @@ json
 
 }
 
-**6. 配置 TypeScript（如果需要）**
+**6. 配置 TypeScript(如果需要)**
 
 如果要在项目中使用 TypeScript，在 Vue CLI 中创建项目时可以选择添加 TypeScript 支持。在 Vite 中需要手动配置：
 
@@ -7490,7 +7481,7 @@ json
 
 "paths": {
 
-"@/*": ["src/*"]
+"@/_": ["src/_"]
 
 }
 
@@ -7522,7 +7513,7 @@ resolve: {
 
 alias: {
 
-'@': path.resolve(__dirname, './src'),
+'@': path.resolve(\_\_dirname, './src'),
 
 },
 
@@ -7544,24 +7535,24 @@ target: 'esnext',
 
 通过以上步骤，就可以在 Vite 创建的 Vue 项目中完成一些常见的配置，使其具备和 Vue CLI 项目类似的功能。
 
-使用vite和使用vueCLi运行npm run serve时，vite进行模块解析，vueCLI进行打包编译；这两个步骤在原理上究竟做了哪些事情，有什么区别吗？功能上是不是都是完成了将vue项目转化为最终提供给浏览器进行渲染的html、js和css文件？
+使用 vite 和使用 vueCLi 运行 npm run serve 时，vite 进行模块解析，vueCLI 进行打包编译；这两个步骤在原理上究竟做了哪些事情，有什么区别吗？功能上是不是都是完成了将 vue 项目转化为最终提供给浏览器进行渲染的 html、js 和 css 文件？
 
 **Vite 模块解析原理及操作**
 
 **原理**
 
-Vite 利用了现代浏览器对原生 ES 模块的支持，其核心思想是在开发环境下不进行传统意义上的打包，而是直接在浏览器请求文件时进行即时的模块解析和转换。当启动开发服务器后，Vite 会监听文件系统的变化，当浏览器请求某个模块时，Vite 根据 ES 模块的导入语法（import 语句）分析模块之间的依赖关系，然后将对应的文件进行转换并返回给浏览器。
+Vite 利用了现代浏览器对原生 ES 模块的支持，其核心思想是在开发环境下不进行传统意义上的打包，而是直接在浏览器请求文件时进行即时的模块解析和转换。当启动开发服务器后，Vite 会监听文件系统的变化，当浏览器请求某个模块时，Vite 根据 ES 模块的导入语法(import 语句)分析模块之间的依赖关系，然后将对应的文件进行转换并返回给浏览器。
 
 **具体操作**
 
-1. **服务器启动**：Vite 启动一个基于 Node.js 的开发服务器，监听指定端口（默认 5173）。
+1. **服务器启动**：Vite 启动一个基于 Node.js 的开发服务器，监听指定端口(默认 5173)。
 
 2. 请求处理
 
-    ：当浏览器请求一个 .js 或 .vue 文件时，Vite 会根据文件类型进行不同处理。
+   ：当浏览器请求一个 .js 或 .vue 文件时，Vite 会根据文件类型进行不同处理。
 
-    - **.js 文件**：如果是普通的 JavaScript 文件，Vite 会检查其中的 import 语句，将相对路径的模块导入转换为浏览器可以理解的绝对路径。例如，将 import { add } from './math.js' 转换为完整的 URL 路径。
-    - **.vue 文件**：对于 Vue 单文件组件，Vite 会将其拆分为模板、脚本和样式三部分。模板部分会使用 Vue 的模板编译器进行编译，脚本部分会进行必要的转换（如处理 JSX、TypeScript 等），样式部分会提取出来并通过 <style> 标签注入到页面中。
+   - **.js 文件**：如果是普通的 JavaScript 文件，Vite 会检查其中的 import 语句，将相对路径的模块导入转换为浏览器可以理解的绝对路径。例如，将 import { add } from './math.js' 转换为完整的 URL 路径。
+   - **.vue 文件**：对于 Vue 单文件组件，Vite 会将其拆分为模板、脚本和样式三部分。模板部分会使用 Vue 的模板编译器进行编译，脚本部分会进行必要的转换(如处理 JSX、TypeScript 等)，样式部分会提取出来并通过 <style> 标签注入到页面中。
 
 3. **热更新支持**：Vite 会监听文件的变化，当文件修改时，通过 WebSocket 通知浏览器进行热更新，只更新发生变化的模块，无需刷新整个页面。
 
@@ -7575,15 +7566,15 @@ Vue CLI 基于 Webpack 构建，Webpack 是一个模块打包工具，它会从�
 
 1. **配置加载**：Vue CLI 读取 vue.config.js 中的配置信息，并根据配置生成 Webpack 配置。
 
-2. **入口分析**：Webpack 从项目的入口文件（通常是 src/main.js）开始，分析其中的 import 语句，找出所有依赖的模块。
+2. **入口分析**：Webpack 从项目的入口文件(通常是 src/main.js)开始，分析其中的 import 语句，找出所有依赖的模块。
 
 3. 模块处理
 
-    ：对于不同类型的模块，Webpack 使用相应的 loader 进行处理。
+   ：对于不同类型的模块，Webpack 使用相应的 loader 进行处理。
 
-    - **.vue 文件**：使用 vue-loader 处理 Vue 单文件组件，将其转换为 JavaScript 模块。
-    - **.js 文件**：可能会使用 babel-loader 进行 ES6+ 语法的转译，以确保代码在旧浏览器中兼容。
-    - **.css 文件**：使用 css-loader 解析 CSS 文件，style-loader 将 CSS 插入到 HTML 的 <style> 标签中，或者使用 mini-css-extract-plugin 将 CSS 提取成独立的文件。
+   - **.vue 文件**：使用 vue-loader 处理 Vue 单文件组件，将其转换为 JavaScript 模块。
+   - **.js 文件**：可能会使用 babel-loader 进行 ES6+ 语法的转译，以确保代码在旧浏览器中兼容。
+   - **.css 文件**：使用 css-loader 解析 CSS 文件，style-loader 将 CSS 插入到 HTML 的 <style> 标签中，或者使用 mini-css-extract-plugin 将 CSS 提取成独立的文件。
 
 4. **打包输出**：Webpack 将处理后的所有模块打包成一个或多个文件，并输出到指定的目录。在开发环境下，这些文件通常存储在内存中，而不是实际的磁盘文件。
 
@@ -7592,20 +7583,20 @@ Vue CLI 基于 Webpack 构建，Webpack 是一个模块打包工具，它会从�
 **两者的区别**
 
 1. 构建方式
-    - **Vite**：在开发环境下采用即时模块解析，按需加载模块，无需预先打包整个项目，启动速度快。
-    - **Vue CLI（Webpack）**：从入口文件开始递归分析所有依赖，将所有模块打包成一个或多个文件，打包过程相对耗时，尤其是项目规模较大时。
+   - **Vite**：在开发环境下采用即时模块解析，按需加载模块，无需预先打包整个项目，启动速度快。
+   - **Vue CLI(Webpack)**：从入口文件开始递归分析所有依赖，将所有模块打包成一个或多个文件，打包过程相对耗时，尤其是项目规模较大时。
 2. 性能表现
-    - **Vite**：由于不需要预先打包，冷启动速度极快，热更新也非常迅速，几乎可以达到即时响应。
-    - **Vue CLI（Webpack）**：冷启动时间较长，尤其是在项目包含大量模块时。热更新速度相对较慢，因为需要重新打包相关模块。
+   - **Vite**：由于不需要预先打包，冷启动速度极快，热更新也非常迅速，几乎可以达到即时响应。
+   - **Vue CLI(Webpack)**：冷启动时间较长，尤其是在项目包含大量模块时。热更新速度相对较慢，因为需要重新打包相关模块。
 3. 模块处理
-    - **Vite**：直接利用浏览器的原生 ES 模块支持，在请求时进行模块解析和转换。
-    - **Vue CLI（Webpack）**：使用各种 loader 和 plugin 对模块进行处理和打包，将所有模块合并成一个或多个文件。
+   - **Vite**：直接利用浏览器的原生 ES 模块支持，在请求时进行模块解析和转换。
+   - **Vue CLI(Webpack)**：使用各种 loader 和 plugin 对模块进行处理和打包，将所有模块合并成一个或多个文件。
 
 **功能目标**
 
 从功能上来说，Vite 的模块解析和 Vue CLI 的打包编译最终都是为了将 Vue 项目转化为浏览器可以渲染的 HTML、JS 和 CSS 文件。但实现方式不同，Vite 更侧重于利用现代浏览器的特性，提供快速的开发体验；而 Vue CLI 基于 Webpack，提供了更强大的打包和优化功能，适用于生产环境的构建。
 
-为什么在 HTML 文件中直接引入 Vue 的 CDN 链接，就可以开始使用 Vue 的功能？Vue在本质上到底是什么？我是一个vue的初学者，现在只会使用vue CLI创建一个项目，知道vue是一个响应式的前端开发框架，但是对背后的很多原理和构建机制尚不清楚，你是vue的开发者尤雨溪，请告诉我Vue到底是什么？究竟怎么样才算是引入了vue，怎么样才算是可以使用vue框架了？我目前粗浅的理解是，只要安装了vite或者vueCLI并创建一个vue项目，就可以在这个项目中使用vue了。我对究竟怎么样才算是引入了vue还是很模糊？另外，vue可以嵌入到其他项目中，这种情况下往往不会重新创建一个vue项目，请详细告诉我这种时候应该怎么引入vue框架？怎么才能够使用v-的指令，使用组件的特性进行开发？这个时候相较于直接使用vueCLI或Vite创建一个新的项目又需要做什么样的配置？
+为什么在 HTML 文件中直接引入 Vue 的 CDN 链接，就可以开始使用 Vue 的功能？Vue 在本质上到底是什么？我是一个 vue 的初学者，现在只会使用 vue CLI 创建一个项目，知道 vue 是一个响应式的前端开发框架，但是对背后的很多原理和构建机制尚不清楚，你是 vue 的开发者尤雨溪，请告诉我 Vue 到底是什么？究竟怎么样才算是引入了 vue，怎么样才算是可以使用 vue 框架了？我目前粗浅的理解是，只要安装了 vite 或者 vueCLI 并创建一个 vue 项目，就可以在这个项目中使用 vue 了。我对究竟怎么样才算是引入了 vue 还是很模糊？另外，vue 可以嵌入到其他项目中，这种情况下往往不会重新创建一个 vue 项目，请详细告诉我这种时候应该怎么引入 vue 框架？怎么才能够使用 v-的指令，使用组件的特性进行开发？这个时候相较于直接使用 vueCLI 或 Vite 创建一个新的项目又需要做什么样的配置？
 
 嘿，朋友！我是尤雨溪，很高兴能跟你聊聊 Vue 相关的问题。
 
@@ -7675,7 +7666,7 @@ app.mount('#app');
 
 当浏览器加载这个 HTML 文件时，会下载并执行 Vue 的代码，这样就完成了 Vue 的引入。
 
-- **使用包管理工具（如 npm）**：在使用 Vite 或 Vue CLI 创建的项目中，通过 npm install vue 安装 Vue，然后在 JavaScript 文件中使用 import 语句引入，例如：
+- **使用包管理工具(如 npm)**：在使用 Vite 或 Vue CLI 创建的项目中，通过 npm install vue 安装 Vue，然后在 JavaScript 文件中使用 import 语句引入，例如：
 
 收起
 
@@ -7701,7 +7692,7 @@ app.mount('#app');
 
 **可以使用 Vue 框架**
 
-当你成功引入 Vue 后，创建了 Vue 实例（在 Vue 3 中是通过 createApp 函数创建应用实例），并且将其挂载到 HTML 页面的某个元素上，就可以开始使用 Vue 框架了。此时你可以在模板中使用 Vue 的指令（如 v-bind、v-on、v-if 等），定义组件，实现数据绑定等功能。
+当你成功引入 Vue 后，创建了 Vue 实例(在 Vue 3 中是通过 createApp 函数创建应用实例)，并且将其挂载到 HTML 页面的某个元素上，就可以开始使用 Vue 框架了。此时你可以在模板中使用 Vue 的指令(如 v-bind、v-on、v-if 等)，定义组件，实现数据绑定等功能。
 
 **在已有项目中嵌入 Vue 框架**
 
@@ -7784,24 +7775,24 @@ app.mount('#app');
 
 **与使用 Vue CLI 或 Vite 创建新项目的配置差异**
 
-- **使用 Vue CLI 或 Vite 创建新项目**：这些工具会为你生成一个完整的项目结构，包含各种配置文件（如 vue.config.js、vite.config.js），并且集成了构建工具（如 Webpack、Rollup），可以方便地进行开发、测试和部署。你可以通过配置这些文件来定制项目的构建过程，例如设置别名、代理等。
-- **嵌入 Vue 到已有项目**：通常不需要复杂的构建配置，因为已有项目可能已经有自己的构建流程。如果使用 CDN 引入 Vue，几乎不需要额外的配置；如果使用 npm 引入，需要确保已有项目的打包工具（如 Webpack）能够正确处理 Vue 文件。可能需要安装一些 loader（如 vue-loader）并进行相应的配置。
+- **使用 Vue CLI 或 Vite 创建新项目**：这些工具会为你生成一个完整的项目结构，包含各种配置文件(如 vue.config.js、vite.config.js)，并且集成了构建工具(如 Webpack、Rollup)，可以方便地进行开发、测试和部署。你可以通过配置这些文件来定制项目的构建过程，例如设置别名、代理等。
+- **嵌入 Vue 到已有项目**：通常不需要复杂的构建配置，因为已有项目可能已经有自己的构建流程。如果使用 CDN 引入 Vue，几乎不需要额外的配置；如果使用 npm 引入，需要确保已有项目的打包工具(如 Webpack)能够正确处理 Vue 文件。可能需要安装一些 loader(如 vue-loader)并进行相应的配置。
 
 希望这些解释能让你对 Vue 有更清晰的认识，祝你在 Vue 的学习和开发中取得好成果！
 
-浏览器中会带有CDN吗？或者说浏览器中的某些服务会带有CDN吗？或者说浏览器中的js引擎带有CDN吗？还是说CDN是相对于某个具体网站而言的吗？原生的 ECMAScript 模块系统又是什么？在开发中起到什么作用？这个模块系统有什么功能？大致的工作原理和组成是怎么样的？模块语法又是什么？代码举例说明常见的模块语法有哪些？模板语法是一门具体的编程语言的语法吗？还是一种机制吗？还是别的什么概念？
+浏览器中会带有 CDN 吗？或者说浏览器中的某些服务会带有 CDN 吗？或者说浏览器中的 js 引擎带有 CDN 吗？还是说 CDN 是相对于某个具体网站而言的吗？原生的 ECMAScript 模块系统又是什么？在开发中起到什么作用？这个模块系统有什么功能？大致的工作原理和组成是怎么样的？模块语法又是什么？代码举例说明常见的模块语法有哪些？模板语法是一门具体的编程语言的语法吗？还是一种机制吗？还是别的什么概念？
 
 **浏览器与 CDN 的关系**
 
-- **浏览器本身不带有 CDN**：CDN（Content Delivery Network）是一个分布在多个地理位置的服务器网络，用于存储和分发网站的静态资源（如图片、CSS、JavaScript 文件等）。浏览器只是一个客户端应用程序，负责向服务器请求资源并渲染页面，它本身并不具备 CDN 的功能。
-- **浏览器中的服务或 JS 引擎也不带有 CDN**：浏览器的服务（如渲染引擎、网络服务等）和 JS 引擎（如 Chrome 的 V8 引擎）主要负责处理页面的渲染、脚本执行等任务，与 CDN 没有直接关系。
+- **浏览器本身不带有 CDN**：CDN(Content Delivery Network)是一个分布在多个地理位置的服务器网络，用于存储和分发网站的静态资源(如图片、CSS、JavaScript 文件等)。浏览器只是一个客户端应用程序，负责向服务器请求资源并渲染页面，它本身并不具备 CDN 的功能。
+- **浏览器中的服务或 JS 引擎也不带有 CDN**：浏览器的服务(如渲染引擎、网络服务等)和 JS 引擎(如 Chrome 的 V8 引擎)主要负责处理页面的渲染、脚本执行等任务，与 CDN 没有直接关系。
 - **CDN 是相对于网站而言的**：网站开发者可以选择使用 CDN 服务来加速其网站的资源加载。当用户访问该网站时，浏览器会根据 CDN 的配置从离用户最近的节点服务器获取资源，从而提高加载速度。
 
 **原生的 ECMAScript 模块系统**
 
 **定义**
 
-原生的 ECMAScript 模块系统是 ES6（ES2015）及后续版本引入的官方模块规范，用于在 JavaScript 中实现模块化编程。它允许开发者将代码分割成多个独立的模块，每个模块可以导出和导入特定的功能，从而提高代码的可维护性和复用性。
+原生的 ECMAScript 模块系统是 ES6(ES2015)及后续版本引入的官方模块规范，用于在 JavaScript 中实现模块化编程。它允许开发者将代码分割成多个独立的模块，每个模块可以导出和导入特定的功能，从而提高代码的可维护性和复用性。
 
 **在开发中的作用**
 
@@ -7811,8 +7802,8 @@ app.mount('#app');
 
 **功能**
 
-- **导出（Export）**：允许模块将其内部的变量、函数、类等暴露给其他模块使用。
-- **导入（Import）**：允许模块从其他模块中引入所需的功能。
+- **导出(Export)**：允许模块将其内部的变量、函数、类等暴露给其他模块使用。
+- **导入(Import)**：允许模块从其他模块中引入所需的功能。
 
 **工作原理和组成**
 
@@ -7901,7 +7892,7 @@ return a - b;
 
 // 导入所有导出内容
 
-import * as math from './math.js';
+import \* as math from './math.js';
 
 console.log(math.add(2, 3)); // 输出 5
 
@@ -7987,7 +7978,7 @@ app.mount('#app');
 
 在这个例子中，{{ message }} 是插值表达式，用于显示数据；v-bind 指令用于绑定 HTML 属性；v-on 指令用于绑定事件。这些都是 Vue 模板语法的一部分，通过模板语法可以方便地实现数据绑定和交互效果。
 
-ESLint 和 Prettier都需要配置什么？举例说明配置文件要怎么写
+ESLint 和 Prettier 都需要配置什么？举例说明配置文件要怎么写
 
 **ESLint 配置**
 
@@ -8011,9 +8002,9 @@ bash
 
 npx eslint --init
 
-在初始化过程中，你可以根据项目需求选择不同的配置选项，例如 JavaScript 模块类型、目标环境、代码风格等。初始化完成后，会生成一个 .eslintrc 文件（根据选择的格式可能是 .eslintrc.js、.eslintrc.json 或 .eslintrc.yml）。
+在初始化过程中，你可以根据项目需求选择不同的配置选项，例如 JavaScript 模块类型、目标环境、代码风格等。初始化完成后，会生成一个 .eslintrc 文件(根据选择的格式可能是 .eslintrc.js、.eslintrc.json 或 .eslintrc.yml)。
 
-**3. 常见配置示例（.eslintrc.js）**
+**3. 常见配置示例(.eslintrc.js)**
 
 收起
 
@@ -8093,9 +8084,9 @@ npm install prettier --save-dev
 
 **2. 创建 Prettier 配置文件**
 
-在项目根目录下创建 .prettierrc 文件（也可以使用 .prettierrc.js、.prettierrc.json 等格式）。
+在项目根目录下创建 .prettierrc 文件(也可以使用 .prettierrc.js、.prettierrc.json 等格式)。
 
-**3. 常见配置示例（.prettierrc）**
+**3. 常见配置示例(.prettierrc)**
 
 收起
 
@@ -8179,7 +8170,7 @@ module.exports = {
 
 **Jinja2**
 
-Jinja2 是 Python 中广泛使用的模板引擎，常用于 Web 开发框架（如 Flask）中生成 HTML 页面。
+Jinja2 是 Python 中广泛使用的模板引擎，常用于 Web 开发框架(如 Flask)中生成 HTML 页面。
 
 **安装**
 
@@ -8207,7 +8198,7 @@ output = template.render(name='John', age=30)
 
 print(output) # 输出: Hello, John! You are 30 years old.
 
-在 Jinja2 中，{{ }} 用于插入变量，还支持控制结构（如 {% if %}、{% for %} 等）来实现条件判断和循环。
+在 Jinja2 中，{{ }} 用于插入变量，还支持控制结构(如 {% if %}、{% for %} 等)来实现条件判断和循环。
 
 收起
 
@@ -8261,7 +8252,7 @@ xml
 
 </dependency>
 
-**示例 HTML 模板（index.html）**
+**示例 HTML 模板(index.html)**
 
 收起
 
@@ -8339,7 +8330,7 @@ System.out.println(output);
 
 ---
 
-你是一个资深的前端工程师，而我对前端的了解仅限于学习过前端三剑客的语法和一点vue框架的知识，现在我从github上fork了这个仓库，想要看一看优秀的代码工程；请告诉我这个工程中每个目录（包括目录下的文件）以及其他文件的作用，他们都是什么？
+你是一个资深的前端工程师，而我对前端的了解仅限于学习过前端三剑客的语法和一点 vue 框架的知识，现在我从 github 上 fork 了这个仓库，想要看一看优秀的代码工程；请告诉我这个工程中每个目录(包括目录下的文件)以及其他文件的作用，他们都是什么？
 
 分享
 
@@ -8349,7 +8340,7 @@ System.out.println(output);
 
 **Gemfile**
 
-这是一个 Ruby 的依赖管理文件，用于指定项目所依赖的 Ruby gem（类似于 Node.js 中的package.json）。在这个项目中，它定义了项目所依赖的 Jekyll 主题、测试工具以及其他一些特定平台所需的 gem。
+这是一个 Ruby 的依赖管理文件，用于指定项目所依赖的 Ruby gem(类似于 Node.js 中的 package.json)。在这个项目中，它定义了项目所依赖的 Jekyll 主题、测试工具以及其他一些特定平台所需的 gem。
 
 收起
 
@@ -8379,27 +8370,23 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 **index.html**
 
-这是网站的首页文件，使用 YAML Front Matter 来指定页面的布局为home，即采用home布局来渲染这个页面。
+这是网站的首页文件，使用 YAML Front Matter 来指定页面的布局为 home，即采用 home 布局来渲染这个页面。
 
 收起
 
 html
 
-
-
 layout: home
 
 ## Index page
 
-
-
-**_config.yml**
+**\_config.yml**
 
 这是 Jekyll 的配置文件，用于配置网站的各种参数，如主题、语言、时间 zone、SEO 相关信息、社交媒体链接、分析工具 ID 等。它是整个网站的核心配置文件，决定了网站的很多基本行为和显示效果。
 
 **目录及其文件**
 
-**_data 目录**
+**\_data 目录**
 
 这个目录用于存放数据文件，通常是 YAML 或 JSON 格式，这些文件可以在 Jekyll 模板中使用。
 
@@ -8445,7 +8432,7 @@ icon: "fa-brands fa-x-twitter"
 
 ## 其他联系选项...
 
-**_plugins 目录**
+**\_plugins 目录**
 
 这个目录用于存放 Jekyll 插件，这些插件可以扩展 Jekyll 的功能。
 
@@ -8475,13 +8462,13 @@ end
 
 end
 
-**_tabs 目录**
+**\_tabs 目录**
 
-根据_config.yml中的配置，_tabs 目录下的文件会被处理成特定的页面（type: tabs），这些页面可能用于展示一些特定的内容。
+根据\_config.yml 中的配置，\_tabs 目录下的文件会被处理成特定的页面(type: tabs)，这些页面可能用于展示一些特定的内容。
 
-**_drafts 目录（未明确列出文件）**
+**\_drafts 目录(未明确列出文件)**
 
-这个目录通常用于存放未发布的草稿文章，在_config.yml中对这个目录下的文章有特殊配置，比如默认不开启评论功能。
+这个目录通常用于存放未发布的草稿文章，在\_config.yml 中对这个目录下的文章有特殊配置，比如默认不开启评论功能。
 
 **配置文件中的关键部分**
 
@@ -8499,13 +8486,13 @@ end
 
 **jekyll-archives 配置**
 
-用于配置 Jekyll 的归档功能，包括启用的归档类型（如分类、标签）、归档页面的布局和永久链接格式。
+用于配置 Jekyll 的归档功能，包括启用的归档类型(如分类、标签)、归档页面的布局和永久链接格式。
 
 通过以上的解释，你应该对这个工程的目录结构和文件作用有了一个基本的了解。这些文件和目录共同协作，构建了一个功能丰富的 Jekyll 网站。
 
 SparkyXXX/sparkyxxx.github.io
 
-gem是什么，Gemfile中一般需要配置哪些内容，作用是什么？为什么jekyll的主题可以在Gemfile中配置？Gemfile不是用来管理Ruby项目中的包依赖关系的吗？而jekyll作为一个基于Ruby开发的专门用于构建静态博客网站的框架，跟Ruby根本就不在一个层次，为什么可以在Gemfile中配置它的主题呢？
+gem 是什么，Gemfile 中一般需要配置哪些内容，作用是什么？为什么 jekyll 的主题可以在 Gemfile 中配置？Gemfile 不是用来管理 Ruby 项目中的包依赖关系的吗？而 jekyll 作为一个基于 Ruby 开发的专门用于构建静态博客网站的框架，跟 Ruby 根本就不在一个层次，为什么可以在 Gemfile 中配置它的主题呢？
 
 **1. gem 是什么**
 
@@ -8515,7 +8502,7 @@ gem是什么，Gemfile中一般需要配置哪些内容，作用是什么？为�
 
 **配置内容**
 
-- **源（source）**：指定 gem 包的来源，通常是 RubyGems 官方源 https://rubygems.org。例如：
+- **源(source)**：指定 gem 包的来源，通常是 RubyGems 官方源 https://rubygems.org。例如：
 
 收起
 
@@ -8533,7 +8520,7 @@ gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
 
 gem "html-proofer", "~> 5.0", group: :test
 
-- **平台特定依赖（platforms）**：针对特定平台指定依赖的 gem 包。例如：
+- **平台特定依赖(platforms)**：针对特定平台指定依赖的 gem 包。例如：
 
 收起
 
@@ -8582,7 +8569,7 @@ end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
-这是Gemfile中的内容，解释一下每行代码都是什么意思干嘛用的
+这是 Gemfile 中的内容，解释一下每行代码都是什么意思干嘛用的
 
 以下是对 Gemfile 中每行代码的详细解释：
 
@@ -8592,7 +8579,7 @@ ruby
 
 ## frozen_string_literal: true
 
-- **含义**：这是一个 Ruby 的魔术注释。当使用这个注释时，Ruby 解释器会将所有的字符串字面量视为不可变的（frozen），也就是不能修改。这样做的好处是可以提高性能，同时避免一些由于字符串被意外修改而导致的错误。
+- **含义**：这是一个 Ruby 的魔术注释。当使用这个注释时，Ruby 解释器会将所有的字符串字面量视为不可变的(frozen)，也就是不能修改。这样做的好处是可以提高性能，同时避免一些由于字符串被意外修改而导致的错误。
 
 收起
 
@@ -8600,7 +8587,7 @@ ruby
 
 source "https://rubygems.org"
 
-- **含义**：指定了 RubyGems 的源地址。RubyGems 是 Ruby 社区的包管理器，source 方法告诉 Bundler（Ruby 的依赖管理工具）从 https://rubygems.org 这个地址去查找和下载 gem 包。
+- **含义**：指定了 RubyGems 的源地址。RubyGems 是 Ruby 社区的包管理器，source 方法告诉 Bundler(Ruby 的依赖管理工具)从 https://rubygems.org 这个地址去查找和下载 gem 包。
 
 收起
 
@@ -8608,7 +8595,7 @@ ruby
 
 gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
 
-- **含义**：声明了一个 gem 依赖。具体来说，项目依赖于 jekyll-theme-chirpy 这个 gem 包。~> 7.2 表示使用 7.2.x 版本的 gem 包，其中 x 可以是任意的小版本号，只要不超过下一个大版本（即 7.3）。>= 7.2.4 进一步限制了版本，要求使用的版本必须大于或等于 7.2.4。这样做的目的是在保证兼容性的前提下，允许使用一些小版本的更新。
+- **含义**：声明了一个 gem 依赖。具体来说，项目依赖于 jekyll-theme-chirpy 这个 gem 包。~> 7.2 表示使用 7.2.x 版本的 gem 包，其中 x 可以是任意的小版本号，只要不超过下一个大版本(即 7.3)。>= 7.2.4 进一步限制了版本，要求使用的版本必须大于或等于 7.2.4。这样做的目的是在保证兼容性的前提下，允许使用一些小版本的更新。
 
 收起
 
@@ -8654,152 +8641,152 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 SparkyXXX/sparkyxxx.github.io
 
-你的意思是说，gem是一个代码库而不是像npm或pip那样的包管理工具？那gem的工作原理是怎样的，gem中的代码是怎么从远程的服务器或数据库一步步到达我们开发者的电脑和代码中的？
+你的意思是说，gem 是一个代码库而不是像 npm 或 pip 那样的包管理工具？那 gem 的工作原理是怎样的，gem 中的代码是怎么从远程的服务器或数据库一步步到达我们开发者的电脑和代码中的？
 
 Ruby 生态系统都有哪些典型的工具或者框架？
 
-Bundler又是什么，有什么功能，在开发过程中起什么作用？工作原理是什么？
+Bundler 又是什么，有什么功能，在开发过程中起什么作用？工作原理是什么？
 
 魔术注释是什么？有什么用？工作原理是什么？是一种代码沙箱吗？代码沙箱是什么？
 
-字符串字面量是什么？为什么要将他们视为不可变的？什么叫不能修改，视为不可变的，我在vscode中直接编辑不就能修改了吗？
+字符串字面量是什么？为什么要将他们视为不可变的？什么叫不能修改，视为不可变的，我在 vscode 中直接编辑不就能修改了吗？
 
-:mingw、:x64_mingw、:mswin 和 :jruby这几个平台分别都是什么？和平时说的x86、x64、arm、linux这样的平台是一个层级的概念吗？
+:mingw、:x64_mingw、:mswin 和 :jruby 这几个平台分别都是什么？和平时说的 x86、x64、arm、linux 这样的平台是一个层级的概念吗？
 
-wdm又是什么，有什么功能，在开发过程中起什么作用？工作原理是什么？
+wdm 又是什么，有什么功能，在开发过程中起什么作用？工作原理是什么？
 
 **1. gem 的相关问题**
 
 - gem 是不是代码库及工作原理
 
-    ：
+  ：
 
-    - gem 不是代码库，而是 Ruby 的包管理工具，类似于 Python 的 pip 或 Node.js 的 npm。它允许开发者方便地安装、管理和分发 Ruby 代码库（通常称为 gems）。
-    - 工作原理：
-        - 当你运行 gem install <gem_name> 时，gem 命令会首先连接到默认的 RubyGems 源（通常是 https://rubygems.org），这个源就像一个存储 gems 的仓库。
-        - 它会在仓库中查找你要安装的 gem，并下载相应的 .gem 文件（这是一个包含 gem 代码和元数据的归档文件）。
-        - 下载完成后，gem 会将这个 .gem 文件解压到本地的 Ruby 环境中，通常是在 ~/.gem 目录下（具体路径可能因系统而异），并设置好相应的依赖关系。
-        - 当你在代码中使用 require 语句引入 gem 时，Ruby 解释器会在已安装的 gem 路径中查找对应的代码文件并加载。
+  - gem 不是代码库，而是 Ruby 的包管理工具，类似于 Python 的 pip 或 Node.js 的 npm。它允许开发者方便地安装、管理和分发 Ruby 代码库(通常称为 gems)。
+  - 工作原理：
+    - 当你运行 gem install <gem_name> 时，gem 命令会首先连接到默认的 RubyGems 源(通常是 https://rubygems.org)，这个源就像一个存储 gems 的仓库。
+    - 它会在仓库中查找你要安装的 gem，并下载相应的 .gem 文件(这是一个包含 gem 代码和元数据的归档文件)。
+    - 下载完成后，gem 会将这个 .gem 文件解压到本地的 Ruby 环境中，通常是在 ~/.gem 目录下(具体路径可能因系统而异)，并设置好相应的依赖关系。
+    - 当你在代码中使用 require 语句引入 gem 时，Ruby 解释器会在已安装的 gem 路径中查找对应的代码文件并加载。
 
 **2. Ruby 生态系统的典型工具和框架**
 
-- **Rails**：是一个非常流行的 Web 应用开发框架，它遵循 MVC（Model-View-Controller）架构模式，提供了丰富的功能和工具，能快速开发出功能强大的 Web 应用。
+- **Rails**：是一个非常流行的 Web 应用开发框架，它遵循 MVC(Model-View-Controller)架构模式，提供了丰富的功能和工具，能快速开发出功能强大的 Web 应用。
 - **Sinatra**：轻量级的 Web 框架，适合开发简单的 Web 应用和 API。
-- **RSpec**：用于 Ruby 的行为驱动开发（BDD）的测试框架，方便进行单元测试和集成测试。
+- **RSpec**：用于 Ruby 的行为驱动开发(BDD)的测试框架，方便进行单元测试和集成测试。
 - **Capybara**：用于 Web 应用的自动化测试工具，它可以模拟用户在浏览器中的操作。
 
 **3. Bundler 的相关问题**
 
 - Bundler 是什么及功能
 
-    ：
+  ：
 
-    - Bundler 是 Ruby 的依赖管理工具。
-    - 功能：
-        - 管理项目的依赖关系，通过 Gemfile 文件来指定项目所依赖的 gems 及其版本要求。
-        - 确保不同开发环境（如开发、测试、生产环境）中使用的 gem 版本一致，避免因 gem 版本不同导致的问题。
+  - Bundler 是 Ruby 的依赖管理工具。
+  - 功能：
+    - 管理项目的依赖关系，通过 Gemfile 文件来指定项目所依赖的 gems 及其版本要求。
+    - 确保不同开发环境(如开发、测试、生产环境)中使用的 gem 版本一致，避免因 gem 版本不同导致的问题。
 
 - 在开发过程中的作用
 
-    ：
+  ：
 
-    - 方便团队协作，开发者可以通过 Gemfile 了解项目所需的所有 gems，使用 bundle install 命令即可安装所有依赖。
-    - 隔离不同项目的 gem 环境，避免项目之间的 gem 版本冲突。
+  - 方便团队协作，开发者可以通过 Gemfile 了解项目所需的所有 gems，使用 bundle install 命令即可安装所有依赖。
+  - 隔离不同项目的 gem 环境，避免项目之间的 gem 版本冲突。
 
 - 工作原理
 
-    ：
+  ：
 
-    - 首先，开发者在项目根目录下创建 Gemfile 文件，在其中列出项目依赖的 gems 及其版本要求。
-    - 运行 bundle install 时，Bundler 会读取 Gemfile，解析依赖关系，并从 RubyGems 源下载所需的 gems。
-    - 同时，Bundler 会生成一个 Gemfile.lock 文件，记录当前安装的 gems 的具体版本信息，确保后续安装时使用相同版本的 gems。
+  - 首先，开发者在项目根目录下创建 Gemfile 文件，在其中列出项目依赖的 gems 及其版本要求。
+  - 运行 bundle install 时，Bundler 会读取 Gemfile，解析依赖关系，并从 RubyGems 源下载所需的 gems。
+  - 同时，Bundler 会生成一个 Gemfile.lock 文件，记录当前安装的 gems 的具体版本信息，确保后续安装时使用相同版本的 gems。
 
 **4. 魔术注释的相关问题**
 
 - 魔术注释是什么及用途
 
-    ：
+  ：
 
-    - 魔术注释是 Ruby 文件开头的特殊注释，以 # 开头，用于指定一些解释器的特殊行为。
-    - 例如 # frozen_string_literal: true 就是一个常见的魔术注释，它的作用是将字符串字面量视为不可变的。
+  - 魔术注释是 Ruby 文件开头的特殊注释，以 # 开头，用于指定一些解释器的特殊行为。
+  - 例如 # frozen_string_literal: true 就是一个常见的魔术注释，它的作用是将字符串字面量视为不可变的。
 
 - 工作原理
 
-    ：
+  ：
 
-    - 当 Ruby 解释器读取文件时，会先检查文件开头的魔术注释。如果发现 # frozen_string_literal: true，那么在该文件中所有的字符串字面量都会被冻结（即不可变）。
+  - 当 Ruby 解释器读取文件时，会先检查文件开头的魔术注释。如果发现 # frozen_string_literal: true，那么在该文件中所有的字符串字面量都会被冻结(即不可变)。
 
 - 是否是代码沙箱
 
-    ：
+  ：
 
-    - 魔术注释不是代码沙箱。代码沙箱是一种安全机制，用于限制代码的执行环境，防止代码访问或修改敏感资源。
+  - 魔术注释不是代码沙箱。代码沙箱是一种安全机制，用于限制代码的执行环境，防止代码访问或修改敏感资源。
 
 **5. 字符串字面量的相关问题**
 
 - 字符串字面量是什么
 
-    ：
+  ：
 
-    - 字符串字面量是在代码中直接写出来的字符串，例如 "hello world" 就是一个字符串字面量。
+  - 字符串字面量是在代码中直接写出来的字符串，例如 "hello world" 就是一个字符串字面量。
 
 - 为什么视为不可变
 
-    ：
+  ：
 
-    - 视为不可变可以提高性能和安全性。因为不可变的字符串在内存中可以被共享，减少内存开销。同时，不可变性也可以避免一些意外的修改导致的错误。
+  - 视为不可变可以提高性能和安全性。因为不可变的字符串在内存中可以被共享，减少内存开销。同时，不可变性也可以避免一些意外的修改导致的错误。
 
 - 不能修改的含义
 
-    ：
+  ：
 
-    - 在 Ruby 中，当字符串被冻结（如通过魔术注释 # frozen_string_literal: true）后，尝试对其进行修改（如 str[0] = 'H'）会抛出 FrozenError 异常。在 VSCode 中直接编辑代码只是修改了代码文件本身，而不是在运行时修改字符串对象。
+  - 在 Ruby 中，当字符串被冻结(如通过魔术注释 # frozen_string_literal: true)后，尝试对其进行修改(如 str[0] = 'H')会抛出 FrozenError 异常。在 VSCode 中直接编辑代码只是修改了代码文件本身，而不是在运行时修改字符串对象。
 
 **6. 平台标识的相关问题**
 
 - :mingw、:x64_mingw、:mswin 和 :jruby 的含义
 
-    ：
+  ：
 
-    - :mingw：MinGW（Minimalist GNU for Windows）是一个用于在 Windows 上开发和编译本地应用程序的工具集，它提供了一个类似 Unix 的开发环境。
-    - :x64_mingw：是 :mingw 的 64 位版本，用于 64 位的 Windows 系统。
-    - :mswin：表示 Microsoft Windows 平台。
-    - :jruby：JRuby 是 Ruby 的 Java 实现，它将 Ruby 代码编译成 Java 字节码，在 Java 虚拟机（JVM）上运行。
+  - :mingw：MinGW(Minimalist GNU for Windows)是一个用于在 Windows 上开发和编译本地应用程序的工具集，它提供了一个类似 Unix 的开发环境。
+  - :x64_mingw：是 :mingw 的 64 位版本，用于 64 位的 Windows 系统。
+  - :mswin：表示 Microsoft Windows 平台。
+  - :jruby：JRuby 是 Ruby 的 Java 实现，它将 Ruby 代码编译成 Java 字节码，在 Java 虚拟机(JVM)上运行。
 
 - 与 x86、x64、arm、linux 的关系
 
-    ：
+  ：
 
-    - 它们不是一个层级的概念。x86、x64、arm 主要是指 CPU 架构，而 linux 是操作系统。:mingw、:x64_mingw、:mswin 主要是针对 Windows 平台的不同开发环境或运行时，:jruby 则是 Ruby 的一种特殊实现方式。
+  - 它们不是一个层级的概念。x86、x64、arm 主要是指 CPU 架构，而 linux 是操作系统。:mingw、:x64_mingw、:mswin 主要是针对 Windows 平台的不同开发环境或运行时，:jruby 则是 Ruby 的一种特殊实现方式。
 
 **7. wdm 的相关问题**
 
 - wdm 是什么及功能
 
-    ：
+  ：
 
-    - wdm（Windows Directory Monitor）是一个用于 Windows 平台的文件更改监视器。
-    - 功能：在开发过程中，当文件发生变化时，wdm 可以通知相关的工具或进程，例如在使用 Jekyll 开发网站时，当文件发生变化，wdm 可以通知 Jekyll 重新编译或刷新页面。
+  - wdm(Windows Directory Monitor)是一个用于 Windows 平台的文件更改监视器。
+  - 功能：在开发过程中，当文件发生变化时，wdm 可以通知相关的工具或进程，例如在使用 Jekyll 开发网站时，当文件发生变化，wdm 可以通知 Jekyll 重新编译或刷新页面。
 
 - 在开发过程中的作用
 
-    ：
+  ：
 
-    - 提高开发效率，开发者不需要手动重新启动或编译项目，当文件保存后，wdm 会自动触发相应的操作。
+  - 提高开发效率，开发者不需要手动重新启动或编译项目，当文件保存后，wdm 会自动触发相应的操作。
 
 - 工作原理
 
-    ：
+  ：
 
-    - wdm 会监视指定目录下的文件变化，当检测到文件的创建、修改或删除等操作时，它会向注册的回调函数或进程发送信号，通知它们文件已经发生变化。
+  - wdm 会监视指定目录下的文件变化，当检测到文件的创建、修改或删除等操作时，它会向注册的回调函数或进程发送信号，通知它们文件已经发生变化。
 
 SparkyXXX/sparkyxxx.github.io
 
-gem命令有哪些？ruby命令有哪些？jekyll命令有哪些？这些命令，或者说叫指令，是怎么被开发出来的，工作原理是什么？比如说为什么我输入gem update或者gem install，就可以实现对应的更新或安装操作，这些指令是谁规定的，背后的工作原理是什么？开发这样的指令系统是不是需要开发对应的CLI（命令行工具）？
+gem 命令有哪些？ruby 命令有哪些？jekyll 命令有哪些？这些命令，或者说叫指令，是怎么被开发出来的，工作原理是什么？比如说为什么我输入 gem update 或者 gem install，就可以实现对应的更新或安装操作，这些指令是谁规定的，背后的工作原理是什么？开发这样的指令系统是不是需要开发对应的 CLI(命令行工具)？
 
 **gem 命令**
 
-gem 是 RubyGems 的命令行工具，RubyGems 是 Ruby 的包管理系统，用于管理 Ruby 库和程序（即 gem）。以下是一些常用的gem命令：
+gem 是 RubyGems 的命令行工具，RubyGems 是 Ruby 的包管理系统，用于管理 Ruby 库和程序(即 gem)。以下是一些常用的 gem 命令：
 
 - gem install <gem_name>：安装指定的 gem。
 - gem update <gem_name>：更新指定的 gem，如果不指定 gem 名称，则更新所有已安装的 gem。
@@ -8809,7 +8796,7 @@ gem 是 RubyGems 的命令行工具，RubyGems 是 Ruby 的包管理系统，用
 
 **ruby 命令**
 
-ruby 是 Ruby 编程语言的解释器，以下是一些常见的ruby命令：
+ruby 是 Ruby 编程语言的解释器，以下是一些常见的 ruby 命令：
 
 - ruby <script.rb>：执行指定的 Ruby 脚本文件。
 - ruby -v：显示当前 Ruby 解释器的版本信息。
@@ -8818,51 +8805,51 @@ ruby 是 Ruby 编程语言的解释器，以下是一些常见的ruby命令：
 
 **jekyll 命令**
 
-Jekyll 是一个静态网站生成器，以下是一些常用的jekyll命令：
+Jekyll 是一个静态网站生成器，以下是一些常用的 jekyll 命令：
 
 - jekyll build 或 jekyll b：生成静态网站文件，将 Markdown 等源文件转换为 HTML 文件。
 - jekyll serve 或 jekyll s：启动本地服务器，用于预览生成的网站，默认地址为 http://127.0.0.1:4000。
 - jekyll new <site_name>：创建一个新的 Jekyll 网站项目。
-- jekyll clean：清除生成的静态文件（_site 目录）。
+- jekyll clean：清除生成的静态文件(\_site 目录)。
 
 **命令的开发与工作原理**
 
 **开发过程**
 
-这些命令通常是通过开发对应的 CLI（命令行工具）来实现的。以gem命令为例，它是 RubyGems 包的一部分，开发人员使用 Ruby 语言编写了相应的代码来实现各种功能，例如解析用户输入的命令、与远程 gem 仓库通信、管理本地 gem 文件等。
+这些命令通常是通过开发对应的 CLI(命令行工具)来实现的。以 gem 命令为例，它是 RubyGems 包的一部分，开发人员使用 Ruby 语言编写了相应的代码来实现各种功能，例如解析用户输入的命令、与远程 gem 仓库通信、管理本地 gem 文件等。
 
 **工作原理**
 
-以gem update和gem install为例，大致工作原理如下：
+以 gem update 和 gem install 为例，大致工作原理如下：
 
-1. **命令解析**：当你在命令行输入gem update或gem install时，系统会启动 Ruby 解释器来执行gem命令对应的代码。这些代码首先会解析你输入的命令和参数，确定你要执行的具体操作。
+1. **命令解析**：当你在命令行输入 gem update 或 gem install 时，系统会启动 Ruby 解释器来执行 gem 命令对应的代码。这些代码首先会解析你输入的命令和参数，确定你要执行的具体操作。
 
 2. 查找 gem 信息
 
-    ：
+   ：
 
-    - 对于gem install，程序会根据你指定的 gem 名称，从 RubyGems 的远程仓库（如https://rubygems.org）中查找该 gem 的最新版本信息，包括下载地址等。
-    - 对于gem update，程序会先检查本地已安装的 gem 列表，然后从远程仓库查找这些 gem 是否有更新版本。
+   - 对于 gem install，程序会根据你指定的 gem 名称，从 RubyGems 的远程仓库(如https://rubygems.org)中查找该 gem 的最新版本信息，包括下载地址等。
+   - 对于 gem update，程序会先检查本地已安装的 gem 列表，然后从远程仓库查找这些 gem 是否有更新版本。
 
 3. 下载与安装
 
-    ：
+   ：
 
-    - 如果是gem install，程序会根据获取到的下载地址，从远程仓库下载 gem 文件到本地临时目录。
-    - 下载完成后，程序会将 gem 文件解压到 Ruby 的 gem 安装目录，并进行必要的配置和依赖处理，例如安装 gem 的依赖项。
-    - 对于gem update，如果发现有更新版本，程序会先卸载旧版本的 gem，然后按照gem install的流程安装新版本的 gem。
+   - 如果是 gem install，程序会根据获取到的下载地址，从远程仓库下载 gem 文件到本地临时目录。
+   - 下载完成后，程序会将 gem 文件解压到 Ruby 的 gem 安装目录，并进行必要的配置和依赖处理，例如安装 gem 的依赖项。
+   - 对于 gem update，如果发现有更新版本，程序会先卸载旧版本的 gem，然后按照 gem install 的流程安装新版本的 gem。
 
 4. **环境更新**：安装或更新完成后，程序会更新 Ruby 的环境信息，例如更新 gem 的加载路径等，以便后续可以正常使用新安装或更新的 gem。
 
 **规范与规定**
 
-这些命令的规范和行为是由相应的开发团队规定的。例如，RubyGems 团队定义了gem命令的各种功能和参数，Jekyll 团队定义了jekyll命令的功能和参数。这些规范通常是为了方便用户使用和管理相关的工具和库。
+这些命令的规范和行为是由相应的开发团队规定的。例如，RubyGems 团队定义了 gem 命令的各种功能和参数，Jekyll 团队定义了 jekyll 命令的功能和参数。这些规范通常是为了方便用户使用和管理相关的工具和库。
 
 综上所述，开发这样的指令系统确实需要开发对应的 CLI，通过编写代码来实现命令的解析、执行和相关的业务逻辑。
 
 SparkyXXX/sparkyxxx.github.io
 
-软件源是什么？为什么我们在使用npm、pip、gem中都会涉及源概念？源的工作原理是怎样的？纵观整个开发流程和软件发展技术，源这个设计有什么作用？它背后的系统是怎么工作的？
+软件源是什么？为什么我们在使用 npm、pip、gem 中都会涉及源概念？源的工作原理是怎样的？纵观整个开发流程和软件发展技术，源这个设计有什么作用？它背后的系统是怎么工作的？
 
 **软件源的定义**
 
@@ -8870,61 +8857,61 @@ SparkyXXX/sparkyxxx.github.io
 
 **为什么在 npm、pip、gem 中都会涉及源概念**
 
-- npm（Node.js 包管理器）
-    - Node.js 生态系统非常庞大，有大量的开源包可供使用。npm 源是存储这些包的地方。开发者使用npm install命令安装包时，npm 会从配置的源中下载所需的包。例如，默认的 npm 源是https://registry.npmjs.org/ ，当你安装express这个包时，npm 就会从这个源去查找并下载express的最新版本。
-- pip（Python 包管理器）
-    - Python 有丰富的第三方库，pip 源用于存储这些库的不同版本。比如安装numpy库，pip 会从配置的源（如默认的https://pypi.org/simple ）下载numpy的安装包并进行安装。
-- gem（Ruby 包管理器）
-    - Ruby 也有很多有用的 Gem 包，gem 源（如默认的https://rubygems.org/ ）是这些 Gem 包的存储和分发中心。当你使用gem install命令安装一个 Gem 包时，gem 会从源中获取该包。
+- npm(Node.js 包管理器)
+  - Node.js 生态系统非常庞大，有大量的开源包可供使用。npm 源是存储这些包的地方。开发者使用 npm install 命令安装包时，npm 会从配置的源中下载所需的包。例如，默认的 npm 源是https://registry.npmjs.org/ ，当你安装 express 这个包时，npm 就会从这个源去查找并下载 express 的最新版本。
+- pip(Python 包管理器)
+  - Python 有丰富的第三方库，pip 源用于存储这些库的不同版本。比如安装 numpy 库，pip 会从配置的源(如默认的https://pypi.org/simple )下载 numpy 的安装包并进行安装。
+- gem(Ruby 包管理器)
+  - Ruby 也有很多有用的 Gem 包，gem 源(如默认的https://rubygems.org/ )是这些 Gem 包的存储和分发中心。当你使用 gem install 命令安装一个 Gem 包时，gem 会从源中获取该包。
 
 **源的工作原理**
 
 1. 包的上传
-    - 软件开发者将开发好的软件包上传到软件源。例如，一个 Ruby 开发者开发了一个新的 Gem 包，他会将这个包打包并上传到https://rubygems.org/ 。上传时，需要提供包的元数据，如包的名称、版本号、依赖关系等。
+   - 软件开发者将开发好的软件包上传到软件源。例如，一个 Ruby 开发者开发了一个新的 Gem 包，他会将这个包打包并上传到https://rubygems.org/ 。上传时，需要提供包的元数据，如包的名称、版本号、依赖关系等。
 2. 包的索引
-    - 软件源会对上传的包进行索引，将包的元数据存储在数据库中。这样，当用户请求安装包时，软件源可以快速查找并提供包的信息。
+   - 软件源会对上传的包进行索引，将包的元数据存储在数据库中。这样，当用户请求安装包时，软件源可以快速查找并提供包的信息。
 3. 用户请求
-    - 当用户使用包管理器安装软件包时，包管理器会向配置的软件源发送请求，请求包含要安装的包的名称和版本信息。例如，使用pip install requests==2.25.1 ，pip 会向源发送请求，要求获取requests包的 2.25.1 版本。
+   - 当用户使用包管理器安装软件包时，包管理器会向配置的软件源发送请求，请求包含要安装的包的名称和版本信息。例如，使用 pip install requests==2.25.1 ，pip 会向源发送请求，要求获取 requests 包的 2.25.1 版本。
 4. 源的响应
-    - 软件源接收到请求后，会在索引中查找相应的包。如果找到，会将包的下载地址返回给包管理器。
+   - 软件源接收到请求后，会在索引中查找相应的包。如果找到，会将包的下载地址返回给包管理器。
 5. 包的下载和安装
-    - 包管理器根据软件源返回的下载地址，下载软件包到本地。下载完成后，进行安装操作，如解压文件、配置环境变量等。
+   - 包管理器根据软件源返回的下载地址，下载软件包到本地。下载完成后，进行安装操作，如解压文件、配置环境变量等。
 
 **源在开发流程和软件发展技术中的作用**
 
 - 方便软件分发
-    - 软件源提供了一个集中的存储和分发平台，使得开发者可以方便地将自己开发的软件包分享给其他开发者。例如，一个开源项目的开发者可以将项目打包成 Gem 包上传到https://rubygems.org/ ，其他 Ruby 开发者就可以很容易地通过gem install命令安装使用。
+  - 软件源提供了一个集中的存储和分发平台，使得开发者可以方便地将自己开发的软件包分享给其他开发者。例如，一个开源项目的开发者可以将项目打包成 Gem 包上传到https://rubygems.org/ ，其他 Ruby 开发者就可以很容易地通过 gem install 命令安装使用。
 - 版本管理
-    - 软件源会记录软件包的不同版本，开发者可以根据需要安装特定版本的软件包。这对于项目的稳定性非常重要，因为不同版本的软件包可能会有不同的功能和兼容性。比如，一个项目在开发过程中使用了numpy 1.19.5，为了保证项目在不同环境下的一致性，开发者可以指定安装这个版本的numpy。
+  - 软件源会记录软件包的不同版本，开发者可以根据需要安装特定版本的软件包。这对于项目的稳定性非常重要，因为不同版本的软件包可能会有不同的功能和兼容性。比如，一个项目在开发过程中使用了 numpy 1.19.5，为了保证项目在不同环境下的一致性，开发者可以指定安装这个版本的 numpy。
 - 依赖管理
-    - 软件源的元数据中包含了软件包的依赖关系信息。包管理器在安装软件包时，会自动解析并安装其依赖的其他软件包。例如，安装一个 Node.js 项目的依赖时，npm 会根据package.json文件中的依赖信息，从 npm 源中下载并安装所有依赖的包。
+  - 软件源的元数据中包含了软件包的依赖关系信息。包管理器在安装软件包时，会自动解析并安装其依赖的其他软件包。例如，安装一个 Node.js 项目的依赖时，npm 会根据 package.json 文件中的依赖信息，从 npm 源中下载并安装所有依赖的包。
 - 提高开发效率
-    - 开发者可以快速地从软件源中获取所需的软件包，而不需要自己去寻找和下载。这大大提高了开发效率，使得开发者可以更专注于业务逻辑的开发。
+  - 开发者可以快速地从软件源中获取所需的软件包，而不需要自己去寻找和下载。这大大提高了开发效率，使得开发者可以更专注于业务逻辑的开发。
 
 **源背后的系统工作方式**
 
 - 服务器架构
-    - 软件源通常是基于 Web 服务器搭建的，如 Apache、Nginx 等。这些服务器负责处理用户的请求，提供软件包的下载服务。
+  - 软件源通常是基于 Web 服务器搭建的，如 Apache、Nginx 等。这些服务器负责处理用户的请求，提供软件包的下载服务。
 - 数据库管理
-    - 软件源需要使用数据库来存储软件包的元数据，如 MySQL、PostgreSQL 等。数据库用于索引和查询软件包的信息，确保包管理器能够快速找到所需的包。
+  - 软件源需要使用数据库来存储软件包的元数据，如 MySQL、PostgreSQL 等。数据库用于索引和查询软件包的信息，确保包管理器能够快速找到所需的包。
 - 缓存机制
-    - 为了提高性能，软件源可能会使用缓存机制。当一个软件包被频繁请求时，服务器可以将其缓存起来，下次请求时直接从缓存中获取，减少磁盘 I/O 和网络传输的开销。
+  - 为了提高性能，软件源可能会使用缓存机制。当一个软件包被频繁请求时，服务器可以将其缓存起来，下次请求时直接从缓存中获取，减少磁盘 I/O 和网络传输的开销。
 - 安全机制
-    - 软件源需要确保软件包的安全性。例如，对上传的软件包进行病毒扫描、验证开发者的身份等。同时，使用 SSL/TLS 协议对数据传输进行加密，防止数据被窃取或篡改。
+  - 软件源需要确保软件包的安全性。例如，对上传的软件包进行病毒扫描、验证开发者的身份等。同时，使用 SSL/TLS 协议对数据传输进行加密，防止数据被窃取或篡改。
 
 SparkyXXX/sparkyxxx.github.io
 
-当我安装Ruby时，到底安装了哪些东西？注册表是什么？为什么安装有的软件会需要添加注册表而有的软件就没有注册表
+当我安装 Ruby 时，到底安装了哪些东西？注册表是什么？为什么安装有的软件会需要添加注册表而有的软件就没有注册表
 
-Model-View-Controller架构模式是什么，内容是什么？有什么作用？主要用在什么程序的开发上？目前在业界使用情况如何，与此并列或者同为架构模式的概念还有哪些？他们的内容、作用、应用范围、使用情况又是怎样的？
+Model-View-Controller 架构模式是什么，内容是什么？有什么作用？主要用在什么程序的开发上？目前在业界使用情况如何，与此并列或者同为架构模式的概念还有哪些？他们的内容、作用、应用范围、使用情况又是怎样的？
 
-Rails是什么样的web开发框架？有什么功能？web开发框架是什么？包含哪些组成部分？具备哪些功能？是指的前端开发工具吗？
+Rails 是什么样的 web 开发框架？有什么功能？web 开发框架是什么？包含哪些组成部分？具备哪些功能？是指的前端开发工具吗？
 
 行为驱动开发是什么？有什么作用？主要用在什么程序的开发上？
 
-什么是依赖管理工具？依赖管理工具和包管理工具有什么区别吗？两者各自负责的功能分别是什么？gem和bundle有什么差别吗？两者各自负责的功能分别是什么？常用的bundle命令和gem命令分别有哪些？js中的依赖管理工具和包管理工具分别是什么？python中的依赖管理工具和包管理工具分别是什么？C语言和C++中的依赖管理工具和包管理工具分别是什么？除了依赖管理工具和包管理工具，软件开发或者说项目构建时，还有哪些经常出现使用频率较高，普及度较广的工具或者框架？
+什么是依赖管理工具？依赖管理工具和包管理工具有什么区别吗？两者各自负责的功能分别是什么？gem 和 bundle 有什么差别吗？两者各自负责的功能分别是什么？常用的 bundle 命令和 gem 命令分别有哪些？js 中的依赖管理工具和包管理工具分别是什么？python 中的依赖管理工具和包管理工具分别是什么？C 语言和 C++中的依赖管理工具和包管理工具分别是什么？除了依赖管理工具和包管理工具，软件开发或者说项目构建时，还有哪些经常出现使用频率较高，普及度较广的工具或者框架？
 
-gem install和bundle install有什么区别？
+gem install 和 bundle install 有什么区别？
 
 **安装 Ruby 时安装了哪些东西**
 
@@ -8932,82 +8919,82 @@ gem install和bundle install有什么区别？
 
 - **Ruby 解释器**：用于执行 Ruby 代码。它会读取和解析 Ruby 脚本，并将其转换为计算机能够理解和执行的指令。
 - **标准库**：Ruby 自带了一套丰富的标准库，包含了许多常用的模块和类，如文件操作、网络通信、数据处理等方面的功能，方便开发者快速开发应用程序。
-- **开发工具**：一些安装包可能还会包含开发所需的工具，如irb（交互式 Ruby Shell），可用于快速测试 Ruby 代码片段；ri（Ruby 文档查看器），方便查阅 Ruby 标准库的文档；rdoc（文档生成工具），用于生成项目的文档。
+- **开发工具**：一些安装包可能还会包含开发所需的工具，如 irb(交互式 Ruby Shell)，可用于快速测试 Ruby 代码片段；ri(Ruby 文档查看器)，方便查阅 Ruby 标准库的文档；rdoc(文档生成工具)，用于生成项目的文档。
 
 **注册表是什么**
 
-注册表是 Windows 操作系统中的一个重要的数据库，用于存储系统和应用程序的配置信息、用户设置、硬件设备信息等。它以树状结构组织数据，包含了各种键（Key）和值（Value）。注册表的存在使得系统和应用程序能够方便地存储和读取这些配置信息，以确保系统和软件的正常运行。
+注册表是 Windows 操作系统中的一个重要的数据库，用于存储系统和应用程序的配置信息、用户设置、硬件设备信息等。它以树状结构组织数据，包含了各种键(Key)和值(Value)。注册表的存在使得系统和应用程序能够方便地存储和读取这些配置信息，以确保系统和软件的正常运行。
 
 **为什么安装有的软件会需要添加注册表而有的软件就没有注册表**
 
 - 需要添加注册表的软件
 
-    ：
+  ：
 
-    - 一些软件需要在注册表中存储配置信息，例如安装路径、用户偏好设置、文件关联等。这些信息在软件启动时会被读取，以确保软件能够正确运行。例如，某些软件会在注册表中注册文件关联，使得用户双击特定类型的文件时，系统能够自动调用该软件打开。
-    - 一些软件可能需要在注册表中注册服务，以便在系统启动时自动运行。
+  - 一些软件需要在注册表中存储配置信息，例如安装路径、用户偏好设置、文件关联等。这些信息在软件启动时会被读取，以确保软件能够正确运行。例如，某些软件会在注册表中注册文件关联，使得用户双击特定类型的文件时，系统能够自动调用该软件打开。
+  - 一些软件可能需要在注册表中注册服务，以便在系统启动时自动运行。
 
 - 不需要添加注册表的软件
 
-    ：
+  ：
 
-    - 跨平台软件通常会采用与平台无关的配置方式，避免依赖注册表。例如，一些基于 Java 或 Python 开发的软件，可能会将配置信息存储在用户目录下的配置文件中。
-    - 一些轻量级的便携式软件，为了方便在不同计算机上使用，不依赖于注册表，而是将所有的配置和数据都存储在软件自身的目录中。
+  - 跨平台软件通常会采用与平台无关的配置方式，避免依赖注册表。例如，一些基于 Java 或 Python 开发的软件，可能会将配置信息存储在用户目录下的配置文件中。
+  - 一些轻量级的便携式软件，为了方便在不同计算机上使用，不依赖于注册表，而是将所有的配置和数据都存储在软件自身的目录中。
 
-**Model-View-Controller（MVC）架构模式**
+**Model-View-Controller(MVC)架构模式**
 
 - 内容
 
-    ：
+  ：
 
-    - **Model（模型）**：负责处理数据和业务逻辑。它封装了数据的存储、读取、更新和删除等操作，以及与数据库或其他数据源的交互。例如，在一个电子商务应用中，商品信息、用户信息等数据的管理都属于模型层的职责。
-    - **View（视图）**：负责呈现数据给用户。它将模型中的数据以用户友好的方式展示出来，例如网页界面、移动应用界面等。视图层通常只负责数据的显示，不包含业务逻辑。例如，在一个博客应用中，文章列表页面、文章详情页面等都属于视图层。
-    - **Controller（控制器）**：负责接收用户的请求，并根据请求调用相应的模型和视图。它是模型和视图之间的桥梁，负责协调两者之间的交互。例如，当用户点击博客文章的标题时，控制器会接收到这个请求，然后从模型中获取相应的文章数据，并将其传递给视图进行展示。
+  - **Model(模型)**：负责处理数据和业务逻辑。它封装了数据的存储、读取、更新和删除等操作，以及与数据库或其他数据源的交互。例如，在一个电子商务应用中，商品信息、用户信息等数据的管理都属于模型层的职责。
+  - **View(视图)**：负责呈现数据给用户。它将模型中的数据以用户友好的方式展示出来，例如网页界面、移动应用界面等。视图层通常只负责数据的显示，不包含业务逻辑。例如，在一个博客应用中，文章列表页面、文章详情页面等都属于视图层。
+  - **Controller(控制器)**：负责接收用户的请求，并根据请求调用相应的模型和视图。它是模型和视图之间的桥梁，负责协调两者之间的交互。例如，当用户点击博客文章的标题时，控制器会接收到这个请求，然后从模型中获取相应的文章数据，并将其传递给视图进行展示。
 
 - 作用
 
-    ：
+  ：
 
-    - 分离关注点：将数据处理、界面显示和用户交互逻辑分开，使得代码更加模块化，易于维护和扩展。例如，当需要修改数据存储方式时，只需要修改模型层的代码，而不会影响到视图和控制器。
-    - 提高代码的可复用性：不同的视图可以使用相同的模型，不同的控制器可以处理不同的用户请求并调用相同的模型和视图。
-    - 便于团队协作：不同的开发人员可以专注于不同的层，提高开发效率。
+  - 分离关注点：将数据处理、界面显示和用户交互逻辑分开，使得代码更加模块化，易于维护和扩展。例如，当需要修改数据存储方式时，只需要修改模型层的代码，而不会影响到视图和控制器。
+  - 提高代码的可复用性：不同的视图可以使用相同的模型，不同的控制器可以处理不同的用户请求并调用相同的模型和视图。
+  - 便于团队协作：不同的开发人员可以专注于不同的层，提高开发效率。
 
-- **主要应用范围**：广泛应用于 Web 应用开发、桌面应用开发等。例如，许多流行的 Web 开发框架，如 Ruby on Rails、Django（Python）等都采用了 MVC 架构模式。
+- **主要应用范围**：广泛应用于 Web 应用开发、桌面应用开发等。例如，许多流行的 Web 开发框架，如 Ruby on Rails、Django(Python)等都采用了 MVC 架构模式。
 
 - **业界使用情况**：MVC 架构模式是一种非常成熟和广泛应用的架构模式，被许多大型项目所采用。它已经成为软件开发中的一种经典架构模式，并且在不断发展和演变。
 
 - 并列或同类架构模式
 
+  ：
+
+  - Model-View-Presenter(MVP)
+
     ：
 
-    - Model-View-Presenter（MVP）
+    - **内容**：与 MVC 类似，但 Presenter(呈现器)承担了更多的视图逻辑处理责任。Presenter 负责从模型中获取数据，并将其格式化后传递给视图。视图将用户的操作通知给 Presenter，由 Presenter 来决定如何处理。
+    - **作用**：进一步分离视图和业务逻辑，使得视图更加简单，易于测试。
+    - **应用范围**：常用于移动应用开发，尤其是 Android 开发中。
+    - **使用情况**：在一些对界面交互逻辑要求较高的应用中得到了广泛应用。
 
-        ：
+  - Model-View-ViewModel(MVVM)
 
-        - **内容**：与 MVC 类似，但 Presenter（呈现器）承担了更多的视图逻辑处理责任。Presenter 负责从模型中获取数据，并将其格式化后传递给视图。视图将用户的操作通知给 Presenter，由 Presenter 来决定如何处理。
-        - **作用**：进一步分离视图和业务逻辑，使得视图更加简单，易于测试。
-        - **应用范围**：常用于移动应用开发，尤其是 Android 开发中。
-        - **使用情况**：在一些对界面交互逻辑要求较高的应用中得到了广泛应用。
+    ：
 
-    - Model-View-ViewModel（MVVM）
-
-        ：
-
-        - **内容**：ViewModel（视图模型）是 MVVM 的核心，它负责将模型中的数据转换为视图可以直接使用的格式，并处理视图的交互逻辑。视图和 ViewModel 之间通过数据绑定实现双向通信，当模型数据发生变化时，视图会自动更新；当用户在视图上进行操作时，ViewModel 会相应地更新模型数据。
-        - **作用**：减少了视图和业务逻辑之间的耦合，提高了代码的可维护性和可测试性。同时，数据绑定机制使得界面开发更加简单和高效。
-        - **应用范围**：广泛应用于前端开发，尤其是在 JavaScript 框架如 Vue.js、Angular 等中得到了广泛应用。
-        - **使用情况**：在现代前端开发中，MVVM 架构模式越来越受欢迎，成为了一种主流的架构模式。
+    - **内容**：ViewModel(视图模型)是 MVVM 的核心，它负责将模型中的数据转换为视图可以直接使用的格式，并处理视图的交互逻辑。视图和 ViewModel 之间通过数据绑定实现双向通信，当模型数据发生变化时，视图会自动更新；当用户在视图上进行操作时，ViewModel 会相应地更新模型数据。
+    - **作用**：减少了视图和业务逻辑之间的耦合，提高了代码的可维护性和可测试性。同时，数据绑定机制使得界面开发更加简单和高效。
+    - **应用范围**：广泛应用于前端开发，尤其是在 JavaScript 框架如 Vue.js、Angular 等中得到了广泛应用。
+    - **使用情况**：在现代前端开发中，MVVM 架构模式越来越受欢迎，成为了一种主流的架构模式。
 
 **Rails 是什么样的 web 开发框架**
 
-Rails 是一个基于 Ruby 语言的开源 Web 开发框架，遵循 MVC 架构模式。它的设计理念是 “约定优于配置”（Convention over Configuration），旨在提高开发效率，让开发者能够快速构建功能强大的 Web 应用程序。
+Rails 是一个基于 Ruby 语言的开源 Web 开发框架，遵循 MVC 架构模式。它的设计理念是 “约定优于配置”(Convention over Configuration)，旨在提高开发效率，让开发者能够快速构建功能强大的 Web 应用程序。
 
 **Rails 的功能**
 
-- **路由系统**：Rails 提供了一个灵活的路由系统，允许开发者将 URL 映射到相应的控制器动作。例如，通过简单的配置，就可以将/posts映射到PostsController的index动作，实现文章列表的展示。
+- **路由系统**：Rails 提供了一个灵活的路由系统，允许开发者将 URL 映射到相应的控制器动作。例如，通过简单的配置，就可以将/posts 映射到 PostsController 的 index 动作，实现文章列表的展示。
 - **数据库迁移**：Rails 的数据库迁移功能使得数据库的版本控制变得非常简单。开发者可以通过编写迁移文件来创建、修改和删除数据库表和字段，并且可以轻松地在不同的环境中进行数据库的同步。
-- **ActiveRecord**：这是 Rails 的对象关系映射（ORM）工具，它将数据库表映射为 Ruby 类，使得开发者可以使用面向对象的方式来操作数据库。例如，可以通过定义一个Post类来对应数据库中的posts表，然后使用Post.find、Post.create等方法来进行数据的查询和插入操作。
-- **视图模板**：Rails 支持多种视图模板引擎，如 ERB（Embedded Ruby）、Haml 等，方便开发者将数据和 HTML 代码分离，提高代码的可读性和可维护性。
+- **ActiveRecord**：这是 Rails 的对象关系映射(ORM)工具，它将数据库表映射为 Ruby 类，使得开发者可以使用面向对象的方式来操作数据库。例如，可以通过定义一个 Post 类来对应数据库中的 posts 表，然后使用 Post.find、Post.create 等方法来进行数据的查询和插入操作。
+- **视图模板**：Rails 支持多种视图模板引擎，如 ERB(Embedded Ruby)、Haml 等，方便开发者将数据和 HTML 代码分离，提高代码的可读性和可维护性。
 - **测试框架**：Rails 内置了一套强大的测试框架，包括单元测试、功能测试和集成测试等，帮助开发者确保代码的质量和稳定性。
 
 **web 开发框架是什么**
@@ -9018,7 +9005,7 @@ Web 开发框架是一种软件框架，用于支持 Web 应用程序的开发�
 
 - **路由系统**：负责将用户的请求 URL 映射到相应的处理函数或控制器动作，实现请求的分发。
 - **模板引擎**：用于生成动态的 HTML 页面，将数据和页面模板结合起来，生成最终的用户界面。
-- **数据库访问层**：提供了与数据库交互的接口，如 ORM（对象关系映射）工具，使得开发者可以方便地进行数据库的增删改查操作。
+- **数据库访问层**：提供了与数据库交互的接口，如 ORM(对象关系映射)工具，使得开发者可以方便地进行数据库的增删改查操作。
 - **中间件**：在请求处理的过程中，中间件可以对请求和响应进行预处理和后处理，如身份验证、日志记录、缓存等。
 - **测试工具**：帮助开发者进行单元测试、功能测试和集成测试，确保代码的质量和稳定性。
 
@@ -9026,17 +9013,17 @@ Web 开发框架是一种软件框架，用于支持 Web 应用程序的开发�
 
 不是。Web 开发框架不仅包含前端开发的部分，还涵盖了后端开发的各个方面，如服务器端的逻辑处理、数据库访问、路由管理等。虽然有些 Web 开发框架也提供了一些前端相关的功能，如模板引擎，但它的主要作用是帮助开发者构建完整的 Web 应用程序，而不仅仅是前端开发。
 
-**行为驱动开发（BDD）**
+**行为驱动开发(BDD)**
 
 - **定义**：行为驱动开发是一种敏捷软件开发的技术，它强调从用户的行为和需求出发，通过描述用户的行为和系统的响应来驱动软件的开发过程。
 
 - 作用
 
-    ：
+  ：
 
-    - 提高团队沟通效率：BDD 使用自然语言编写的场景和步骤，使得非技术人员（如产品经理、客户等）也能够理解和参与到软件开发过程中，减少了沟通成本。
-    - 提前发现需求问题：在开发之前，通过编写行为场景可以提前发现需求中的模糊和不明确之处，及时进行调整和完善。
-    - 作为测试用例：BDD 编写的场景可以直接作为自动化测试用例，确保软件的功能符合用户的预期。
+  - 提高团队沟通效率：BDD 使用自然语言编写的场景和步骤，使得非技术人员(如产品经理、客户等)也能够理解和参与到软件开发过程中，减少了沟通成本。
+  - 提前发现需求问题：在开发之前，通过编写行为场景可以提前发现需求中的模糊和不明确之处，及时进行调整和完善。
+  - 作为测试用例：BDD 编写的场景可以直接作为自动化测试用例，确保软件的功能符合用户的预期。
 
 - **主要应用范围**：广泛应用于各种类型的软件开发项目，尤其是 Web 应用开发、移动应用开发等。例如，在开发一个电子商务应用时，可以使用 BDD 来描述用户的购物流程，如添加商品到购物车、结算等行为，然后根据这些描述来开发和测试相应的功能。
 
@@ -9049,158 +9036,158 @@ Web 开发框架是一种软件框架，用于支持 Web 应用程序的开发�
 
 - 功能侧重点
 
-    ：
+  ：
 
-    - 依赖管理工具更侧重于管理项目的依赖关系，确保项目中使用的各个依赖库的版本兼容性。例如，在一个 Java 项目中，Maven 和 Gradle 就是常用的依赖管理工具，它们会根据项目的配置文件（如pom.xml或build.gradle）来下载和管理项目所需的依赖库。
-    - 包管理工具更侧重于软件包的分发和安装。例如，在 Linux 系统中，apt（Debian 和 Ubuntu）和yum（Red Hat 和 CentOS）就是常用的包管理工具，它们可以方便地安装、升级和卸载系统软件包。
+  - 依赖管理工具更侧重于管理项目的依赖关系，确保项目中使用的各个依赖库的版本兼容性。例如，在一个 Java 项目中，Maven 和 Gradle 就是常用的依赖管理工具，它们会根据项目的配置文件(如 pom.xml 或 build.gradle)来下载和管理项目所需的依赖库。
+  - 包管理工具更侧重于软件包的分发和安装。例如，在 Linux 系统中，apt(Debian 和 Ubuntu)和 yum(Red Hat 和 CentOS)就是常用的包管理工具，它们可以方便地安装、升级和卸载系统软件包。
 
 - 应用场景
 
-    ：
+  ：
 
-    - 依赖管理工具主要用于开发环境，帮助开发者管理项目的依赖。
-    - 包管理工具主要用于系统级的软件安装和管理。
+  - 依赖管理工具主要用于开发环境，帮助开发者管理项目的依赖。
+  - 包管理工具主要用于系统级的软件安装和管理。
 
 **gem 和 bundle 的差别及功能**
 
 - gem
 
+  ：
+
+  - **功能**：gem 是 Ruby 的包管理工具，用于安装、卸载和管理 Ruby 的库和框架(称为 gem)。例如，使用 gem install rails 可以安装 Rails 框架。
+
+  - 常用命令
+
     ：
 
-    - **功能**：gem是 Ruby 的包管理工具，用于安装、卸载和管理 Ruby 的库和框架（称为 gem）。例如，使用gem install rails可以安装 Rails 框架。
-
-    - 常用命令
-
-        ：
-
-        - gem install <gem_name>：安装指定的 gem。
-        - gem uninstall <gem_name>：卸载指定的 gem。
-        - gem list：列出已安装的 gem。
-        - gem update：更新已安装的 gem。
+    - gem install <gem_name>：安装指定的 gem。
+    - gem uninstall <gem_name>：卸载指定的 gem。
+    - gem list：列出已安装的 gem。
+    - gem update：更新已安装的 gem。
 
 - bundle
 
+  ：
+
+  - **功能**：bundle 是 Ruby 的依赖管理工具，它根据项目中的 Gemfile 文件来管理项目的依赖。Gemfile 文件中列出了项目所需的所有 gem 及其版本要求，bundle 会根据这个文件来安装和管理这些依赖。例如，在一个 Rails 项目中，使用 bundle install 可以安装项目所需的所有 gem。
+
+  - 常用命令
+
     ：
 
-    - **功能**：bundle是 Ruby 的依赖管理工具，它根据项目中的Gemfile文件来管理项目的依赖。Gemfile文件中列出了项目所需的所有 gem 及其版本要求，bundle会根据这个文件来安装和管理这些依赖。例如，在一个 Rails 项目中，使用bundle install可以安装项目所需的所有 gem。
-
-    - 常用命令
-
-        ：
-
-        - bundle install：安装项目所需的所有 gem。
-        - bundle update：更新项目的所有 gem 到最新版本。
-        - bundle exec：在项目的 gem 环境中执行指定的命令。
+    - bundle install：安装项目所需的所有 gem。
+    - bundle update：更新项目的所有 gem 到最新版本。
+    - bundle exec：在项目的 gem 环境中执行指定的命令。
 
 **js 中的依赖管理工具和包管理工具**
 
 - **依赖管理工具**：Webpack 是一个常用的 JavaScript 模块打包工具，也可以作为依赖管理工具使用。它可以分析项目中的依赖关系，并将所有的模块打包成一个或多个文件，方便在浏览器中使用。
-- **包管理工具**：npm（Node Package Manager）和 yarn 是 JavaScript 中最常用的包管理工具。它们可以从 npm 仓库中下载和安装 JavaScript 的库和框架，并且管理这些包的依赖关系。
+- **包管理工具**：npm(Node Package Manager)和 yarn 是 JavaScript 中最常用的包管理工具。它们可以从 npm 仓库中下载和安装 JavaScript 的库和框架，并且管理这些包的依赖关系。
 
 **python 中的依赖管理工具和包管理工具**
 
-- **依赖管理工具**：pipenv 是一个常用的 Python 依赖管理工具，它结合了虚拟环境和依赖管理的功能。使用 pipenv 可以创建和管理项目的虚拟环境，并根据Pipfile文件来安装和管理项目的依赖。
+- **依赖管理工具**：pipenv 是一个常用的 Python 依赖管理工具，它结合了虚拟环境和依赖管理的功能。使用 pipenv 可以创建和管理项目的虚拟环境，并根据 Pipfile 文件来安装和管理项目的依赖。
 - **包管理工具**：pip 是 Python 的官方包管理工具，用于安装、卸载和管理 Python 的库和框架。
 
 **C 语言和 C++ 中的依赖管理工具和包管理工具**
 
 - **依赖管理工具**：在 C 和 C++ 中，没有像 Ruby 或 JavaScript 那样成熟的依赖管理工具。不过，一些项目会使用 CMake 或 Autotools 来管理项目的构建和依赖关系。
-- **包管理工具**：在 Linux 系统中，apt（Debian 和 Ubuntu）和yum（Red Hat 和 CentOS）可以用于安装 C 和 C++ 的开发库。在 Windows 系统中，vcpkg 是一个常用的 C++ 包管理工具。
+- **包管理工具**：在 Linux 系统中，apt(Debian 和 Ubuntu)和 yum(Red Hat 和 CentOS)可以用于安装 C 和 C++ 的开发库。在 Windows 系统中，vcpkg 是一个常用的 C++ 包管理工具。
 
 **软件开发或项目构建时常用的工具或框架**
 
 - 构建工具
 
-    ：
+  ：
 
-    - **Make**：是一个经典的构建工具，通过编写Makefile文件来定义项目的构建规则。
-    - **Maven**和**Gradle**：主要用于 Java 项目的构建和依赖管理。
-    - **Ant**：也是一个 Java 项目的构建工具，它使用 XML 文件来描述构建任务。
+  - **Make**：是一个经典的构建工具，通过编写 Makefile 文件来定义项目的构建规则。
+  - **Maven**和**Gradle**：主要用于 Java 项目的构建和依赖管理。
+  - **Ant**：也是一个 Java 项目的构建工具，它使用 XML 文件来描述构建任务。
 
 - 版本控制工具
 
-    ：
+  ：
 
-    - **Git**：是目前最流行的分布式版本控制工具，用于管理项目的代码版本。
-    - **SVN**：是一个集中式版本控制工具，也被广泛使用。
+  - **Git**：是目前最流行的分布式版本控制工具，用于管理项目的代码版本。
+  - **SVN**：是一个集中式版本控制工具，也被广泛使用。
 
 - 自动化测试工具
 
-    ：
+  ：
 
-    - **JUnit**：是 Java 的单元测试框架。
-    - **Pytest**：是 Python 的测试框架。
+  - **JUnit**：是 Java 的单元测试框架。
+  - **Pytest**：是 Python 的测试框架。
 
 **gem install 和 bundle install 的区别**
 
-- **gem install**：直接安装指定的 gem 到系统中，不考虑项目的依赖关系。例如，gem install rails会将 Rails 框架安装到系统的 gem 目录中。
-- **bundle install**：根据项目中的Gemfile文件来安装项目所需的所有 gem，并确保这些 gem 的版本符合Gemfile中的要求。它会在项目的vendor/bundle目录下创建一个独立的 gem 环境，避免不同项目之间的 gem 版本冲突。
+- **gem install**：直接安装指定的 gem 到系统中，不考虑项目的依赖关系。例如，gem install rails 会将 Rails 框架安装到系统的 gem 目录中。
+- **bundle install**：根据项目中的 Gemfile 文件来安装项目所需的所有 gem，并确保这些 gem 的版本符合 Gemfile 中的要求。它会在项目的 vendor/bundle 目录下创建一个独立的 gem 环境，避免不同项目之间的 gem 版本冲突。
 
 SparkyXXX/sparkyxxx.github.io
 
-对于:mingw、:x64_mingw、:mswin这样的不同平台，差别在哪里？为什么需要Gemfile中需要指明平台？字节码是什么？为什么要将 Ruby 代码编译成 Java 字节码？Java虚拟机又是什么？虚拟机是什么？为什么还要分Java虚拟机，难道虚拟机是针对于特定编程语言的吗？
+对于:mingw、:x64_mingw、:mswin 这样的不同平台，差别在哪里？为什么需要 Gemfile 中需要指明平台？字节码是什么？为什么要将 Ruby 代码编译成 Java 字节码？Java 虚拟机又是什么？虚拟机是什么？为什么还要分 Java 虚拟机，难道虚拟机是针对于特定编程语言的吗？
 
 **1. :mingw、:x64_mingw、:mswin 平台的差别**
 
-- **:mingw**：MinGW（Minimalist GNU for Windows）是一个将 GNU 工具集引入 Windows 环境的项目，主要用于在 Windows 上开发和编译类 Unix 风格的软件。它提供了一个轻量级的开发环境，让开发者可以在 Windows 上使用 GCC 等 GNU 工具。mingw 通常是 32 位的环境。
+- **:mingw**：MinGW(Minimalist GNU for Windows)是一个将 GNU 工具集引入 Windows 环境的项目，主要用于在 Windows 上开发和编译类 Unix 风格的软件。它提供了一个轻量级的开发环境，让开发者可以在 Windows 上使用 GCC 等 GNU 工具。mingw 通常是 32 位的环境。
 - **:x64_mingw**：这是 MinGW 的 64 位版本，与 :mingw 类似，但针对 64 位的 Windows 系统，用于编译 64 位的可执行文件。
 - **:mswin**：代表原生的 Windows 平台，主要用于指定在 Windows 系统上运行的原生 Ruby 扩展或库。
 
 **2. 为什么需要在 Gemfile 中指明平台**
 
-在 Gemfile 中指明平台是为了确保在不同的操作系统或环境下，安装和使用正确版本的 Gem（Ruby 的包）。某些 Gem 可能包含原生扩展，这些扩展在不同平台上的编译和运行方式可能不同。通过指定平台，可以保证在特定平台上安装与之兼容的 Gem 版本，避免因平台差异导致的兼容性问题。
+在 Gemfile 中指明平台是为了确保在不同的操作系统或环境下，安装和使用正确版本的 Gem(Ruby 的包)。某些 Gem 可能包含原生扩展，这些扩展在不同平台上的编译和运行方式可能不同。通过指定平台，可以保证在特定平台上安装与之兼容的 Gem 版本，避免因平台差异导致的兼容性问题。
 
 **3. 字节码是什么**
 
-字节码是一种中间代码，它介于高级编程语言（如 Java、Ruby 等）和机器语言之间。高级编程语言编写的代码经过编译器编译后，会生成字节码。字节码不是直接在硬件上执行的机器码，而是一种相对抽象的指令集。它的设计目的是在不同的平台和硬件环境下实现一定程度的代码可移植性。
+字节码是一种中间代码，它介于高级编程语言(如 Java、Ruby 等)和机器语言之间。高级编程语言编写的代码经过编译器编译后，会生成字节码。字节码不是直接在硬件上执行的机器码，而是一种相对抽象的指令集。它的设计目的是在不同的平台和硬件环境下实现一定程度的代码可移植性。
 
 **4. 为什么要将 Ruby 代码编译成 Java 字节码**
 
 将 Ruby 代码编译成 Java 字节码主要有以下几个原因：
 
-- **跨平台性**：Java 字节码可以在任何安装了 Java 虚拟机（JVM）的平台上运行，这样可以使 Ruby 代码获得 Java 的跨平台优势，无需为不同的操作系统单独编译。
-- **性能优化**：JVM 有一套成熟的即时编译（JIT）和垃圾回收机制，通过将 Ruby 代码编译成 Java 字节码在 JVM 上运行，可以利用这些机制来优化代码的性能。
+- **跨平台性**：Java 字节码可以在任何安装了 Java 虚拟机(JVM)的平台上运行，这样可以使 Ruby 代码获得 Java 的跨平台优势，无需为不同的操作系统单独编译。
+- **性能优化**：JVM 有一套成熟的即时编译(JIT)和垃圾回收机制，通过将 Ruby 代码编译成 Java 字节码在 JVM 上运行，可以利用这些机制来优化代码的性能。
 - **利用 Java 生态系统**：Java 拥有庞大的类库和工具生态系统，将 Ruby 代码编译成 Java 字节码可以方便地调用 Java 的类库和工具，扩展 Ruby 的功能。
 
-**5. Java 虚拟机（JVM）是什么**
+**5. Java 虚拟机(JVM)是什么**
 
 Java 虚拟机是一个虚拟的计算机，它是 Java 程序运行的环境。JVM 负责加载 Java 字节码文件，并将字节码解释或编译成机器码在实际的计算机硬件上执行。JVM 还提供了内存管理、垃圾回收、安全检查等一系列功能，使得 Java 程序能够高效、安全地运行。
 
 **6. 虚拟机是什么**
 
-虚拟机是一种软件实现的计算机系统，它模拟了真实计算机的硬件和操作系统环境。虚拟机可以在一台物理计算机上运行多个独立的操作系统和应用程序，每个虚拟机都有自己的虚拟硬件资源（如 CPU、内存、磁盘等）。虚拟机的主要作用是实现资源隔离、提高硬件利用率和软件的可移植性。
+虚拟机是一种软件实现的计算机系统，它模拟了真实计算机的硬件和操作系统环境。虚拟机可以在一台物理计算机上运行多个独立的操作系统和应用程序，每个虚拟机都有自己的虚拟硬件资源(如 CPU、内存、磁盘等)。虚拟机的主要作用是实现资源隔离、提高硬件利用率和软件的可移植性。
 
 **7. 为什么还要分 Java 虚拟机，难道虚拟机是针对于特定编程语言的吗**
 
-虽然虚拟机的基本原理是模拟计算机环境，但不同的编程语言有不同的特性和需求，因此会有针对特定编程语言的虚拟机。Java 虚拟机是专门为 Java 语言设计的，它针对 Java 的语法、内存管理模型、类加载机制等进行了优化，能够高效地执行 Java 字节码。除了 Java 虚拟机，还有其他针对不同编程语言的虚拟机，如 Python 的 PyPy 虚拟机、.NET 的 CLR（Common Language Runtime）等。这些虚拟机根据各自语言的特点提供了不同的功能和优化，以提高编程语言的执行效率和性能。
+虽然虚拟机的基本原理是模拟计算机环境，但不同的编程语言有不同的特性和需求，因此会有针对特定编程语言的虚拟机。Java 虚拟机是专门为 Java 语言设计的，它针对 Java 的语法、内存管理模型、类加载机制等进行了优化，能够高效地执行 Java 字节码。除了 Java 虚拟机，还有其他针对不同编程语言的虚拟机，如 Python 的 PyPy 虚拟机、.NET 的 CLR(Common Language Runtime)等。这些虚拟机根据各自语言的特点提供了不同的功能和优化，以提高编程语言的执行效率和性能。
 
 SparkyXXX/sparkyxxx.github.io
 
-安装这些软件包究竟指的是进行了什么样的操作？比如我使用npm install、gem install、pip install等等，所谓的安装软件包，背后到底进行了什么？卸载呢？
+安装这些软件包究竟指的是进行了什么样的操作？比如我使用 npm install、gem install、pip install 等等，所谓的安装软件包，背后到底进行了什么？卸载呢？
 
-解释器是什么？有什么作用？实现原理和工作原理是什么？编译器是什么？有什么作用？实现原理和工作原理是什么？调用解释器运行一个脚本时，究竟指的是进行了什么样的操作？比如我使用python [test.py](http://test.py)，背后到底进行了什么？
+解释器是什么？有什么作用？实现原理和工作原理是什么？编译器是什么？有什么作用？实现原理和工作原理是什么？调用解释器运行一个脚本时，究竟指的是进行了什么样的操作？比如我使用 python [test.py](http://test.py)，背后到底进行了什么？
 
-运行jekyll build时究竟指的是进行了什么样的操作？背后到底进行了什么？静态网站是怎么从一个jekyll项目中被一步步生成出来的？静态网站其中包含哪些组成部分？jekyll中的哪些文件对应生成了静态网站中的哪些文件？
+运行 jekyll build 时究竟指的是进行了什么样的操作？背后到底进行了什么？静态网站是怎么从一个 jekyll 项目中被一步步生成出来的？静态网站其中包含哪些组成部分？jekyll 中的哪些文件对应生成了静态网站中的哪些文件？
 
-运行jekyll serve时究竟指的是进行了什么样的操作？背后到底进行了什么？启动本地服务器是怎么做到可以预览生成的网站的？默认地址又是谁规定的？为什么要启动一个服务器才能够预览生成的网站？
+运行 jekyll serve 时究竟指的是进行了什么样的操作？背后到底进行了什么？启动本地服务器是怎么做到可以预览生成的网站的？默认地址又是谁规定的？为什么要启动一个服务器才能够预览生成的网站？
 
-jekyll new <site_name>时究竟指的是进行了什么样的操作？背后到底进行了什么？一个jekyll项目有哪些组成部分？
+jekyll new <site_name>时究竟指的是进行了什么样的操作？背后到底进行了什么？一个 jekyll 项目有哪些组成部分？
 
 **安装软件包背后的操作**
 
 **npm install**
 
-- **安装过程**：npm 是 Node.js 的包管理工具。当你运行 npm install 时，npm 会首先读取项目根目录下的 package.json 文件，确定需要安装的包及其版本信息。然后它会从 npm 官方仓库（或其他配置的仓库）下载这些包及其依赖项，并将它们存储在项目的 node_modules 目录下。同时，npm 还会更新 package-lock.json 文件，记录每个包的确切版本信息，以确保后续安装的一致性。
+- **安装过程**：npm 是 Node.js 的包管理工具。当你运行 npm install 时，npm 会首先读取项目根目录下的 package.json 文件，确定需要安装的包及其版本信息。然后它会从 npm 官方仓库(或其他配置的仓库)下载这些包及其依赖项，并将它们存储在项目的 node_modules 目录下。同时，npm 还会更新 package-lock.json 文件，记录每个包的确切版本信息，以确保后续安装的一致性。
 - **卸载过程**：运行 npm uninstall <package-name> 时，npm 会从 node_modules 目录中删除指定的包及其依赖项，并更新 package.json 和 package-lock.json 文件。
 
 **gem install**
 
-- **安装过程**：gem 是 Ruby 的包管理工具。当你运行 gem install 时，gem 会连接到 RubyGems 仓库（或其他配置的仓库），下载指定的 gem 包。然后将其解压到 Ruby 的 gem 安装目录中，并根据需要编译和安装 gem 包中的扩展模块。同时，gem 会更新 gem 列表和相关的依赖信息。
+- **安装过程**：gem 是 Ruby 的包管理工具。当你运行 gem install 时，gem 会连接到 RubyGems 仓库(或其他配置的仓库)，下载指定的 gem 包。然后将其解压到 Ruby 的 gem 安装目录中，并根据需要编译和安装 gem 包中的扩展模块。同时，gem 会更新 gem 列表和相关的依赖信息。
 - **卸载过程**：运行 gem uninstall <gem-name> 时，gem 会从 gem 安装目录中删除指定的 gem 包及其相关文件，并更新 gem 列表。
 
 **pip install**
 
-- **安装过程**：pip 是 Python 的包管理工具。当你运行 pip install 时，pip 会从 PyPI（Python Package Index）或其他配置的仓库下载指定的包及其依赖项。然后将这些包安装到 Python 的 site-packages 目录下。在安装过程中，pip 可能会执行一些编译操作（如果包包含 C 扩展模块），并更新相关的元数据。
+- **安装过程**：pip 是 Python 的包管理工具。当你运行 pip install 时，pip 会从 PyPI(Python Package Index)或其他配置的仓库下载指定的包及其依赖项。然后将这些包安装到 Python 的 site-packages 目录下。在安装过程中，pip 可能会执行一些编译操作(如果包包含 C 扩展模块)，并更新相关的元数据。
 - **卸载过程**：运行 pip uninstall <package-name> 时，pip 会从 site-packages 目录中删除指定的包及其相关文件，并更新相关的元数据。
 
 **解释器和编译器**
@@ -9208,7 +9195,7 @@ jekyll new <site_name>时究竟指的是进行了什么样的操作？背后到�
 **解释器**
 
 - **定义和作用**：解释器是一种程序，它可以直接执行源代码，而不需要事先将其编译成机器码。解释器逐行读取源代码，将其转换为机器可以理解的指令并立即执行。例如，Python 解释器可以直接运行 Python 脚本，方便开发人员快速测试和调试代码。
-- **实现原理和工作原理**：解释器通常包含一个词法分析器、语法分析器和执行引擎。词法分析器将源代码分解为词法单元（如关键字、标识符、运算符等），语法分析器根据语法规则将词法单元组合成抽象语法树（AST），执行引擎则遍历 AST 并执行相应的操作。
+- **实现原理和工作原理**：解释器通常包含一个词法分析器、语法分析器和执行引擎。词法分析器将源代码分解为词法单元(如关键字、标识符、运算符等)，语法分析器根据语法规则将词法单元组合成抽象语法树(AST)，执行引擎则遍历 AST 并执行相应的操作。
 - **调用解释器运行脚本的操作**：当你运行 python [test.py](http://test.py) 时，Python 解释器会首先读取 [test.py](http://test.py) 文件的内容，进行词法分析和语法分析，将其转换为 AST。然后，执行引擎会遍历 AST，执行其中的代码。在执行过程中，解释器会处理变量赋值、函数调用、控制流语句等操作，并输出相应的结果。
 
 **编译器**
@@ -9220,50 +9207,50 @@ jekyll new <site_name>时究竟指的是进行了什么样的操作？背后到�
 
 **jekyll build**
 
-- **操作过程**：jekyll build 命令用于将 Jekyll 项目构建成静态网站。当你运行 jekyll build 时，Jekyll 会首先读取项目根目录下的 _config.yml 文件，获取项目的配置信息。然后，Jekyll 会遍历项目中的所有文件，根据文件的类型和配置信息进行处理。例如，对于 Markdown 文件，Jekyll 会将其转换为 HTML 文件；对于模板文件（如 Liquid 模板），Jekyll 会将其渲染成最终的 HTML 文件。最后，Jekyll 会将生成的静态文件输出到 _site 目录下。
+- **操作过程**：jekyll build 命令用于将 Jekyll 项目构建成静态网站。当你运行 jekyll build 时，Jekyll 会首先读取项目根目录下的 \_config.yml 文件，获取项目的配置信息。然后，Jekyll 会遍历项目中的所有文件，根据文件的类型和配置信息进行处理。例如，对于 Markdown 文件，Jekyll 会将其转换为 HTML 文件；对于模板文件(如 Liquid 模板)，Jekyll 会将其渲染成最终的 HTML 文件。最后，Jekyll 会将生成的静态文件输出到 \_site 目录下。
 - **静态网站的组成部分**：静态网站主要由 HTML 文件、CSS 文件、JavaScript 文件、图像文件等组成。这些文件都是静态的，不需要服务器端的动态处理。
-- **文件对应关系**：Jekyll 项目中的 _posts 目录下的 Markdown 文件会被转换为 HTML 文件，存储在 _site 目录下的相应位置。_layouts 目录下的模板文件会被用于渲染 Markdown 文件和其他页面。assets 目录下的 CSS、JavaScript 和图像文件会被直接复制到 _site 目录下。
+- **文件对应关系**：Jekyll 项目中的 \_posts 目录下的 Markdown 文件会被转换为 HTML 文件，存储在 \_site 目录下的相应位置。\_layouts 目录下的模板文件会被用于渲染 Markdown 文件和其他页面。assets 目录下的 CSS、JavaScript 和图像文件会被直接复制到 \_site 目录下。
 
 **jekyll serve**
 
-- **操作过程**：jekyll serve 命令用于启动一个本地服务器，并在构建静态网站后将其提供给本地访问。当你运行 jekyll serve 时，Jekyll 会首先执行 jekyll build 命令，构建静态网站。然后，Jekyll 会启动一个本地服务器（通常是基于 WEBrick 或 Puma），监听指定的端口（默认是 4000）。当你在浏览器中访问 http://localhost:4000 时，服务器会将 _site 目录下的静态文件发送给浏览器，从而实现网站的预览。
-- **启动本地服务器预览网站的原理**：本地服务器会监听指定的端口，接收来自浏览器的 HTTP 请求。当收到请求时，服务器会根据请求的 URL 找到 _site 目录下的相应文件，并将其发送给浏览器。浏览器接收到文件后，会解析和渲染 HTML、CSS 和 JavaScript 文件，显示网站的内容。
+- **操作过程**：jekyll serve 命令用于启动一个本地服务器，并在构建静态网站后将其提供给本地访问。当你运行 jekyll serve 时，Jekyll 会首先执行 jekyll build 命令，构建静态网站。然后，Jekyll 会启动一个本地服务器(通常是基于 WEBrick 或 Puma)，监听指定的端口(默认是 4000)。当你在浏览器中访问 http://localhost:4000 时，服务器会将 \_site 目录下的静态文件发送给浏览器，从而实现网站的预览。
+- **启动本地服务器预览网站的原理**：本地服务器会监听指定的端口，接收来自浏览器的 HTTP 请求。当收到请求时，服务器会根据请求的 URL 找到 \_site 目录下的相应文件，并将其发送给浏览器。浏览器接收到文件后，会解析和渲染 HTML、CSS 和 JavaScript 文件，显示网站的内容。
 - **默认地址的规定**：Jekyll 的默认地址 http://localhost:4000 是由 Jekyll 本身规定的。你可以通过命令行参数或配置文件来更改服务器的监听地址和端口。
 - **启动服务器预览网站的原因**：由于静态网站的文件是存储在本地的，需要一个服务器来提供文件的访问服务。通过启动本地服务器，你可以在浏览器中访问这些文件，模拟真实的网站访问环境，方便进行开发和调试。
 
 **jekyll new <site_name>**
 
-- **操作过程**：jekyll new <site_name> 命令用于创建一个新的 Jekyll 项目。当你运行这个命令时，Jekyll 会在当前目录下创建一个名为 <site_name> 的目录，并在该目录下生成一个基本的 Jekyll 项目结构。这个结构包括 _config.yml 文件、_posts 目录、_layouts 目录、assets 目录等。同时，Jekyll 还会安装一些默认的依赖项，如 Jekyll 主题和插件。
+- **操作过程**：jekyll new <site_name> 命令用于创建一个新的 Jekyll 项目。当你运行这个命令时，Jekyll 会在当前目录下创建一个名为 <site_name> 的目录，并在该目录下生成一个基本的 Jekyll 项目结构。这个结构包括 \_config.yml 文件、\_posts 目录、\_layouts 目录、assets 目录等。同时，Jekyll 还会安装一些默认的依赖项，如 Jekyll 主题和插件。
 
 - Jekyll 项目的组成部分
 
-    ：一个 Jekyll 项目通常由以下部分组成：
+  ：一个 Jekyll 项目通常由以下部分组成：
 
-    - _config.yml：项目的配置文件，包含网站的基本信息、主题设置、插件配置等。
-    - _posts：存储博客文章的 Markdown 文件。
-    - _layouts：存储页面模板文件，用于渲染页面的布局。
-    - _includes：存储可复用的代码片段，如页眉、页脚等。
-    - assets：存储 CSS、JavaScript 和图像文件等静态资源。
-    - _site：存储生成的静态网站文件。
+  - \_config.yml：项目的配置文件，包含网站的基本信息、主题设置、插件配置等。
+  - \_posts：存储博客文章的 Markdown 文件。
+  - \_layouts：存储页面模板文件，用于渲染页面的布局。
+  - \_includes：存储可复用的代码片段，如页眉、页脚等。
+  - assets：存储 CSS、JavaScript 和图像文件等静态资源。
+  - \_site：存储生成的静态网站文件。
 
 SparkyXXX/sparkyxxx.github.io
 
-Web 服务器是什么？还有其他种类的服务器吗？他们是按照什么来划分的？各自的应用场景都是什么？ Apache、Nginx 又分别是什么概念？磁盘 I/O有什么开销？网络传输有什么开销？ SSL/TLS 协议是什么协议？还有哪些与他们属于同一概念层次的协议？
+Web 服务器是什么？还有其他种类的服务器吗？他们是按照什么来划分的？各自的应用场景都是什么？ Apache、Nginx 又分别是什么概念？磁盘 I/O 有什么开销？网络传输有什么开销？ SSL/TLS 协议是什么协议？还有哪些与他们属于同一概念层次的协议？
 
 **1. Web 服务器**
 
-Web 服务器是一种软件或硬件系统，主要用于处理来自客户端（如浏览器）的 HTTP 请求，并返回相应的 Web 页面或资源（如 HTML 文件、图片、脚本等）。常见的 Web 服务器软件有 Apache、Nginx 等。
+Web 服务器是一种软件或硬件系统，主要用于处理来自客户端(如浏览器)的 HTTP 请求，并返回相应的 Web 页面或资源(如 HTML 文件、图片、脚本等)。常见的 Web 服务器软件有 Apache、Nginx 等。
 
 **2. 其他种类的服务器及划分依据**
 
 - 其他种类的服务器
-    - **文件服务器**：专门用于存储和管理文件，允许用户通过网络访问和共享文件。
-    - **数据库服务器**：用于管理和存储数据库，处理客户端对数据库的读写请求，如 MySQL、Oracle 服务器。
-    - **邮件服务器**：负责处理电子邮件的收发、存储和转发，如 Postfix、Exchange 服务器。
-    - **应用服务器**：为应用程序提供运行环境和服务，如 Tomcat、Jboss 服务器，主要用于运行 Java 等应用程序。
+  - **文件服务器**：专门用于存储和管理文件，允许用户通过网络访问和共享文件。
+  - **数据库服务器**：用于管理和存储数据库，处理客户端对数据库的读写请求，如 MySQL、Oracle 服务器。
+  - **邮件服务器**：负责处理电子邮件的收发、存储和转发，如 Postfix、Exchange 服务器。
+  - **应用服务器**：为应用程序提供运行环境和服务，如 Tomcat、Jboss 服务器，主要用于运行 Java 等应用程序。
 - 划分依据
-    - **功能**：根据服务器所提供的主要功能进行划分，如上述的 Web 服务器主要处理 Web 资源请求，数据库服务器主要管理数据库。
-    - **应用场景**：不同的业务场景需要不同类型的服务器，例如企业内部文件共享场景需要文件服务器，网站建设则需要 Web 服务器。
+  - **功能**：根据服务器所提供的主要功能进行划分，如上述的 Web 服务器主要处理 Web 资源请求，数据库服务器主要管理数据库。
+  - **应用场景**：不同的业务场景需要不同类型的服务器，例如企业内部文件共享场景需要文件服务器，网站建设则需要 Web 服务器。
 
 **3. 各类服务器的应用场景**
 
@@ -9271,7 +9258,7 @@ Web 服务器是一种软件或硬件系统，主要用于处理来自客户端�
 - **文件服务器**：常用于企业内部的文件共享和协作，如团队成员之间共享文档、图片等资源。
 - **数据库服务器**：适用于需要存储和管理大量数据的场景，如银行系统、电商订单管理系统等。
 - **邮件服务器**：企业或组织内部的邮件收发，以及对外的邮件服务，如公司员工之间的邮件沟通。
-- **应用服务器**：用于运行企业级应用程序，如在线教育平台、企业资源规划（ERP）系统等。
+- **应用服务器**：用于运行企业级应用程序，如在线教育平台、企业资源规划(ERP)系统等。
 
 **4. Apache 和 Nginx 的概念**
 
@@ -9292,64 +9279,64 @@ Web 服务器是一种软件或硬件系统，主要用于处理来自客户端�
 
 **7. SSL/TLS 协议**
 
-- **概念**：SSL（Secure Sockets Layer）和 TLS（Transport Layer Security）是用于在网络通信中提供安全保障的协议。TLS 是 SSL 的后继协议，目前广泛使用的是 TLS 协议。它们通过加密通信数据、身份验证和数据完整性校验等手段，确保数据在网络传输过程中的安全性。
-- **同一概念层次的协议**：IPsec（Internet Protocol Security）也是一种网络安全协议，主要用于在 IP 层提供安全服务，如 VPN（Virtual Private Network）中经常使用 IPsec 协议来加密和认证网络流量。
+- **概念**：SSL(Secure Sockets Layer)和 TLS(Transport Layer Security)是用于在网络通信中提供安全保障的协议。TLS 是 SSL 的后继协议，目前广泛使用的是 TLS 协议。它们通过加密通信数据、身份验证和数据完整性校验等手段，确保数据在网络传输过程中的安全性。
+- **同一概念层次的协议**：IPsec(Internet Protocol Security)也是一种网络安全协议，主要用于在 IP 层提供安全服务，如 VPN(Virtual Private Network)中经常使用 IPsec 协议来加密和认证网络流量。
 
 SparkyXXX/sparkyxxx.github.io
 
-GNU 工具集是什么？Java是一门什么语言？一般用于什么软件的开发？为什么有跨平台的特性？虚拟机是怎么实现的？工作原理是什么？内存管理模型是什么？不同编程语言的内存模型不一样吗？还是说内存管理模型是针对运行平台？针对运行环境？针对特定的硬件架构？针对指令集架构？C、C++、Python、Java、JavaScript、Ruby的内存管理模型分别是怎样的？虚拟机如何根据语言的特性进行优化？背后的原理是什么？
+GNU 工具集是什么？Java 是一门什么语言？一般用于什么软件的开发？为什么有跨平台的特性？虚拟机是怎么实现的？工作原理是什么？内存管理模型是什么？不同编程语言的内存模型不一样吗？还是说内存管理模型是针对运行平台？针对运行环境？针对特定的硬件架构？针对指令集架构？C、C++、Python、Java、JavaScript、Ruby 的内存管理模型分别是怎样的？虚拟机如何根据语言的特性进行优化？背后的原理是什么？
 
 **GNU 工具集**
 
-GNU 工具集是一组由 GNU 项目开发的自由软件工具的集合。这些工具主要用于软件开发和系统管理，在类 Unix 系统（如 Linux）中广泛使用。常见的 GNU 工具包括：
+GNU 工具集是一组由 GNU 项目开发的自由软件工具的集合。这些工具主要用于软件开发和系统管理，在类 Unix 系统(如 Linux)中广泛使用。常见的 GNU 工具包括：
 
-- **GCC（GNU Compiler Collection）**：一套编程语言编译器，支持多种编程语言，如 C、C++、Objective-C、Fortran 等。
-- **GDB（GNU Debugger）**：一个功能强大的调试器，用于调试程序。
+- **GCC(GNU Compiler Collection)**：一套编程语言编译器，支持多种编程语言，如 C、C++、Objective-C、Fortran 等。
+- **GDB(GNU Debugger)**：一个功能强大的调试器，用于调试程序。
 - **Make**：一个构建自动化工具，通过读取 Makefile 文件来自动化编译和链接程序。
 - **Bash**：一种常用的 Unix shell，用于命令行交互和脚本编写。
 
 **Java 语言概述**
 
-Java 是一门高级的、面向对象的编程语言。它由 Sun Microsystems（现在是 Oracle 公司的一部分）于 1995 年推出。
+Java 是一门高级的、面向对象的编程语言。它由 Sun Microsystems(现在是 Oracle 公司的一部分)于 1995 年推出。
 
 **Java 的应用领域**
 
 Java 常用于以下类型软件的开发：
 
-- **企业级应用开发**：如企业资源规划（ERP）系统、客户关系管理（CRM）系统等。Java 提供了强大的企业级开发框架，如 Spring、Hibernate 等。
+- **企业级应用开发**：如企业资源规划(ERP)系统、客户关系管理(CRM)系统等。Java 提供了强大的企业级开发框架，如 Spring、Hibernate 等。
 - **移动应用开发**：曾经在 Android 开发中占据主导地位，虽然现在有其他语言和框架也可用于 Android 开发，但 Java 仍然是一个重要的选择。
-- **Web 应用开发**：Java 可以用于开发服务器端的 Web 应用，如使用 Java Servlet 和 JavaServer Pages（JSP）技术。
+- **Web 应用开发**：Java 可以用于开发服务器端的 Web 应用，如使用 Java Servlet 和 JavaServer Pages(JSP)技术。
 
 **Java 跨平台特性的原因**
 
-Java 之所以具有跨平台的特性，主要是因为 Java 虚拟机（JVM）的存在。Java 程序在编译后生成的是字节码（.class 文件），而不是特定于某个硬件平台或操作系统的机器码。字节码是一种中间形式的代码，它可以在任何安装了相应 JVM 的平台上运行。不同平台的 JVM 负责将字节码解释或编译成该平台的机器码，从而实现了 “一次编写，到处运行” 的目标。
+Java 之所以具有跨平台的特性，主要是因为 Java 虚拟机(JVM)的存在。Java 程序在编译后生成的是字节码(.class 文件)，而不是特定于某个硬件平台或操作系统的机器码。字节码是一种中间形式的代码，它可以在任何安装了相应 JVM 的平台上运行。不同平台的 JVM 负责将字节码解释或编译成该平台的机器码，从而实现了 “一次编写，到处运行” 的目标。
 
-**Java 虚拟机（JVM）的实现和工作原理**
+**Java 虚拟机(JVM)的实现和工作原理**
 
 - **实现**：JVM 是一个软件实现的虚拟计算机，它模拟了一个真实计算机的硬件和操作系统环境。不同的 JVM 实现可能会有不同的优化策略和性能特点，例如 Oracle 的 HotSpot JVM、OpenJDK 的 JVM 等。
 
 - 工作原理
 
-    ：
+  ：
 
-    1. **加载字节码**：JVM 首先将 Java 字节码文件加载到内存中。
-    2. **验证字节码**：JVM 会验证字节码的格式和安全性，确保字节码符合 Java 语言规范。
-    3. **解释或编译字节码**：JVM 可以选择解释执行字节码，也可以将字节码编译成机器码。现代 JVM 通常采用即时编译（JIT）技术，在运行时将热点代码编译成机器码，以提高性能。
-    4. **执行程序**：JVM 执行编译后的机器码或解释执行字节码，完成程序的运行。
+  1. **加载字节码**：JVM 首先将 Java 字节码文件加载到内存中。
+  2. **验证字节码**：JVM 会验证字节码的格式和安全性，确保字节码符合 Java 语言规范。
+  3. **解释或编译字节码**：JVM 可以选择解释执行字节码，也可以将字节码编译成机器码。现代 JVM 通常采用即时编译(JIT)技术，在运行时将热点代码编译成机器码，以提高性能。
+  4. **执行程序**：JVM 执行编译后的机器码或解释执行字节码，完成程序的运行。
 
 **Java 的内存管理模型**
 
-Java 的内存管理模型主要基于堆（Heap）和栈（Stack）的概念：
+Java 的内存管理模型主要基于堆(Heap)和栈(Stack)的概念：
 
-- **堆（Heap）**：用于存储对象实例。Java 中的所有对象都在堆上分配内存。堆由垃圾回收器（Garbage Collector，GC）管理，GC 负责自动回收不再使用的对象，释放堆内存。
-- **栈（Stack）**：用于存储局部变量、方法调用信息等。每个线程都有自己的栈，栈的大小在创建线程时确定。栈的内存管理是自动的，当方法调用结束时，栈帧会自动弹出，释放相应的内存。
+- **堆(Heap)**：用于存储对象实例。Java 中的所有对象都在堆上分配内存。堆由垃圾回收器(Garbage Collector，GC)管理，GC 负责自动回收不再使用的对象，释放堆内存。
+- **栈(Stack)**：用于存储局部变量、方法调用信息等。每个线程都有自己的栈，栈的大小在创建线程时确定。栈的内存管理是自动的，当方法调用结束时，栈帧会自动弹出，释放相应的内存。
 
 **不同编程语言的内存管理模型**
 
 不同编程语言的内存管理模型确实存在差异，这些差异主要取决于语言的设计目标、使用场景以及对开发人员的要求。内存管理模型的设计可以针对运行平台、运行环境、特定的硬件架构或指令集架构等因素进行优化，但主要还是与语言的特性和设计理念相关。以下是几种常见编程语言的内存管理模型：
 
 - **C 语言**：C 语言的内存管理由开发人员手动控制。开发人员需要使用 malloc、calloc 等函数来分配内存，使用 free 函数来释放内存。这种手动管理内存的方式给开发人员提供了很大的灵活性，但也容易导致内存泄漏和悬空指针等问题。
-- **C++ 语言**：C++ 既支持手动内存管理（使用 new 和 delete 运算符），也提供了自动内存管理的机制（如智能指针）。智能指针（如 std::unique_ptr、std::shared_ptr 等）可以自动管理对象的生命周期，避免内存泄漏。
+- **C++ 语言**：C++ 既支持手动内存管理(使用 new 和 delete 运算符)，也提供了自动内存管理的机制(如智能指针)。智能指针(如 std::unique_ptr、std::shared_ptr 等)可以自动管理对象的生命周期，避免内存泄漏。
 - **Python 语言**：Python 使用自动内存管理机制，主要通过引用计数和垃圾回收来管理内存。每个对象都有一个引用计数，当引用计数为 0 时，对象的内存会被自动回收。此外，Python 还使用了标记 - 清除和分代回收等垃圾回收算法来处理循环引用等复杂情况。
 - **Java 语言**：如前所述，Java 的内存管理由 JVM 负责。JVM 中的垃圾回收器会自动回收不再使用的对象，开发人员不需要手动管理内存。
 - **JavaScript 语言**：JavaScript 的内存管理由 JavaScript 引擎负责。JavaScript 引擎使用垃圾回收算法来自动回收不再使用的对象。不同的 JavaScript 引擎可能采用不同的垃圾回收策略，如标记 - 清除、引用计数等。
@@ -9359,7 +9346,7 @@ Java 的内存管理模型主要基于堆（Heap）和栈（Stack）的概念：
 
 虚拟机根据语言的特性进行优化的原理主要包括以下几个方面：
 
-- **即时编译（JIT）**：虚拟机可以在运行时将热点代码（经常执行的代码）编译成机器码，以提高执行效率。JIT 编译器可以根据程序的运行时信息进行优化，如内联函数、消除死代码等。
+- **即时编译(JIT)**：虚拟机可以在运行时将热点代码(经常执行的代码)编译成机器码，以提高执行效率。JIT 编译器可以根据程序的运行时信息进行优化，如内联函数、消除死代码等。
 - **垃圾回收优化**：虚拟机可以根据语言的内存管理模型和程序的运行时行为，优化垃圾回收算法。例如，根据对象的生命周期特点，采用不同的垃圾回收策略，以减少垃圾回收的停顿时间。
 - **代码分析和优化**：虚拟机可以对字节码进行静态分析和动态分析，找出程序中的优化机会。例如，通过分析程序的控制流和数据流，进行常量折叠、循环展开等优化。
 - **自适应优化**：虚拟机可以根据程序的运行时特征，动态调整优化策略。例如，根据程序的内存使用情况，调整垃圾回收的频率和强度。
@@ -9368,13 +9355,13 @@ SparkyXXX/sparkyxxx.github.io
 
 语法树是什么？
 
-以一个python的helloworld举例说明语法树是什么？监听指定的端口是什么意思？监听究竟是指的什么过程或行为？端口又是什么概念？是针对什么而言的？针对一台具体的硬件设备吗？针对一个网站吗？针对一个应用程序吗？还是别的什么？
+以一个 python 的 helloworld 举例说明语法树是什么？监听指定的端口是什么意思？监听究竟是指的什么过程或行为？端口又是什么概念？是针对什么而言的？针对一台具体的硬件设备吗？针对一个网站吗？针对一个应用程序吗？还是别的什么？
 
 服务器是什么？为什么需要服务器才能提供访问服务？本地服务器有什么特殊之处吗？本地服务器到底在本地的哪里？究竟指的是什么？
 
-**语法树（Syntax Tree）**
+**语法树(Syntax Tree)**
 
-语法树，也称为解析树（Parse Tree），是一种树状数据结构，用于表示源代码的语法结构。它将源代码中的每个语法单元（如语句、表达式、操作符等）表示为树的节点，节点之间的关系反映了语法单元之间的组合和层次结构。
+语法树，也称为解析树(Parse Tree)，是一种树状数据结构，用于表示源代码的语法结构。它将源代码中的每个语法单元(如语句、表达式、操作符等)表示为树的节点，节点之间的关系反映了语法单元之间的组合和层次结构。
 
 **Python 的 Hello World 示例语法树**
 
@@ -9390,14 +9377,14 @@ print("Hello, World!")
 
 - 根节点：表示整个语句。
 - 子节点：
-    - 函数调用节点：print 函数调用。
-    - 参数节点：字符串 "Hello, World!"。
+  - 函数调用节点：print 函数调用。
+  - 参数节点：字符串 "Hello, World!"。
 
 实际的语法树会更复杂，包含更多的语法细节，如函数定义、参数传递规则等。
 
 **监听指定的端口**
 
-监听指定的端口是指一个程序（通常是服务器程序）告诉操作系统，它要接收发送到特定端口的网络连接请求。
+监听指定的端口是指一个程序(通常是服务器程序)告诉操作系统，它要接收发送到特定端口的网络连接请求。
 
 **监听的过程或行为**
 
@@ -9426,7 +9413,7 @@ print("Hello, World!")
 - **开发和测试**：方便开发人员在本地进行开发和测试，不需要将代码部署到远程服务器上。
 - **隐私和安全**：本地服务器只在本地计算机上运行，不会暴露到公网上，增加了数据的隐私和安全性。
 
-本地服务器实际上就是在本地计算机上运行的一个程序，它可以在本地计算机的任何位置运行，只要操作系统允许。例如，在开发 Web 应用时，常用的本地服务器如 Python 的http.server模块可以在命令行中启动，它会在本地计算机上监听一个指定的端口，提供 Web 服务。
+本地服务器实际上就是在本地计算机上运行的一个程序，它可以在本地计算机的任何位置运行，只要操作系统允许。例如，在开发 Web 应用时，常用的本地服务器如 Python 的 http.server 模块可以在命令行中启动，它会在本地计算机上监听一个指定的端口，提供 Web 服务。
 
 搜索一下：代码文件
 
@@ -9436,52 +9423,52 @@ GitHub 仓库
 
 **代码文件**
 
-代码文件是程序员用开发工具所支持的语言写出来的源文件2。它是一组由字符、符号或信号码元以离散形式表示信息的明确规则体系2。代码文件的作用主要有以下两点2：
+代码文件是程序员用开发工具所支持的语言写出来的源文件 2。它是一组由字符、符号或信号码元以离散形式表示信息的明确规则体系 2。代码文件的作用主要有以下两点 2：
 
 - **生成目标代码**：即计算机可以识别的代码，计算机源代码的最终目的是将人类可读的文本翻译成为计算机可以执行的二进制指令，这个过程叫做编译。
 - **对软件进行说明**：即对软件的编写进行说明，对软件的学习、分享、维护和软件...
 
 SparkyXXX/sparkyxxx.github.io
 
-NAS也是一种服务器吗？NAS指的究竟是什么？代理是什么？反向代码又是什么？为什么称为”反向“代理？代理和反向代理分别都是用来做什么的？除了Bash之外，还有哪些shell，各自有什么特点和区别？不同的shell是不是有各自支持的命令集？shell和命令行工具是同一个概念吗？如果不是有什么区别？还有哪门编程语言会像Java这样有针对平台的虚拟机的机制吗？
+NAS 也是一种服务器吗？NAS 指的究竟是什么？代理是什么？反向代码又是什么？为什么称为”反向“代理？代理和反向代理分别都是用来做什么的？除了 Bash 之外，还有哪些 shell，各自有什么特点和区别？不同的 shell 是不是有各自支持的命令集？shell 和命令行工具是同一个概念吗？如果不是有什么区别？还有哪门编程语言会像 Java 这样有针对平台的虚拟机的机制吗？
 
 **1. NAS 是否为一种服务器及 NAS 的定义**
 
-NAS（Network Attached Storage）即网络附属存储，是一种专用的数据存储服务器。它通过网络（通常是以太网）连接到计算机或其他网络设备，为用户提供文件存储和共享服务。可以说 NAS 是一种特殊类型的服务器，主要专注于文件存储和共享功能。例如，在一个小型办公网络中，NAS 可以存储公司的文档、图片等资料，多个员工可以通过网络访问这些资料。
+NAS(Network Attached Storage)即网络附属存储，是一种专用的数据存储服务器。它通过网络(通常是以太网)连接到计算机或其他网络设备，为用户提供文件存储和共享服务。可以说 NAS 是一种特殊类型的服务器，主要专注于文件存储和共享功能。例如，在一个小型办公网络中，NAS 可以存储公司的文档、图片等资料，多个员工可以通过网络访问这些资料。
 
 **2. 代理的概念**
 
-代理（Proxy）是一种网络服务，它充当客户端和目标服务器之间的中间人。当客户端向目标服务器发送请求时，请求首先发送到代理服务器，代理服务器再将请求转发给目标服务器，并将目标服务器的响应返回给客户端。代理的主要作用包括访问控制、缓存、提高安全性等。例如，公司内部网络可能会设置代理服务器，限制员工只能访问特定的网站。
+代理(Proxy)是一种网络服务，它充当客户端和目标服务器之间的中间人。当客户端向目标服务器发送请求时，请求首先发送到代理服务器，代理服务器再将请求转发给目标服务器，并将目标服务器的响应返回给客户端。代理的主要作用包括访问控制、缓存、提高安全性等。例如，公司内部网络可能会设置代理服务器，限制员工只能访问特定的网站。
 
 **3. 反向代理的概念及为何称为 “反向”**
 
-- **概念**：反向代理（Reverse Proxy）也是一种代理服务器，但它位于服务器端，对外表现为服务器，接收客户端的请求，然后将请求转发到内部的真实服务器上。客户端并不知道实际处理请求的是哪台服务器。
-- **为何称为 “反向”**：与普通代理（正向代理）客户端主动选择代理服务器不同，反向代理是由服务器端配置的，客户端并不知道代理的存在，请求的流向与正向代理相反，所以称为反向代理。例如，在一个大型网站中，多个服务器提供服务，通过反向代理服务器将客户端的请求分发到不同的服务器上，提高网站的性能和可用性。
+- **概念**：反向代理(Reverse Proxy)也是一种代理服务器，但它位于服务器端，对外表现为服务器，接收客户端的请求，然后将请求转发到内部的真实服务器上。客户端并不知道实际处理请求的是哪台服务器。
+- **为何称为 “反向”**：与普通代理(正向代理)客户端主动选择代理服务器不同，反向代理是由服务器端配置的，客户端并不知道代理的存在，请求的流向与正向代理相反，所以称为反向代理。例如，在一个大型网站中，多个服务器提供服务，通过反向代理服务器将客户端的请求分发到不同的服务器上，提高网站的性能和可用性。
 
 **4. 代理和反向代理的用途**
 
-- 代理（正向代理）的用途
+- 代理(正向代理)的用途
 
-    ：
+  ：
 
-    - 访问控制：限制用户对某些网站的访问。
-    - 缓存：缓存经常访问的网页内容，提高访问速度。
-    - 隐藏客户端真实 IP：保护客户端的隐私。
+  - 访问控制：限制用户对某些网站的访问。
+  - 缓存：缓存经常访问的网页内容，提高访问速度。
+  - 隐藏客户端真实 IP：保护客户端的隐私。
 
 - 反向代理的用途
 
-    ：
+  ：
 
-    - 负载均衡：将客户端请求分发到多个服务器上，避免单个服务器负载过高。
-    - 提高安全性：隐藏内部服务器的真实 IP，防止外部攻击。
-    - 缓存静态内容：提高网站的访问速度。
+  - 负载均衡：将客户端请求分发到多个服务器上，避免单个服务器负载过高。
+  - 提高安全性：隐藏内部服务器的真实 IP，防止外部攻击。
+  - 缓存静态内容：提高网站的访问速度。
 
 **5. 除 Bash 之外的 shell 及其特点和区别**
 
-- **sh（Bourne Shell）**：是 Unix 系统最初的 shell，功能相对简单，语法简洁，许多其他 shell 都基于它发展而来。
-- **csh（C Shell）**：语法类似于 C 语言，提供了一些面向程序员的特性，如变量类型和命令历史记录。
-- **ksh（Korn Shell）**：结合了 sh 和 csh 的优点，功能强大，支持数组、浮点运算等高级特性。
-- **zsh（Z Shell）**：功能非常丰富，具有强大的自动补全、历史记录管理等功能，是许多高级用户的首选。
+- **sh(Bourne Shell)**：是 Unix 系统最初的 shell，功能相对简单，语法简洁，许多其他 shell 都基于它发展而来。
+- **csh(C Shell)**：语法类似于 C 语言，提供了一些面向程序员的特性，如变量类型和命令历史记录。
+- **ksh(Korn Shell)**：结合了 sh 和 csh 的优点，功能强大，支持数组、浮点运算等高级特性。
+- **zsh(Z Shell)**：功能非常丰富，具有强大的自动补全、历史记录管理等功能，是许多高级用户的首选。
 
 **区别**：主要体现在语法、功能特性、兼容性等方面。例如，csh 的语法更接近 C 语言，而 zsh 的功能更为强大和丰富；sh 的兼容性最好，在大多数 Unix/Linux 系统上都能使用。
 
@@ -9492,19 +9479,19 @@ NAS（Network Attached Storage）即网络附属存储，是一种专用的数�
 **7. shell 和命令行工具是否为同一个概念及区别**
 
 - **不是同一个概念**。
-- **区别**：shell 是一个命令解释器，它接收用户输入的命令，并将其解释执行。例如，Bash、zsh 等都是 shell。而命令行工具是指那些可以在命令行中执行的程序，如ls、grep等。shell 为用户提供了一个与操作系统交互的环境，用户可以在这个环境中使用各种命令行工具来完成不同的任务。
+- **区别**：shell 是一个命令解释器，它接收用户输入的命令，并将其解释执行。例如，Bash、zsh 等都是 shell。而命令行工具是指那些可以在命令行中执行的程序，如 ls、grep 等。shell 为用户提供了一个与操作系统交互的环境，用户可以在这个环境中使用各种命令行工具来完成不同的任务。
 
 **8. 还有哪些编程语言有针对平台的虚拟机机制**
 
-除了 Java 的 Java 虚拟机（JVM）外，还有以下编程语言有类似的机制：
+除了 Java 的 Java 虚拟机(JVM)外，还有以下编程语言有类似的机制：
 
-- **Python**：有 Python 虚拟机（PVM），Python 代码先编译成字节码，然后在 PVM 上执行。
-- **.NET 平台**：C#、[VB.NET](https://vb.net/)[等语言使用.NET](http://xn--2rqz13gpges4qoic.NET) 公共语言运行时（CLR），代码编译成中间语言（IL），在 CLR 上执行。
-- **Ruby**：有 Ruby 虚拟机（YARV），Ruby 代码编译成字节码后在 YARV 上运行。
+- **Python**：有 Python 虚拟机(PVM)，Python 代码先编译成字节码，然后在 PVM 上执行。
+- **.NET 平台**：C#、[VB.NET](https://vb.net/)[等语言使用.NET](http://xn--2rqz13gpges4qoic.NET) 公共语言运行时(CLR)，代码编译成中间语言(IL)，在 CLR 上执行。
+- **Ruby**：有 Ruby 虚拟机(YARV)，Ruby 代码编译成字节码后在 YARV 上运行。
 
 SparkyXXX/sparkyxxx.github.io
 
-我是大疆的HR，你是一个精通各种软硬件开发，项目经历和动手捣鼓经历都非常丰富的、能力十分出众的面试者，为了考察你的实际动手能力，看你是不是真实地进行过这些摸索，我问你如何用命令行配置代理？其中的原理是什么？背后实际上都发生了什么
+我是大疆的 HR，你是一个精通各种软硬件开发，项目经历和动手捣鼓经历都非常丰富的、能力十分出众的面试者，为了考察你的实际动手能力，看你是不是真实地进行过这些摸索，我问你如何用命令行配置代理？其中的原理是什么？背后实际上都发生了什么
 
 **命令行配置代理的方法**
 
@@ -9512,7 +9499,7 @@ SparkyXXX/sparkyxxx.github.io
 
 在 Linux 和 macOS 系统中，可以通过设置环境变量来配置代理。以下是一些常见的设置方法：
 
-**临时设置（仅在当前终端会话中生效）**
+**临时设置(仅在当前终端会话中生效)**
 
 - **HTTP 代理**：
 
@@ -9550,7 +9537,7 @@ bash
 
 export ALL_PROXY="socks5://192.168.1.100:1080"
 
-**永久设置（对所有终端会话生效）**
+**永久设置(对所有终端会话生效)**
 
 - 对于 bash 用户，可以编辑 ~/.bashrc 或 ~/.bash_profile 文件，添加以下内容：
 
@@ -9584,7 +9571,7 @@ source ~/.bashrc
 
 在 Windows 系统中，可以通过设置系统环境变量来配置代理。
 
-**临时设置（仅在当前命令行窗口生效）**
+**临时设置(仅在当前命令行窗口生效)**
 
 - **HTTP 代理**：
 
@@ -9622,7 +9609,7 @@ powershell
 
 $env:ALL_PROXY="socks5://192.168.1.100:1080"
 
-**永久设置（对所有命令行窗口生效）**
+**永久设置(对所有命令行窗口生效)**
 
 - 打开 “系统属性” -> “高级系统设置” -> “环境变量”，在 “系统变量” 中新建或编辑 http_proxy、https_proxy 和 ALL_PROXY 变量，分别设置为相应的代理地址和端口。
 
@@ -9630,12 +9617,12 @@ $env:ALL_PROXY="socks5://192.168.1.100:1080"
 
 **原理**
 
-代理服务器充当客户端和目标服务器之间的中间人。当你在命令行中配置代理后，所有通过命令行工具发起的网络请求（如 curl、wget、git 等）在发送到目标服务器之前，会先发送到代理服务器。代理服务器会代表客户端与目标服务器进行通信，然后将目标服务器的响应返回给客户端。
+代理服务器充当客户端和目标服务器之间的中间人。当你在命令行中配置代理后，所有通过命令行工具发起的网络请求(如 curl、wget、git 等)在发送到目标服务器之前，会先发送到代理服务器。代理服务器会代表客户端与目标服务器进行通信，然后将目标服务器的响应返回给客户端。
 
 **背后发生的事情**
 
-1. **请求发送**：当你在命令行中执行一个需要访问网络的命令（如 curl https://example.com）时，应用程序会检查是否配置了代理。如果配置了代理，应用程序会将请求发送到代理服务器，而不是直接发送到目标服务器（https://example.com）。
-2. **代理服务器处理**：代理服务器接收到客户端的请求后，会对请求进行处理。它会根据请求的协议（如 HTTP、HTTPS 等）和目标地址，建立与目标服务器的连接。
+1. **请求发送**：当你在命令行中执行一个需要访问网络的命令(如 curl https://example.com)时，应用程序会检查是否配置了代理。如果配置了代理，应用程序会将请求发送到代理服务器，而不是直接发送到目标服务器(https://example.com)。
+2. **代理服务器处理**：代理服务器接收到客户端的请求后，会对请求进行处理。它会根据请求的协议(如 HTTP、HTTPS 等)和目标地址，建立与目标服务器的连接。
 3. **与目标服务器通信**：代理服务器作为客户端与目标服务器进行通信，发送客户端的请求并接收目标服务器的响应。
 4. **响应返回**：代理服务器将从目标服务器接收到的响应返回给客户端，客户端就像直接与目标服务器通信一样，获得了所需的数据。
 
@@ -9645,12 +9632,12 @@ Docker
 
 Font Awesome 是一套非常流行的图标字体和 CSS 框架，它包含了大量的矢量图标，可以很方便地在网页设计中使用。这些图标可以通过 CSS 类名轻松地插入到 HTML 页面中，并且可以像字体一样进行样式调整，例如改变颜色、大小等。
 
-RSS（Really Simple Syndication 或 Rich Site Summary）是一种用于发布和订阅网站内容更新的技术标准。以下是关于 RSS 的详细介绍：
+RSS(Really Simple Syndication 或 Rich Site Summary)是一种用于发布和订阅网站内容更新的技术标准。以下是关于 RSS 的详细介绍：
 
 ### **工作原理**
 
-- **发布方**：网站管理员使用 RSS 生成工具或相关插件，将网站上的更新内容（如博客文章、新闻资讯等）转换为符合 RSS 规范的 XML 文件，这个文件通常被称为 RSS Feed（订阅源）。
-- **订阅方**：用户使用 RSS 阅读器（如 Feedly、Inoreader 等）订阅自己感兴趣的网站的 RSS Feed。一旦网站有新的内容发布，RSS 阅读器会自动检查并获取这些更新，将更新的内容显示给用户。
+- **发布方**：网站管理员使用 RSS 生成工具或相关插件，将网站上的更新内容(如博客文章、新闻资讯等)转换为符合 RSS 规范的 XML 文件，这个文件通常被称为 RSS Feed(订阅源)。
+- **订阅方**：用户使用 RSS 阅读器(如 Feedly、Inoreader 等)订阅自己感兴趣的网站的 RSS Feed。一旦网站有新的内容发布，RSS 阅读器会自动检查并获取这些更新，将更新的内容显示给用户。
 
 ### **主要用途**
 
@@ -9660,69 +9647,69 @@ RSS（Really Simple Syndication 或 Rich Site Summary）是一种用于发布和
 
 ### **`.github/workflows` 目录的作用**
 
-`.github/workflows` 目录是用于存放 GitHub Actions 工作流配置文件的地方。GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）服务，它允许你在 GitHub 仓库中自动化执行各种任务，例如构建、测试、部署等。每个工作流配置文件都是一个 YAML 文件，定义了一系列的任务和步骤，当满足特定的触发条件时，这些任务和步骤会自动执行。
+`.github/workflows` 目录是用于存放 GitHub Actions 工作流配置文件的地方。GitHub Actions 是 GitHub 提供的一种持续集成和持续交付(CI/CD)服务，它允许你在 GitHub 仓库中自动化执行各种任务，例如构建、测试、部署等。每个工作流配置文件都是一个 YAML 文件，定义了一系列的任务和步骤，当满足特定的触发条件时，这些任务和步骤会自动执行。
 
 ### **`pages-deploy.yml` 文件的作用**
 
-`pages-deploy.yml` 文件通常是用于配置 GitHub Pages 部署工作流的。GitHub Pages 是 GitHub 提供的一种静态网站托管服务，它允许你将仓库中的静态文件（如 HTML、CSS、JavaScript 等）部署到一个公开的 URL 上，以便其他人可以访问。`pages-deploy.yml` 文件定义了如何构建和部署你的项目到 GitHub Pages 的具体步骤。
+`pages-deploy.yml` 文件通常是用于配置 GitHub Pages 部署工作流的。GitHub Pages 是 GitHub 提供的一种静态网站托管服务，它允许你将仓库中的静态文件(如 HTML、CSS、JavaScript 等)部署到一个公开的 URL 上，以便其他人可以访问。`pages-deploy.yml` 文件定义了如何构建和部署你的项目到 GitHub Pages 的具体步骤。
 
-GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）平台，它允许开发者自动化软件开发生命周期中的各种任务。以下是关于 GitHub Actions 的详细介绍：
+GitHub Actions 是 GitHub 提供的一种持续集成和持续交付(CI/CD)平台，它允许开发者自动化软件开发生命周期中的各种任务。以下是关于 GitHub Actions 的详细介绍：
 
 ### **核心概念**
 
-- 工作流（Workflow）
+- 工作流(Workflow)
 
-    ：
+  ：
 
-    - 工作流是一个自动化的流程，由一个或多个作业（Job）组成，这些作业按照特定的顺序执行。
-    - 每个工作流都由一个 YAML 文件定义，存放在仓库的 `.github/workflows` 目录下。
+  - 工作流是一个自动化的流程，由一个或多个作业(Job)组成，这些作业按照特定的顺序执行。
+  - 每个工作流都由一个 YAML 文件定义，存放在仓库的 `.github/workflows` 目录下。
 
-- 作业（Job）
+- 作业(Job)
 
-    ：
+  ：
 
-    - 作业是工作流中的一个独立执行单元，它可以在同一个或不同的运行器（Runner）上运行。
-    - 一个作业可以包含一个或多个步骤（Step）。
+  - 作业是工作流中的一个独立执行单元，它可以在同一个或不同的运行器(Runner)上运行。
+  - 一个作业可以包含一个或多个步骤(Step)。
 
-- 步骤（Step）
+- 步骤(Step)
 
-    ：
+  ：
 
-    - 步骤是作业中最小的可执行单元，它可以是一个命令行脚本、一个 Action 或者一个复合步骤。
+  - 步骤是作业中最小的可执行单元，它可以是一个命令行脚本、一个 Action 或者一个复合步骤。
 
-- 运行器（Runner）
+- 运行器(Runner)
 
-    ：
+  ：
 
-    - 运行器是执行作业的服务器或虚拟机。GitHub 提供了 Ubuntu、Windows 和 macOS 等不同操作系统的运行器，也可以使用自托管的运行器。
+  - 运行器是执行作业的服务器或虚拟机。GitHub 提供了 Ubuntu、Windows 和 macOS 等不同操作系统的运行器，也可以使用自托管的运行器。
 
 ### **主要功能**
 
 - 自动化构建和测试
 
-    ：
+  ：
 
-    - 每当有代码推送到仓库、有新的拉取请求（Pull Request）或者定时触发等事件发生时，GitHub Actions 可以自动构建和测试代码。例如，对于一个 Python 项目，可以配置工作流在每次代码推送时自动运行 `pytest` 进行单元测试。
+  - 每当有代码推送到仓库、有新的拉取请求(Pull Request)或者定时触发等事件发生时，GitHub Actions 可以自动构建和测试代码。例如，对于一个 Python 项目，可以配置工作流在每次代码推送时自动运行 `pytest` 进行单元测试。
 
-- 持续集成（CI）
+- 持续集成(CI)
 
-    ：
+  ：
 
-    - 集成多个开发者的代码变更，自动检查代码的正确性和兼容性。比如，在合并代码到主分支之前，运行一系列的静态代码检查工具（如 ESLint 用于 JavaScript 项目）来确保代码质量。
+  - 集成多个开发者的代码变更，自动检查代码的正确性和兼容性。比如，在合并代码到主分支之前，运行一系列的静态代码检查工具(如 ESLint 用于 JavaScript 项目)来确保代码质量。
 
-- 持续交付（CD）
+- 持续交付(CD)
 
-    ：
+  ：
 
-    - 自动将经过测试的代码部署到不同的环境，如测试环境、预生产环境和生产环境。例如，将一个 Node.js 应用部署到 Heroku 或 AWS 等云平台。
+  - 自动将经过测试的代码部署到不同的环境，如测试环境、预生产环境和生产环境。例如，将一个 Node.js 应用部署到 Heroku 或 AWS 等云平台。
 
 - 自动化任务
 
-    ：
+  ：
 
-    - 除了构建和部署，还可以执行各种自动化任务，如代码格式化、文档生成、依赖更新等。例如，使用 `prettier` 对代码进行格式化，或者使用 Sphinx 生成项目文档。
+  - 除了构建和部署，还可以执行各种自动化任务，如代码格式化、文档生成、依赖更新等。例如，使用 `prettier` 对代码进行格式化，或者使用 Sphinx 生成项目文档。
 
-`.vscode` 目录是 Visual Studio Code（VS Code）用于存储与项目相关的配置文件的目录。以下是关于这个目录及其中一些重要文件的详细信息：
+`.vscode` 目录是 Visual Studio Code(VS Code)用于存储与项目相关的配置文件的目录。以下是关于这个目录及其中一些重要文件的详细信息：
 
 ### **`.vscode` 目录的用途**
 
@@ -9755,7 +9742,7 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 - **作用**：用于定义项目的任务，比如编译代码、运行测试、打包项目等。通过任务，你可以方便地在 VS Code 中执行这些操作，而无需手动输入复杂的命令。
 - **自动生成时机**：当你在 VS Code 中通过终端面板创建或配置任务时，VS Code 会自动在 `.vscode` 目录下创建或更新 `tasks.json` 文件。
 - **起作用时机**：当你在 VS Code 中执行任务时，比如通过终端面板的 “运行任务” 按钮或使用快捷键，VS Code 会根据 `tasks.json` 文件中的定义来执行相应的任务。
-- `bundle` 是 Ruby 的包管理工具 Bundler 提供的一个命令。Bundler 用于管理 Ruby 项目的依赖项，它会根据项目根目录下的 `Gemfile` 文件来确定项目所需的所有 Ruby 库（gems）及其版本。
+- `bundle` 是 Ruby 的包管理工具 Bundler 提供的一个命令。Bundler 用于管理 Ruby 项目的依赖项，它会根据项目根目录下的 `Gemfile` 文件来确定项目所需的所有 Ruby 库(gems)及其版本。
 - 当你运行 `bundle install` 时，Bundler 会根据 `Gemfile` 中的配置安装所有依赖的 gems。而 `bundle exec` 则用于在项目的特定环境中执行命令，确保使用的是 `Gemfile` 中指定版本的 gems，避免与系统中其他版本的 gems 产生冲突。
 
 ### **`bundle exec jekyll serve` 命令的来源**
@@ -9770,7 +9757,7 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 - **Python 解释器**：例如 `python` 或 `python3`，用于执行 Python 脚本。Python 是一种广泛使用的高级编程语言，常用于数据处理、机器学习、Web 开发等领域。
 - **Node.js**：可以作为 JavaScript 脚本的解释器，用于执行服务器端的 JavaScript 代码。Node.js 基于 Chrome V8 引擎，提供了异步 I/O 和事件驱动的编程模型，适合构建高性能的网络应用。
 - **Perl**：Perl 解释器，用于执行 Perl 脚本。Perl 是一种通用的脚本语言，在文本处理、系统管理等方面有广泛的应用。
-- **Ruby**：Ruby 解释器，用于执行 Ruby 脚本。Ruby 是一种面向对象的脚本语言，语法简洁优雅，常用于 Web 开发（如 Ruby on Rails 框架）。
+- **Ruby**：Ruby 解释器，用于执行 Ruby 脚本。Ruby 是一种面向对象的脚本语言，语法简洁优雅，常用于 Web 开发(如 Ruby on Rails 框架)。
 
 ### **脚本解释器的作用**
 
@@ -9779,9 +9766,9 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 ### **脚本解释器的工作原理**
 
 - 脚本解释器的工作原理大致如下：
-    1. **读取脚本文件**：解释器首先会读取脚本文件的内容，将其加载到内存中。
-    2. **解析代码**：解释器会对脚本文件中的代码进行解析，将其转换为内部的数据结构，例如抽象语法树（AST）。
-    3. **执行代码**：解释器会按照解析后的代码结构，依次执行其中的指令和命令。在执行过程中，解释器会根据代码的逻辑进行计算、调用函数、处理数据等操作。
+  1. **读取脚本文件**：解释器首先会读取脚本文件的内容，将其加载到内存中。
+  2. **解析代码**：解释器会对脚本文件中的代码进行解析，将其转换为内部的数据结构，例如抽象语法树(AST)。
+  3. **执行代码**：解释器会按照解析后的代码结构，依次执行其中的指令和命令。在执行过程中，解释器会根据代码的逻辑进行计算、调用函数、处理数据等操作。
 
 ### **不同脚本解释器的区别**
 
@@ -9807,7 +9794,7 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 
 ### **3. 格式化代码时**
 
-当你手动触发代码格式化操作（通常是通过编辑器的菜单选项或快捷键）时，编辑器会依据 `.editorconfig` 文件的规则对代码进行格式化。例如，根据 `indent_size` 和 `indent_style` 的设置来调整代码的缩进。
+当你手动触发代码格式化操作(通常是通过编辑器的菜单选项或快捷键)时，编辑器会依据 `.editorconfig` 文件的规则对代码进行格式化。例如，根据 `indent_size` 和 `indent_style` 的设置来调整代码的缩进。
 
 需要注意的是，要使 `.editorconfig` 文件起作用，你所使用的编辑器或 IDE 必须支持 `.editorconfig`。许多常见的编辑器和 IDE 都已经内置了对 `.editorconfig` 的支持，如 Visual Studio Code、Sublime Text、WebStorm 等。如果你的编辑器不支持，可能需要安装相应的插件来启用该功能。
 
@@ -9817,8 +9804,8 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 
 不同的操作系统使用不同的行尾字符：
 
-- Unix 和 Linux 系统使用换行符（LF，`\\n`）作为行尾。
-- Windows 系统使用回车符和换行符（CRLF，`\\r\\n`）作为行尾。
+- Unix 和 Linux 系统使用换行符(LF，`\\n`)作为行尾。
+- Windows 系统使用回车符和换行符(CRLF，`\\r\\n`)作为行尾。
 
 当在不同操作系统上协作开发时，行尾字符的差异可能会导致问题。`.gitattributes` 可以帮助统一行尾字符的处理。
 
@@ -9832,9 +9819,9 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 
 ### **为什么需要定义文件的属性和 Git 处理这些文件的方式？**
 
-在使用版本控制系统（如 Git）时，定义文件的属性和指定 Git 处理文件的方式有几个重要原因：
+在使用版本控制系统(如 Git)时，定义文件的属性和指定 Git 处理文件的方式有几个重要原因：
 
-- **优化性能**：不同类型的文件在版本控制中可能需要不同的处理方式。例如，二进制文件（如图片、编译后的程序）通常不需要像文本文件那样逐行比较差异，而是更适合整体比较和存储，这样可以提高版本控制的性能。
+- **优化性能**：不同类型的文件在版本控制中可能需要不同的处理方式。例如，二进制文件(如图片、编译后的程序)通常不需要像文本文件那样逐行比较差异，而是更适合整体比较和存储，这样可以提高版本控制的性能。
 - **正确处理差异**：文本文件可以逐行比较差异，Git 可以清晰地显示每次修改的具体内容。而二进制文件的修改可能难以以有意义的方式逐行呈现，定义属性可以让 Git 知道如何正确处理这些差异。
 - **防止不必要的提交**：有些文件可能会因为系统或工具的原因频繁变动，但这些变动并不需要纳入版本控制。通过定义文件属性，我们可以告诉 Git 忽略这些文件或采用特定的处理方式，避免产生大量无意义的提交。
 
@@ -9850,31 +9837,31 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 
 - 存储方式
 
-    ：
+  ：
 
-    - **文本文件**：以字符编码的形式存储，每个字符对应一个或多个字节。常见的字符编码有 ASCII、UTF-8 等。例如，在 UTF-8 编码中，英文字符通常占用 1 个字节，中文字符占用 3 个字节。
-    - **二进制文件**：直接以二进制数据的形式存储，没有特定的字符编码。二进制文件中的每个字节都可以表示不同的含义，例如，在图片文件中，字节可能表示像素的颜色、位置等信息。
+  - **文本文件**：以字符编码的形式存储，每个字符对应一个或多个字节。常见的字符编码有 ASCII、UTF-8 等。例如，在 UTF-8 编码中，英文字符通常占用 1 个字节，中文字符占用 3 个字节。
+  - **二进制文件**：直接以二进制数据的形式存储，没有特定的字符编码。二进制文件中的每个字节都可以表示不同的含义，例如，在图片文件中，字节可能表示像素的颜色、位置等信息。
 
 - 可编辑性
 
-    ：
+  ：
 
-    - **文本文件**：可以使用普通的文本编辑器（如 Notepad、Vim 等）进行编辑，因为其内容是可读的字符。
-    - **二进制文件**：不能直接使用文本编辑器进行编辑，因为编辑后的内容可能会破坏文件的结构和格式，导致文件无法正常使用。需要使用专门的工具（如图像编辑软件、音频编辑软件等）来处理。
+  - **文本文件**：可以使用普通的文本编辑器(如 Notepad、Vim 等)进行编辑，因为其内容是可读的字符。
+  - **二进制文件**：不能直接使用文本编辑器进行编辑，因为编辑后的内容可能会破坏文件的结构和格式，导致文件无法正常使用。需要使用专门的工具(如图像编辑软件、音频编辑软件等)来处理。
 
 - 文件大小
 
-    ：
+  ：
 
-    - **文本文件**：通常文件大小相对较小，因为只包含字符信息。
-    - **二进制文件**：文件大小可能会很大，尤其是图像、视频等文件，因为它们需要存储大量的二进制数据。
+  - **文本文件**：通常文件大小相对较小，因为只包含字符信息。
+  - **二进制文件**：文件大小可能会很大，尤其是图像、视频等文件，因为它们需要存储大量的二进制数据。
 
 ### **什么是二进制文件和文本文件？**
 
 - **文本文件**：是一种由字符组成的文件，其内容可以被人类直接阅读和理解。文本文件通常包含了代码、配置信息、文档等。例如，`.txt`、`.html`、`.css`、`.js` 等文件都是文本文件。
 - **二进制文件**：是一种以二进制编码的形式存储数据的文件，其内容不能被人类直接阅读。二进制文件通常包含了计算机程序、图像、音频、视频等。例如，`.exe`、`.jpg`、`.mp3`、`.mp4` 等文件都是二进制文件。
 
-`.gitmodules` 文件是 Git 用来管理子模块（submodule）的配置文件。子模块允许你将一个 Git 仓库作为另一个 Git 仓库的子目录。以下是关于 `.gitmodules` 文件的详细解释：
+`.gitmodules` 文件是 Git 用来管理子模块(submodule)的配置文件。子模块允许你将一个 Git 仓库作为另一个 Git 仓库的子目录。以下是关于 `.gitmodules` 文件的详细解释：
 
 ### **作用**
 
@@ -9884,7 +9871,7 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 
 ### **使用场景举例**
 
-假设你正在开发一个网站项目，其中的静态资源（如 CSS、JavaScript 文件等）由另一个独立的仓库管理。你可以将这个静态资源仓库作为子模块添加到你的网站项目中。这样，你可以在网站项目中方便地引用和更新这些静态资源，同时又能保持静态资源仓库的独立性。
+假设你正在开发一个网站项目，其中的静态资源(如 CSS、JavaScript 文件等)由另一个独立的仓库管理。你可以将这个静态资源仓库作为子模块添加到你的网站项目中。这样，你可以在网站项目中方便地引用和更新这些静态资源，同时又能保持静态资源仓库的独立性。
 
 ### **相关操作命令**
 
@@ -9896,21 +9883,21 @@ GitHub Actions 是 GitHub 提供的一种持续集成和持续交付（CI/CD）�
 ### **作用**
 
 1. 防止 Jekyll 处理特定文件或目录
-    - GitHub Pages 默认会使用 Jekyll 来构建和处理仓库中的静态页面。Jekyll 有自己的一套规则，例如它会忽略以 `_` 或 `.` 开头的文件和目录（如 `_config.yml`、`.git` 等），还会对某些文件进行特殊处理（如 Markdown 文件会被转换为 HTML）。
-    - 当你在仓库中添加 `.nojekyll` 文件后，GitHub Pages 会跳过 Jekyll 的处理步骤，直接将仓库中的文件原样发布。这对于那些不需要 Jekyll 处理的静态网站或包含一些 Jekyll 可能会错误处理的文件的仓库非常有用。
+   - GitHub Pages 默认会使用 Jekyll 来构建和处理仓库中的静态页面。Jekyll 有自己的一套规则，例如它会忽略以 `_` 或 `.` 开头的文件和目录(如 `_config.yml`、`.git` 等)，还会对某些文件进行特殊处理(如 Markdown 文件会被转换为 HTML)。
+   - 当你在仓库中添加 `.nojekyll` 文件后，GitHub Pages 会跳过 Jekyll 的处理步骤，直接将仓库中的文件原样发布。这对于那些不需要 Jekyll 处理的静态网站或包含一些 Jekyll 可能会错误处理的文件的仓库非常有用。
 2. 保留特定文件和目录结构
-    - 如果你有一些文件或目录的命名或结构不符合 Jekyll 的默认规则，但又希望它们能在 GitHub Pages 上正常显示，那么 `.nojekyll` 文件就可以帮助你实现这一点。例如，有些前端项目可能会使用以 `_` 开头的目录来存放一些资源文件，而 Jekyll 会默认忽略这些目录，添加 `.nojekyll` 后就可以避免这个问题。
+   - 如果你有一些文件或目录的命名或结构不符合 Jekyll 的默认规则，但又希望它们能在 GitHub Pages 上正常显示，那么 `.nojekyll` 文件就可以帮助你实现这一点。例如，有些前端项目可能会使用以 `_` 开头的目录来存放一些资源文件，而 Jekyll 会默认忽略这些目录，添加 `.nojekyll` 后就可以避免这个问题。
 
-渐进式网络应用（Progressive Web App，简称 PWA）是一种使用现代网络技术来增强网页应用功能的开发模式，旨在让网页应用具备接近原生应用的用户体验。
+渐进式网络应用(Progressive Web App，简称 PWA)是一种使用现代网络技术来增强网页应用功能的开发模式，旨在让网页应用具备接近原生应用的用户体验。
 
 ### **主要特点**
 
-- **可靠**：即使在网络不稳定甚至离线的情况下，也能正常使用。通过服务工作线程（Service Worker）技术，PWA 可以缓存应用的关键资源，如 HTML、CSS、JavaScript 文件以及数据等，当用户再次访问应用时，即使没有网络连接，也可以从缓存中加载这些资源，保证应用的正常运行。
+- **可靠**：即使在网络不稳定甚至离线的情况下，也能正常使用。通过服务工作线程(Service Worker)技术，PWA 可以缓存应用的关键资源，如 HTML、CSS、JavaScript 文件以及数据等，当用户再次访问应用时，即使没有网络连接，也可以从缓存中加载这些资源，保证应用的正常运行。
 - **快速**：加载速度快，响应迅速。PWA 采用了一系列优化技术，例如代码拆分、资源预加载、高效的缓存策略等，减少了页面的加载时间，提高了用户体验。
 - **可安装**：用户可以将 PWA 添加到设备的主屏幕，就像安装原生应用一样。安装后的 PWA 可以在独立的窗口中打开，有自己的图标和启动画面，与原生应用的使用方式非常相似。
 
 ### **主要应用需求**
 
 - **提升用户体验**：对于一些内容类网站，如新闻资讯、博客等，用户希望能够快速、流畅地浏览文章，并且在离线时也能继续阅读之前看过的内容。PWA 可以通过缓存机制和快速加载的特点，满足用户对流畅体验的需求。例如，一些新闻类的 PWA 应用，用户在有网络时浏览新闻，应用会自动缓存文章内容，当用户在地铁等没有网络的环境中，仍然可以继续阅读之前缓存的新闻。
-- **减少应用开发和分发成本**：对于企业或开发者来说，开发原生应用需要针对不同的操作系统（如 iOS、Android）进行开发，并且需要通过各自的应用商店进行分发，开发和维护成本较高。而 PWA 只需要一套代码就可以在不同的设备和操作系统上运行，并且可以通过网页链接直接访问，无需经过应用商店的审核和上架流程，大大降低了开发和分发成本。
+- **减少应用开发和分发成本**：对于企业或开发者来说，开发原生应用需要针对不同的操作系统(如 iOS、Android)进行开发，并且需要通过各自的应用商店进行分发，开发和维护成本较高。而 PWA 只需要一套代码就可以在不同的设备和操作系统上运行，并且可以通过网页链接直接访问，无需经过应用商店的审核和上架流程，大大降低了开发和分发成本。
 - **增强用户参与度和留存率**：PWA 的可安装性和推送通知功能可以提高用户的参与度和留存率。用户将 PWA 添加到主屏幕后，更容易再次打开应用，而推送通知功能可以及时向用户发送重要信息，提醒用户回到应用中进行交互。例如，电商类的 PWA 应用可以通过推送通知向用户发送商品折扣信息、订单状态更新等，吸引用户再次打开应用进行购买。
