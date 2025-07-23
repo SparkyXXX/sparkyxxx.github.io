@@ -2,7 +2,7 @@
 
 ### 后端开发基础概念
 
-互联网中计算机可相互发送消息，发送消息的是客户端，接收消息的是服务器。默认情况下计算机无法接收网络消息，需用后端编程语言将其编程为服务器。常见的后端编程语言有 JavaScript（Node.js）、Python、Ruby、Java 等。使用后端编程语言开发难度大，需借助后端框架和包管理器，如 Express.js（JavaScript）、Django（Python）、Ruby on Rails、Spring（Java）等框架，以及 npm（JavaScript）、pip（Python）、Bundler（Ruby）、Maven（Java）等包管理器。
+互联网中计算机可相互发送消息，发送消息的是客户端，接收消息的是服务器。默认情况下计算机无法接收网络消息，需用后端编程语言将其编程为服务器。常见的后端编程语言有 JavaScript(Node.js)、Python、Ruby、Java 等。使用后端编程语言开发难度大，需借助后端框架和包管理器，如 Express.js(JavaScript)、Django(Python)、Ruby on Rails、Spring(Java)等框架，以及 npm(JavaScript)、pip(Python)、Bundler(Ruby)、Maven(Java)等包管理器。
 
 ### 数据存储与数据库
 
@@ -10,19 +10,19 @@
 
 ### 请求与响应机制
 
-以亚马逊下单为例，前端发送订单消息给后端是请求，后端保存订单并返回确认消息是响应，这构成请求 - 响应周期。请求包含订单信息、请求类型、域名和 URL 路径等，后端通过编程和框架定义允许的请求类型及处理方式，如 post 请求用于创建资源（如 post orders 创建订单）、get 请求获取资源、delete 请求删除资源等。这些允许的请求类型列表就是 API（应用程序编程接口），遵循 REST（表述性状态转移）命名约定的 API 叫 REST API，此外还有 GraphQL、RPC 等其他约定。
+以亚马逊下单为例，前端发送订单消息给后端是请求，后端保存订单并返回确认消息是响应，这构成请求 - 响应周期。请求包含订单信息、请求类型、域名和 URL 路径等，后端通过编程和框架定义允许的请求类型及处理方式，如 post 请求用于创建资源(如 post orders 创建订单)、get 请求获取资源、delete 请求删除资源等。这些允许的请求类型列表就是 API(应用程序编程接口)，遵循 REST(表述性状态转移)命名约定的 API 叫 REST API，此外还有 GraphQL、RPC 等其他约定。
 
 ### 云计算与后端部署
 
-如今公司多租用云计算公司的计算机运行网站，如 aws（Amazon Web Services）、Gcp（Google Cloud Platform）、microsoft azure。这其中涉及 IaaS（基础设施即服务），如租用 aws 的虚拟机（VM）运行后端和数据库；当网站流量大时，可设置多个 VM 和负载均衡器，并在流量低时关闭 VM。PaaS（平台即服务）能让用户上传后端代码，自动设置 VM、负载均衡器并集成，如 elastic beanstalk（aws）、App engine（Gcp）、App service（microsoft azure）。
+如今公司多租用云计算公司的计算机运行网站，如 aws(Amazon Web Services)、Gcp(Google Cloud Platform)、microsoft azure。这其中涉及 IaaS(基础设施即服务)，如租用 aws 的虚拟机(VM)运行后端和数据库；当网站流量大时，可设置多个 VM 和负载均衡器，并在流量低时关闭 VM。PaaS(平台即服务)能让用户上传后端代码，自动设置 VM、负载均衡器并集成，如 elastic beanstalk(aws)、App engine(Gcp)、App service(microsoft azure)。
 
 ### 后端架构模式
 
-后端代码量庞大时，可拆分为多个代码库和后端，每个有自己的负载均衡器和数据库，这就是微服务，它使代码更聚焦，不同微服务可使用不同编程语言和数据库。此外，像 twilio 提供的邮件服务属于 SaaS（软件即服务），公司可使用其服务而非自建微服务。
+后端代码量庞大时，可拆分为多个代码库和后端，每个有自己的负载均衡器和数据库，这就是微服务，它使代码更聚焦，不同微服务可使用不同编程语言和数据库。此外，像 twilio 提供的邮件服务属于 SaaS(软件即服务)，公司可使用其服务而非自建微服务。
 
 ### 后端辅助技术
 
-除主数据库外，还有多种辅助技术。存储用户上传图片用 blob 存储（如 aws s three ）和 CDN（如 cloud front ）；文本搜索慢时用搜索数据库（如 elasticsearch ）；缓解主数据库压力用缓存（如 redis ）；进行数据分析用分析数据库（如 snowflake ）；调度任务用任务队列（如 rabbit mq ）。
+除主数据库外，还有多种辅助技术。存储用户上传图片用 blob 存储(如 aws s three )和 CDN(如 cloud front )；文本搜索慢时用搜索数据库(如 elasticsearch )；缓解主数据库压力用缓存(如 redis )；进行数据分析用分析数据库(如 snowflake )；调度任务用任务队列(如 rabbit mq )。
 
 ## 应用程序设计
 
@@ -40,7 +40,7 @@ UI 设计动效虽可能降低程序员幸福指数，但能拉高产品品质�
 
 ### 动效与静态界面差异
 
-相比静态 UI 界面，动效可展示更丰富内容，突破屏幕限制。添加交互手势（如滑动）后，能让操作更流畅，滑动手势交互区域大，操作便捷。对于重要板块，还可利用动效强调，如设置位置移动时间差、添加 3D 效果或贴合现实材质的转场。
+相比静态 UI 界面，动效可展示更丰富内容，突破屏幕限制。添加交互手势(如滑动)后，能让操作更流畅，滑动手势交互区域大，操作便捷。对于重要板块，还可利用动效强调，如设置位置移动时间差、添加 3D 效果或贴合现实材质的转场。
 
 ### 常用交互动效
 
