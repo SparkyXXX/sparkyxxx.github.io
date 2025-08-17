@@ -3,24 +3,24 @@
 - type: github
   icon: "fab fa-github"
 
-- type: stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "https://stackoverflow.com/users/27007817/hatrix"
-
 - type: zhihu
   icon: "fab fa-zhihu"
   url: "https://www.zhihu.com/people/hatrixxxx"
+
+- type: stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "https://stackoverflow.com/users/27007817/hatrix"
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
 # - type: twitter
 #   icon: "fa-brands fa-x-twitter"
 
-# - type: rss
-#   icon: "fas fa-rss"
-#   noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
